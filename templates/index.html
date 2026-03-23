@@ -11,11 +11,11 @@
     /* ── Hero ───────────────────────────────────────────── */
     .hero {
       position: relative;
-      min-height: 56vh;
+      min-height: 28vh;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 72px 6vw 88px;
+      padding: 36px 6vw 52px;
       background:
         radial-gradient(ellipse at 10% 95%, rgba(249, 112, 80, 0.70) 0%, transparent 50%),
         radial-gradient(ellipse at 88% 8%,  rgba(168, 85, 247, 0.65) 0%, transparent 50%),
@@ -29,7 +29,7 @@
       content: '';
       position: absolute;
       bottom: 0; left: 0; right: 0;
-      height: 150px;
+      height: 100px;
       background: linear-gradient(to bottom, transparent, #0a0a0a);
       pointer-events: none;
     }
@@ -41,12 +41,12 @@
     }
 
     .hero-title {
-      font-size: clamp(48px, 6.5vw, 88px);
+      font-size: clamp(32px, 4.5vw, 58px);
       font-weight: 800;
-      letter-spacing: -3px;
+      letter-spacing: -2px;
       color: #111;
       line-height: 1;
-      margin-bottom: 6px;
+      margin-bottom: 4px;
       display: inline-block;
     }
 
@@ -70,23 +70,17 @@
     }
 
     .hero-sub {
-      margin-top: 28px;
-      font-size: clamp(14px, 1.6vw, 18px);
+      margin-top: 16px;
+      font-size: clamp(13px, 1.3vw, 16px);
       font-weight: 500;
       color: #333;
-      max-width: 480px;
-      line-height: 1.65;
-    }
-
-    .hero-meta {
-      margin-top: 20px;
-      font-size: 12px;
-      color: rgba(0,0,0,0.32);
+      max-width: 420px;
+      line-height: 1.6;
     }
 
     /* Right column */
     .hero-right {
-      width: clamp(280px, 30vw, 380px);
+      width: clamp(240px, 26vw, 320px);
       flex-shrink: 0;
       display: flex;
       flex-direction: column;
@@ -107,7 +101,7 @@
       gap: 16px;
     }
     .stat-number {
-      font-size: 52px;
+      font-size: 40px;
       font-weight: 800;
       letter-spacing: -2px;
       color: #111;
@@ -187,6 +181,53 @@
 
     .progress-bar { height: 2px; background: #181818; }
     .progress-fill { height: 100%; background: linear-gradient(90deg, #f97060, #a855f7); transition: width 0.4s ease; }
+
+    /* ── Section tabs ───────────────────────────────────── */
+    .section-tabs {
+      padding: 20px 32px 0;
+      display: flex;
+      gap: 10px;
+      background: #0a0a0a;
+      border-bottom: 1px solid #181818;
+    }
+    .section-tab {
+      padding: 11px 22px;
+      border-radius: 8px 8px 0 0;
+      border: 1px solid #222;
+      border-bottom: none;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: inherit;
+      background: #111;
+      color: #888;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      position: relative;
+      bottom: -1px;
+    }
+    .section-tab.active {
+      background: #0a0a0a;
+      color: #e8e8e8;
+      border-color: #2a2a2a;
+      border-bottom-color: #0a0a0a;
+    }
+    .section-tab.coming-soon {
+      cursor: default;
+      opacity: 0.45;
+    }
+    .soon-pill {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      background: #1e1630;
+      color: #a78bfa;
+      padding: 2px 7px;
+      border-radius: 10px;
+    }
 
     /* ── Filter bar ─────────────────────────────────────── */
     .filter-bar {
@@ -297,8 +338,7 @@
         </svg>
       </span>
     </h1>
-    <p class="hero-sub">a place to map the Feltsense community, orchestrate content, and drive connection of the Feltsense Mission</p>
-    <p class="hero-meta">{{ generated }} of {{ total }} profiles generated</p>
+    <p class="hero-sub">A place to map the Feltsense community, orchestrate content, and drive connection of the Feltsense Mission</p>
   </div>
 
   <!-- Right: stat + quote carousel -->
@@ -334,6 +374,12 @@
 
 <div class="progress-bar">
   <div class="progress-fill" style="width: {{ (generated / total * 100) | round }}%"></div>
+</div>
+
+<!-- ── Section tabs ──────────────────────────────────────────── -->
+<div class="section-tabs">
+  <button class="section-tab active">Content Network Engine</button>
+  <button class="section-tab coming-soon" disabled>LinkedIn Talent Mapping <span class="soon-pill">Coming Soon</span></button>
 </div>
 
 <!-- ── Filter bar ─────────────────────────────────────────── -->
