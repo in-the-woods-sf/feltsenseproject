@@ -63,12 +63,13 @@ CAMPAIGNS = [
 # Rows in the copy table, grouped by platform section
 # (section, field_id, label, textarea_rows)
 COPY_FIELDS = [
-    ("x",        "x_post",        "Post",         3),
-    ("x",        "reply_casual",  "Reply A",       2),
-    ("x",        "reply_insight", "Reply B",       2),
-    ("x",        "reply_tease",   "Reply C",       2),
-    ("linkedin", "linkedin_post", "Post",          6),
-    ("shared",   "comment",       "Comment",       3),
+    ("x",          "x_post",        "Post",              3),
+    ("x",          "reply_casual",  "Reply A",            2),
+    ("x",          "reply_insight", "Reply B",            2),
+    ("x",          "reply_tease",   "Reply C",            2),
+    ("linkedin",   "linkedin_post", "Post",               6),
+    ("engagement", "comment",       "Their Comment",      3),
+    ("engagement", "our_comment",   "Feltsense Comment",  3),
 ]
 
 
@@ -167,7 +168,8 @@ def load_copy(slug: str, campaign: str = "march") -> Optional[dict]:
     return {
         "x_post": x_match.group(1).strip() if x_match else "",
         "linkedin_post": li_match.group(1).strip() if li_match else "",
-        "comment": extract("💬 Comment to drop on our post"),
+        "comment": extract("💬 Their Comment"),
+        "our_comment": extract("💬 Feltsense Comment"),
         "reply_casual": extract_reply("A — Casual"),
         "reply_insight": extract_reply("B — Insight"),
         "reply_tease": extract_reply("C — Tease"),
@@ -194,9 +196,17 @@ def save_copy(slug: str, copy: GeneratedCopy, campaign: str = "march"):
 
 ---
 
-### 💬 Comment to drop on our post
+### 💬 Their Comment
+*(Suggested copy for {copy.name} to post on Feltsense's post)*
 
 {copy.comment}
+
+---
+
+### 💬 Feltsense Comment
+*(What Feltsense / Marik drops on {copy.name}'s own post)*
+
+{copy.our_comment}
 
 ---
 
@@ -382,6 +392,7 @@ def regenerate(slug):
                 "x_post": x_post,
                 "linkedin_post": linkedin_post,
                 "comment": copy.comment,
+                "our_comment": copy.our_comment,
                 "reply_casual": copy.our_reply_casual,
                 "reply_insight": copy.our_reply_insight,
                 "reply_tease": copy.our_reply_tease,
@@ -409,11 +420,12 @@ def save_edit(slug):
     raw = path.read_text(encoding="utf-8")
 
     field_patterns = {
-        "x_post": (r"(\*\*X:\*\*\s*\n)(.*?)(\n\n\*\*LinkedIn:)", re.DOTALL),
-        "linkedin_post": (r"(\*\*LinkedIn:\*\*\s*\n)(.*?)(\n\n---)", re.DOTALL),
-        "comment": (r"(### 💬 Comment to drop on our post\s*\n\n)(.*?)(\n\n---)", re.DOTALL),
-        "reply_casual": (r"(\*\*A — Casual\*\*[^\n]*\n)(.*?)(\n\n\*\*B —)", re.DOTALL),
-        "reply_insight": (r"(\*\*B — Insight\*\*[^\n]*\n)(.*?)(\n\n\*\*C —)", re.DOTALL),
+        "x_post":      (r"(\*\*X:\*\*\s*\n)(.*?)(\n\n\*\*LinkedIn:)", re.DOTALL),
+        "linkedin_post":(r"(\*\*LinkedIn:\*\*\s*\n)(.*?)(\n\n---)", re.DOTALL),
+        "comment":     (r"(### 💬 Their Comment\s*\n[^\n]*\n\n)(.*?)(\n\n---)", re.DOTALL),
+        "our_comment": (r"(### 💬 Feltsense Comment\s*\n[^\n]*\n\n)(.*?)(\n\n---)", re.DOTALL),
+        "reply_casual":(r"(\*\*A — Casual\*\*[^\n]*\n)(.*?)(\n\n\*\*B —)", re.DOTALL),
+        "reply_insight":(r"(\*\*B — Insight\*\*[^\n]*\n)(.*?)(\n\n\*\*C —)", re.DOTALL),
         "reply_tease": (r"(\*\*C — Tease\*\*[^\n]*\n)(.*?)(\n\n---)", re.DOTALL),
     }
 

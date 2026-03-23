@@ -19,7 +19,8 @@ class GeneratedCopy:
     name: str
     firm: str
     standalone_post: str
-    comment: str
+    comment: str               # Suggested copy for the VC to post ON Feltsense's post
+    our_comment: str           # What Feltsense/Marik drops ON the VC's own post
     our_reply_casual: str      # Option A: warm thanks / acknowledgment
     our_reply_insight: str     # Option B: unintuitive push that deepens the thread
     our_reply_tease: str       # Option C: hint at more coming / stay tuned
@@ -90,17 +91,25 @@ Write three pieces in {name}'s voice:
 
 1. STANDALONE POST (X + LinkedIn)
    - X version: ≤280 characters, punchy, one question or one bold claim
-   - LinkedIn version: 100-200 words, more reflective, still leaves reader with a question
+   - LinkedIn version: 60-100 words MAX, punchy and direct — not a wall of text, no listicles, no bullet points, no long paragraphs. Still leaves reader with a question
    - Both should feel like {name} decided to write this unprompted
    - Aim for "quietly confident" over "hyped up" — the idea should carry the energy, not the adjectives
    - FRAMING: The scope is the entire YC W26 batch. The public launch features 20 deep-dive replications with live products; the full PDF covers the rest. Always frame as "went through every startup in the YC batch" or "the whole W26 batch" — never just "20 startups." If referencing the 20, it's "20 featured deep-dives" or "20 live builds," not the total scope of the project.
 
-2. COMMENT (to drop on our main Feltsense post)
+2. THEIR COMMENT (suggested copy for {name} to post on Feltsense's post)
    - 1-3 sentences max
    - Sounds like a natural, considered reaction from {name} — not a fan reply, more like a peer observation
    - No generic praise, no hype words — something specific, grounded, and in their voice
+   - Written FROM {name}'s perspective, as if they are commenting on Feltsense's content
 
-3. OUR REPLY to their comment — three options (for Feltsense / Marik to pick from)
+3. OUR COMMENT (what Feltsense / Marik drops on {name}'s OWN posts)
+   - 1-2 sentences written as Feltsense engaging with {name}'s recent content
+   - Should feel like a genuine peer reaction — not promotional, not begging for engagement
+   - Reference something specific from their actual posts if possible
+   - Ends the exchange feeling like two people who see the world similarly
+   - Written FROM Feltsense's perspective, engaging with {name}'s content
+
+4. OUR REPLY to their comment — three options (for Feltsense / Marik to pick from)
    All three are written as Feltsense (@feltsense) responding personally to {name}.
    Each is 1-2 sentences. Pick up something specific from their comment.
    Write all three — the team will choose the right one for the moment.
@@ -127,8 +136,11 @@ Format your response EXACTLY as:
 ### LINKEDIN POST
 [100-200 words]
 
-### COMMENT
-[1-3 sentences]
+### THEIR COMMENT ON OUR POST
+[1-3 sentences — written as {name} commenting on Feltsense's post]
+
+### OUR COMMENT ON THEIR POST
+[1-2 sentences — written as Feltsense commenting on {name}'s post]
 
 ### OUR REPLY A — CASUAL
 [1-2 sentences]
@@ -228,7 +240,7 @@ class CopyGenerator:
         )
 
         # Stream the response (copy can be long, prevents timeouts)
-        x_post = linkedin_post = comment = ""
+        x_post = linkedin_post = comment = our_comment = ""
         our_reply_casual = our_reply_insight = our_reply_tease = final_voice_notes = ""
 
         with self.client.messages.stream(
@@ -258,7 +270,8 @@ class CopyGenerator:
 
         x_post = _extract_section(raw, "X POST")
         linkedin_post = _extract_section(raw, "LINKEDIN POST")
-        comment = _extract_section(raw, "COMMENT")
+        comment = _extract_section(raw, "THEIR COMMENT ON OUR POST")
+        our_comment = _extract_section(raw, "OUR COMMENT ON THEIR POST")
         our_reply_casual = _extract_section(raw, "OUR REPLY A — CASUAL")
         our_reply_insight = _extract_section(raw, "OUR REPLY B — INSIGHT")
         our_reply_tease = _extract_section(raw, "OUR REPLY C — TEASE")
@@ -269,6 +282,7 @@ class CopyGenerator:
             firm=firm,
             standalone_post=f"**X:**\n{x_post}\n\n**LinkedIn:**\n{linkedin_post}",
             comment=comment,
+            our_comment=our_comment,
             our_reply_casual=our_reply_casual,
             our_reply_insight=our_reply_insight,
             our_reply_tease=our_reply_tease,

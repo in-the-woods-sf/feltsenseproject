@@ -72,6 +72,7 @@
     .ct-section-head.x-section   { color: #38bdf8; }
     .ct-section-head.li-section  { color: #818cf8; }
     .ct-section-head.sh-section  { color: #a3a3a3; }
+    .ct-section-head.en-section  { color: #f59e0b; }
 
     /* Row label */
     .ct-row-label {
@@ -225,9 +226,10 @@
             {% if section == 'x' %}<span style="font-size:10px;color:#555">╱</span>{% endif %}
           </div>
           <div class="ct-section-head
-            {% if section == 'x' %}x-section{% elif section == 'linkedin' %}li-section{% else %}sh-section{% endif %}">
+            {% if section == 'x' %}x-section{% elif section == 'linkedin' %}li-section{% elif section == 'engagement' %}en-section{% else %}sh-section{% endif %}">
             {% if section == 'x' %}𝕏 &nbsp;X / Twitter
             {% elif section == 'linkedin' %}in &nbsp;LinkedIn
+            {% elif section == 'engagement' %}↕ &nbsp;Engagement
             {% else %}✦ &nbsp;Shared
             {% endif %}
           </div>
@@ -289,7 +291,8 @@
           <option value="all">All sections</option>
           <option value="x_post">X Post</option>
           <option value="linkedin_post">LinkedIn Post</option>
-          <option value="comment">Comment</option>
+          <option value="comment">Their Comment</option>
+          <option value="our_comment">Feltsense Comment</option>
           <option value="reply_casual">Reply A — Casual</option>
           <option value="reply_insight">Reply B — Insight</option>
           <option value="reply_tease">Reply C — Tease</option>
@@ -429,7 +432,8 @@ async function regenerate(slug) {
     const c = data.copy;
     const fieldMap = {
       x_post: c.x_post, linkedin_post: c.linkedin_post,
-      comment: c.comment, reply_casual: c.reply_casual,
+      comment: c.comment, our_comment: c.our_comment,
+      reply_casual: c.reply_casual,
       reply_insight: c.reply_insight, reply_tease: c.reply_tease,
     };
 
