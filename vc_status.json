@@ -34,5 +34,16 @@
   "matt-schlicht": {
     "status": "active",
     "engagement_month": ""
-  }
+  },
+  "marik-hazan": { "status": "", "engagement_month": "", "role": "feltsense_teammate" },
+  "sarah-cabilte": { "status": "", "engagement_month": "", "role": "feltsense_teammate" },
+  "ben-norman": { "status": "", "engagement_month": "", "role": "feltsense_teammate" },
+  "matt-wood": { "status": "", "engagement_month": "", "role": "feltsense_teammate" },
+  "rishabh-kapoor": { "status": "", "engagement_month": "", "role": "feltsense_teammate" },
+  "yvonne-pilapitiya": { "status": "", "engagement_month": "", "role": "feltsense_teammate" },
+  "lakshitha-perera": { "status": "", "engagement_month": "", "role": "feltsense_teammate" },
+  "harry-roper": { "status": "", "engagement_month": "", "role": "feltsense_teammate" },
+  "ayesh-jayasinghe": { "status": "", "engagement_month": "", "role": "feltsense_teammate" },
+  "aza-allsop": { "status": "", "engagement_month": "", "role": "feltsense_teammate" },
+  "roger-jin": { "status": "", "engagement_month": "", "role": "feltsense_teammate" }
 }
