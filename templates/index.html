@@ -3,87 +3,203 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Friends of Feltsense — Content Generator</title>
+  <title>FeltBook</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #0f0f0f; color: #e8e8e8; min-height: 100vh; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #0a0a0a; color: #e8e8e8; min-height: 100vh; }
 
-    .header { padding: 32px 40px 24px; border-bottom: 1px solid #222; display: flex; align-items: center; justify-content: space-between; }
-    .header h1 { font-size: 18px; font-weight: 600; letter-spacing: -0.3px; }
-    .header .meta { font-size: 13px; color: #666; }
-    .progress-bar { height: 3px; background: #1a1a1a; }
-    .progress-fill { height: 100%; background: #7c6ff7; transition: width 0.4s ease; }
-
-    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1px; background: #1a1a1a; padding: 1px; }
-    .card { background: #0f0f0f; padding: 20px 24px; cursor: pointer; text-decoration: none; color: inherit; display: block; transition: background 0.15s; position: relative; }
-    .card:hover { background: #161616; }
-    .card .name { font-size: 15px; font-weight: 500; margin-bottom: 4px; }
-    .card .firm { font-size: 12px; color: #555; margin-bottom: 12px; }
-    .card .badges { display: flex; gap: 6px; flex-wrap: wrap; }
-    .badge { font-size: 11px; padding: 2px 8px; border-radius: 20px; font-weight: 500; }
-    .badge.done { background: #1a2e1a; color: #4ade80; }
-    .badge.pending { background: #1a1a2e; color: #666; }
-    .badge.no-x { background: #2e1a1a; color: #f87171; }
-    .badge.active { background: #12263a; color: #38bdf8; }
-    .badge.periodic { background: #261a3a; color: #a78bfa; }
-    .badge.cold { background: #1e1e1e; color: #555; }
-    .badge.month { background: #0f2420; color: #6ee7b7; }
-    .badge.set-status { background: #1e1e1e; color: #444; cursor: pointer; border: 1px dashed #2a2a2a; }
-    .badge.set-status:hover { color: #888; border-color: #444; }
-    .badge.role-vc        { background: #1a1a2e; color: #818cf8; }
-    .badge.role-teammate  { background: #2e1a2e; color: #e879f9; }
-    .badge.role-friend    { background: #1a2820; color: #34d399; }
-    .card .arrow { position: absolute; right: 20px; top: 50%; transform: translateY(-50%); color: #333; font-size: 18px; }
-    .card:hover .arrow { color: #666; }
-
-    .status-control { display: inline-block; }
-
-    /* Floating status menu */
-    .status-menu {
-      position: fixed;
-      z-index: 1000;
-      background: #1a1a1a;
-      border: 1px solid #2a2a2a;
-      border-radius: 8px;
-      padding: 6px;
-      min-width: 210px;
-      box-shadow: 0 8px 28px rgba(0,0,0,0.7);
-      display: none;
+    /* ── Hero ───────────────────────────────────────────── */
+    .hero {
+      position: relative;
+      min-height: 52vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 72px 32px 80px;
+      background:
+        radial-gradient(ellipse at 15% 90%, rgba(249, 112, 80, 0.72) 0%, transparent 52%),
+        radial-gradient(ellipse at 85% 10%, rgba(168, 85, 247, 0.65) 0%, transparent 52%),
+        radial-gradient(ellipse at 55% 50%, rgba(232, 121, 177, 0.35) 0%, transparent 60%),
+        #d4cfe0;
+      overflow: hidden;
     }
-    .status-menu .menu-label { font-size: 10px; font-weight: 600; color: #444; text-transform: uppercase; letter-spacing: 0.5px; padding: 4px 8px 6px; }
-    .status-menu .menu-opt { padding: 7px 10px; border-radius: 5px; font-size: 12px; cursor: pointer; color: #888; }
-    .status-menu .menu-opt:hover { background: #252525; color: #e8e8e8; }
-    .status-menu .menu-opt.selected { color: #e8e8e8; background: #252525; }
-    .status-menu .menu-divider { height: 1px; background: #252525; margin: 6px 0; }
-    .status-menu .menu-month { width: 100%; background: #111; border: 1px solid #2a2a2a; color: #888; border-radius: 5px; font-size: 12px; padding: 7px 8px; outline: none; cursor: pointer; font-family: inherit; }
-    .status-menu .menu-month:focus { border-color: #6ee7b7; color: #e8e8e8; }
-    .status-menu .menu-role  { width: 100%; background: #111; border: 1px solid #2a2a2a; color: #888; border-radius: 5px; font-size: 12px; padding: 7px 8px; outline: none; cursor: pointer; font-family: inherit; }
-    .status-menu .menu-role:focus  { border-color: #818cf8; color: #e8e8e8; }
 
-    .filter-bar { padding: 16px 40px; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; border-bottom: 1px solid #1a1a1a; }
-    .filter-bar input { background: #161616; border: 1px solid #2a2a2a; color: #e8e8e8; padding: 7px 12px; border-radius: 6px; font-size: 13px; width: 200px; outline: none; }
-    .filter-bar input:focus { border-color: #7c6ff7; }
-    .filter-sep { width: 1px; height: 20px; background: #2a2a2a; margin: 0 4px; }
-    .filter-btn { background: none; border: 1px solid #2a2a2a; color: #888; padding: 6px 12px; border-radius: 6px; font-size: 12px; cursor: pointer; white-space: nowrap; }
+    /* fade into black at the bottom */
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 140px;
+      background: linear-gradient(to bottom, transparent, #0a0a0a);
+      pointer-events: none;
+    }
+
+    .hero-title {
+      font-size: clamp(52px, 8vw, 96px);
+      font-weight: 800;
+      letter-spacing: -3px;
+      color: #111;
+      line-height: 1;
+      margin-bottom: 6px;
+      position: relative;
+      display: inline-block;
+    }
+
+    /* curved SVG underline on "Book" part */
+    .hero-title .underlined {
+      position: relative;
+      display: inline-block;
+    }
+    .hero-title .underlined svg {
+      position: absolute;
+      bottom: -10px;
+      left: -4px;
+      width: calc(100% + 8px);
+      height: 14px;
+      overflow: visible;
+    }
+    .hero-title .underlined svg path {
+      stroke: #111;
+      stroke-width: 4;
+      fill: none;
+      stroke-linecap: round;
+    }
+
+    .hero-sub {
+      margin-top: 28px;
+      font-size: clamp(15px, 2vw, 19px);
+      font-weight: 500;
+      color: #333;
+      max-width: 560px;
+      line-height: 1.6;
+    }
+
+    .hero-meta {
+      margin-top: 24px;
+      font-size: 13px;
+      color: rgba(0,0,0,0.35);
+    }
+
+    .progress-bar { height: 2px; background: #181818; }
+    .progress-fill { height: 100%; background: linear-gradient(90deg, #f97060, #a855f7); transition: width 0.4s ease; }
+
+    /* ── Filter bar ─────────────────────────────────────── */
+    .filter-bar {
+      padding: 16px 32px;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #181818;
+      background: #0a0a0a;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .filter-bar input {
+      background: #131313;
+      border: 1px solid #242424;
+      color: #e8e8e8;
+      padding: 7px 12px;
+      border-radius: 6px;
+      font-size: 13px;
+      width: 200px;
+      outline: none;
+    }
+    .filter-bar input:focus { border-color: #a855f7; }
+    .filter-sep { width: 1px; height: 20px; background: #242424; margin: 0 4px; }
+    .filter-btn { background: none; border: 1px solid #242424; color: #666; padding: 6px 12px; border-radius: 6px; font-size: 12px; cursor: pointer; white-space: nowrap; transition: all 0.12s; }
+    .filter-btn:hover { border-color: #444; color: #aaa; }
     .filter-btn.active { border-color: #7c6ff7; color: #7c6ff7; background: #1a1830; }
     .filter-btn.f-active.active  { border-color: #38bdf8; color: #38bdf8; background: #0c1e2e; }
     .filter-btn.f-periodic.active { border-color: #a78bfa; color: #a78bfa; background: #1a1030; }
-    .filter-month { background: #161616; border: 1px solid #2a2a2a; color: #888; padding: 6px 10px; border-radius: 6px; font-size: 12px; outline: none; cursor: pointer; font-family: inherit; }
+    .filter-month { background: #131313; border: 1px solid #242424; color: #666; padding: 6px 10px; border-radius: 6px; font-size: 12px; outline: none; cursor: pointer; font-family: inherit; }
     .filter-month.active { border-color: #6ee7b7; color: #6ee7b7; background: #0a1e18; }
+
+    /* ── Grid ───────────────────────────────────────────── */
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1px; background: #181818; padding: 1px; }
+
+    .card {
+      background: #0a0a0a;
+      padding: 20px 24px;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      transition: background 0.15s;
+      position: relative;
+    }
+    .card:hover { background: #101010; }
+    .card .name { font-size: 15px; font-weight: 500; margin-bottom: 3px; }
+    .card .firm { font-size: 12px; color: #444; margin-bottom: 12px; }
+    .card .badges { display: flex; gap: 6px; flex-wrap: wrap; }
+
+    .badge { font-size: 11px; padding: 2px 8px; border-radius: 20px; font-weight: 500; }
+    .badge.done     { background: #0f2218; color: #4ade80; }
+    .badge.pending  { background: #141414; color: #555; }
+    .badge.no-x     { background: #2e1a1a; color: #f87171; }
+    .badge.active   { background: #0c1e2e; color: #38bdf8; }
+    .badge.periodic { background: #1a1030; color: #a78bfa; }
+    .badge.cold     { background: #161616; color: #555; }
+    .badge.month    { background: #0a1e18; color: #6ee7b7; }
+    .badge.set-status { background: #141414; color: #444; cursor: pointer; border: 1px dashed #222; }
+    .badge.set-status:hover { color: #888; border-color: #444; }
+    .badge.role-vc        { background: #131328; color: #818cf8; }
+    .badge.role-teammate  { background: #2a142a; color: #e879f9; }
+    .badge.role-friend    { background: #112218; color: #34d399; }
+
+    .card .arrow { position: absolute; right: 20px; top: 50%; transform: translateY(-50%); color: #282828; font-size: 18px; }
+    .card:hover .arrow { color: #555; }
+
+    .status-control { display: inline-block; }
+
+    /* ── Floating status menu ───────────────────────────── */
+    .status-menu {
+      position: fixed;
+      z-index: 1000;
+      background: #161616;
+      border: 1px solid #252525;
+      border-radius: 8px;
+      padding: 6px;
+      min-width: 210px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.8);
+      display: none;
+    }
+    .status-menu .menu-label  { font-size: 10px; font-weight: 600; color: #444; text-transform: uppercase; letter-spacing: 0.5px; padding: 4px 8px 6px; }
+    .status-menu .menu-opt    { padding: 7px 10px; border-radius: 5px; font-size: 12px; cursor: pointer; color: #888; }
+    .status-menu .menu-opt:hover  { background: #202020; color: #e8e8e8; }
+    .status-menu .menu-opt.selected { color: #e8e8e8; background: #202020; }
+    .status-menu .menu-divider { height: 1px; background: #222; margin: 6px 0; }
+    .status-menu .menu-month  { width: 100%; background: #0f0f0f; border: 1px solid #252525; color: #888; border-radius: 5px; font-size: 12px; padding: 7px 8px; outline: none; cursor: pointer; font-family: inherit; }
+    .status-menu .menu-month:focus { border-color: #6ee7b7; color: #e8e8e8; }
+    .status-menu .menu-role   { width: 100%; background: #0f0f0f; border: 1px solid #252525; color: #888; border-radius: 5px; font-size: 12px; padding: 7px 8px; outline: none; cursor: pointer; font-family: inherit; }
+    .status-menu .menu-role:focus  { border-color: #818cf8; color: #e8e8e8; }
 
     .empty { padding: 60px 40px; text-align: center; color: #444; }
   </style>
 </head>
 <body>
 
-<div class="header">
-  <h1>Friends of Feltsense — Content Generator</h1>
-  <div class="meta">{{ generated }} of {{ total }} generated</div>
+<!-- ── Hero ──────────────────────────────────────────────── -->
+<div class="hero">
+  <h1 class="hero-title">
+    Felt<span class="underlined">Book
+      <svg viewBox="0 0 120 14" preserveAspectRatio="none">
+        <path d="M 2 10 Q 30 2 60 8 Q 90 14 118 6" />
+      </svg>
+    </span>
+  </h1>
+  <p class="hero-sub">a place to map the Feltsense community, orchestrate content, and drive connection of the Feltsense Mission</p>
+  <p class="hero-meta">{{ generated }} of {{ total }} profiles generated</p>
 </div>
+
 <div class="progress-bar">
   <div class="progress-fill" style="width: {{ (generated / total * 100) | round }}%"></div>
 </div>
 
+<!-- ── Filter bar ─────────────────────────────────────────── -->
 <div class="filter-bar">
   <input type="text" id="search" placeholder="Search by name or firm…" oninput="filterCards()">
   <div class="filter-sep"></div>
@@ -91,10 +207,10 @@
   <button class="filter-btn" onclick="setFilter('done', this)">Generated</button>
   <button class="filter-btn" onclick="setFilter('pending', this)">Pending</button>
   <div class="filter-sep"></div>
-  <button class="filter-btn f-active" onclick="setFilter('active', this)">🔵 Active Posting Partner</button>
-  <button class="filter-btn f-periodic" onclick="setFilter('periodic', this)">🟣 Periodic Posting Partner</button>
+  <button class="filter-btn f-active" onclick="setFilter('active', this)">🔵 Active Partner</button>
+  <button class="filter-btn f-periodic" onclick="setFilter('periodic', this)">🟣 Periodic Partner</button>
   <div class="filter-sep"></div>
-  <select class="filter-month" id="role-filter" onchange="filterCards()" style="border-color:#2a2a2a;">
+  <select class="filter-month" id="role-filter" onchange="filterCards()">
     <option value="">All roles</option>
     {% for r in role_types %}{% if r.value %}
     <option value="{{ r.value }}">{{ r.label }}</option>
@@ -108,6 +224,7 @@
   </select>
 </div>
 
+<!-- ── Grid ───────────────────────────────────────────────── -->
 <div class="grid" id="grid">
   {% for vc in vcs %}
   <a class="card" href="/vc/{{ vc.slug }}"
@@ -122,7 +239,7 @@
     <div class="firm">{{ vc.firm }}</div>
     <div class="badges">
       {% if vc.generated %}
-        <span class="badge done">✓ March Copy Ready</span>
+        <span class="badge done">✓ Copy Ready</span>
       {% else %}
         <span class="badge pending">Not generated</span>
       {% endif %}
@@ -156,7 +273,7 @@
   {% endfor %}
 </div>
 
-<!-- Floating status / engagement menu -->
+<!-- ── Floating status / engagement menu ──────────────────── -->
 <div class="status-menu" id="status-menu">
   <div class="menu-label">Partner Status</div>
   <div class="menu-opt" data-val="" onclick="setCardStatus('')">— No status</div>
@@ -185,7 +302,6 @@
 let activeFilter = 'all';
 let menuSlug = null;
 
-// Close menu on outside click
 document.addEventListener('click', (e) => {
   const menu = document.getElementById('status-menu');
   if (menu.style.display !== 'none' && !menu.contains(e.target)) {
@@ -196,31 +312,21 @@ document.addEventListener('click', (e) => {
 
 function openStatusMenu(slug, event) {
   const menu = document.getElementById('status-menu');
-
-  // Toggle off if already open for same slug
   if (menuSlug === slug && menu.style.display !== 'none') {
-    menu.style.display = 'none';
-    menuSlug = null;
-    return;
+    menu.style.display = 'none'; menuSlug = null; return;
   }
-
   menuSlug = slug;
-
-  // Position below the badge
   const rect = event.target.getBoundingClientRect();
   const menuWidth = 220;
   let left = rect.left;
   if (left + menuWidth > window.innerWidth - 8) left = window.innerWidth - menuWidth - 8;
-  menu.style.top = (rect.bottom + window.scrollY + 6) + 'px';
+  menu.style.top  = (rect.bottom + window.scrollY + 6) + 'px';
   menu.style.left = left + 'px';
   menu.style.display = 'block';
-
-  // Reflect current card values
   const card = document.querySelector(`.card[data-slug="${slug}"]`);
   const currentStatus = card ? (card.dataset.status || '') : '';
   const currentMonth  = card ? (card.dataset.month  || '') : '';
   const currentRole   = card ? (card.dataset.role   || '') : '';
-
   document.querySelectorAll('.status-menu .menu-opt').forEach(opt => {
     opt.classList.toggle('selected', opt.dataset.val === currentStatus);
   });
@@ -232,18 +338,13 @@ async function setCardStatus(status) {
   if (!menuSlug) return;
   const slug = menuSlug;
   const res = await fetch('/api/set-status/' + slug, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+    method: 'POST', headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ status }),
   });
   const data = await res.json();
   if (!data.ok) return;
-
   const card = document.querySelector(`.card[data-slug="${slug}"]`);
-  if (card) {
-    card.dataset.status = status;
-    updateCardStatusBadge(card, status);
-  }
+  if (card) { card.dataset.status = status; updateCardStatusBadge(card, status); }
   document.querySelectorAll('.status-menu .menu-opt').forEach(opt => {
     opt.classList.toggle('selected', opt.dataset.val === status);
   });
@@ -253,53 +354,33 @@ async function setCardMonth(month) {
   if (!menuSlug) return;
   const slug = menuSlug;
   const res = await fetch('/api/set-status/' + slug, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+    method: 'POST', headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ engagement_month: month }),
   });
   const data = await res.json();
   if (!data.ok) return;
-
   const card = document.querySelector(`.card[data-slug="${slug}"]`);
-  if (card) {
-    card.dataset.month = month;
-    updateCardMonthBadge(card, month);
-  }
+  if (card) { card.dataset.month = month; updateCardMonthBadge(card, month); }
 }
 
 async function setCardRole(role) {
   if (!menuSlug) return;
   const slug = menuSlug;
   const res = await fetch('/api/set-status/' + slug, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+    method: 'POST', headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ role }),
   });
   const data = await res.json();
   if (!data.ok) return;
-
   const card = document.querySelector(`.card[data-slug="${slug}"]`);
-  if (card) {
-    card.dataset.role = role;
-    updateCardRoleBadge(card, role);
-  }
+  if (card) { card.dataset.role = role; updateCardRoleBadge(card, role); }
 }
 
 function updateCardStatusBadge(card, status) {
   const ctrl = card.querySelector('.status-control');
   if (!ctrl) return;
-  const labels = {
-    active:   '🔵 Active Partner ▾',
-    periodic: '🟣 Periodic Partner ▾',
-    cold:     'Not engaged ▾',
-    '':       '+ Set status',
-  };
-  const classes = {
-    active:   'badge active',
-    periodic: 'badge periodic',
-    cold:     'badge cold',
-    '':       'badge set-status',
-  };
+  const labels  = { active: '🔵 Active Partner ▾', periodic: '🟣 Periodic Partner ▾', cold: 'Not engaged ▾', '': '+ Set status' };
+  const classes = { active: 'badge active', periodic: 'badge periodic', cold: 'badge cold', '': 'badge set-status' };
   ctrl.innerHTML = `<span class="${classes[status] || 'badge set-status'}">${labels[status] || '+ Set status'}</span>`;
 }
 
@@ -308,9 +389,9 @@ function updateCardRoleBadge(card, role) {
   if (existing) existing.remove();
   if (!role) return;
   const map = {
-    vc:                 { cls: 'badge role-vc',       label: 'VC' },
-    feltsense_teammate: { cls: 'badge role-teammate',  label: 'Feltsense Teammate' },
-    friend:             { cls: 'badge role-friend',    label: 'Friend of Feltsense' },
+    vc:                 { cls: 'badge role-vc',      label: 'VC' },
+    feltsense_teammate: { cls: 'badge role-teammate', label: 'Feltsense Teammate' },
+    friend:             { cls: 'badge role-friend',   label: 'Friend of Feltsense' },
   };
   if (!map[role]) return;
   const badge = document.createElement('span');
@@ -326,7 +407,6 @@ function updateCardMonthBadge(card, month) {
     const badge = document.createElement('span');
     badge.className = 'badge month';
     badge.textContent = '📅 ' + month;
-    // Insert before the no-x badge if it exists, else append
     const noX = card.querySelector('.badge.no-x');
     if (noX) card.querySelector('.badges').insertBefore(badge, noX);
     else card.querySelector('.badges').appendChild(badge);
@@ -337,7 +417,6 @@ function filterCards() {
   const q           = document.getElementById('search').value.toLowerCase();
   const activeMonth = document.getElementById('month-filter').value;
   const activeRole  = document.getElementById('role-filter').value;
-
   document.querySelectorAll('.card').forEach(card => {
     const name   = card.dataset.name;
     const firm   = card.dataset.firm;
@@ -345,20 +424,16 @@ function filterCards() {
     const status = card.dataset.status;
     const month  = card.dataset.month || '';
     const role   = card.dataset.role  || '';
-
     const matchSearch = !q || name.includes(q) || firm.includes(q);
     const matchMonth  = !activeMonth || month === activeMonth;
     const matchRole   = !activeRole  || role  === activeRole;
     let   matchFilter = true;
-
     if      (activeFilter === 'done')     matchFilter = state  === 'done';
     else if (activeFilter === 'pending')  matchFilter = state  === 'pending';
     else if (activeFilter === 'active')   matchFilter = status === 'active';
     else if (activeFilter === 'periodic') matchFilter = status === 'periodic';
-
     card.style.display = (matchSearch && matchFilter && matchMonth && matchRole) ? '' : 'none';
   });
-
   document.getElementById('month-filter').classList.toggle('active', !!activeMonth);
   document.getElementById('role-filter').classList.toggle('active', !!activeRole);
 }
