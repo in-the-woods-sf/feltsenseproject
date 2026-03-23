@@ -1,0 +1,188 @@
+╭────────────────────────────────────╮
+│ Feltsense VC Social Copy Generator │
+╰────────────────────────────────────╯
+Loaded 30 VC(s) from vcs_normalized.csv
+Output directory: output
+Model: claude-opus-4-6
+
+  ✓ twitter: 26 posts
+  ~ linkedin: 3 posts
+  ✓ Jeff Bocan → jeff-bocan.md
+  ✓ twitter: 26 posts
+  ~ linkedin: 3 posts
+  ✓ Marc Averitt → marc-averitt.md
+  ~ linkedin: 1 posts
+  ✓ Elias Can → elias-can.md
+  ✓ twitter: 30 posts
+  ✗ linkedin: 0 posts
+  ✓ Ronnie Martinez → ronnie-martinez.md
+  ✓ twitter: 1 posts
+  ~ linkedin: 1 posts
+  ✓ Evan Buhler → evan-buhler.md
+  ✓ twitter: 30 posts
+  ~ linkedin: 2 posts
+  ✓ Jon Soberg → jon-soberg.md
+  ~ linkedin: 5 posts
+  ✓ Matthew Mulvey → matthew-mulvey.md
+  ~ linkedin: 3 posts
+  ✓ Shawn Larrabee → shawn-larrabee.md
+  ✗ linkedin: 0 posts
+  ✓ Patrick Kerr → patrick-kerr.md
+  ✗ twitter: 0 posts
+  ~ linkedin: 1 posts
+  ✓ Zachary Ginsburg → zachary-ginsburg.md
+  ✓ twitter: 30 posts
+  ~ linkedin: 4 posts
+  ✓ David Wieland → david-wieland.md
+  ✓ twitter: 29 posts
+  ✗ linkedin: 0 posts
+  ✓ Winslow Strong → winslow-strong.md
+  ✓ twitter: 30 posts
+  ~ linkedin: 2 posts
+  ✓ Alejandra Vergara → alejandra-vergara.md
+  ~ linkedin: 1 posts
+  ✓ Carl Choi → carl-choi.md
+  ✓ twitter: 25 posts
+  ~ linkedin: 2 posts
+  ✓ Danny Pantuso → danny-pantuso.md
+  ✓ twitter: 25 posts
+  ~ linkedin: 4 posts
+  ✗ William Hsu: {'type': 'error', 'error': {'details': None, 'type': 
+'overloaded_error', 'message': 'Overloaded'}, 'request_id': 
+'req_011CZFFRBk4cNcQx5YMimax7'}
+  ✓ twitter: 29 posts
+  ~ linkedin: 1 posts
+  ✗ Gus Domel: Error code: 529 - {'type': 'error', 'error': {'type': 
+'overloaded_error', 'message': 'Overloaded'}, 'request_id': 
+'req_011CZFFSsmtB2UTm8rZac3wN'}
+  ✓ twitter: 30 posts
+  ~ linkedin: 2 posts
+  ✓ Brayton Williams → brayton-williams.md
+  ✗ linkedin: 0 posts
+  ✗ Aaron Meder: {'type': 'error', 'error': {'details': None, 'type': 
+'overloaded_error', 'message': 'Overloaded'}, 'request_id': 
+'req_011CZFFXCMh7ezf3LDiSdpZv'}
+  ✓ twitter: 30 posts
+  ~ linkedin: 1 posts
+  ✗ Ben Parr: {'type': 'error', 'error': {'details': None, 'type': 
+'overloaded_error', 'message': 'Overloaded'}, 'request_id': 
+'req_011CZFFaQhBG9ciSMWo4STc9'}
+  ✓ twitter: 2 posts
+  ~ linkedin: 3 posts
+  ✓ Matt Schlicht → matt-schlicht.md
+  ✗ linkedin: 0 posts
+  ✓ Dylan Bern → dylan-bern.md
+  ✓ twitter: 30 posts
+  ~ linkedin: 1 posts
+  ✗ Angad Randhawa: Error code: 529 - {'type': 'error', 'error': {'type': 
+'overloaded_error', 'message': 'Overloaded'}, 'request_id': 
+'req_011CZFFgUSKeBBEwspfohxnB'}
+  ~ linkedin: 12 posts
+  ✓ Ethan → ethan.md
+  ~ linkedin: 2 posts
+  ✗ Marina Girgis: Error code: 529 - {'type': 'error', 'error': {'type': 
+'overloaded_error', 'message': 'Overloaded'}, 'request_id': 
+'req_011CZFFn4kxiB759iFntEQ9H'}
+  ✓ twitter: 30 posts
+  ~ linkedin: 4 posts
+  ✓ Michelle Kwok → michelle-kwok.md
+  ✓ twitter: 29 posts
+  ~ linkedin: 3 posts
+  ✗ Colin Gardiner: {'type': 'error', 'error': {'details': None, 'type': 
+'overloaded_error', 'message': 'Overloaded'}, 'request_id': 
+'req_011CZFFt7gVbec9CZdBkwAQT'}
+  ✓ twitter: 25 posts
+  ~ linkedin: 1 posts
+  ✓ Arian Ghashghai → arian-ghashghai.md
+  ✓ twitter: 30 posts
+  ~ linkedin: 4 posts
+  ✗ Paul Grossinger: Error code: 529 - {'type': 'error', 'error': {'type': 
+'overloaded_error', 'message': 'Overloaded'}, 'request_id': 
+'req_011CZFFyPEWnmQaGKQgD4xYK'}
+  ✗ linkedin: 0 posts
+  ✗ Sebastian Spitzer: {'type': 'error', 'error': {'details': None, 'type': 
+'overloaded_error', 'message': 'Overloaded'}, 'request_id': 
+'req_011CZFFzC2qzkMBn3JLNNjFj'}
+  Sebastian Spitzer — generating copy... ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100%
+
+                                    Results                                     
+┏━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━┓
+┃ VC             ┃ Firm            ┃ X posts ┃ LinkedIn posts ┃ Status         ┃
+┡━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━╇━━━━━━━━━╇━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━┩
+│ Jeff Bocan     │ Okapi VC        │ 26      │ 3              │ ✓              │
+│ Marc Averitt   │ Okapi VC        │ 26      │ 3              │ ✓              │
+│ Elias Can      │ Elias Can       │ —       │ 1              │ ✓              │
+│ Ronnie         │ CEAS            │ 30      │ 0              │ ✓              │
+│ Martinez       │ Investments     │         │                │                │
+│ Evan Buhler    │ Talok Capital   │ 1       │ 1              │ ✓              │
+│ Jon Soberg     │ MS&AD Ventures  │ 30      │ 2              │ ✓              │
+│ Matthew Mulvey │ Liquid 2        │ —       │ 5              │ ✓              │
+│                │ Ventures        │         │                │                │
+│ Shawn Larrabee │ Liquid 2        │ —       │ 3              │ ✓              │
+│                │ Ventures        │         │                │                │
+│ Patrick Kerr   │ Launch Factory  │ —       │ 0              │ ⚠️ low data    │
+│ Zachary        │ Calm Ventures   │ 0       │ 1              │ ✓              │
+│ Ginsburg       │                 │         │                │                │
+│ David Wieland  │ Motivate        │ 30      │ 4              │ ✓              │
+│                │ Ventures        │         │                │                │
+│ Winslow Strong │ Winslow Strong  │ 29      │ 0              │ ✓              │
+│ Alejandra      │ Bee Partners    │ 30      │ 2              │ ✓              │
+│ Vergara        │                 │         │                │                │
+│ Carl Choi      │ Alumni Ventures │ —       │ 1              │ ✓              │
+│ Danny Pantuso  │ Mucker Capital  │ 25      │ 2              │ ✓              │
+│ Brayton        │ Boost VC        │ 30      │ 2              │ ✓              │
+│ Williams       │                 │         │                │                │
+│ Matt Schlicht  │ Theory Forge    │ 2       │ 3              │ ✓              │
+│                │ Ventures        │         │                │                │
+│ Dylan Bern     │ Western         │ —       │ 0              │ ⚠️ low data    │
+│                │ Technology Inv  │         │                │                │
+│ Ethan          │ Outside VC      │ —       │ 12             │ ✓              │
+│ Michelle Kwok  │ Draper          │ 30      │ 4              │ ✓              │
+│                │ Associates      │         │                │                │
+│ Arian          │ Earthling VC    │ 25      │ 1              │ ✓              │
+│ Ghashghai      │                 │         │                │                │
+│ William Hsu    │ Mucker Capital  │ —       │ —              │ FAILED:        │
+│                │                 │         │                │ {'type':       │
+│                │                 │         │                │ 'error',       │
+│                │                 │         │                │ 'error':       │
+│                │                 │         │                │ {'details': N  │
+│ Gus Domel      │ Boost VC        │ —       │ —              │ FAILED: Error  │
+│                │                 │         │                │ code: 529 -    │
+│                │                 │         │                │ {'type':       │
+│                │                 │         │                │ 'error', 'err  │
+│ Aaron Meder    │ Aaron Meder     │ —       │ —              │ FAILED:        │
+│                │                 │         │                │ {'type':       │
+│                │                 │         │                │ 'error',       │
+│                │                 │         │                │ 'error':       │
+│                │                 │         │                │ {'details': N  │
+│ Ben Parr       │ Theory Forge    │ —       │ —              │ FAILED:        │
+│                │ Ventures        │         │                │ {'type':       │
+│                │                 │         │                │ 'error',       │
+│                │                 │         │                │ 'error':       │
+│                │                 │         │                │ {'details': N  │
+│ Angad Randhawa │ FalconX         │ —       │ —              │ FAILED: Error  │
+│                │                 │         │                │ code: 529 -    │
+│                │                 │         │                │ {'type':       │
+│                │                 │         │                │ 'error', 'err  │
+│ Marina Girgis  │ Precursor       │ —       │ —              │ FAILED: Error  │
+│                │ Ventures        │         │                │ code: 529 -    │
+│                │                 │         │                │ {'type':       │
+│                │                 │         │                │ 'error', 'err  │
+│ Colin Gardiner │ Yonder VC       │ —       │ —              │ FAILED:        │
+│                │                 │         │                │ {'type':       │
+│                │                 │         │                │ 'error',       │
+│                │                 │         │                │ 'error':       │
+│                │                 │         │                │ {'details': N  │
+│ Paul           │ Gaingels        │ —       │ —              │ FAILED: Error  │
+│ Grossinger     │                 │         │                │ code: 529 -    │
+│                │                 │         │                │ {'type':       │
+│                │                 │         │                │ 'error', 'err  │
+│ Sebastian      │ Sebastian       │ —       │ —              │ FAILED:        │
+│ Spitzer        │ Spitzer         │         │                │ {'type':       │
+│                │                 │         │                │ 'error',       │
+│                │                 │         │                │ 'error':       │
+│                │                 │         │                │ {'details': N  │
+└────────────────┴─────────────────┴─────────┴────────────────┴────────────────┘
+
+Done. Files written to output
+9 VC(s) failed — check errors above.

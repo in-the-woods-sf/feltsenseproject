@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ vc.name }} — Friends of Feltsense</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #0f0f0f; color: #e8e8e8; min-height: 100vh; }
+
+    /* ── Topbar ─────────────────────────────────────── */
+    .topbar { padding: 14px 32px; border-bottom: 1px solid #1e1e1e; display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+    .back { color: #555; text-decoration: none; font-size: 13px; }
+    .back:hover { color: #aaa; }
+    .topbar h1 { font-size: 16px; font-weight: 600; }
+    .topbar .firm { font-size: 13px; color: #555; }
+    .topbar .links { margin-left: auto; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+    .topbar .links a { font-size: 12px; color: #666; text-decoration: none; padding: 4px 10px; border: 1px solid #2a2a2a; border-radius: 4px; }
+    .topbar .links a:hover { border-color: #444; color: #aaa; }
+    .topbar select { background: #161616; border: 1px solid #2a2a2a; color: #e8e8e8; padding: 4px 10px; border-radius: 4px; font-size: 12px; cursor: pointer; outline: none; font-family: inherit; }
+
+    /* ── Main layout ────────────────────────────────── */
+    .layout { display: flex; height: calc(100vh - 57px); }
+
+    /* ── Copy table panel ───────────────────────────── */
+    .copy-panel { flex: 1; min-width: 0; overflow: auto; }
+
+    /* ── Campaign × platform table ──────────────────── */
+    .copy-table {
+      display: grid;
+      /* row-label | march | april | may | june */
+      grid-template-columns: 110px repeat(4, minmax(230px, 1fr));
+      min-width: 1040px;
+      border-collapse: collapse;
+    }
+
+    /* generic cell base */
+    .ct-cell { border-right: 1px solid #1a1a1a; border-bottom: 1px solid #1a1a1a; }
+
+    /* Header row */
+    .ct-head-spacer { background: #111; border-right: 1px solid #1a1a1a; border-bottom: 2px solid #252525; }
+    .ct-campaign-head {
+      background: #111;
+      padding: 14px 16px 12px;
+      border-right: 1px solid #1a1a1a;
+      border-bottom: 2px solid #252525;
+    }
+    .ct-campaign-head .c-label { font-size: 13px; font-weight: 600; letter-spacing: -0.2px; margin-bottom: 6px; }
+    .ct-campaign-head .c-status { display: flex; align-items: center; gap: 8px; }
+    .c-badge-done { font-size: 10px; padding: 2px 7px; border-radius: 10px; background: #1a2e1a; color: #4ade80; font-weight: 500; }
+    .c-badge-empty { font-size: 10px; padding: 2px 7px; border-radius: 10px; background: #1e1e1e; color: #555; font-weight: 500; }
+    .btn-gen-campaign { font-size: 10px; padding: 2px 8px; border-radius: 4px; background: none; border: 1px solid #7c6ff7; color: #7c6ff7; cursor: pointer; font-family: inherit; }
+    .btn-gen-campaign:hover { background: #1a1830; }
+
+    /* Platform section headers */
+    .ct-section-spacer { background: #0d0d0d; border-right: 1px solid #1a1a1a; border-bottom: 1px solid #1a1a1a; display: flex; align-items: center; padding: 0 12px; }
+    .ct-section-head {
+      background: #0d0d0d;
+      padding: 7px 14px;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      border-right: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+      /* Span all 4 campaign columns */
+      grid-column: span 4;
+    }
+    .ct-section-head.x-section   { color: #38bdf8; }
+    .ct-section-head.li-section  { color: #818cf8; }
+    .ct-section-head.sh-section  { color: #a3a3a3; }
+
+    /* Row label */
+    .ct-row-label {
+      background: #0f0f0f;
+      padding: 10px 12px;
+      font-size: 11px;
+      font-weight: 600;
+      color: #555;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      border-right: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+      display: flex;
+      align-items: flex-start;
+      padding-top: 12px;
+    }
+
+    /* Copy cell */
+    .ct-copy-cell {
+      background: #0f0f0f;
+      padding: 10px 12px;
+      border-right: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .ct-copy-cell:hover { background: #111; }
+    .ct-copy-cell.empty { background: #0a0a0a; }
+
+    .cell-ta {
+      width: 100%;
+      background: transparent;
+      border: none;
+      color: #ccc;
+      font-size: 12.5px;
+      line-height: 1.55;
+      resize: none;
+      outline: none;
+      font-family: inherit;
+      min-height: 44px;
+    }
+    .cell-ta:focus { color: #e8e8e8; background: #0a0a0a; border-radius: 4px; padding: 4px; margin: -4px; }
+
+    .cell-footer { display: flex; align-items: center; justify-content: space-between; }
+    .char-count { font-size: 10px; color: #333; }
+    .char-count.warn { color: #f59e0b; }
+    .char-count.over { color: #f87171; }
+    .btn-copy-cell { background: none; border: 1px solid #222; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 10px; cursor: pointer; font-family: inherit; }
+    .btn-copy-cell:hover { border-color: #555; color: #aaa; }
+    .btn-copy-cell.copied { border-color: #4ade80; color: #4ade80; }
+    .cell-empty-label { font-size: 12px; color: #2a2a2a; padding: 8px 0; }
+
+    .warn-flag { font-size: 10px; color: #f59e0b; margin-bottom: 2px; }
+
+    /* ── Regen panel ────────────────────────────────── */
+    .regen-panel { width: 340px; flex-shrink: 0; border-left: 1px solid #1e1e1e; display: flex; flex-direction: column; overflow-y: auto; }
+    .regen-header { padding: 18px 18px 14px; border-bottom: 1px solid #1e1e1e; }
+    .regen-header h2 { font-size: 14px; font-weight: 600; margin-bottom: 4px; }
+    .regen-header p { font-size: 12px; color: #555; line-height: 1.5; }
+
+    .regen-body { padding: 14px 18px; flex: 1; display: flex; flex-direction: column; gap: 12px; }
+    .field-group label { display: block; font-size: 10px; font-weight: 600; color: #555; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 5px; }
+    .field-group select, .field-group textarea { width: 100%; background: #141414; border: 1px solid #2a2a2a; color: #e8e8e8; border-radius: 6px; font-size: 12px; font-family: inherit; outline: none; padding: 7px 10px; }
+    .field-group select { cursor: pointer; }
+    .field-group textarea { resize: none; line-height: 1.5; min-height: 80px; }
+    .field-group select:focus, .field-group textarea:focus { border-color: #7c6ff7; }
+
+    .btn-regen { background: #7c6ff7; color: white; border: none; padding: 10px 16px; border-radius: 6px; font-size: 13px; font-weight: 500; cursor: pointer; width: 100%; transition: background 0.15s; }
+    .btn-regen:hover { background: #6c5fe6; }
+    .btn-regen:disabled { background: #2a2a2a; color: #555; cursor: not-allowed; }
+    .btn-regen.loading { background: #4a3ea0; }
+
+    .regen-status { font-size: 12px; color: #555; text-align: center; min-height: 16px; }
+    .regen-status.error { color: #f87171; }
+    .regen-status.success { color: #4ade80; }
+
+    .voice-notes-area { padding: 14px 18px; border-top: 1px solid #1e1e1e; }
+    .voice-notes-area .vn-label { font-size: 10px; font-weight: 600; color: #444; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+    .voice-notes-area .vn-campaign { font-size: 10px; color: #333; margin-bottom: 4px; font-style: italic; }
+    .voice-notes-area p { font-size: 12px; color: #555; line-height: 1.6; }
+
+    .spinner { display: inline-block; width: 13px; height: 13px; border: 2px solid #444; border-top-color: #7c6ff7; border-radius: 50%; animation: spin 0.7s linear infinite; vertical-align: middle; margin-right: 5px; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
+</head>
+<body>
+
+<div class="topbar">
+  <a href="/" class="back">← All VCs</a>
+  <h1>{{ vc.name }}</h1>
+  <span class="firm">{{ vc.firm }}</span>
+  <div class="links">
+    {% if vc.x_url %}<a href="{{ vc.x_url }}" target="_blank">X ↗</a>{% endif %}
+    {% if vc.linkedin_url %}<a href="{{ vc.linkedin_url }}" target="_blank">LinkedIn ↗</a>{% endif %}
+    <select id="partner-status" onchange="setStatus('{{ vc.slug }}', this.value)">
+      {% for s in partner_statuses %}
+        <option value="{{ s.value }}" {% if vc.status == s.value %}selected{% endif %}>{{ s.label }}</option>
+      {% endfor %}
+    </select>
+    <select id="role-type" onchange="setRole('{{ vc.slug }}', this.value)">
+      <option value="">No role</option>
+      {% for r in role_types %}{% if r.value %}
+      <option value="{{ r.value }}" {% if vc.role == r.value %}selected{% endif %}>{{ r.label }}</option>
+      {% endif %}{% endfor %}
+    </select>
+    <select id="engagement-month" onchange="setMonth('{{ vc.slug }}', this.value)">
+      <option value="">📅 No month</option>
+      {% for m in engagement_months %}{% if m %}
+      <option value="{{ m }}" {% if vc.engagement_month == m %}selected{% endif %}>{{ m }}</option>
+      {% endif %}{% endfor %}
+    </select>
+    <span id="status-saved" style="font-size:11px;color:#4ade80;opacity:0;transition:opacity 0.3s;">Saved</span>
+  </div>
+</div>
+
+<div class="layout">
+
+  <!-- ── Copy table ─────────────────────────────────── -->
+  <div class="copy-panel">
+    <div class="copy-table">
+
+      <!-- Header row: spacer + 4 campaign columns -->
+      <div class="ct-head-spacer"></div>
+      {% for c in campaigns %}
+      <div class="ct-campaign-head">
+        <div class="c-label">{{ c.label }}</div>
+        <div class="c-status">
+          {% if copies[c.id] %}
+            <span class="c-badge-done">✓ Generated</span>
+            {% if copies[c.id].insufficient_data %}<span style="font-size:10px;color:#f59e0b">⚠️ limited data</span>{% endif %}
+          {% else %}
+            <span class="c-badge-empty">Not generated</span>
+            <button class="btn-gen-campaign" onclick="quickGenerate('{{ vc.slug }}', '{{ c.id }}')">+ Generate</button>
+          {% endif %}
+        </div>
+        {% if copies[c.id] and copies[c.id].voice_notes %}
+        <div style="font-size:10px;color:#3a3a3a;margin-top:6px;line-height:1.4;font-style:italic">{{ copies[c.id].voice_notes }}</div>
+        {% endif %}
+      </div>
+      {% endfor %}
+
+      {# ── Platform sections ────────────────────────── #}
+      {% set ns = namespace(prev_section='') %}
+      {% for section, field_id, field_label, ta_rows in copy_fields %}
+
+        {# Section divider when platform changes #}
+        {% if section != ns.prev_section %}
+          {% set ns.prev_section = section %}
+          <div class="ct-section-spacer">
+            {% if section == 'x' %}<span style="font-size:10px;color:#555">╱</span>{% endif %}
+          </div>
+          <div class="ct-section-head
+            {% if section == 'x' %}x-section{% elif section == 'linkedin' %}li-section{% else %}sh-section{% endif %}">
+            {% if section == 'x' %}𝕏 &nbsp;X / Twitter
+            {% elif section == 'linkedin' %}in &nbsp;LinkedIn
+            {% else %}✦ &nbsp;Shared
+            {% endif %}
+          </div>
+        {% endif %}
+
+        <!-- Row label -->
+        <div class="ct-row-label">{{ field_label }}</div>
+
+        <!-- One cell per campaign -->
+        {% for c in campaigns %}
+        {% set cell_id = "cell-" ~ c.id ~ "-" ~ field_id %}
+        {% if copies[c.id] %}
+        <div class="ct-copy-cell" id="{{ cell_id }}">
+          <textarea class="cell-ta"
+            id="ta-{{ c.id }}-{{ field_id }}"
+            data-campaign="{{ c.id }}"
+            data-field="{{ field_id }}"
+            data-slug="{{ vc.slug }}"
+            rows="{{ ta_rows }}"
+            oninput="cellInput(this)">{{ copies[c.id][field_id] }}</textarea>
+          <div class="cell-footer">
+            {% if field_id == 'x_post' %}
+            <span class="char-count" id="cc-{{ c.id }}-{{ field_id }}"></span>
+            {% else %}
+            <span></span>
+            {% endif %}
+            <button class="btn-copy-cell" onclick="copyCell('{{ c.id }}', '{{ field_id }}', this)">Copy</button>
+          </div>
+        </div>
+        {% else %}
+        <div class="ct-copy-cell empty" id="{{ cell_id }}">
+          <span class="cell-empty-label">—</span>
+        </div>
+        {% endif %}
+        {% endfor %}
+
+      {% endfor %}
+    </div><!-- /copy-table -->
+  </div><!-- /copy-panel -->
+
+  <!-- ── Regenerate panel ───────────────────────────── -->
+  <div class="regen-panel">
+    <div class="regen-header">
+      <h2>Regenerate</h2>
+      <p>Choose a campaign and section, add an optional instruction, and regenerate in {{ vc.name }}'s voice.</p>
+    </div>
+    <div class="regen-body">
+      <div class="field-group">
+        <label>Campaign</label>
+        <select id="regen-campaign">
+          {% for c in campaigns %}
+          <option value="{{ c.id }}">{{ c.label }}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="field-group">
+        <label>Section</label>
+        <select id="regen-section">
+          <option value="all">All sections</option>
+          <option value="x_post">X Post</option>
+          <option value="linkedin_post">LinkedIn Post</option>
+          <option value="comment">Comment</option>
+          <option value="reply_casual">Reply A — Casual</option>
+          <option value="reply_insight">Reply B — Insight</option>
+          <option value="reply_tease">Reply C — Tease</option>
+        </select>
+      </div>
+      <div class="field-group">
+        <label>Instruction <span style="font-weight:400;text-transform:none;letter-spacing:0;color:#333">(optional)</span></label>
+        <textarea id="regen-instruction" placeholder="e.g. Make it shorter and punchier. Try a different angle on the comment."></textarea>
+      </div>
+      <button class="btn-regen" id="regen-btn" onclick="regenerate('{{ vc.slug }}')">Regenerate</button>
+      <div class="regen-status" id="regen-status"></div>
+    </div>
+
+    <!-- Voice notes per campaign -->
+    {% for c in campaigns %}
+    {% if copies[c.id] and copies[c.id].voice_notes %}
+    <div class="voice-notes-area">
+      <div class="vn-label">Voice notes</div>
+      <div class="vn-campaign">{{ c.label }}</div>
+      <p>{{ copies[c.id].voice_notes }}</p>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+
+</div><!-- /layout -->
+
+<script>
+// ── Auto-resize + save ────────────────────────────────────
+const saveTimers = {};
+
+function cellInput(ta) {
+  // Auto-resize
+  ta.style.height = 'auto';
+  ta.style.height = ta.scrollHeight + 'px';
+  // Char count for X Post
+  if (ta.dataset.field === 'x_post') {
+    const cc = document.getElementById('cc-' + ta.dataset.campaign + '-x_post');
+    if (cc) {
+      const n = ta.value.length;
+      cc.textContent = n + ' / 280';
+      cc.className = 'char-count' + (n > 280 ? ' over' : n > 252 ? ' warn' : '');
+    }
+  }
+  // Debounced save
+  const key = ta.dataset.campaign + '-' + ta.dataset.field;
+  clearTimeout(saveTimers[key]);
+  saveTimers[key] = setTimeout(() => {
+    fetch('/api/save-edit/' + ta.dataset.slug, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ field: ta.dataset.field, value: ta.value, campaign: ta.dataset.campaign }),
+    });
+  }, 800);
+}
+
+// Init all textareas on load
+document.querySelectorAll('.cell-ta').forEach(ta => {
+  ta.style.height = 'auto';
+  ta.style.height = ta.scrollHeight + 'px';
+  if (ta.dataset.field === 'x_post') {
+    const cc = document.getElementById('cc-' + ta.dataset.campaign + '-x_post');
+    if (cc) {
+      const n = ta.value.length;
+      cc.textContent = n + ' / 280';
+      cc.className = 'char-count' + (n > 280 ? ' over' : n > 252 ? ' warn' : '');
+    }
+  }
+});
+
+// ── Copy cell ─────────────────────────────────────────────
+function copyCell(campaign, field, btn) {
+  const ta = document.getElementById('ta-' + campaign + '-' + field);
+  if (!ta) return;
+  navigator.clipboard.writeText(ta.value).then(() => {
+    const orig = btn.textContent;
+    btn.textContent = 'Copied!';
+    btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = orig; btn.classList.remove('copied'); }, 1400);
+  });
+}
+
+// ── Topbar controls ───────────────────────────────────────
+async function setStatus(slug, status) {
+  await fetch('/api/set-status/' + slug, {
+    method: 'POST', headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ status }),
+  });
+  flashSaved();
+}
+
+async function setRole(slug, role) {
+  await fetch('/api/set-status/' + slug, {
+    method: 'POST', headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ role }),
+  });
+  flashSaved();
+}
+
+async function setMonth(slug, engagement_month) {
+  await fetch('/api/set-status/' + slug, {
+    method: 'POST', headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ engagement_month }),
+  });
+  flashSaved();
+}
+
+function flashSaved() {
+  const el = document.getElementById('status-saved');
+  el.style.opacity = '1';
+  setTimeout(() => { el.style.opacity = '0'; }, 1500);
+}
+
+// ── Regenerate ────────────────────────────────────────────
+async function regenerate(slug) {
+  const btn      = document.getElementById('regen-btn');
+  const statusEl = document.getElementById('regen-status');
+  const campaign = document.getElementById('regen-campaign').value;
+  const section  = document.getElementById('regen-section').value;
+  const instruction = document.getElementById('regen-instruction').value.trim();
+
+  btn.disabled = true;
+  btn.classList.add('loading');
+  btn.innerHTML = '<span class="spinner"></span> Regenerating…';
+  statusEl.textContent = '';
+  statusEl.className = 'regen-status';
+
+  try {
+    const res = await fetch('/api/regenerate/' + slug, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ section, instruction, campaign }),
+    });
+    const data = await res.json();
+    if (!res.ok || data.error) throw new Error(data.error || 'Generation failed');
+
+    const c = data.copy;
+    const fieldMap = {
+      x_post: c.x_post, linkedin_post: c.linkedin_post,
+      comment: c.comment, reply_casual: c.reply_casual,
+      reply_insight: c.reply_insight, reply_tease: c.reply_tease,
+    };
+
+    const toUpdate = section === 'all' ? Object.keys(fieldMap) : [section];
+    toUpdate.forEach(f => {
+      const ta = document.getElementById('ta-' + campaign + '-' + f);
+      if (ta && fieldMap[f] !== undefined) {
+        ta.value = fieldMap[f];
+        ta.style.height = 'auto';
+        ta.style.height = ta.scrollHeight + 'px';
+        if (f === 'x_post') {
+          const cc = document.getElementById('cc-' + campaign + '-x_post');
+          if (cc) {
+            const n = ta.value.length;
+            cc.textContent = n + ' / 280';
+            cc.className = 'char-count' + (n > 280 ? ' over' : n > 252 ? ' warn' : '');
+          }
+        }
+        ta.style.background = '#0d1a0d';
+        setTimeout(() => { ta.style.background = ''; }, 1200);
+      }
+    });
+
+    statusEl.textContent = '✓ Updated';
+    statusEl.className = 'regen-status success';
+    setTimeout(() => { statusEl.textContent = ''; statusEl.className = 'regen-status'; }, 3000);
+
+    // If column was empty, reload to render new cells
+    if (!document.getElementById('ta-' + campaign + '-x_post')) location.reload();
+
+  } catch (err) {
+    statusEl.textContent = err.message;
+    statusEl.className = 'regen-status error';
+  } finally {
+    btn.disabled = false;
+    btn.classList.remove('loading');
+    btn.innerHTML = 'Regenerate';
+  }
+}
+
+// Quick generate straight from the column header button
+function quickGenerate(slug, campaign) {
+  document.getElementById('regen-campaign').value = campaign;
+  document.getElementById('regen-section').value = 'all';
+  document.getElementById('regen-instruction').value = '';
+  regenerate(slug);
+}
+</script>
+</body>
+</html>
