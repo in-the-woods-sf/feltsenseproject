@@ -86,9 +86,19 @@
     }
 
     /* ── Sidebar ─────────────────────────────────────── */
-    .sidebar {
+    /* sidebar-col fills full column height with the gradient;
+       the aside inside is sticky so the cards follow scroll */
+    .sidebar-col {
       width: 264px;
       flex-shrink: 0;
+      border-left: 1px solid rgba(0,0,0,0.18);
+      background:
+        radial-gradient(ellipse at 15% 10%,  rgba(249, 112, 80, 0.28) 0%, transparent 55%),
+        radial-gradient(ellipse at 90% 80%,  rgba(168, 85, 247, 0.22) 0%, transparent 55%),
+        radial-gradient(ellipse at 50% 50%,  rgba(232, 121, 177, 0.14) 0%, transparent 60%),
+        #dbd7e8;
+    }
+    .sidebar {
       padding: 20px 16px;
       display: flex;
       flex-direction: column;
@@ -97,12 +107,6 @@
       top: 0;
       max-height: 100vh;
       overflow-y: auto;
-      border-left: 1px solid rgba(0,0,0,0.18);
-      background:
-        radial-gradient(ellipse at 15% 10%,  rgba(249, 112, 80, 0.28) 0%, transparent 55%),
-        radial-gradient(ellipse at 90% 80%,  rgba(168, 85, 247, 0.22) 0%, transparent 55%),
-        radial-gradient(ellipse at 50% 50%,  rgba(232, 121, 177, 0.14) 0%, transparent 60%),
-        #dbd7e8;
     }
     .sidebar-label {
       font-size: 10px;
@@ -452,6 +456,7 @@
 </div><!-- end .grid-wrap -->
 
 <!-- ── Sidebar ─────────────────────────────────────────────── -->
+<div class="sidebar-col">
 <aside class="sidebar">
   <div class="sidebar-label">✦ Community</div>
 
@@ -489,6 +494,7 @@
   </div>
   {% endif %}
 </aside>
+</div><!-- end .sidebar-col -->
 
 </div><!-- end .content-layout -->
 
