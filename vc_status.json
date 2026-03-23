@@ -1,51 +1,45 @@
 {
-  "michelle-kwok": {
-    "status": "active",
-    "engagement_month": ""
-  },
-  "paul-grossinger": {
-    "status": "active",
-    "engagement_month": ""
-  },
-  "marina-girgis": {
-    "status": "active",
-    "engagement_month": ""
-  },
-  "ethan": {
-    "status": "active",
-    "engagement_month": ""
-  },
-  "gus-domel": {
-    "status": "active",
-    "engagement_month": ""
-  },
-  "brayton-williams": {
-    "status": "active",
-    "engagement_month": ""
-  },
-  "matthew-mulvey": {
-    "status": "active",
-    "engagement_month": ""
-  },
-  "shawn-larrabee": {
-    "status": "active",
-    "engagement_month": ""
-  },
-  "matt-schlicht": {
-    "status": "active",
-    "engagement_month": ""
-  },
-  "marik-hazan": { "status": "", "engagement_month": "", "role": "feltsense_teammate" },
-  "sarah-cabilte": { "status": "", "engagement_month": "", "role": "feltsense_teammate" },
-  "ben-norman": { "status": "", "engagement_month": "", "role": "feltsense_teammate" },
-  "matt-wood": { "status": "", "engagement_month": "", "role": "feltsense_teammate" },
-  "rishabh-kapoor": { "status": "", "engagement_month": "", "role": "feltsense_teammate" },
+  "jeff-bocan":        { "status": "", "engagement_month": "", "role": "vc" },
+  "marc-averitt":      { "status": "", "engagement_month": "", "role": "vc" },
+  "elias-can":         { "status": "", "engagement_month": "", "role": "vc" },
+  "ronnie-martinez":   { "status": "", "engagement_month": "", "role": "vc" },
+  "evan-buhler":       { "status": "", "engagement_month": "", "role": "vc" },
+  "jon-soberg":        { "status": "", "engagement_month": "", "role": "vc" },
+  "matthew-mulvey":    { "status": "active", "engagement_month": "", "role": "vc" },
+  "shawn-larrabee":    { "status": "active", "engagement_month": "", "role": "vc" },
+  "patrick-kerr":      { "status": "", "engagement_month": "", "role": "vc" },
+  "zachary-ginsburg":  { "status": "", "engagement_month": "", "role": "vc" },
+  "david-wieland":     { "status": "", "engagement_month": "", "role": "vc" },
+  "winslow-strong":    { "status": "", "engagement_month": "", "role": "vc" },
+  "alejandra-vergara": { "status": "", "engagement_month": "", "role": "vc" },
+  "carl-choi":         { "status": "", "engagement_month": "", "role": "vc" },
+  "danny-pantuso":     { "status": "", "engagement_month": "", "role": "vc" },
+  "william-hsu":       { "status": "", "engagement_month": "", "role": "vc" },
+  "gus-domel":         { "status": "active", "engagement_month": "", "role": "vc" },
+  "brayton-williams":  { "status": "active", "engagement_month": "", "role": "vc" },
+  "aaron-meder":       { "status": "", "engagement_month": "", "role": "vc" },
+  "ben-parr":          { "status": "", "engagement_month": "", "role": "vc" },
+  "matt-schlicht":     { "status": "active", "engagement_month": "", "role": "vc" },
+  "dylan-bern":        { "status": "", "engagement_month": "", "role": "vc" },
+  "angad-randhawa":    { "status": "", "engagement_month": "", "role": "vc" },
+  "ethan":             { "status": "active", "engagement_month": "", "role": "vc" },
+  "marina-girgis":     { "status": "active", "engagement_month": "", "role": "vc" },
+  "michelle-kwok":     { "status": "active", "engagement_month": "", "role": "vc" },
+  "colin-gardiner":    { "status": "", "engagement_month": "", "role": "vc" },
+  "arian-ghashghai":   { "status": "", "engagement_month": "", "role": "vc" },
+  "paul-grossinger":   { "status": "active", "engagement_month": "", "role": "vc" },
+  "sebastian-spitzer": { "status": "", "engagement_month": "", "role": "vc" },
+  "marik-hazan":       { "status": "", "engagement_month": "", "role": "feltsense_teammate" },
+  "sarah-cabilte":     { "status": "", "engagement_month": "", "role": "feltsense_teammate" },
+  "ben-norman":        { "status": "", "engagement_month": "", "role": "feltsense_teammate" },
+  "matt-wood":         { "status": "", "engagement_month": "", "role": "feltsense_teammate" },
+  "rishabh-kapoor":    { "status": "", "engagement_month": "", "role": "feltsense_teammate" },
   "yvonne-pilapitiya": { "status": "", "engagement_month": "", "role": "feltsense_teammate" },
-  "lakshitha-perera": { "status": "", "engagement_month": "", "role": "feltsense_teammate" },
-  "harry-roper": { "status": "", "engagement_month": "", "role": "feltsense_teammate" },
-  "ayesh-jayasinghe": { "status": "", "engagement_month": "", "role": "feltsense_teammate" },
-  "aza-allsop": { "status": "", "engagement_month": "", "role": "feltsense_teammate" },
-  "roger-jin": { "status": "", "engagement_month": "", "role": "feltsense_teammate" },
-  "uday-anand": { "status": "", "engagement_month": "", "role": "feltsense_teammate" },
-  "john-lee": { "status": "", "engagement_month": "", "role": "feltsense_teammate" }
+  "lakshitha-perera":  { "status": "", "engagement_month": "", "role": "feltsense_teammate" },
+  "harry-roper":       { "status": "", "engagement_month": "", "role": "feltsense_teammate" },
+  "ayesh-jayasinghe":  { "status": "", "engagement_month": "", "role": "feltsense_teammate" },
+  "aza-allsop":        { "status": "", "engagement_month": "", "role": "feltsense_teammate" },
+  "roger-jin":         { "status": "", "engagement_month": "", "role": "feltsense_teammate" },
+  "uday-anand":        { "status": "", "engagement_month": "", "role": "feltsense_teammate" },
+  "john-lee":          { "status": "", "engagement_month": "", "role": "feltsense_teammate" }
 }

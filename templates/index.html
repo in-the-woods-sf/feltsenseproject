@@ -11,43 +11,45 @@
     /* ── Hero ───────────────────────────────────────────── */
     .hero {
       position: relative;
-      min-height: 52vh;
+      min-height: 56vh;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
-      text-align: center;
-      padding: 72px 32px 80px;
+      padding: 72px 6vw 88px;
       background:
-        radial-gradient(ellipse at 15% 90%, rgba(249, 112, 80, 0.72) 0%, transparent 52%),
-        radial-gradient(ellipse at 85% 10%, rgba(168, 85, 247, 0.65) 0%, transparent 52%),
-        radial-gradient(ellipse at 55% 50%, rgba(232, 121, 177, 0.35) 0%, transparent 60%),
+        radial-gradient(ellipse at 10% 95%, rgba(249, 112, 80, 0.70) 0%, transparent 50%),
+        radial-gradient(ellipse at 88% 8%,  rgba(168, 85, 247, 0.65) 0%, transparent 50%),
+        radial-gradient(ellipse at 50% 55%, rgba(232, 121, 177, 0.30) 0%, transparent 58%),
         #d4cfe0;
       overflow: hidden;
+      gap: 4vw;
     }
 
-    /* fade into black at the bottom */
     .hero::after {
       content: '';
       position: absolute;
       bottom: 0; left: 0; right: 0;
-      height: 140px;
+      height: 150px;
       background: linear-gradient(to bottom, transparent, #0a0a0a);
       pointer-events: none;
     }
 
+    /* Left column */
+    .hero-left {
+      flex: 1;
+      min-width: 0;
+    }
+
     .hero-title {
-      font-size: clamp(52px, 8vw, 96px);
+      font-size: clamp(48px, 6.5vw, 88px);
       font-weight: 800;
       letter-spacing: -3px;
       color: #111;
       line-height: 1;
       margin-bottom: 6px;
-      position: relative;
       display: inline-block;
     }
 
-    /* curved SVG underline on "Book" part */
     .hero-title .underlined {
       position: relative;
       display: inline-block;
@@ -69,17 +71,118 @@
 
     .hero-sub {
       margin-top: 28px;
-      font-size: clamp(15px, 2vw, 19px);
+      font-size: clamp(14px, 1.6vw, 18px);
       font-weight: 500;
       color: #333;
-      max-width: 560px;
-      line-height: 1.6;
+      max-width: 480px;
+      line-height: 1.65;
     }
 
     .hero-meta {
-      margin-top: 24px;
+      margin-top: 20px;
+      font-size: 12px;
+      color: rgba(0,0,0,0.32);
+    }
+
+    /* Right column */
+    .hero-right {
+      width: clamp(280px, 30vw, 380px);
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Stat card */
+    .stat-card {
+      background: rgba(0,0,0,0.12);
+      border: 1px solid rgba(0,0,0,0.15);
+      backdrop-filter: blur(8px);
+      border-radius: 14px;
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .stat-number {
+      font-size: 52px;
+      font-weight: 800;
+      letter-spacing: -2px;
+      color: #111;
+      line-height: 1;
+    }
+    .stat-label {
       font-size: 13px;
+      font-weight: 600;
+      color: rgba(0,0,0,0.5);
+      line-height: 1.4;
+    }
+    .stat-sub {
+      font-size: 11px;
       color: rgba(0,0,0,0.35);
+      margin-top: 3px;
+    }
+
+    /* Quote carousel */
+    .quote-card {
+      background: rgba(0,0,0,0.10);
+      border: 1px solid rgba(0,0,0,0.13);
+      backdrop-filter: blur(8px);
+      border-radius: 14px;
+      padding: 22px 24px 18px;
+      min-height: 148px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .quote-text {
+      font-size: 12.5px;
+      line-height: 1.65;
+      color: rgba(0,0,0,0.75);
+      font-style: italic;
+      flex: 1;
+      /* clamp to 4 lines */
+      display: -webkit-box;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      opacity: 1;
+      transition: opacity 0.4s ease;
+    }
+    .quote-text.fade { opacity: 0; }
+    .quote-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 12px;
+    }
+    .quote-name {
+      font-size: 11px;
+      font-weight: 600;
+      color: rgba(0,0,0,0.4);
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+    }
+    .quote-dots {
+      display: flex;
+      gap: 5px;
+    }
+    .quote-dot {
+      width: 5px; height: 5px;
+      border-radius: 50%;
+      background: rgba(0,0,0,0.2);
+      transition: background 0.3s;
+    }
+    .quote-dot.active { background: rgba(0,0,0,0.55); }
+    .quote-label {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: rgba(0,0,0,0.35);
+      margin-bottom: 10px;
     }
 
     .progress-bar { height: 2px; background: #181818; }
@@ -184,15 +287,49 @@
 
 <!-- ── Hero ──────────────────────────────────────────────── -->
 <div class="hero">
-  <h1 class="hero-title">
-    Felt<span class="underlined">Book
-      <svg viewBox="0 0 120 14" preserveAspectRatio="none">
-        <path d="M 2 10 Q 30 2 60 8 Q 90 14 118 6" />
-      </svg>
-    </span>
-  </h1>
-  <p class="hero-sub">a place to map the Feltsense community, orchestrate content, and drive connection of the Feltsense Mission</p>
-  <p class="hero-meta">{{ generated }} of {{ total }} profiles generated</p>
+
+  <!-- Left: title + subtitle -->
+  <div class="hero-left">
+    <h1 class="hero-title">
+      Felt<span class="underlined">Book
+        <svg viewBox="0 0 120 14" preserveAspectRatio="none">
+          <path d="M 2 10 Q 30 2 60 8 Q 90 14 118 6" />
+        </svg>
+      </span>
+    </h1>
+    <p class="hero-sub">a place to map the Feltsense community, orchestrate content, and drive connection of the Feltsense Mission</p>
+    <p class="hero-meta">{{ generated }} of {{ total }} profiles generated</p>
+  </div>
+
+  <!-- Right: stat + quote carousel -->
+  <div class="hero-right">
+
+    <!-- Posts generated count -->
+    <div class="stat-card">
+      <div class="stat-number">{{ generated }}</div>
+      <div>
+        <div class="stat-label">Posts Generated</div>
+        <div class="stat-sub">Friends of Feltsense · March</div>
+      </div>
+    </div>
+
+    <!-- Rotating quote carousel -->
+    {% if quotes %}
+    <div class="quote-card">
+      <div class="quote-label">✦ From the community</div>
+      <div class="quote-text" id="quote-text">{{ quotes[0].text }}</div>
+      <div class="quote-footer">
+        <span class="quote-name" id="quote-name">{{ quotes[0].name }}</span>
+        <div class="quote-dots" id="quote-dots">
+          {% for q in quotes %}
+          <div class="quote-dot {% if loop.index0 == 0 %}active{% endif %}"></div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    {% endif %}
+
+  </div>
 </div>
 
 <div class="progress-bar">
@@ -299,6 +436,30 @@
 </div>
 
 <script>
+// ── Quote carousel ────────────────────────────────────────
+const quotes = [
+  {% for q in quotes %}
+  { text: {{ q.text | tojson }}, name: {{ q.name | tojson }} }{% if not loop.last %},{% endif %}
+  {% endfor %}
+];
+let quoteIdx = 0;
+if (quotes.length > 1) {
+  setInterval(() => {
+    const textEl = document.getElementById('quote-text');
+    const nameEl = document.getElementById('quote-name');
+    const dots   = document.querySelectorAll('.quote-dot');
+    if (!textEl) return;
+    textEl.classList.add('fade');
+    setTimeout(() => {
+      quoteIdx = (quoteIdx + 1) % quotes.length;
+      textEl.textContent = quotes[quoteIdx].text;
+      nameEl.textContent = quotes[quoteIdx].name;
+      dots.forEach((d, i) => d.classList.toggle('active', i === quoteIdx));
+      textEl.classList.remove('fade');
+    }, 400);
+  }, 4500);
+}
+
 let activeFilter = 'all';
 let menuSlug = null;
 

@@ -12,6 +12,7 @@ import re
 from pathlib import Path
 from dataclasses import asdict
 
+import random
 from typing import Optional
 from flask import Flask, render_template, request, jsonify, abort
 from dotenv import load_dotenv
@@ -227,6 +228,33 @@ def load_campaign_brief() -> str:
 # Routes
 # ---------------------------------------------------------------------------
 
+def load_march_quotes(max_quotes: int = 8) -> list:
+    """Pull random X post snippets from generated March copy files for the carousel."""
+    quotes = []
+    for path in sorted(OUTPUT_DIR.glob("*.md")):
+        # Skip campaign-suffixed files (april/may/june) and the index log
+        stem = path.stem
+        if stem in ("index", "run_log") or stem.endswith(("-april", "-may", "-june")):
+            continue
+        try:
+            raw = path.read_text(encoding="utf-8")
+        except Exception:
+            continue
+        # Extract VC name
+        name_match = re.match(r"## (.+?) —", raw)
+        if not name_match:
+            continue
+        name = name_match.group(1).strip()
+        # Extract X post text
+        x_match = re.search(r"\*\*X:\*\*\s*\n(.*?)(?=\n\n\*\*LinkedIn:|\Z)", raw, re.DOTALL)
+        if x_match:
+            text = x_match.group(1).strip()
+            if text and len(text) > 30:
+                quotes.append({"text": text, "name": name})
+    random.shuffle(quotes)
+    return quotes[:max_quotes]
+
+
 @app.route("/")
 def index():
     vcs = load_vcs()
@@ -238,9 +266,10 @@ def index():
         vc["engagement_month"] = entry.get("engagement_month", "") if isinstance(entry, dict) else ""
         vc["role"] = entry.get("role", "") if isinstance(entry, dict) else ""
     generated = sum(1 for v in vcs if v["generated"])
+    quotes = load_march_quotes()
     return render_template("index.html", vcs=vcs, total=len(vcs), generated=generated,
                            partner_statuses=PARTNER_STATUSES, engagement_months=ENGAGEMENT_MONTHS,
-                           role_types=ROLE_TYPES)
+                           role_types=ROLE_TYPES, quotes=quotes)
 
 
 @app.route("/vc/<slug>")
