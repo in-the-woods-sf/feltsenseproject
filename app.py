@@ -9,9 +9,11 @@ import csv
 import json
 import os
 import re
+import time
 from pathlib import Path
 from dataclasses import asdict
 
+import httpx
 import random
 from typing import Optional
 from flask import Flask, render_template, request, jsonify, abort
@@ -235,6 +237,41 @@ def load_campaign_brief() -> str:
 
 
 # ---------------------------------------------------------------------------
+# Mention count (X API v2 — app-only Bearer Token, no VC auth needed)
+# ---------------------------------------------------------------------------
+
+_mention_cache: dict = {"count": None, "ts": 0.0}
+_MENTION_TTL = 3600  # re-fetch at most once per hour
+
+
+def _fetch_mention_count() -> Optional[int]:
+    """Return @feltsensefund mention count for the last 7 days via X API tweet counts."""
+    global _mention_cache
+    now = time.time()
+    if _mention_cache["count"] is not None and (now - _mention_cache["ts"]) < _MENTION_TTL:
+        return _mention_cache["count"]
+
+    bearer = os.environ.get("TWITTER_BEARER_TOKEN", "")
+    if not bearer:
+        return None
+
+    try:
+        resp = httpx.get(
+            "https://api.twitter.com/2/tweets/counts/recent",
+            headers={"Authorization": f"Bearer {bearer}"},
+            params={"query": "@feltsensefund", "granularity": "day"},
+            timeout=8,
+        )
+        if resp.status_code == 200:
+            total = resp.json().get("meta", {}).get("total_tweet_count", 0)
+            _mention_cache = {"count": total, "ts": now}
+            return total
+    except Exception:
+        pass
+    return None
+
+
+# ---------------------------------------------------------------------------
 # Routes
 # ---------------------------------------------------------------------------
 
@@ -437,6 +474,13 @@ def save_edit(slug):
     path.write_text(new_raw, encoding="utf-8")
 
     return jsonify({"ok": True})
+
+
+@app.route("/api/mention-count")
+def mention_count_route():
+    """Return cached @feltsensefund mention count for the last 7 days."""
+    count = _fetch_mention_count()
+    return jsonify({"count": count})
 
 
 @app.route("/api/status")

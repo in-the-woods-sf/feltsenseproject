@@ -458,6 +458,15 @@
     </div>
   </div>
 
+  <!-- @feltsensefund mentions last 7 days -->
+  <div class="stat-card">
+    <div class="stat-number" id="mention-count">–</div>
+    <div>
+      <div class="stat-label">Mentions</div>
+      <div class="stat-sub">@feltsensefund · 7 days</div>
+    </div>
+  </div>
+
   <!-- Rotating quote carousel -->
   {% if quotes %}
   <div class="quote-card">
@@ -672,6 +681,15 @@ function setFilter(f, btn) {
   btn.classList.add('active');
   filterCards();
 }
+
+// ── @feltsensefund mention count ──────────────────────────
+fetch('/api/mention-count')
+  .then(r => r.json())
+  .then(d => {
+    const el = document.getElementById('mention-count');
+    if (el) el.textContent = (d.count !== null && d.count !== undefined) ? d.count : '—';
+  })
+  .catch(() => {});
 </script>
 </body>
 </html>
