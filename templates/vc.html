@@ -124,6 +124,11 @@
     .btn-copy-cell { background: none; border: 1px solid #222; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 10px; cursor: pointer; font-family: inherit; }
     .btn-copy-cell:hover { border-color: #555; color: #aaa; }
     .btn-copy-cell.copied { border-color: #4ade80; color: #4ade80; }
+    .btn-share-cell { background: none; border: 1px solid #1e1e1e; color: #333; padding: 2px 7px; border-radius: 3px; font-size: 10px; cursor: pointer; font-family: inherit; transition: all 0.12s; }
+    .btn-share-cell.x:hover  { border-color: #38bdf8; color: #38bdf8; }
+    .btn-share-cell.li:hover { border-color: #818cf8; color: #818cf8; }
+    .btn-share-cell.copied { border-color: #4ade80; color: #4ade80; }
+    .cell-actions { display: flex; gap: 5px; }
     .cell-empty-label { font-size: 12px; color: #2a2a2a; padding: 8px 0; }
 
     .warn-flag { font-size: 10px; color: #f59e0b; margin-bottom: 2px; }
@@ -239,6 +244,7 @@
         <div class="ct-row-label">{{ field_label }}</div>
 
         <!-- One cell per campaign -->
+        {% set platform = 'linkedin' if section == 'linkedin' else 'x' %}
         {% for c in campaigns %}
         {% set cell_id = "cell-" ~ c.id ~ "-" ~ field_id %}
         {% if copies[c.id] %}
@@ -256,7 +262,10 @@
             {% else %}
             <span></span>
             {% endif %}
-            <button class="btn-copy-cell" onclick="copyCell('{{ c.id }}', '{{ field_id }}', this)">Copy</button>
+            <div class="cell-actions">
+              <button class="btn-copy-cell" onclick="copyCell('{{ c.id }}', '{{ field_id }}', this)">Copy</button>
+              <button class="btn-share-cell {{ platform }}" onclick="shareCell('{{ c.id }}', '{{ field_id }}', '{{ platform }}', this)" title="Open in {{ 'X' if platform == 'x' else 'LinkedIn' }}">↗</button>
+            </div>
           </div>
         </div>
         {% else %}
@@ -373,6 +382,31 @@ function copyCell(campaign, field, btn) {
     btn.classList.add('copied');
     setTimeout(() => { btn.textContent = orig; btn.classList.remove('copied'); }, 1400);
   });
+}
+
+// ── Share cell ────────────────────────────────────────────
+// X: opens twitter intent with text pre-filled
+// LinkedIn: no native text-prefill intent — copies text then opens compose
+function shareCell(campaign, field, platform, btn) {
+  const ta = document.getElementById('ta-' + campaign + '-' + field);
+  if (!ta || !ta.value.trim()) return;
+  const text = ta.value.trim();
+
+  if (platform === 'x') {
+    const url = 'https://x.com/intent/tweet?text=' + encodeURIComponent(text);
+    window.open(url, '_blank', 'noopener');
+  } else {
+    // LinkedIn has no reliable compose intent for plain text — copy + open
+    navigator.clipboard.writeText(text).then(() => {
+      const orig = btn.textContent;
+      btn.textContent = '✓';
+      btn.classList.add('copied');
+      setTimeout(() => {
+        window.open('https://www.linkedin.com/post/new', '_blank', 'noopener');
+        setTimeout(() => { btn.textContent = orig; btn.classList.remove('copied'); }, 900);
+      }, 250);
+    });
+  }
 }
 
 // ── Topbar controls ───────────────────────────────────────
