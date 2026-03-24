@@ -1,39 +1,38 @@
 ## Carl Choi — Alumni Ventures
 
 
+> ⚠️ **Insufficient data:** No posts were scraped. Copy uses general VC conventions — review carefully.
+
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-@feltsense just replicated 20 YC W26 startups using AI agents. Full products, live, in days. As an investor, I keep asking myself: if the product is replicable that fast, where does the real value sit? 🤔
+We evaluate hundreds of early-stage companies a year. @feltsense just went through every startup in the YC W26 batch and stress-tested defensibility using agentic AI. If an agent can rebuild your product in days, what exactly is the investor betting on?
 
 **LinkedIn:**
-Something worth paying attention to just dropped.
-
-Feltsense took 20 startups from the YC W26 batch and replicated them using agentic AI founders. Not mockups. Live products. Built in days.
-
-I spend my time evaluating early-stage companies, and the question this raises is one I think every investor needs to sit with: what are we actually underwriting when we back a pre-seed startup?
-
-For years, speed to market was the edge. Ship fast, learn fast, raise fast. That playbook worked when building was the bottleneck. But if an AI agent can stand up a functional version of your product in 72 hours, speed alone is not a moat anymore.
-
-The interesting thing is that some of the 20 companies couldn't be fully replicated. That's where my attention goes. The ones that held up tell you something about what defensibility actually looks like now. Proprietary data, deep domain expertise, network effects that compound with real human behavior.
-
-If an AI can rebuild what you built in days, what exactly is the investor paying for?
+As an investor, I spend a lot of time thinking about what makes a company defensible at the earliest stages. Feltsense went through the entire YC W26 batch and used agentic AI founders to stress-test each one, rebuilding core products in days. Twenty of those replications are live now with deep-dive breakdowns. The results are forcing a real conversation about what we're actually underwriting when we back a pre-seed company. If speed to market is no longer the moat, what is?
 
 ---
 
 ### 💬 Comment to drop on our post
 
-This is the kind of stress test the early-stage ecosystem actually needs. Speed used to be the whole thesis at pre-seed. The companies that held up against replication are the signal worth studying.
+This is the kind of diligence exercise that should make every early-stage investor uncomfortable in a productive way. The companies that survived the replication test are telling us something important about where defensibility actually lives now.
 
 ---
 
-### 🔁 Our reply to their comment (internal use)
+### 🔁 Our reply to their comment — pick one (internal use)
 
-Appreciate that framing, Carl. You're right that the ones that held up deserve the most attention, and we're planning a deeper breakdown on exactly what made those companies resistant. Stay tuned.
+**A — Casual** *(warm thanks / acknowledgment)*
+Appreciate you engaging with this, Carl. Coming from someone evaluating deal flow at your scale, that means a lot.
+
+**B — Insight** *(unintuitive push that deepens the thread)*
+One thing that surprised us: the startups with the strongest technical moats weren't always the hardest to replicate. Sometimes the defensibility lived in places the founders themselves hadn't articulated yet.
+
+**C — Tease** *(hint at more coming / stay tuned)*
+We're seeing patterns across the batch about which types of moats hold up and which ones dissolve on contact. The next piece of this project goes deeper into that taxonomy.
 
 ---
 
-**Voice notes:** With no voice data available, I defaulted to a measured, analytically grounded VC partner tone: direct, thesis-driven, focused on investment implications rather than hype. Kept it professional without being stiff, leaning into the evaluative lens a fund partner naturally brings.
+**Voice notes:** Used a measured, analytical VC voice with a focus on investment framing and portfolio-level thinking. Kept the tone composed and inquiry-driven, reflecting a partner who evaluates companies methodically rather than reacting with hype.
 
 **Scrape status:**
-> LinkedIn [~]: LinkedIn partial scrape (not logged in) (1 posts)
+> LinkedIn [✗]: LinkedIn blocked request (status 999) — this is normal (0 posts)

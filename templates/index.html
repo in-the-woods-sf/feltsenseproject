@@ -310,6 +310,8 @@
     .badge.done     { background: #0f2218; color: #4ade80; }
     .badge.pending  { background: #141414; color: #555; }
     .badge.no-x     { background: #2e1a1a; color: #f87171; }
+    .badge.linkedin { background: #1a2a3a; color: #60a5fa; cursor: pointer; }
+    .badge.x-handle { background: #1a1a1a; color: #e5e5e5; cursor: pointer; }
     .badge.active   { background: #0c1e2e; color: #38bdf8; }
     .badge.periodic { background: #1a1030; color: #a78bfa; }
     .badge.cold     { background: #161616; color: #555; }
@@ -445,8 +447,13 @@
       {% elif vc.role == 'friend' %}
         <span class="badge role-friend">Friend of Feltsense</span>
       {% endif %}
-      {% if not vc.x_url %}
+      {% if vc.x_url %}
+        <span class="badge x-handle" onclick="event.preventDefault(); event.stopPropagation(); window.open('{{ vc.x_url }}', '_blank')">X ↗</span>
+      {% else %}
         <span class="badge no-x">No X handle</span>
+      {% endif %}
+      {% if vc.linkedin_url %}
+        <span class="badge linkedin" onclick="event.preventDefault(); event.stopPropagation(); window.open('{{ vc.linkedin_url }}', '_blank')">LinkedIn ↗</span>
       {% endif %}
     </div>
     <span class="arrow">›</span>

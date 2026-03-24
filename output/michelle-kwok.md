@@ -4,37 +4,40 @@
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-20 YC W26 startups got replicated by AI agents in days. Full products, live. If an agent can rebuild what you're building that fast... what's actually defensible? This is the conversation every founder and investor needs to be having rn 👀 @feltsense
+At Draper we talk a lot about backing the audacious. @feltsense just went through every startup in the YC W26 batch with agentic AI founders and replicated them in days. If speed-to-market isn't the moat anymore, what is? 👀
 
 **LinkedIn:**
-Something wild just dropped and honestly I can't stop thinking about it.
+We spend a lot of time at Draper thinking about what actually makes a founder defensible. Not the pitch, not the speed, not the demo day momentum. The deeper thing.
 
-@Feltsense replicated 20 startups from the YC W26 batch using agentic AI founders. Not mockups. Full products. Live. In days.
+Feltsense just went through every startup in the YC W26 batch using agentic AI founders, stress-testing defensibility in real time. 20 featured deep-dives are live with working products built in days. The full batch breakdown is in the PDF.
 
-All founders are heroes to us at Draper. That's a core belief I hold. But this is exactly the kind of stress test that makes the best founders better. Because if an AI agent can ship your product in a weekend, your moat was never the product.
+This isn't an attack on YC or founders. It's a mirror. And honestly, the startups that couldn't be replicated are the most interesting ones in the whole batch.
 
-The startups that couldn't be replicated? Those are the ones worth paying attention to. The ones where the founder's insight, the network effects, the weird domain depth create something an agent can't just spin up.
-
-We're entering an era where "build fast and raise" isn't enough. Speed used to be defensibility. Now it's table stakes.
-
-So the real question for every founder in my inbox and every investor writing checks alongside me: what are you funding that an agent genuinely can't do? 📝
+If an AI agent can rebuild what you're building in a weekend, was it ever a real moat?
 
 ---
 
 ### 💬 Comment to drop on our post
 
-This is honestly one of the most important provocations I've seen in the startup ecosystem this year. Not because it threatens founders but because it reveals which ones are building something an agent can't touch. The ones that survived this? Those are the companies I want to talk to.
+This is the kind of stress test that actually moves the conversation forward. At Draper we've always said the founder matters more than the idea. Now there's a pretty concrete way to see which ideas need that founder to survive and which ones don't.
 
 ---
 
-### 🔁 Our reply to their comment (internal use)
+### 🔁 Our reply to their comment — pick one (internal use)
 
-That means a lot coming from you, Michelle. We're planning to break down exactly which startups held up and why. Would love to get your take on the defensibility patterns you're seeing from the investor side.
+**A — Casual** *(warm thanks / acknowledgment)*
+Appreciate you Michelle. The Draper lens on contrarian conviction is exactly the energy this project was built around.
+
+**B — Insight** *(unintuitive push that deepens the thread)*
+The surprising thing wasn't which startups were easy to replicate. It was that the ones with the strongest founder-market fit were often the hardest to copy even when the product itself was straightforward.
+
+**C — Tease** *(hint at more coming / stay tuned)*
+We're sitting on some patterns about what makes the unreplicable ones tick that aren't in the public launch yet, and it challenges a few assumptions about where defensibility actually lives in a batch like this.
 
 ---
 
-**Voice notes:** Leaned into Michelle's hype-operator register with earnest enthusiasm grounded by specifics, her "all founders are heroes" ethos, and her pattern of building momentum through short declarative punches before landing on an open question. Kept emoji use minimal and functional, matching her selective style.
+**Voice notes:** Matched Michelle's "bold hook into structured expansion" rhythm with her conversational-professional register. Threaded in Draper brand language ("At Draper," "audacious," contrarian conviction framing) and kept emoji use to a single 👀 accent, consistent with her punctuating style.
 
 **Scrape status:**
 > X/Twitter [✓]: Twitter API v2 (30 posts)
-> LinkedIn [~]: LinkedIn partial scrape (not logged in) (4 posts)
+> LinkedIn [✗]: LinkedIn blocked request (status 999) — this is normal (0 posts)

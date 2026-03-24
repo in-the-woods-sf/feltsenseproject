@@ -1,37 +1,44 @@
 ## Matthew Mulvey — Liquid 2 Ventures
 
 
+> ⚠️ **Insufficient data:** No posts were scraped. Copy uses general VC conventions — review carefully.
+
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-A few years ago, speed to market was the moat. Now @feltsense is replicating 20 YC startups in days with agentic AI founders. If the product can be rebuilt that fast, what exactly are we investing in? The answer matters more than most VCs want to admit.
+We evaluate defensibility every day as investors. @feltsense just stress-tested every startup in the YC W26 batch by rebuilding them with agentic AI. 20 featured deep-dives are live with working products. If the core can be replicated in days, what exactly are we funding?
 
 **LinkedIn:**
-For as long as I've been in venture, we've told founders that speed is their advantage. Get to market first. Ship before anyone else can. Raise on momentum. It made sense in a world where building was hard and slow.
+As investors we talk about defensibility constantly. But how often do we actually pressure-test it?
 
-But something is shifting. Feltsense just replicated 20 startups from the YC W26 batch using agentic AI founders. Not mockups. Live products, built in days.
+Feltsense went through every startup in the YC W26 batch using agentic AI founders, rebuilding what each company does. The public launch features 20 deep-dive replications with live products built in days. The full PDF covers the entire batch.
 
-I keep coming back to a question that I think every investor in my position needs to sit with: if the core product of a company can be reconstructed by an AI agent in under a week, where does the defensibility actually live? Is it in the team? The data? The distribution? The insight that led to the idea in the first place?
+Some startups held up. Many didn't. That distinction is becoming the only one that matters.
 
-I spent years learning to evaluate founders on their ability to execute fast. Now I'm starting to wonder whether the more important signal is what remains standing when execution speed stops being scarce.
-
-The startups that couldn't be replicated in this experiment are the ones worth studying closely.
+If speed-to-market is no longer a moat, what is the new signal we should be underwriting?
 
 ---
 
 ### 💬 Comment to drop on our post
 
-This is the kind of stress test that forces a more honest conversation about what we're actually funding when we write early-stage checks. I keep thinking about the ones that held up, the startups where the replication fell short. That's where the real signal lives.
+This is a useful forcing function. We spend a lot of time on defensibility in diligence, but seeing an agent actually rebuild the product in days makes the conversation much more concrete. Curious which companies in the batch surprised you by being harder to replicate than expected.
 
 ---
 
-### 🔁 Our reply to their comment (internal use)
+### 🔁 Our reply to their comment — pick one (internal use)
 
-That's exactly the layer we wanted to surface, Matthew. The ones that resisted replication tell a story about defensibility that we think the whole ecosystem needs to hear right now.
+**A — Casual** *(warm thanks / acknowledgment)*
+Appreciate that, Matthew. The goal was always to make the defensibility conversation tangible instead of theoretical, so that means a lot coming from someone running real diligence on these companies.
+
+**B — Insight** *(unintuitive push that deepens the thread)*
+The biggest surprise was that technical complexity wasn't the best predictor of replication difficulty. The startups that held up often had defensibility rooted in data loops or network density that no agent could cold-start, even with the same feature set.
+
+**C — Tease** *(hint at more coming / stay tuned)*
+We're sitting on a pattern across the full batch around which categories of moat actually survived replication, and it cuts against a lot of conventional early-stage wisdom.
 
 ---
 
-**Voice notes:** Leaned into Matthew's signature move of anchoring in personal career experience before expanding into a broader industry observation. Kept the pace deliberate and unhurried, favoring narrative reflection over punchy declarations, with no emojis and a measured, essayistic register throughout.
+**Voice notes:** With no public post history available, this copy uses a measured, analytically grounded VC voice focused on investment frameworks and diligence thinking. The tone stays composed and inquiry-driven, reflecting a partner-level perspective rather than a hype-forward founder energy.
 
 **Scrape status:**
-> LinkedIn [~]: LinkedIn partial scrape (not logged in) (5 posts)
+> LinkedIn [✗]: LinkedIn blocked request (status 999) — this is normal (0 posts)

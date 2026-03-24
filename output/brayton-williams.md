@@ -4,46 +4,40 @@
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-@feltsense went through the ENTIRE YC W26 batch. Stress-tested every single one for defensibility using agentic AI. Some held up. Most didn't. If your moat is speed-to-market, that's not a moat anymore 🔥
+@feltsense went through every startup in the YC W26 batch and tried to replicate them with AI agents. Built live products in days. Some held up. Most didn't. If speed was your moat, what is it now? 👀
 
 **LinkedIn:**
-This one got me thinking.
+@Feltsense just stress-tested the entire YC W26 batch for defensibility. AI agents replicating startups in days, with 20 deep-dive live builds featured publicly and the full batch covered in the PDF.
 
-@Feltsense took the whole YC W26 batch and ran every startup through an agentic AI replication test. Not a thought experiment. Live products. Built in days.
+Some of these companies held up. A lot of them didn't.
 
-20 deep-dives are public now. The full batch breakdown is in the PDF.
+The conversation around moats is shifting. Speed to market used to be the answer. Now it's the question.
 
-Here's what hits different as an investor: we've been underwriting speed for years. First to market. First to ship. First to raise. That playbook is getting compressed to near-zero by agents.
-
-The startups that couldn't be replicated? Those are the ones I want to talk to. Because they have something that isn't just code and timing.
-
-Defensibility used to be a checkbox on a pitch deck. Now it's the whole conversation.
-
-If an AI agent can rebuild what you do in a few days, what are you actually selling? 🧠
+If an AI agent can rebuild what you're building before your Series A, what actually makes you defensible? 👀
 
 ---
 
 ### 💬 Comment to drop on our post
 
-This is the stress test the ecosystem needed. Speed used to be the moat. Now the question is what's left when speed is free. The ones that held up are worth watching closely.
+This is the stress test founders should want to take. The ones that can't be replicated are the ones I want to talk to.
 
 ---
 
 ### 🔁 Our reply to their comment — pick one (internal use)
 
 **A — Casual** *(warm thanks / acknowledgment)*
-Appreciate that, Brayton. Coming from someone who sees hundreds of these companies early, that means a lot.
+Appreciate that, Brayton. That's exactly the lens we built this through.
 
 **B — Insight** *(unintuitive push that deepens the thread)*
-What surprised us most: the startups with the deepest technical complexity weren't always the hardest to replicate. The ones with compounding human trust loops were.
+What surprised us is that the defensibility wall wasn't where most people expect it. Technical complexity barely mattered. The ones that held up had something you can't spec out in a prompt.
 
 **C — Tease** *(hint at more coming / stay tuned)*
-We're already seeing patterns in what separates the unreplicable ones from the rest. The next thing we ship makes that very specific.
+We're finding patterns in what makes those un-replicable companies tick that aren't in the public drop yet. Investors are going to want that list. 👀
 
 ---
 
-**Voice notes:** Leaned into Brayton's fragment-heavy, declarative rhythm and ALL CAPS for selective emphasis. Kept emojis to one per post (end-position, his pattern). Dialed the hype back one notch from his natural LFG energy toward composed conviction, letting the project's weight carry the tone.
+**Voice notes:** Kept it clipped and fragment-forward with line breaks as beats, matching Brayton's setup-kicker cadence. Used 👀 as his signature closer, stayed casual but composed, and avoided over-hyping while letting the concept carry the weight.
 
 **Scrape status:**
 > X/Twitter [✓]: Twitter API v2 (30 posts)
-> LinkedIn [~]: LinkedIn partial scrape (not logged in) (2 posts)
+> LinkedIn [✗]: LinkedIn blocked request (status 999) — this is normal (0 posts)

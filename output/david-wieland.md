@@ -4,37 +4,40 @@
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-@feltsense replicated 20 YC W26 startups using agentic AI founders. In days. Question for my VC folks: if an agent can rebuild it that fast, what are we actually funding?
+Feltsense went through every startup in the YC W26 batch and stress-tested each one for defensibility using agentic AI. Built live products in days. If an AI agent can replicate what you're building that fast, what does defensibility actually mean now? Worth your time.
 
 **LinkedIn:**
-Saw this from Feltsense and thought it was worth sharing with the investor community.
+Feltsense just went through every startup in the YC W26 batch, stress-testing each one for defensibility using agentic AI founders. 20 featured deep-dives with live products built in days. The full PDF covers the rest.
 
-They replicated 20 startups from the YC W26 batch using agentic AI founders. Full products, live, built in days. Not mockups. Working software.
+This is the kind of work that makes investors and founders uncomfortable in the best way. Speed-to-market used to be the moat. Now it might be the thing that gets replicated first.
 
-As someone who spends a lot of time evaluating early-stage defensibility, this is the kind of stress test that makes you recalibrate. We talk about moats constantly in venture. Speed to market used to be one. But if an AI agent can replicate the core product in a fraction of the time, what does defensibility actually look like now?
+If an AI agent can rebuild your product in days, what is your actual defensibility?
 
-The startups that couldn't be replicated are the interesting ones. That's where the signal is.
-
-Not saying this is a threat to founders. If anything it clarifies what matters. Domain expertise, proprietary data, network effects, regulatory positioning. The stuff that takes years, not days.
-
-Question for my founder and investor network: how are you thinking about defensibility differently heading into 2025?
+Impressive and impactful work from the Feltsense team.
 
 ---
 
 ### 💬 Comment to drop on our post
 
-This is a real stress test for how we think about moats in early-stage. The ones that couldn't be replicated are worth paying close attention to. Curious what the common thread is across those holdouts.
+This is the right question at the right time. Every investor evaluating early-stage companies is going to have to recalibrate what defensibility looks like. The startups that couldn't be replicated are the ones I want to look at more closely.
 
 ---
 
-### 🔁 Our reply to their comment (internal use)
+### 🔁 Our reply to their comment — pick one (internal use)
 
-Great question, David. We're seeing some patterns across the ones that held up and planning to break that down soon. Stay tuned.
+**A — Casual** *(warm thanks / acknowledgment)*
+Appreciate that, David. Coming from someone who evaluates this stuff daily, that means a lot.
+
+**B — Insight** *(unintuitive push that deepens the thread)*
+The interesting thing is the companies we couldn't replicate rarely had the most sophisticated tech. They had something in their user relationship or data loop that an agent just couldn't cold-start, which says a lot about where real moats are forming.
+
+**C — Tease** *(hint at more coming / stay tuned)*
+We're seeing a pattern across the batch that changes how you'd score defensibility at the seed stage, and we're not done pulling on that thread yet.
 
 ---
 
-**Voice notes:** Kept it utilitarian and measured, leaning on his pattern of light framing around shared content and direct questions to his network. No emojis, caps-based emphasis only where natural, and let the concept do the heavy lifting rather than over-editorializing.
+**Voice notes:** Kept the register casual-professional with exclamation-point energy traded for confident brevity. Leaned into David's amplifier/curator mode, framing this as a share-and-endorse rather than original essay, with his signature "impressive and impactful" vocabulary.
 
 **Scrape status:**
 > X/Twitter [✓]: Twitter API v2 (30 posts)
-> LinkedIn [~]: LinkedIn partial scrape (not logged in) (4 posts)
+> LinkedIn [✗]: LinkedIn blocked request (status 999) — this is normal (0 posts)

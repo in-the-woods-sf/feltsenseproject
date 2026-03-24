@@ -91,11 +91,11 @@ Write social copy for {name}, Partner at {firm}, for the following campaign.
 Write three pieces in {name}'s voice:
 
 1. STANDALONE POST (X + LinkedIn)
-   - X version: ≤280 characters, punchy, one question or one bold claim
-   - LinkedIn version: 60-100 words MAX, punchy and direct — not a wall of text, no listicles, no bullet points, no long paragraphs. Still leaves reader with a question
+   - X version: 200-280 characters (use the space — don't leave it short), punchy, one question or one bold claim
+   - LinkedIn version: 60-100 words HARD LIMIT (count before submitting). Punchy and direct — not a wall of text, no listicles, no bullet points. Still leaves reader with a question.
    - Both should feel like {name} decided to write this unprompted
    - Aim for "quietly confident" over "hyped up" — the idea should carry the energy, not the adjectives
-   - FRAMING: The scope is the entire YC W26 batch. The public launch features 20 deep-dive replications with live products; the full PDF covers the rest. Always frame as "went through every startup in the YC batch" or "the whole W26 batch" — never just "20 startups." If referencing the 20, it's "20 featured deep-dives" or "20 live builds," not the total scope of the project.
+   - FRAMING (NON-NEGOTIABLE): Feltsense went through EVERY startup in the YC W26 batch — not 20, not "some." The full scope is the entire batch. The public launch features 20 deep-dive replications with live products built; the full PDF covers every company. NEVER say "replicated 20 startups" or frame this as 20 companies. Always say "went through the entire YC W26 batch," "every startup in the batch," or "the whole W26 batch." If referencing the 20, it's only "20 featured deep-dives" or "20 live builds" — always in the context of the full batch. This framing applies to every piece of copy in every future version.
 
 2. THEIR COMMENT (suggested copy for {name} to post on Feltsense's post)
    - 1-3 sentences max
@@ -104,7 +104,7 @@ Write three pieces in {name}'s voice:
    - Written FROM {name}'s perspective, as if they are commenting on Feltsense's content
 
 3. OUR COMMENT (what Feltsense / Marik drops on {name}'s OWN posts)
-   - 1-2 sentences written as Feltsense engaging with {name}'s recent content
+   - STRICTLY 1 sentence ONLY — no exceptions, no two-sentence exceptions, never more than one sentence
    - Should feel like a genuine peer reaction — not promotional, not begging for engagement
    - Reference something specific from their actual posts if possible
    - Ends the exchange feeling like two people who see the world similarly
@@ -132,16 +132,16 @@ Write three pieces in {name}'s voice:
 
 Format your response EXACTLY as:
 ### X POST
-[280 char max]
+[200-280 characters — aim to fill the space, not leave it short]
 
 ### LINKEDIN POST
-[100-200 words]
+[60-100 words HARD LIMIT — count every word, do not exceed 100]
 
 ### THEIR COMMENT ON OUR POST
 [1-3 sentences — written as {name} commenting on Feltsense's post]
 
 ### OUR COMMENT ON THEIR POST
-[1-2 sentences — written as Feltsense commenting on {name}'s post]
+[1 sentence ONLY — written as Feltsense commenting on {name}'s post]
 
 ### OUR REPLY A — CASUAL
 [1-2 sentences]

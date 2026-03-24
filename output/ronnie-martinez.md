@@ -4,36 +4,37 @@
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-20 YC startups replicated by AI agents in days. Not a dunk, more like a mirror. The ones that couldn't be copied? That's your actual deal flow. @feltsense
+@feltsense went through every startup in the YC W26 batch and stress-tested defensibility with agentic AI founders. 20 featured deep-dives with live products built in days. if an agent can replicate your startup that fast, what exactly is the moat? 🤔
 
 **LinkedIn:**
-So @Feltsense just replicated 20 startups from the YC W26 batch. AI agents. Full products. Days, not months.
+@feltsense just went through the entire YC W26 batch and stress-tested every startup for defensibility using agentic AI founders. 20 featured deep-dives have live products built in days. the full PDF covers every company.
 
-First reaction: wild. Second reaction: honestly kind of clarifying.
+as an investor this is the question i keep sitting with: if an AI agent can replicate the core of what you're building that quickly, what are we actually underwriting? speed to market used to be the answer. not sure it is anymore.
 
-We spend a lot of time in diligence trying to figure out what's defensible and what's just fast execution on an obvious idea. This makes that conversation way more concrete. If an agent can rebuild your product over a weekend, your moat was never the product.
-
-The startups that couldn't be replicated are the interesting ones. That's where the actual founder edge lives. Network effects, proprietary data, domain depth that doesn't compress into a prompt.
-
-Not saying this kills YC or anything dramatic like that. YC is still selecting for incredible people. But the bar for what counts as defensible is moving fast, and investors who aren't updating their frameworks are going to get caught writing checks for things that get cloned in a sprint.
-
-Worth sitting with this one for a minute before reacting.
+curious what other investors are seeing here.
 
 ---
 
 ### 💬 Comment to drop on our post
 
-This is the diligence question nobody wants to ask out loud. If your product is replicable in days, what exactly are we funding? The few that held up tell you everything.
+this is a real question for anyone writing checks right now. speed used to be the whole thesis for early stage. interested to see which ones actually held up.
 
 ---
 
-### 🔁 Our reply to their comment (internal use)
+### 🔁 Our reply to their comment — pick one (internal use)
 
-Ronnie, that's exactly the tension we wanted to surface. The ones that held up surprised us too. Happy to share what we found on the defensibility side.
+**A — Casual** *(warm thanks / acknowledgment)*
+appreciate you, Ronnie. that question about what we're actually underwriting is the one that kept coming up on our end too.
+
+**B — Insight** *(unintuitive push that deepens the thread)*
+one thing that surprised us: the startups that held up best weren't the most technically complex ones. the real moats came from places we honestly didn't expect going in.
+
+**C — Tease** *(hint at more coming / stay tuned)*
+we're sitting on some patterns about where defensibility actually shows up in early-stage batches that haven't made it into the public version yet.
 
 ---
 
-**Voice notes:** Short, declarative cadence with a self-aware investor lens. Kept it casual but grounded, leaning into Ronnie's habit of cutting through VC posturing while still showing genuine intellectual curiosity. No decoration, let the provocation do the work.
+**Voice notes:** Kept it lowercase, breezy, and clipped to match Ronnie's natural register. Leaned into his investor lens and self-aware tone without any VC pomposity, using one emoji and ending on a question rather than a conclusion.
 
 **Scrape status:**
 > X/Twitter [✓]: Twitter API v2 (30 posts)

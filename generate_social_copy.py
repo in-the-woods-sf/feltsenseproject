@@ -96,9 +96,11 @@ def load_brief(path: Optional[Path]) -> str:
     # Hardcoded fallback
     return """\
 Campaign: YC Replication Sculpture — March 24th launch.
-We replicated 20 startups from the YC W26 batch using agentic AI founders.
+Feltsense went through every startup in the YC W26 batch using agentic AI founders — stress-testing each one for defensibility.
+The public launch features 20 deep-dive replications with live products; the full PDF covers the entire batch.
+NEVER say "replicated 20 startups" — always frame as "every startup in the YC batch" or "the whole W26 batch."
 Three claims: (1) The future of founding is agentic. (2) The YC model is evolving.
-(3) True defensibility is rare — replicating 20 companies reveals which ones have it.
+(3) True defensibility is rare — going through every company in the batch reveals which ones have it.
 Central question: If an AI agent can replicate your startup in days, was it ever a real moat?
 Our handle: @feltsense
 """

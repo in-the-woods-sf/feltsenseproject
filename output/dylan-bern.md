@@ -6,34 +6,39 @@
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-@feltsense just replicated 20 YC W26 startups with agentic AI founders. Live products, built in days. Every investor should be asking: what are we actually underwriting when we back a company right now?
+We evaluate defensibility for a living. @feltsense just went through every startup in the YC W26 batch with agentic AI founders and replicated them in days. If speed-to-market is your moat, what exactly are you defending?
 
 **LinkedIn:**
-Something worth paying attention to just dropped. Feltsense took 20 startups from the current YC batch and replicated them using agentic AI founders. Not mockups. Full products, live, built in days.
+I spend my days evaluating what makes companies durable. So when Feltsense went through every startup in the YC W26 batch using agentic AI founders and rebuilt core products in days, it got my attention.
 
-As an investor, I spend most of my time trying to answer one question: what's actually defensible here? Speed used to be a reasonable answer. Get to market first, grab users, build from there. That playbook is getting stress-tested in real time.
+This isn't about dunking on early-stage companies. It's a stress test. The ones that held up are revealing something important about what defensibility actually means now.
 
-What's interesting isn't the replication itself. It's what resisted replication. The companies that couldn't be copied in a few days are telling us something important about where durable value actually lives now. And it's probably not where most pitch decks claim it is.
+20 deep-dive replications are live. The full batch breakdown is in the PDF.
 
-If you're a founder, this isn't a reason to panic. It's a reason to get honest about what you're really building. If you're an investor, it's a reason to sharpen your diligence.
-
-The question I keep sitting with: if an AI agent can rebuild your product in days, what exactly is the asset we're investing in?
+If your moat is execution speed alone, what happens when agents execute faster?
 
 ---
 
 ### 💬 Comment to drop on our post
 
-This is the kind of diligence stress test that should make every seed investor uncomfortable in a productive way. The companies that held up here are the signal. Curious how many of those 20 teams even know this happened yet.
+This is the kind of diligence exercise every investor should be running internally. The gap between "first to ship" and "hard to replicate" is getting wider, and most pitch decks still treat them as the same thing.
 
 ---
 
-### 🔁 Our reply to their comment (internal use)
+### 🔁 Our reply to their comment — pick one (internal use)
 
-@dylanbern That last question is a good one. Some teams are finding out today, and how they respond might be as revealing as the replication itself.
+**A — Casual** *(warm thanks / acknowledgment)*
+Appreciate you engaging with this, Dylan. Coming from someone who underwrites durability for a living, that means a lot.
+
+**B — Insight** *(unintuitive push that deepens the thread)*
+One thing that surprised us: the startups with the deepest technical moats weren't always the hardest to replicate. Sometimes the defensibility was in relationships and data loops that don't show up in a pitch deck at all.
+
+**C — Tease** *(hint at more coming / stay tuned)*
+We're seeing a pattern in which *types* of moats hold up and which collapse, and it's not mapping to what most investors expect. More on that soon.
 
 ---
 
-**Voice notes:** Used a measured, analytical VC tone with emphasis on investment framing and defensibility. Kept it grounded and direct without flashy language, leaning into the "investor asking hard questions" posture since no specific voice data was available.
+**Voice notes:** With no public post data available, this copy adopts a measured, analytically grounded VC voice befitting a partner at a firm known for patient, long-duration investing. Tone is composed and evaluative rather than flashy.
 
 **Scrape status:**
 > LinkedIn [✗]: LinkedIn blocked request (status 999) — this is normal (0 posts)

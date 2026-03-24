@@ -1,41 +1,42 @@
 ## Elias Can — Elias Can
 
 
+> ⚠️ **Insufficient data:** No posts were scraped. Copy uses general VC conventions — review carefully.
+
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-20 startups from YC W26 got replicated by AI agents in days. Full products, live. If the thing you built can be copied that fast, what exactly is the investor betting on? @feltsense is asking the right question.
+@feltsense went through every startup in the YC W26 batch and stress-tested each one for defensibility using agentic AI. 20 featured deep-dives ship today with live products built in days. The question investors need to sit with: if an agent can rebuild it that fast, what are we actually funding?
 
 **LinkedIn:**
-Something worth paying attention to just went live.
+Feltsense just stress-tested every startup in the entire YC W26 batch for defensibility using agentic AI founders. The public launch features 20 deep-dive replications with live products built in days. The full PDF covers the whole batch.
 
-Feltsense took 20 startups from the YC W26 batch and replicated them using agentic AI founders. Not mockups. Not slide decks. Working products, built in days.
+This is the part that should make investors uncomfortable: speed-to-market used to be the moat. Now agents move faster than founders. So what does defensibility actually look like in 2025?
 
-I keep coming back to one question: what does defensibility actually mean now?
-
-For years, the playbook was clear. Move fast, ship first, raise on momentum. That worked when execution speed was the bottleneck. But if an AI agent can match your output in a fraction of the time, speed alone stops being a moat. It becomes table stakes.
-
-The startups that resisted replication are the interesting ones. The ones where something human, something contextual, something deeply embedded in relationships or insight made copying them meaningfully harder.
-
-This isn't about being anti-YC or anti-founder. YC keeps producing exceptional people. But the environment around them is shifting fast, and the old signals of defensibility need updating.
-
-If an AI agent can replicate your startup in days, what were you really building?
+The startups that couldn't be replicated are telling us something. Worth paying attention.
 
 ---
 
 ### 💬 Comment to drop on our post
 
-This is the kind of stress test the ecosystem actually needs. The uncomfortable part isn't that 20 companies got replicated. It's figuring out which ones couldn't be, and why.
+The most interesting signal here isn't which startups got replicated. It's how few had something an agent genuinely couldn't touch. That gap between "hard to build" and "hard to replicate" is where the real diligence conversation is heading.
 
 ---
 
-### 🔁 Our reply to their comment (internal use)
+### 🔁 Our reply to their comment — pick one (internal use)
 
-That's exactly the split we keep staring at, Elias. The "why" behind the ones that held up is where the real conversation starts.
+**A — Casual** *(warm thanks / acknowledgment)*
+Appreciate this framing, Elias. That gap between "hard to build" and "hard to replicate" is exactly the distinction we were trying to surface.
+
+**B — Insight** *(unintuitive push that deepens the thread)*
+One thing that surprised us: the startups with the most technical complexity weren't the hardest to replicate. The ones with deep, compounding feedback loops from real users were. Complexity is not a moat; learning velocity might be.
+
+**C — Tease** *(hint at more coming / stay tuned)*
+That diligence conversation you're pointing to is closer than most investors realize, and the next thing we're working on leans directly into that gap.
 
 ---
 
-**Voice notes:** With no authentic voice data available, I defaulted to a measured, investor-grade tone: intellectually curious, direct without being flashy, and comfortable sitting with open questions rather than rushing to conclusions. Kept it clean and restrained to avoid projecting a personality that doesn't exist in the data.
+**Voice notes:** No voice profile available, so this uses a measured, analytically grounded VC tone: confident but not flashy, focused on what the data implies rather than how exciting it sounds. Kept the energy composed and peer-level.
 
 **Scrape status:**
-> LinkedIn [~]: LinkedIn partial scrape (not logged in) (1 posts)
+> LinkedIn [✗]: LinkedIn blocked request (status 999) — this is normal (0 posts)

@@ -6,36 +6,33 @@
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-@feltsense just replicated 20 YC W26 startups with agentic AI. In days. The ones that couldn't be copied are the only ones I want to talk to. If speed was your moat, what is it now?
+We spend all our time evaluating defensibility in pitch decks. @feltsense went through every startup in the YC W26 batch with agentic AI and built live replicas in days. If the product is replicable that fast, what exactly are we funding? That question is going to reshape how we do diligence.
 
 **LinkedIn:**
-We spend a lot of time at Launch Factory talking about defensibility. What's the moat. What survives contact with a well-funded competitor. The usual stress tests.
-
-Feltsense just ran a different kind of stress test. They used agentic AI to replicate 20 startups from the current YC batch. Full products. Live. In days, not months.
-
-Some of those companies held up. Most didn't.
-
-That's not an indictment of YC or the founders in it. YC selects for exceptional people and gives them real velocity. But velocity alone is not a moat anymore. It can't be, when an AI agent is moving at the same speed or faster.
-
-What I keep coming back to: the companies that survived replication are the ones with something you can't clone. Proprietary data. Deep domain insight. Network effects already compounding. Those are the ones worth investing behind.
-
-For everyone else, this is a wake-up call worth paying attention to. If your entire product can be rebuilt by an agent in 72 hours, what exactly are you defending in your next fundraise?
+We talk about defensibility in every pitch meeting. Usually it's a slide with a diagram and some optimistic arrows. Feltsense just went through every startup in the entire YC W26 batch using agentic AI founders, stress-testing whether each one could be replicated. Twenty of those are now live products, built in days. Not as a stunt. As a question. If the core product can be rebuilt that quickly, what is the actual moat we're backing? Speed used to be the answer. I'm not sure it is anymore.
 
 ---
 
 ### 💬 Comment to drop on our post
 
-This is the diligence question every seed investor should be asking right now. If an agent can ship your product in days, the founder's edge better live somewhere the agent can't reach. Curious which of the 20 held up best.
+This is the diligence exercise most investors talk about doing but never actually run at scale. Going through the entire W26 batch forces a real conversation about what defensibility means when build cost approaches zero. Interested to see which companies held up.
 
 ---
 
-### 🔁 Our reply to their comment (internal use)
+### 🔁 Our reply to their comment — pick one (internal use)
 
-Appreciate that framing, Patrick. We're publishing the full breakdown soon, including which startups proved hardest to replicate and why. Think you'll find the "where the agent can't reach" line maps pretty cleanly to what we saw.
+**A — Casual** *(warm thanks / acknowledgment)*
+Appreciate that, Patrick. The "diligence nobody actually runs" framing is exactly the gap we kept bumping into.
+
+**B — Insight** *(unintuitive push that deepens the thread)*
+One thing that surprised us: the startups with the strongest technical moats on paper were often easier to replicate than the ones with deeply specific domain workflows baked in. Build cost hitting zero exposes a different axis of defensibility than most investors are screening for.
+
+**C — Tease** *(hint at more coming / stay tuned)*
+We're sitting on patterns across the full batch around which types of moats actually held and which collapsed under pressure, and the breakdown is not what most investors would predict.
 
 ---
 
-**Voice notes:** Used a measured, investment-thesis-oriented tone grounded in how an early-stage VC partner would naturally frame defensibility. Kept it analytical rather than hype-driven, with a bias toward practical implications for portfolio decisions.
+**Voice notes:** With no public post data available, the copy uses a measured, analytical VC voice: someone who thinks in frameworks, respects the data, and leans toward questions over declarations. Kept the energy composed and intellectually engaged rather than promotional.
 
 **Scrape status:**
 > LinkedIn [✗]: LinkedIn blocked request (status 999) — this is normal (0 posts)

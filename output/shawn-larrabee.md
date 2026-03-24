@@ -1,37 +1,42 @@
 ## Shawn Larrabee — Liquid 2 Ventures
 
 
+> ⚠️ **Insufficient data:** No posts were scraped. Copy uses general VC conventions — review carefully.
+
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-I've spent my career simplifying complex systems. @feltsense just replicated 20 YC startups with AI agents in days. If the process is the product, what's actually defensible?
+@feltsense just went through every startup in the YC W26 batch and stress-tested each one for defensibility using agentic AI. 20 featured deep-dives ship today with live products built in days. The question investors need to sit with: if an agent can rebuild it that fast, what are we actually funding?
 
 **LinkedIn:**
-In every role I've held, the work that mattered most was taking something complex and making it simpler, faster, and more accurate. That skill used to be a competitive advantage in itself.
+Feltsense went through every startup in the entire YC W26 batch and stress-tested each one for defensibility using agentic AI founders. The public launch features 20 deep-dive replications with live products built in days. The full PDF covers the whole batch.
 
-Feltsense just put that assumption under serious pressure. They replicated 20 startups from the current YC W26 batch using agentic AI founders. Not mockups. Live products, built in days.
+As an early-stage investor, I think about moats constantly. Speed to market used to be one. That assumption is getting tested in real time right now.
 
-As an investor, I look for the things that are genuinely hard to replicate. The niche expertise. The integrations that take years of context to get right. The trust layers that no shortcut can replace. This exercise is a useful stress test for all of us thinking about where real defensibility lives now.
-
-Speed to market used to be the moat. If AI agents can match that speed on day one, founders and investors both need to recalibrate what we consider durable. The startups that couldn't be replicated in this experiment are the ones I want to understand better.
-
-What does defensibility actually look like when building the product is no longer the hard part?
+If an AI agent can replicate your startup in days, what exactly is the durable value we're backing?
 
 ---
 
 ### 💬 Comment to drop on our post
 
-This is a sharp exercise. In my experience, the hardest things to replicate are never the systems themselves but the deep domain context behind them. Curious which of the 20 required that kind of specificity and where the agents hit a wall.
+This is a useful forcing function for how we evaluate defensibility at the seed stage. The companies that held up under this kind of pressure are the ones I want to spend time understanding. Curious how the results shift investor diligence conversations going forward.
 
 ---
 
-### 🔁 Our reply to their comment (internal use)
+### 🔁 Our reply to their comment — pick one (internal use)
 
-That's exactly the distinction we kept running into, Shawn. The domain-specific context gaps were real, and we're planning a deeper breakdown of where the agents stalled and why. Stay tuned.
+**A — Casual** *(warm thanks / acknowledgment)*
+Appreciate you engaging with this, Shawn. Means a lot coming from someone who lives in the seed-stage diligence trenches every day.
+
+**B — Insight** *(unintuitive push that deepens the thread)*
+One thing that surprised us: the startups with the strongest technical moats weren't always the hardest to replicate. The ones that resisted replication often had something structural in how they acquired data or locked in users that no amount of engineering speed could shortcut.
+
+**C — Tease** *(hint at more coming / stay tuned)*
+We're seeing patterns in what held up across the full batch that point to a different framework for seed defensibility than what most investors are currently using.
 
 ---
 
-**Voice notes:** Measured, formal, and grounded in operational specificity. Avoids hype in favor of precise, experience-based framing, consistent with the buttoned-up finance/systems culture reflected in his professional orbit.
+**Voice notes:** With no public posts to anchor, the copy defaults to a measured, analytically grounded VC voice. Kept the tone composed and peer-level, leaning on investor-native language around moats and diligence without overplaying enthusiasm.
 
 **Scrape status:**
-> LinkedIn [~]: LinkedIn partial scrape (not logged in) (3 posts)
+> LinkedIn [✗]: LinkedIn blocked request (status 999) — this is normal (0 posts)

@@ -4,42 +4,38 @@
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-If an AI agent can replicate your startup in days, was it ever a real moat? @feltsense went through the entire YC W26 batch and stress-tested every one. Worth a look.
+Really interesting work from @feltsense. They went through every startup in the entire YC W26 batch and stress-tested each one for defensibility using agentic AI. 20 featured deep-dives are live now. If an AI agent can rebuild your product in days, what does a real moat even look like anymore?
 
 **LinkedIn:**
-Here's a question every early-stage investor should be sitting with right now: if an AI agent can replicate the core of your startup in a few days, what exactly are we funding?
+This caught my attention. Feltsense went through every startup in the entire YC W26 batch using agentic AI founders to stress-test defensibility. 20 featured deep-dives are live with working products built in days. The full report covers the whole batch.
 
-Feltsense just went through every startup in the YC W26 batch using agentic AI founders, stress-testing each one for defensibility. The public launch features 20 deep-dive replications with live products actually built. The full PDF covers the rest of the batch.
+As an investor, I think about moats constantly. Speed to market used to be enough. Now the question is shifting. If an AI agent can replicate what you built, what is your actual defensibility?
 
-Some of these companies held up. Most didn't. That's the part worth paying attention to.
-
-I've always believed that speed to market was a weaker moat than people wanted to admit. But this makes the case in a way that's hard to argue with. The startups that couldn't be replicated tell you something important about where real value lives now.
-
-If you're a founder or an investor, this is the kind of mirror you should want to look into. What does defensibility actually mean when building is no longer the hard part?
+Worth a look for anyone investing at the early stage right now.
 
 ---
 
 ### 💬 Comment to drop on our post
 
-This is the right question at the right time. Defensibility has always been harder to evaluate than most investors admit. Seeing it stress-tested across an entire batch like this is genuinely useful.
+This is a great exercise for the whole ecosystem. The defensibility question is only getting harder, and I think founders and investors both need to be honest about what actually holds up. Really looking forward to going through the full report.
 
 ---
 
 ### 🔁 Our reply to their comment — pick one (internal use)
 
 **A — Casual** *(warm thanks / acknowledgment)*
-Appreciate that, Jon. Coming from someone who evaluates defensibility for a living, that means a lot.
+Really appreciate that, Jon. Honesty about defensibility is exactly the conversation we were hoping to start with this.
 
 **B — Insight** *(unintuitive push that deepens the thread)*
-One thing that surprised us: the companies that held up best weren't the most technically complex. They were the ones where the product was inseparable from a specific relationship or trust dynamic that agents couldn't shortcut.
+One thing that surprised us: the startups that held up best weren't always the most technically complex ones. Some of the strongest moats came down to workflow design decisions that an agent couldn't infer from the outside.
 
 **C — Tease** *(hint at more coming / stay tuned)*
-The batch-level patterns around which types of moats actually held are more consistent than we expected. We're not done pulling on that thread.
+We're starting to see a pattern in which types of founding teams consistently produce something an agent can't touch, and it's not what most investors would predict.
 
 ---
 
-**Voice notes:** Matched Jon's short declarative style, conversational-professional register, and zero emoji usage. Used his natural pattern of question-as-hook for the X post and kept the LinkedIn reflective but brief, letting the idea carry the weight rather than adjectives.
+**Voice notes:** Kept Jon's signature warmth and brevity: short declarative lines, exclamation-free but clearly engaged, oriented around the investor lens he naturally writes from. No emojis, no hype words, grounded enthusiasm through the idea itself.
 
 **Scrape status:**
 > X/Twitter [✓]: Twitter API v2 (30 posts)
-> LinkedIn [~]: LinkedIn partial scrape (not logged in) (2 posts)
+> LinkedIn [✗]: LinkedIn blocked request (status 999) — this is normal (0 posts)

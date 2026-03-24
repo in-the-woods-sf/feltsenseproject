@@ -1,39 +1,44 @@
 ## Ethan — Outside VC
 
 
+> ⚠️ **Insufficient data:** No posts were scraped. Copy uses general VC conventions — review carefully.
+
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-I've spent a decade betting on founders, not features. @feltsense just replicated 20 YC startups with AI agents in days. If the product is the moat, there is no moat. So what makes a founder irreplaceable?
+We talk about defensibility constantly in venture. @feltsense just went through every startup in the YC W26 batch with agentic AI and rebuilt them in days. If speed-to-market isn't a moat anymore, what exactly are we funding?
 
 **LinkedIn:**
-I remember my first angel investment. I wrote the check because I believed in the person sitting across from me. Not the product. Not the TAM slide. The person.
+Every investor conversation about early-stage defensibility is about to shift.
 
-That instinct kept coming back to me when I saw what Feltsense is doing. They took 20 startups from the current YC batch and replicated them using agentic AI founders. Full products. Live. In days.
+Feltsense went through the entire YC W26 batch using agentic AI founders, stress-testing each company for real defensibility. They built live replications of 20 featured startups in days. The full breakdown covers the rest.
 
-My first reaction was discomfort. My second was recognition. Because this is the question I've been circling for years as an investor. What is actually defensible?
+The startups that held up are genuinely interesting. The ones that didn't raise a harder question for how we evaluate what's fundable.
 
-Speed used to be the answer. Ship fast, raise fast, grow fast. But if an AI agent can rebuild your core product in a weekend, speed is no longer the moat. It never really was.
-
-The founders I believe in most are the ones building something that can't be copied by watching a demo. The ones where the insight lives in their bones, not their codebase.
-
-Feltsense is holding up a mirror to the startup world right now. The question is whether we're willing to look at what it shows us.
+If an AI agent can rebuild your product that fast, what are we actually backing?
 
 ---
 
 ### 💬 Comment to drop on our post
 
-This is the kind of thing that makes you uncomfortable in the best way. The founders who see this and get curious instead of defensive are the ones I want to back. Really important work.
+This is the kind of stress test the ecosystem needs right now. The interesting part isn't which startups got replicated, it's how few had something an agent genuinely couldn't touch. That gap is where the real diligence conversation starts.
 
 ---
 
-### 🔁 Our reply to their comment (internal use)
+### 🔁 Our reply to their comment — pick one (internal use)
 
-That means a lot coming from someone who writes checks on people, not products. That distinction between curiosity and defensiveness is exactly the signal we're trying to surface.
+**A — Casual** *(warm thanks / acknowledgment)*
+Really appreciate this, Ethan. Coming from someone doing the diligence work every day, that means a lot.
+
+**B — Insight** *(unintuitive push that deepens the thread)*
+What surprised us most is that the companies with the strongest defensibility often looked the least impressive on a demo day slide. The moat was in the problem selection, not the product surface.
+
+**C — Tease** *(hint at more coming / stay tuned)*
+We're starting to see a pattern in which types of founders the agents consistently fail to replicate, and it's not the dimension most investors are screening for.
 
 ---
 
-**Voice notes:** Matched Ethan's earnest storyteller cadence: personal anchoring ("I remember my first angel investment"), short declarative builds, zero emojis, emotional directness without performance. Kept the framing around people over products, which is his throughline across every post.
+**Voice notes:** With no voice data available, the tone defaults to measured, thoughtful VC partner register: direct without being flashy, comfortable asking questions that imply conviction rather than stating conclusions outright.
 
 **Scrape status:**
-> LinkedIn [~]: LinkedIn partial scrape (not logged in) (12 posts)
+> LinkedIn [✗]: LinkedIn blocked request (status 999) — this is normal (0 posts)

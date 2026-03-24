@@ -1,15 +1,15 @@
 # Campaign: YC Replication Sculpture — March 24th Launch
 
 ## What We Did
-We went through every startup in the YC W26 batch using agentic AI founders — stress-testing each one for defensibility. The public launch features 20 deep-dive replications with live products built in days. The full PDF covers the rest of the batch.
+Feltsense went through every startup in the YC W26 batch using agentic AI founders — stress-testing each one for defensibility. The public launch features 20 deep-dive replications with live products built in days. The full PDF covers every company in the batch.
 
 ## The Three Bold Claims
 1. **The future of founding is agentic** — AI agents can now replicate the core of what a startup does.
 2. **The YC model is evolving** — this stress-tests what the entire batch actually produces and what defensibility looks like today.
 3. **True defensibility is rare** — by going through every company in the batch, we reveal which ones have it and which ones don't.
 
-## Important Framing Note
-The public post highlights 20 deep-dive replications — but the scope is the entire YC W26 batch. Copy should reflect this full scope. "20" is the number featured publicly; the PDF contains the full breakdown. The right framing is "went through the whole batch" not "replicated 20 startups."
+## CRITICAL Framing Rule (applies to all copy, all versions, forever)
+Feltsense replicated every YC startup in the W26 batch — NOT just 20. NEVER frame this as "20 startups." The 20 are featured deep-dives with live products; the full PDF covers the entire batch. Always say "every startup in the YC batch," "the entire W26 batch," or "went through the whole batch." The 20 are only ever "20 featured deep-dives" or "20 live builds" — always in context of the full scope.
 
 ## The Central Question We're Asking
 > If an AI agent can replicate your startup in days, was it ever a real moat?

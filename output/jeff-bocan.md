@@ -4,38 +4,37 @@
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-20 YC startups replicated by AI agents in days… if your moat is just shipping speed, is it really a moat? 🤔 @feltsense
+@feltsense went through the entire YC W26 batch and stress-tested each one for defensibility using agentic AI. Built live replicas in days. If speed-to-market is no longer a moat, what exactly are early investors actually underwriting now… 🤔
 
 **LinkedIn:**
-Brave new world out there…
+The first check is based on trust. Subsequent checks are earned. That framework has guided me for years. But what happens when an AI agent can replicate what a startup does in days?
 
-@Feltsense just replicated 20 startups from the YC W26 batch using agentic AI founders. Full products. Live. In days.
+Feltsense just went through every startup in the YC W26 batch, stress-testing defensibility with agentic AI founders. 20 deep-dive replications are live, full batch breakdown in the PDF.
 
-Let that sit for a moment.
-
-The first check an investor writes is based on TRUST. But trust in what, exactly? We used to trust that speed-to-market meant defensibility. Build fast, raise fast, figure out the rest later. That playbook is getting stress-tested in real time.
-
-This isn't an attack on YC or on founders. YC produces incredible talent, full stop isn't the point. The point is what happens when an AI agent can do in days what a founding team does in months. Some of these companies couldn't be replicated. Those are the ones worth paying attention to.
-
-As investors, we have to ask harder questions now. Not just "can this team build?" but "can anyone else build this just as fast?"
-
-Defensibility used to mean something. Does it still… 🤔
+Speed used to be the moat. Now it might be the commodity. So what are we really betting on when we write that first check… 🤔
 
 ---
 
 ### 💬 Comment to drop on our post
 
-This is the kind of stress test the ecosystem needs right now… the companies that survive this mirror are the ones actually worth backing. 💯
+This is the kind of mirror the ecosystem needs right now. The startups that held up under this are the ones worth watching closely. Has me curious about how the defensibility conversation shifts at the seed stage going forward.
 
 ---
 
-### 🔁 Our reply to their comment (internal use)
+### 🔁 Our reply to their comment — pick one (internal use)
 
-Appreciate that framing, Jeff. That mirror metaphor is exactly the intent. The ones that hold up tell us something important about where real defensibility lives now.
+**A — Casual** *(warm thanks / acknowledgment)*
+Appreciate you engaging with this, Jeff. Means a lot coming from someone who thinks about first checks the way you do.
+
+**B — Insight** *(unintuitive push that deepens the thread)*
+One thing that surprised us: the startups with the deepest technical moats weren't always the hardest to replicate. The ones with unusual data loops or community lock-in gave our agents the most trouble, which says something about where defensibility is actually migrating.
+
+**C — Tease** *(hint at more coming / stay tuned)*
+We're sitting on some patterns from the full batch about what seed-stage defensibility actually looks like now, and it challenges a few assumptions most early-stage investors are still operating on.
 
 ---
 
-**Voice notes:** Leaned into Jeff's signature ellipses for trailing intrigue, kept the curator-philosopher tone with short punchy fragments, used 🤔 and 💯 as his go-to strategic emoji punctuation, and echoed his trust/earned investment philosophy as a natural entry point into the defensibility question.
+**Voice notes:** Matched Jeff's aphoristic, ellipsis-trailing pensiveness and his genuine curiosity about AI disruption's impact on investing. Kept emoji use earnest and sparse (🤔 as his signature thinking-out-loud marker), leaned into his investor-wisdom register without overcooking the enthusiasm.
 
 **Scrape status:**
 > X/Twitter [✓]: Twitter API v2 (26 posts)
