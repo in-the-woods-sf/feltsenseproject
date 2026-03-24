@@ -65,6 +65,7 @@ CAMPAIGNS = [
 # Rows in the copy table, grouped by platform section
 # (section, field_id, label, textarea_rows)
 COPY_FIELDS = [
+    ("summary",    "post_summary",  "Summary",            2),
     ("x",          "x_post",        "Post",              3),
     ("x",          "reply_casual",  "Reply A",            2),
     ("x",          "reply_insight", "Reply B",            2),
@@ -167,10 +168,18 @@ def load_copy(slug: str, campaign: str = "march") -> Optional[dict]:
         m = re.search(pattern, raw, re.DOTALL)
         return m.group(1).strip() if m else ""
 
+    # "Their Comment" — new header first, fall back to old single-comment header
+    their_comment = (
+        extract("💬 Their Comment")
+        or extract("💬 Comment to drop on our post")
+        or extract("💬 Comment")
+    )
+
     return {
+        "post_summary": extract("📋 Sculpture Summary"),
         "x_post": x_match.group(1).strip() if x_match else "",
         "linkedin_post": li_match.group(1).strip() if li_match else "",
-        "comment": extract("💬 Their Comment"),
+        "comment": their_comment,
         "our_comment": extract("💬 Feltsense Comment"),
         "reply_casual": extract_reply("A — Casual"),
         "reply_insight": extract_reply("B — Insight"),
@@ -185,8 +194,15 @@ def save_copy(slug: str, copy: GeneratedCopy, campaign: str = "march"):
     """Persist a GeneratedCopy to its markdown file."""
     path = _copy_path(slug, campaign)
     insufficient_flag = "\n\n> ⚠️ **Insufficient data:** No posts were scraped. Copy uses general VC conventions — review carefully." if copy.insufficient_data else ""
+    post_summary = getattr(copy, "post_summary", "")
     content = f"""## {copy.name} — {copy.firm}
 {insufficient_flag}
+
+### 📋 Sculpture Summary
+
+{post_summary}
+
+---
 
 ### 📣 Post (X + LinkedIn)
 
@@ -416,6 +432,11 @@ def regenerate(slug):
             linkedin=scraped.get("linkedin"),
         )
 
+        # Preserve any manually-entered sculpture summary from the existing file
+        existing = load_copy(slug, campaign)
+        if existing and existing.get("post_summary"):
+            copy.post_summary = existing["post_summary"]
+
         save_copy(slug, copy, campaign)
 
         # Parse x_post and linkedin_post from standalone_post
@@ -426,6 +447,7 @@ def regenerate(slug):
         return jsonify({
             "ok": True,
             "copy": {
+                "post_summary": getattr(copy, "post_summary", ""),
                 "x_post": x_post,
                 "linkedin_post": linkedin_post,
                 "comment": copy.comment,
@@ -457,6 +479,7 @@ def save_edit(slug):
     raw = path.read_text(encoding="utf-8")
 
     field_patterns = {
+        "post_summary":(r"(### 📋 Sculpture Summary\s*\n\n)(.*?)(\n\n---)", re.DOTALL),
         "x_post":      (r"(\*\*X:\*\*\s*\n)(.*?)(\n\n\*\*LinkedIn:)", re.DOTALL),
         "linkedin_post":(r"(\*\*LinkedIn:\*\*\s*\n)(.*?)(\n\n---)", re.DOTALL),
         "comment":     (r"(### 💬 Their Comment\s*\n[^\n]*\n\n)(.*?)(\n\n---)", re.DOTALL),

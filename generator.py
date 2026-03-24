@@ -26,6 +26,7 @@ class GeneratedCopy:
     our_reply_tease: str       # Option C: hint at more coming / stay tuned
     voice_notes: str
     insufficient_data: bool = False
+    post_summary: str = ""        # Manually-entered sculpture/post summary (not AI-generated)
 
 
 # ---------------------------------------------------------------------------

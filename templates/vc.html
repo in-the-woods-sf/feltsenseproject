@@ -69,6 +69,7 @@
       /* Span all 4 campaign columns */
       grid-column: span 4;
     }
+    .ct-section-head.sum-section { color: #a3a3a3; }
     .ct-section-head.x-section   { color: #38bdf8; }
     .ct-section-head.li-section  { color: #818cf8; }
     .ct-section-head.sh-section  { color: #a3a3a3; }
@@ -231,8 +232,9 @@
             {% if section == 'x' %}<span style="font-size:10px;color:#555">╱</span>{% endif %}
           </div>
           <div class="ct-section-head
-            {% if section == 'x' %}x-section{% elif section == 'linkedin' %}li-section{% elif section == 'engagement' %}en-section{% else %}sh-section{% endif %}">
-            {% if section == 'x' %}𝕏 &nbsp;X / Twitter
+            {% if section == 'summary' %}sum-section{% elif section == 'x' %}x-section{% elif section == 'linkedin' %}li-section{% elif section == 'engagement' %}en-section{% else %}sh-section{% endif %}">
+            {% if section == 'summary' %}✦ &nbsp;Sculpture / Post Summary
+            {% elif section == 'x' %}𝕏 &nbsp;X / Twitter
             {% elif section == 'linkedin' %}in &nbsp;LinkedIn
             {% elif section == 'engagement' %}↕ &nbsp;Engagement
             {% else %}✦ &nbsp;Shared
@@ -465,6 +467,7 @@ async function regenerate(slug) {
 
     const c = data.copy;
     const fieldMap = {
+      post_summary: c.post_summary,
       x_post: c.x_post, linkedin_post: c.linkedin_post,
       comment: c.comment, our_comment: c.our_comment,
       reply_casual: c.reply_casual,
