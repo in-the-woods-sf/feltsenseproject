@@ -52,6 +52,8 @@ ROLE_TYPES = [
     {"value": "friend",              "label": "Friend of Feltsense"},
 ]
 
+POC_OPTIONS = ["", "Marik", "Matt"]
+
 ENGAGEMENT_MONTHS = [
     "", "March 2026", "April 2026", "May 2026", "June 2026",
     "July 2026", "August 2026", "September 2026", "October 2026",
@@ -94,6 +96,7 @@ def load_statuses() -> dict:
                     "engagement_month": val.get("engagement_month", ""),
                     "role": val.get("role", ""),
                     "approved": val.get("approved", False),
+                    "poc": val.get("poc", ""),
                 }
         return migrated
     return {}
@@ -333,11 +336,12 @@ def index():
         vc["engagement_month"] = entry.get("engagement_month", "") if isinstance(entry, dict) else ""
         vc["role"] = entry.get("role", "") if isinstance(entry, dict) else ""
         vc["approved"] = entry.get("approved", False) if isinstance(entry, dict) else False
+        vc["poc"] = entry.get("poc", "") if isinstance(entry, dict) else ""
     generated = sum(1 for v in vcs if v["generated"])
     quotes = load_march_quotes()
     return render_template("index.html", vcs=vcs, total=len(vcs), generated=generated,
                            partner_statuses=PARTNER_STATUSES, engagement_months=ENGAGEMENT_MONTHS,
-                           role_types=ROLE_TYPES, quotes=quotes)
+                           role_types=ROLE_TYPES, poc_options=POC_OPTIONS, quotes=quotes)
 
 
 @app.route("/vc/<slug>")
@@ -352,6 +356,7 @@ def vc_profile(slug):
     vc["engagement_month"] = entry.get("engagement_month", "") if isinstance(entry, dict) else ""
     vc["role"] = entry.get("role", "") if isinstance(entry, dict) else ""
     vc["approved"] = entry.get("approved", False) if isinstance(entry, dict) else False
+    vc["poc"] = entry.get("poc", "") if isinstance(entry, dict) else ""
     copies = {c["id"]: load_copy(slug, c["id"]) for c in CAMPAIGNS}
     return render_template("vc.html", vc=vc, copies=copies, campaigns=CAMPAIGNS,
                            copy_fields=COPY_FIELDS, partner_statuses=PARTNER_STATUSES,
@@ -390,11 +395,15 @@ def set_status(slug):
     if approved is not None:
         entry["approved"] = bool(approved)
 
+    poc = data.get("poc")
+    if poc is not None:
+        entry["poc"] = poc
+
     statuses[slug] = entry
     save_statuses(statuses)
     return jsonify({"ok": True, "slug": slug, "status": entry["status"],
                     "engagement_month": entry["engagement_month"], "role": entry["role"],
-                    "approved": entry.get("approved", False)})
+                    "approved": entry.get("approved", False), "poc": entry.get("poc", "")})
 
 
 @app.route("/api/regenerate/<slug>", methods=["POST"])

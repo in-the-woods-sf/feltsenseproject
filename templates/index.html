@@ -283,13 +283,17 @@
     .filter-btn { background: none; border: 1px solid #242424; color: #666; padding: 6px 12px; border-radius: 6px; font-size: 12px; cursor: pointer; white-space: nowrap; transition: all 0.12s; }
     .filter-btn:hover { border-color: #444; color: #aaa; }
     .filter-btn.active { border-color: #7c6ff7; color: #7c6ff7; background: #1a1830; }
-    .filter-btn.f-active.active  { border-color: #38bdf8; color: #38bdf8; background: #0c1e2e; }
-    .filter-btn.f-periodic.active { border-color: #a78bfa; color: #a78bfa; background: #1a1030; }
     .filter-month { background: #131313; border: 1px solid #242424; color: #666; padding: 6px 10px; border-radius: 6px; font-size: 12px; outline: none; cursor: pointer; font-family: inherit; }
     .filter-month.active { border-color: #6ee7b7; color: #6ee7b7; background: #0a1e18; }
 
-    /* ── Grid ───────────────────────────────────────────── */
-    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1px; background: #181818; padding: 1px; }
+    /* ── Three-column layout ────────────────────────────── */
+    .three-col-layout { display: flex; gap: 0; flex: 1; min-width: 0; }
+    .col-section { flex: 1; min-width: 0; border-right: 1px solid #181818; display: flex; flex-direction: column; }
+    .col-section:last-child { border-right: none; }
+    .col-header { padding: 12px 20px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: #444; border-bottom: 2px solid #181818; background: #080808; position: sticky; top: 57px; z-index: 5; display: flex; align-items: center; justify-content: space-between; }
+    .col-header .col-count { font-size: 10px; font-weight: 600; color: #333; background: #141414; padding: 2px 7px; border-radius: 10px; text-transform: none; letter-spacing: 0; }
+    .col-cards { flex: 1; }
+    .col-empty { padding: 32px 20px; font-size: 12px; color: #333; text-align: center; }
 
     .card {
       background: #0a0a0a;
@@ -312,13 +316,11 @@
     .badge.no-x     { background: #2e1a1a; color: #f87171; }
     .badge.linkedin { background: #1a2a3a; color: #60a5fa; cursor: pointer; }
     .badge.x-handle { background: #1a1a1a; color: #e5e5e5; cursor: pointer; }
-    .badge.active   { background: #0c1e2e; color: #38bdf8; }
-    .badge.periodic { background: #1a1030; color: #a78bfa; }
-    .badge.cold     { background: #161616; color: #555; }
     .badge.month    { background: #0a1e18; color: #6ee7b7; }
     .badge.set-status { background: #141414; color: #444; cursor: pointer; border: 1px dashed #222; }
     .badge.set-status:hover { color: #888; border-color: #444; }
     .badge.approved { background: #0a1e10; color: #4ade80; }
+    .badge.poc      { background: #1e1628; color: #c084fc; }
 
     .card-select { position: absolute; top: 10px; right: 10px; width: 16px; height: 16px; accent-color: #818cf8; cursor: pointer; display: none; }
     .select-mode .card-select { display: block; }
@@ -407,15 +409,6 @@
   <button class="filter-btn" onclick="setFilter('done', this)">Generated</button>
   <button class="filter-btn" onclick="setFilter('pending', this)">Pending</button>
   <div class="filter-sep"></div>
-  <button class="filter-btn f-active" onclick="setFilter('active', this)">🔵 Active Partner</button>
-  <button class="filter-btn f-periodic" onclick="setFilter('periodic', this)">🟣 Periodic Partner</button>
-  <div class="filter-sep"></div>
-  <select class="filter-month" id="role-filter" onchange="filterCards()">
-    <option value="">All roles</option>
-    {% for r in role_types %}{% if r.value %}
-    <option value="{{ r.value }}">{{ r.label }}</option>
-    {% endif %}{% endfor %}
-  </select>
   <button class="filter-btn" id="btn-select-mode" onclick="toggleSelectMode()">✉ Bulk Email</button>
   <select class="filter-month" id="month-filter" onchange="filterCards()">
     <option value="">📅 Months / Sculpture</option>
@@ -425,68 +418,98 @@
   </select>
 </div>
 
-<!-- ── Content layout (grid + sidebar) ───────────────────── -->
+<!-- ── Content layout (3-col + sidebar) ──────────────────── -->
 <div class="content-layout">
 
-<!-- ── Grid ───────────────────────────────────────────────── -->
-<div class="grid-wrap">
-<div class="grid" id="grid">
-  {% for vc in vcs %}
-  <a class="card" href="/vc/{{ vc.slug }}"
-     data-slug="{{ vc.slug }}"
-     data-name="{{ vc.name | lower }}"
-     data-firm="{{ vc.firm | lower }}"
-     data-state="{{ 'done' if vc.generated else 'pending' }}"
-     data-status="{{ vc.status }}"
-     data-month="{{ vc.engagement_month }}"
-     data-role="{{ vc.role }}"
-     data-approved="{{ 'true' if vc.approved else 'false' }}">
-    <input type="checkbox" class="card-select" onclick="event.stopPropagation()" data-slug="{{ vc.slug }}">
-    <div class="name">{{ vc.name }}</div>
-    <div class="firm">{{ vc.firm }}</div>
-    <div class="badges">
-      {% if vc.generated %}
-        <span class="badge done">✓ Copy Ready</span>
-      {% else %}
-        <span class="badge pending">Not generated</span>
-      {% endif %}
-      <div class="status-control" onclick="event.preventDefault(); event.stopPropagation(); openStatusMenu('{{ vc.slug }}', event)">
-        {% if vc.status == 'active' %}
-          <span class="badge active">🔵 Active Partner ▾</span>
-        {% elif vc.status == 'periodic' %}
-          <span class="badge periodic">🟣 Periodic Partner ▾</span>
-        {% elif vc.status == 'cold' %}
-          <span class="badge cold">Not engaged ▾</span>
-        {% else %}
-          <span class="badge set-status">+ Set status</span>
-        {% endif %}
-      </div>
-      {% if vc.engagement_month %}
-        <span class="badge month">📅 {{ vc.engagement_month }}</span>
-      {% endif %}
-      {% if vc.role == 'vc' %}
-        <span class="badge role-vc">VC</span>
-      {% elif vc.role == 'feltsense_teammate' %}
-        <span class="badge role-teammate">Feltsense Teammate</span>
-      {% elif vc.role == 'friend' %}
-        <span class="badge role-friend">Friend of Feltsense</span>
-      {% endif %}
-      {% if vc.approved %}
-        <span class="badge approved">✓ Approved</span>
-      {% endif %}
-      {% if vc.x_url %}
-        <span class="badge x-handle" onclick="event.preventDefault(); event.stopPropagation(); window.open('{{ vc.x_url }}', '_blank')">X ↗</span>
-      {% else %}
-        <span class="badge no-x">No X handle</span>
-      {% endif %}
-      {% if vc.linkedin_url %}
-        <span class="badge linkedin" onclick="event.preventDefault(); event.stopPropagation(); window.open('{{ vc.linkedin_url }}', '_blank')">LinkedIn ↗</span>
-      {% endif %}
+{% macro vc_card(vc) %}
+<a class="card" href="/vc/{{ vc.slug }}"
+   data-slug="{{ vc.slug }}"
+   data-name="{{ vc.name | lower }}"
+   data-firm="{{ vc.firm | lower }}"
+   data-state="{{ 'done' if vc.generated else 'pending' }}"
+   data-month="{{ vc.engagement_month }}"
+   data-role="{{ vc.role }}"
+   data-poc="{{ vc.poc }}">
+  <input type="checkbox" class="card-select" onclick="event.stopPropagation()" data-slug="{{ vc.slug }}">
+  <div class="name">{{ vc.name }}</div>
+  <div class="firm">{{ vc.firm }}</div>
+  <div class="badges">
+    {% if vc.generated %}
+      <span class="badge done">✓ Copy Ready</span>
+    {% else %}
+      <span class="badge pending">Not generated</span>
+    {% endif %}
+    <div class="status-control" onclick="event.preventDefault(); event.stopPropagation(); openStatusMenu('{{ vc.slug }}', event)">
+      <span class="badge set-status">⚙ Edit ▾</span>
     </div>
-    <span class="arrow">›</span>
-  </a>
-  {% endfor %}
-</div><!-- end .grid -->
+    {% if vc.engagement_month %}
+      <span class="badge month">📅 {{ vc.engagement_month }}</span>
+    {% endif %}
+    {% if vc.approved %}
+      <span class="badge approved">✓ Approved</span>
+    {% endif %}
+    {% if vc.poc %}
+      <span class="badge poc">POC: {{ vc.poc }}</span>
+    {% endif %}
+    {% if vc.x_url %}
+      <span class="badge x-handle" onclick="event.preventDefault(); event.stopPropagation(); window.open('{{ vc.x_url }}', '_blank')">X ↗</span>
+    {% else %}
+      <span class="badge no-x">No X</span>
+    {% endif %}
+    {% if vc.linkedin_url %}
+      <span class="badge linkedin" onclick="event.preventDefault(); event.stopPropagation(); window.open('{{ vc.linkedin_url }}', '_blank')">in ↗</span>
+    {% endif %}
+  </div>
+  <span class="arrow">›</span>
+</a>
+{% endmacro %}
+
+{% set vcs_col    = vcs | selectattr('role', 'equalto', 'vc') | list %}
+{% set team_col   = vcs | selectattr('role', 'equalto', 'feltsense_teammate') | list %}
+{% set friends_col = vcs | selectattr('role', 'equalto', 'friend') | list %}
+{% set unassigned = vcs | rejectattr('role') | list %}
+{% set vcs_col    = vcs_col + unassigned %}
+
+<div class="grid-wrap">
+<div class="three-col-layout" id="grid">
+
+  <!-- VCs -->
+  <div class="col-section">
+    <div class="col-header">
+      VCs
+      <span class="col-count">{{ vcs_col | length }}</span>
+    </div>
+    <div class="col-cards" id="col-vc">
+      {% for vc in vcs_col %}{{ vc_card(vc) }}{% endfor %}
+      {% if not vcs_col %}<div class="col-empty">No VCs yet</div>{% endif %}
+    </div>
+  </div>
+
+  <!-- Feltsense Team -->
+  <div class="col-section">
+    <div class="col-header">
+      Feltsense Team
+      <span class="col-count">{{ team_col | length }}</span>
+    </div>
+    <div class="col-cards" id="col-team">
+      {% for vc in team_col %}{{ vc_card(vc) }}{% endfor %}
+      {% if not team_col %}<div class="col-empty">No team members yet</div>{% endif %}
+    </div>
+  </div>
+
+  <!-- Friends of Feltsense -->
+  <div class="col-section">
+    <div class="col-header">
+      Friends of Feltsense
+      <span class="col-count">{{ friends_col | length }}</span>
+    </div>
+    <div class="col-cards" id="col-friends">
+      {% for vc in friends_col %}{{ vc_card(vc) }}{% endfor %}
+      {% if not friends_col %}<div class="col-empty">No friends yet</div>{% endif %}
+    </div>
+  </div>
+
+</div><!-- end .three-col-layout -->
 </div><!-- end .grid-wrap -->
 
 <!-- ── Sidebar ─────────────────────────────────────────────── -->
@@ -534,18 +557,19 @@
 
 <!-- ── Floating status / engagement menu ──────────────────── -->
 <div class="status-menu" id="status-menu">
-  <div class="menu-label">Partner Status</div>
-  <div class="menu-opt" data-val="" onclick="setCardStatus('')">— No status</div>
-  <div class="menu-opt" data-val="active" onclick="setCardStatus('active')">🔵 Active Posting Partner</div>
-  <div class="menu-opt" data-val="periodic" onclick="setCardStatus('periodic')">🟣 Periodic Posting Partner</div>
-  <div class="menu-opt" data-val="cold" onclick="setCardStatus('cold')">Not engaged</div>
-  <div class="menu-divider"></div>
   <div class="menu-label">Role Type</div>
   <select class="menu-role" id="menu-role" onchange="setCardRole(this.value)">
     <option value="">— No role</option>
     {% for r in role_types %}{% if r.value %}
     <option value="{{ r.value }}">{{ r.label }}</option>
     {% endif %}{% endfor %}
+  </select>
+  <div class="menu-divider"></div>
+  <div class="menu-label">Point of Contact</div>
+  <select class="menu-role" id="menu-poc" onchange="setCardPoc(this.value)">
+    {% for p in poc_options %}
+    <option value="{{ p }}">{{ p if p else '— Not set' }}</option>
+    {% endfor %}
   </select>
   <div class="menu-divider"></div>
   <div class="menu-label">Last Engagement Month</div>
@@ -607,30 +631,12 @@ function openStatusMenu(slug, event) {
   menu.style.left = left + 'px';
   menu.style.display = 'block';
   const card = document.querySelector(`.card[data-slug="${slug}"]`);
-  const currentStatus = card ? (card.dataset.status || '') : '';
-  const currentMonth  = card ? (card.dataset.month  || '') : '';
-  const currentRole   = card ? (card.dataset.role   || '') : '';
-  document.querySelectorAll('.status-menu .menu-opt').forEach(opt => {
-    opt.classList.toggle('selected', opt.dataset.val === currentStatus);
-  });
+  const currentMonth = card ? (card.dataset.month || '') : '';
+  const currentRole  = card ? (card.dataset.role  || '') : '';
+  const currentPoc   = card ? (card.dataset.poc   || '') : '';
   document.getElementById('menu-month').value = currentMonth;
   document.getElementById('menu-role').value  = currentRole;
-}
-
-async function setCardStatus(status) {
-  if (!menuSlug) return;
-  const slug = menuSlug;
-  const res = await fetch('/api/set-status/' + slug, {
-    method: 'POST', headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ status }),
-  });
-  const data = await res.json();
-  if (!data.ok) return;
-  const card = document.querySelector(`.card[data-slug="${slug}"]`);
-  if (card) { card.dataset.status = status; updateCardStatusBadge(card, status); }
-  document.querySelectorAll('.status-menu .menu-opt').forEach(opt => {
-    opt.classList.toggle('selected', opt.dataset.val === status);
-  });
+  document.getElementById('menu-poc').value   = currentPoc;
 }
 
 async function setCardMonth(month) {
@@ -656,31 +662,32 @@ async function setCardRole(role) {
   const data = await res.json();
   if (!data.ok) return;
   const card = document.querySelector(`.card[data-slug="${slug}"]`);
-  if (card) { card.dataset.role = role; updateCardRoleBadge(card, role); }
+  if (card) card.dataset.role = role;
 }
 
-function updateCardStatusBadge(card, status) {
-  const ctrl = card.querySelector('.status-control');
-  if (!ctrl) return;
-  const labels  = { active: '🔵 Active Partner ▾', periodic: '🟣 Periodic Partner ▾', cold: 'Not engaged ▾', '': '+ Set status' };
-  const classes = { active: 'badge active', periodic: 'badge periodic', cold: 'badge cold', '': 'badge set-status' };
-  ctrl.innerHTML = `<span class="${classes[status] || 'badge set-status'}">${labels[status] || '+ Set status'}</span>`;
-}
-
-function updateCardRoleBadge(card, role) {
-  const existing = card.querySelector('.badge.role-vc, .badge.role-teammate, .badge.role-friend');
-  if (existing) existing.remove();
-  if (!role) return;
-  const map = {
-    vc:                 { cls: 'badge role-vc',      label: 'VC' },
-    feltsense_teammate: { cls: 'badge role-teammate', label: 'Feltsense Teammate' },
-    friend:             { cls: 'badge role-friend',   label: 'Friend of Feltsense' },
-  };
-  if (!map[role]) return;
-  const badge = document.createElement('span');
-  badge.className = map[role].cls;
-  badge.textContent = map[role].label;
-  card.querySelector('.badges').appendChild(badge);
+async function setCardPoc(poc) {
+  if (!menuSlug) return;
+  const slug = menuSlug;
+  const res = await fetch('/api/set-status/' + slug, {
+    method: 'POST', headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ poc }),
+  });
+  const data = await res.json();
+  if (!data.ok) return;
+  const card = document.querySelector(`.card[data-slug="${slug}"]`);
+  if (!card) return;
+  card.dataset.poc = poc;
+  let pocBadge = card.querySelector('.badge.poc');
+  if (poc) {
+    if (!pocBadge) {
+      pocBadge = document.createElement('span');
+      pocBadge.className = 'badge poc';
+      card.querySelector('.badges').appendChild(pocBadge);
+    }
+    pocBadge.textContent = 'POC: ' + poc;
+  } else {
+    if (pocBadge) pocBadge.remove();
+  }
 }
 
 function updateCardMonthBadge(card, month) {
@@ -699,26 +706,19 @@ function updateCardMonthBadge(card, month) {
 function filterCards() {
   const q           = document.getElementById('search').value.toLowerCase();
   const activeMonth = document.getElementById('month-filter').value;
-  const activeRole  = document.getElementById('role-filter').value;
   document.querySelectorAll('.card').forEach(card => {
-    const name   = card.dataset.name;
-    const firm   = card.dataset.firm;
-    const state  = card.dataset.state;
-    const status = card.dataset.status;
-    const month  = card.dataset.month || '';
-    const role   = card.dataset.role  || '';
+    const name  = card.dataset.name;
+    const firm  = card.dataset.firm;
+    const state = card.dataset.state;
+    const month = card.dataset.month || '';
     const matchSearch = !q || name.includes(q) || firm.includes(q);
     const matchMonth  = !activeMonth || month === activeMonth;
-    const matchRole   = !activeRole  || role  === activeRole;
     let   matchFilter = true;
-    if      (activeFilter === 'done')     matchFilter = state  === 'done';
-    else if (activeFilter === 'pending')  matchFilter = state  === 'pending';
-    else if (activeFilter === 'active')   matchFilter = status === 'active';
-    else if (activeFilter === 'periodic') matchFilter = status === 'periodic';
-    card.style.display = (matchSearch && matchFilter && matchMonth && matchRole) ? '' : 'none';
+    if      (activeFilter === 'done')    matchFilter = state === 'done';
+    else if (activeFilter === 'pending') matchFilter = state === 'pending';
+    card.style.display = (matchSearch && matchFilter && matchMonth) ? '' : 'none';
   });
   document.getElementById('month-filter').classList.toggle('active', !!activeMonth);
-  document.getElementById('role-filter').classList.toggle('active', !!activeRole);
 }
 
 function setFilter(f, btn) {
@@ -735,7 +735,7 @@ let selectMode = false;
 
 function toggleSelectMode() {
   selectMode = !selectMode;
-  document.getElementById('grid').classList.toggle('select-mode', selectMode);
+  document.querySelectorAll('.col-cards').forEach(c => c.classList.toggle('select-mode', selectMode));
   document.getElementById('btn-select-mode').classList.toggle('active', selectMode);
   if (!selectMode) {
     document.querySelectorAll('.card-select').forEach(cb => cb.checked = false);
