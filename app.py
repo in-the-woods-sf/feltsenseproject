@@ -10,6 +10,9 @@ import json
 import os
 import re
 import time
+import smtplib
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
 from pathlib import Path
 from dataclasses import asdict
 
@@ -90,6 +93,7 @@ def load_statuses() -> dict:
                     "status": val.get("status", ""),
                     "engagement_month": val.get("engagement_month", ""),
                     "role": val.get("role", ""),
+                    "approved": val.get("approved", False),
                 }
         return migrated
     return {}
@@ -328,6 +332,7 @@ def index():
         vc["status"] = entry.get("status", "") if isinstance(entry, dict) else entry
         vc["engagement_month"] = entry.get("engagement_month", "") if isinstance(entry, dict) else ""
         vc["role"] = entry.get("role", "") if isinstance(entry, dict) else ""
+        vc["approved"] = entry.get("approved", False) if isinstance(entry, dict) else False
     generated = sum(1 for v in vcs if v["generated"])
     quotes = load_march_quotes()
     return render_template("index.html", vcs=vcs, total=len(vcs), generated=generated,
@@ -346,6 +351,7 @@ def vc_profile(slug):
     vc["status"] = entry.get("status", "") if isinstance(entry, dict) else entry
     vc["engagement_month"] = entry.get("engagement_month", "") if isinstance(entry, dict) else ""
     vc["role"] = entry.get("role", "") if isinstance(entry, dict) else ""
+    vc["approved"] = entry.get("approved", False) if isinstance(entry, dict) else False
     copies = {c["id"]: load_copy(slug, c["id"]) for c in CAMPAIGNS}
     return render_template("vc.html", vc=vc, copies=copies, campaigns=CAMPAIGNS,
                            copy_fields=COPY_FIELDS, partner_statuses=PARTNER_STATUSES,
@@ -380,10 +386,15 @@ def set_status(slug):
             return jsonify({"error": "Invalid role"}), 400
         entry["role"] = role
 
+    approved = data.get("approved")
+    if approved is not None:
+        entry["approved"] = bool(approved)
+
     statuses[slug] = entry
     save_statuses(statuses)
     return jsonify({"ok": True, "slug": slug, "status": entry["status"],
-                    "engagement_month": entry["engagement_month"], "role": entry["role"]})
+                    "engagement_month": entry["engagement_month"], "role": entry["role"],
+                    "approved": entry.get("approved", False)})
 
 
 @app.route("/api/regenerate/<slug>", methods=["POST"])
@@ -497,6 +508,109 @@ def save_edit(slug):
     path.write_text(new_raw, encoding="utf-8")
 
     return jsonify({"ok": True})
+
+
+@app.route("/api/send-email/<slug>", methods=["POST"])
+def send_email(slug):
+    """Send personalized copy email to a single VC."""
+    vcs = load_vcs()
+    vc = next((v for v in vcs if v["slug"] == slug), None)
+    if not vc:
+        return jsonify({"error": "VC not found"}), 404
+    if not vc.get("email"):
+        return jsonify({"error": "No email on file for this VC"}), 400
+
+    copy = load_copy(slug)
+    if not copy:
+        return jsonify({"error": "No copy generated yet — generate copy first"}), 400
+
+    gmail_user = os.environ.get("GMAIL_USER", "")
+    gmail_pass = os.environ.get("GMAIL_APP_PASSWORD", "")
+    if not gmail_user or not gmail_pass:
+        return jsonify({"error": "GMAIL_USER or GMAIL_APP_PASSWORD not set in environment"}), 500
+
+    try:
+        _send_vc_email(gmail_user, gmail_pass, vc, copy)
+        return jsonify({"ok": True, "sent_to": vc["email"]})
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+@app.route("/api/send-email-bulk", methods=["POST"])
+def send_email_bulk():
+    """Send emails to multiple VCs at once."""
+    data = request.get_json() or {}
+    slugs = data.get("slugs", [])
+    if not slugs:
+        return jsonify({"error": "No slugs provided"}), 400
+
+    gmail_user = os.environ.get("GMAIL_USER", "")
+    gmail_pass = os.environ.get("GMAIL_APP_PASSWORD", "")
+    if not gmail_user or not gmail_pass:
+        return jsonify({"error": "GMAIL_USER or GMAIL_APP_PASSWORD not set in environment"}), 500
+
+    vcs = load_vcs()
+    vc_map = {v["slug"]: v for v in vcs}
+
+    sent, failed = [], []
+    for slug in slugs:
+        vc = vc_map.get(slug)
+        if not vc or not vc.get("email"):
+            failed.append({"slug": slug, "reason": "No email on file"})
+            continue
+        copy = load_copy(slug)
+        if not copy:
+            failed.append({"slug": slug, "reason": "No copy generated"})
+            continue
+        try:
+            _send_vc_email(gmail_user, gmail_pass, vc, copy)
+            sent.append(vc["email"])
+        except Exception as e:
+            failed.append({"slug": slug, "reason": str(e)})
+
+    return jsonify({"ok": True, "sent": sent, "failed": failed})
+
+
+def _send_vc_email(gmail_user: str, gmail_pass: str, vc: dict, copy: dict):
+    """Compose and send personalized copy email to a VC via Gmail SMTP."""
+    first_name = vc["name"].split()[0]
+    x_post = copy.get("x_post", "").strip()
+    linkedin_post = copy.get("linkedin_post", "").strip()
+    comment = copy.get("comment", "").strip()
+
+    html = f"""
+<html><body style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:#1a1a1a;max-width:600px;margin:0 auto;padding:24px;">
+  <p>Hey {first_name},</p>
+  <p>We went through every startup in the YC W26 batch using agentic AI founders to stress-test defensibility. The results are live — and we'd love your take.</p>
+  <p>We wrote some copy in your voice in case you want to share or engage. Use it, ignore it, or rewrite it — totally up to you.</p>
+
+  <hr style="border:none;border-top:1px solid #e5e5e5;margin:24px 0;">
+
+  <p style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:#888;">Your X Post</p>
+  <p style="background:#f5f5f5;padding:14px 16px;border-radius:8px;font-size:14px;line-height:1.6;">{x_post}</p>
+
+  <p style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:#888;margin-top:20px;">Your LinkedIn Post</p>
+  <p style="background:#f5f5f5;padding:14px 16px;border-radius:8px;font-size:14px;line-height:1.6;">{linkedin_post}</p>
+
+  <p style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:#888;margin-top:20px;">Suggested Comment on Our Post</p>
+  <p style="background:#f5f5f5;padding:14px 16px;border-radius:8px;font-size:14px;line-height:1.6;">{comment}</p>
+
+  <hr style="border:none;border-top:1px solid #e5e5e5;margin:24px 0;">
+
+  <p>See the full project here: <a href="https://feltsenseproject-production.up.railway.app" style="color:#7c6ff7;">feltsenseproject-production.up.railway.app</a></p>
+  <p style="color:#888;font-size:12px;">— Marik &amp; the Feltsense team</p>
+</body></html>
+"""
+
+    msg = MIMEMultipart("alternative")
+    msg["Subject"] = f"Your copy for the Feltsense YC W26 campaign"
+    msg["From"] = gmail_user
+    msg["To"] = vc["email"]
+    msg.attach(MIMEText(html, "html"))
+
+    with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
+        server.login(gmail_user, gmail_pass)
+        server.sendmail(gmail_user, vc["email"], msg.as_string())
 
 
 @app.route("/api/mention-count")

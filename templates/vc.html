@@ -17,6 +17,12 @@
     .topbar .links { margin-left: auto; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
     .topbar .links a { font-size: 12px; color: #666; text-decoration: none; padding: 4px 10px; border: 1px solid #2a2a2a; border-radius: 4px; }
     .topbar .links a:hover { border-color: #444; color: #aaa; }
+    .btn-send-email { font-size: 12px; color: #818cf8; padding: 4px 10px; border: 1px solid #2a2a3a; border-radius: 4px; background: none; cursor: pointer; font-family: inherit; }
+    .btn-send-email:hover { border-color: #818cf8; background: #131328; }
+    .btn-send-email:disabled { opacity: 0.4; cursor: not-allowed; }
+    .btn-approved { font-size: 12px; padding: 4px 10px; border-radius: 4px; border: 1px solid #2a2a2a; background: none; cursor: pointer; font-family: inherit; color: #555; transition: all 0.15s; }
+    .btn-approved:hover { border-color: #4ade80; color: #4ade80; }
+    .btn-approved.is-approved { border-color: #4ade80; color: #4ade80; background: #0a1e10; }
     .topbar select { background: #161616; border: 1px solid #2a2a2a; color: #e8e8e8; padding: 4px 10px; border-radius: 4px; font-size: 12px; cursor: pointer; outline: none; font-family: inherit; }
 
     /* ── Main layout ────────────────────────────────── */
@@ -174,6 +180,13 @@
   <div class="links">
     {% if vc.x_url %}<a href="{{ vc.x_url }}" target="_blank">X ↗</a>{% endif %}
     {% if vc.linkedin_url %}<a href="{{ vc.linkedin_url }}" target="_blank">LinkedIn ↗</a>{% endif %}
+    <button class="btn-approved {{ 'is-approved' if vc.approved else '' }}" id="btn-approved"
+      onclick="toggleApproved('{{ vc.slug }}')">
+      {{ '✓ Marik Approved' if vc.approved else '○ Mark Approved' }}
+    </button>
+    {% if vc.email %}
+    <button class="btn-send-email" id="btn-send-email" onclick="sendEmail('{{ vc.slug }}')">✉ Send Email</button>
+    {% endif %}
     <select id="partner-status" onchange="setStatus('{{ vc.slug }}', this.value)">
       {% for s in partner_statuses %}
         <option value="{{ s.value }}" {% if vc.status == s.value %}selected{% endif %}>{{ s.label }}</option>
@@ -517,6 +530,51 @@ function quickGenerate(slug, campaign) {
   document.getElementById('regen-section').value = 'all';
   document.getElementById('regen-instruction').value = '';
   regenerate(slug);
+}
+
+// ── Marik Approved toggle ──────────────────────────────────
+async function toggleApproved(slug) {
+  const btn = document.getElementById('btn-approved');
+  const isApproved = btn.classList.contains('is-approved');
+  const newVal = !isApproved;
+  const res = await fetch('/api/set-status/' + slug, {
+    method: 'POST', headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ approved: newVal }),
+  });
+  const data = await res.json();
+  if (!data.ok) return;
+  btn.classList.toggle('is-approved', newVal);
+  btn.textContent = newVal ? '✓ Marik Approved' : '○ Mark Approved';
+  flashSaved();
+}
+
+// ── Send email ─────────────────────────────────────────────
+async function sendEmail(slug) {
+  const btn = document.getElementById('btn-send-email');
+  btn.disabled = true;
+  btn.textContent = '✉ Sending…';
+  try {
+    const res = await fetch('/api/send-email/' + slug, { method: 'POST' });
+    const data = await res.json();
+    if (!res.ok || data.error) throw new Error(data.error);
+    btn.textContent = '✓ Sent!';
+    btn.style.color = '#4ade80';
+    btn.style.borderColor = '#4ade80';
+    setTimeout(() => {
+      btn.textContent = '✉ Send Email';
+      btn.style.color = '';
+      btn.style.borderColor = '';
+      btn.disabled = false;
+    }, 3000);
+  } catch (err) {
+    btn.textContent = '✗ ' + err.message;
+    btn.style.color = '#f87171';
+    setTimeout(() => {
+      btn.textContent = '✉ Send Email';
+      btn.style.color = '';
+      btn.disabled = false;
+    }, 4000);
+  }
 }
 </script>
 </body>

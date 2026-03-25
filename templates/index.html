@@ -318,6 +318,27 @@
     .badge.month    { background: #0a1e18; color: #6ee7b7; }
     .badge.set-status { background: #141414; color: #444; cursor: pointer; border: 1px dashed #222; }
     .badge.set-status:hover { color: #888; border-color: #444; }
+    .badge.approved { background: #0a1e10; color: #4ade80; }
+
+    .card-select { position: absolute; top: 10px; right: 10px; width: 16px; height: 16px; accent-color: #818cf8; cursor: pointer; display: none; }
+    .select-mode .card-select { display: block; }
+    .select-mode .arrow { display: none; }
+    .select-mode .card { padding-right: 36px; }
+
+    .bulk-bar {
+      position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);
+      background: #161616; border: 1px solid #2a2a2a; border-radius: 10px;
+      padding: 10px 16px; display: flex; align-items: center; gap: 12px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.8); z-index: 100;
+      display: none;
+    }
+    .bulk-bar.visible { display: flex; }
+    .bulk-bar span { font-size: 13px; color: #888; }
+    .btn-bulk-send { background: #818cf8; color: white; border: none; padding: 8px 16px; border-radius: 6px; font-size: 13px; font-weight: 500; cursor: pointer; font-family: inherit; }
+    .btn-bulk-send:hover { background: #6c75e6; }
+    .btn-bulk-send:disabled { background: #2a2a2a; color: #555; cursor: not-allowed; }
+    .btn-cancel-select { background: none; border: 1px solid #333; color: #666; padding: 7px 12px; border-radius: 6px; font-size: 12px; cursor: pointer; font-family: inherit; }
+    .btn-cancel-select:hover { border-color: #555; color: #aaa; }
     .badge.role-vc        { background: #131328; color: #818cf8; }
     .badge.role-teammate  { background: #2a142a; color: #e879f9; }
     .badge.role-friend    { background: #112218; color: #34d399; }
@@ -395,6 +416,7 @@
     <option value="{{ r.value }}">{{ r.label }}</option>
     {% endif %}{% endfor %}
   </select>
+  <button class="filter-btn" id="btn-select-mode" onclick="toggleSelectMode()">✉ Bulk Email</button>
   <select class="filter-month" id="month-filter" onchange="filterCards()">
     <option value="">📅 Months / Sculpture</option>
     {% for m in engagement_months %}{% if m %}
@@ -417,7 +439,9 @@
      data-state="{{ 'done' if vc.generated else 'pending' }}"
      data-status="{{ vc.status }}"
      data-month="{{ vc.engagement_month }}"
-     data-role="{{ vc.role }}">
+     data-role="{{ vc.role }}"
+     data-approved="{{ 'true' if vc.approved else 'false' }}">
+    <input type="checkbox" class="card-select" onclick="event.stopPropagation()" data-slug="{{ vc.slug }}">
     <div class="name">{{ vc.name }}</div>
     <div class="firm">{{ vc.firm }}</div>
     <div class="badges">
@@ -446,6 +470,9 @@
         <span class="badge role-teammate">Feltsense Teammate</span>
       {% elif vc.role == 'friend' %}
         <span class="badge role-friend">Friend of Feltsense</span>
+      {% endif %}
+      {% if vc.approved %}
+        <span class="badge approved">✓ Approved</span>
       {% endif %}
       {% if vc.x_url %}
         <span class="badge x-handle" onclick="event.preventDefault(); event.stopPropagation(); window.open('{{ vc.x_url }}', '_blank')">X ↗</span>
@@ -702,6 +729,67 @@ function setFilter(f, btn) {
 }
 
 // @feltsensefund mention count — placeholder until X API polling is enabled
+
+// ── Bulk email select mode ─────────────────────────────────
+let selectMode = false;
+
+function toggleSelectMode() {
+  selectMode = !selectMode;
+  document.getElementById('grid').classList.toggle('select-mode', selectMode);
+  document.getElementById('btn-select-mode').classList.toggle('active', selectMode);
+  if (!selectMode) {
+    document.querySelectorAll('.card-select').forEach(cb => cb.checked = false);
+    updateBulkBar();
+  }
+}
+
+function updateBulkBar() {
+  const checked = document.querySelectorAll('.card-select:checked');
+  const bar = document.getElementById('bulk-bar');
+  const countEl = document.getElementById('bulk-count');
+  if (checked.length > 0) {
+    bar.classList.add('visible');
+    countEl.textContent = checked.length + ' selected';
+  } else {
+    bar.classList.remove('visible');
+  }
+}
+
+document.addEventListener('change', e => {
+  if (e.target.classList.contains('card-select')) updateBulkBar();
+});
+
+async function sendBulkEmails() {
+  const checked = document.querySelectorAll('.card-select:checked');
+  const slugs = Array.from(checked).map(cb => cb.dataset.slug);
+  if (!slugs.length) return;
+
+  const btn = document.getElementById('btn-bulk-send');
+  btn.disabled = true;
+  btn.textContent = 'Sending…';
+
+  const res = await fetch('/api/send-email-bulk', {
+    method: 'POST', headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ slugs }),
+  });
+  const data = await res.json();
+
+  const sent = data.sent?.length || 0;
+  const failed = data.failed?.length || 0;
+  btn.textContent = `✓ Sent ${sent}${failed ? `, ${failed} failed` : ''}`;
+  setTimeout(() => {
+    btn.textContent = '✉ Send Emails';
+    btn.disabled = false;
+    toggleSelectMode();
+  }, 3000);
+}
 </script>
+
+<!-- ── Bulk send bar ───────────────────────────────────── -->
+<div class="bulk-bar" id="bulk-bar">
+  <span id="bulk-count">0 selected</span>
+  <button class="btn-bulk-send" id="btn-bulk-send" onclick="sendBulkEmails()">✉ Send Emails</button>
+  <button class="btn-cancel-select" onclick="toggleSelectMode()">Cancel</button>
+</div>
 </body>
 </html>
