@@ -64,7 +64,7 @@ ENGAGEMENT_MONTHS = [
 
 CAMPAIGNS = [
     {"id": "march", "label": "March YC Demo Day"},
-    {"id": "april", "label": "April VC Portfolio Stunt"},
+    {"id": "april", "label": "April 10 Founders 10 Weeks"},
     {"id": "may",   "label": "May Founder Launch"},
     {"id": "june",  "label": "June Series A Stunt"},
 ]
