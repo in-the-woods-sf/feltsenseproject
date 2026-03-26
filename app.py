@@ -164,7 +164,10 @@ def load_copy(slug: str, campaign: str = "march") -> Optional[dict]:
         # Match markdown bold labels like **X:** or section headers
         pattern = rf"###\s+{re.escape(header)}\s*\n(.*?)(?=###|\Z)"
         m = re.search(pattern, raw, re.DOTALL | re.IGNORECASE)
-        return m.group(1).strip() if m else ""
+        if not m:
+            return ""
+        # Strip trailing horizontal rules and whitespace
+        return re.sub(r'\s*\n---+\s*$', '', m.group(1)).strip()
 
     # Parse standalone post sub-sections
     post_block = extract("📣 Post (X + LinkedIn)")
