@@ -401,13 +401,13 @@
 
 <!-- ── Section tabs ──────────────────────────────────────────── -->
 <div class="section-tabs">
-  <button class="section-tab active" id="tab-network" onclick="switchTab('network')">Feltsense Network</button>
-  <button class="section-tab" id="tab-hub" onclick="switchTab('hub')">Feltsense VC Content Hub</button>
+  <button class="section-tab active" id="tab-hub" onclick="switchTab('hub')">Feltsense VC Content Hub</button>
+  <button class="section-tab" id="tab-network" onclick="switchTab('network')">Feltsense Network</button>
   <button class="section-tab coming-soon" disabled>Feltsense Talent Tool <span class="soon-pill">Coming Soon</span></button>
 </div>
 
 <!-- ── Filter bar ─────────────────────────────────────────── -->
-<div class="filter-bar">
+<div class="filter-bar" style="display:none;">
   <input type="text" id="search" placeholder="Search by name or firm…" oninput="filterCards()">
   <div class="filter-sep"></div>
   <button class="filter-btn active" onclick="setFilter('all', this)">All</button>
@@ -422,7 +422,7 @@
 </div>
 
 <!-- ── Content layout (3-col + sidebar) ──────────────────── -->
-<div class="content-layout">
+<div class="content-layout" style="display:none;">
 
 {% macro vc_card(vc) %}
 <a class="card" href="/vc/{{ vc.slug }}"
@@ -569,7 +569,7 @@
 </div><!-- end .content-layout -->
 
 <!-- ── VC Content Hub panel ───────────────────────────────── -->
-<div id="hub-panel" style="display:none; padding: 32px;">
+<div id="hub-panel" style="display:block; padding: 32px;">
   <div style="margin-bottom: 20px;">
     <h2 style="font-size:15px; font-weight:700; color:#1C1917; margin-bottom:4px;">Feltsense VC Content Hub</h2>
     <p style="font-size:12px; color:#A8A29E;">VC-facing copy — posts and replies, no internal notes.</p>
@@ -899,11 +899,6 @@ async function sendBulkEmails() {
   }, 3000);
 }
 
-// Auto-restore hub tab if returning from hub profile
-if (new URLSearchParams(location.search).get('tab') === 'hub') {
-  document.addEventListener('DOMContentLoaded', () => switchTab('hub'));
-}
-
 function switchTab(tab) {
   const networkContent = document.querySelector('.filter-bar');
   const contentLayout  = document.querySelector('.content-layout');
@@ -911,19 +906,24 @@ function switchTab(tab) {
   const tabNetwork     = document.getElementById('tab-network');
   const tabHub         = document.getElementById('tab-hub');
 
-  if (tab === 'hub') {
+  if (tab === 'network') {
+    networkContent.style.display = '';
+    contentLayout.style.display  = '';
+    hubPanel.style.display       = 'none';
+    tabHub.classList.remove('active');
+    tabNetwork.classList.add('active');
+  } else {
     networkContent.style.display = 'none';
     contentLayout.style.display  = 'none';
     hubPanel.style.display       = 'block';
     tabNetwork.classList.remove('active');
     tabHub.classList.add('active');
-  } else {
-    networkContent.style.display = '';
-    contentLayout.style.display  = '';
-    hubPanel.style.display       = 'none';
-    tabNetwork.classList.add('active');
-    tabHub.classList.remove('active');
   }
+}
+
+// If returning from a network profile, restore network tab
+if (new URLSearchParams(location.search).get('tab') === 'network') {
+  document.addEventListener('DOMContentLoaded', () => switchTab('network'));
 }
 </script>
 
