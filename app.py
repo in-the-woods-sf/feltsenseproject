@@ -198,10 +198,13 @@ def load_copy(slug: str, campaign: str = "march") -> Optional[dict]:
     x_count_m = re.search(r'> X/Twitter.*?\((\d+) posts\)', raw)
     li_count_m = re.search(r'> LinkedIn.*?\((\d+) posts\)', raw)
 
+    x_post = x_match.group(1).strip() if x_match else ""
+    linkedin_post = li_match.group(1).strip() if li_match else ""
+
     return {
         "post_summary": extract("📋 Sculpture Summary"),
-        "x_post": x_match.group(1).strip() if x_match else "",
-        "linkedin_post": li_match.group(1).strip() if li_match else "",
+        "x_post": x_post,
+        "linkedin_post": linkedin_post,
         "comment": their_comment,
         "our_comment": extract("💬 Feltsense Comment"),
         "reply_casual": extract_reply("A — Casual"),
@@ -209,7 +212,7 @@ def load_copy(slug: str, campaign: str = "march") -> Optional[dict]:
         "reply_tease": extract_reply("C — Tease"),
         "voice_notes": "",
         "insufficient_data": "⚠️" in raw,
-        "generated": True,
+        "generated": bool(x_post or linkedin_post),
         "x_scraped": int(x_count_m.group(1)) if x_count_m else None,
         "li_scraped": int(li_count_m.group(1)) if li_count_m else None,
     }

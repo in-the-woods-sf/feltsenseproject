@@ -246,7 +246,7 @@
       <div class="ct-campaign-head">
         <div class="c-label">{{ c.label }}</div>
         <div class="c-status">
-          {% if copies[c.id] %}
+          {% if copies[c.id] and copies[c.id].generated %}
             <span class="c-badge-done">✓ Generated</span>
             {% if copies[c.id].insufficient_data %}<span style="font-size:10px;color:#f59e0b">⚠️ limited data</span>{% endif %}
           {% else %}
