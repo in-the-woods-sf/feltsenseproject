@@ -50,6 +50,8 @@ ROLE_TYPES = [
     {"value": "vc",                  "label": "VC"},
     {"value": "feltsense_teammate",  "label": "Feltsense Teammate"},
     {"value": "friend",              "label": "Friend of Feltsense"},
+    {"value": "mentor_advisor",      "label": "Mentor / Advisor"},
+    {"value": "investor_update",     "label": "Prev. Investor Update List"},
 ]
 
 POC_OPTIONS = ["", "Marik", "Matt"]
@@ -181,6 +183,10 @@ def load_copy(slug: str, campaign: str = "march") -> Optional[dict]:
         or extract("💬 Comment")
     )
 
+    # Parse scrape counts from metadata lines if present
+    x_count_m = re.search(r'> X/Twitter.*?\((\d+) posts\)', raw)
+    li_count_m = re.search(r'> LinkedIn.*?\((\d+) posts\)', raw)
+
     return {
         "post_summary": extract("📋 Sculpture Summary"),
         "x_post": x_match.group(1).strip() if x_match else "",
@@ -193,6 +199,8 @@ def load_copy(slug: str, campaign: str = "march") -> Optional[dict]:
         "voice_notes": "",
         "insufficient_data": "⚠️" in raw,
         "generated": True,
+        "x_scraped": int(x_count_m.group(1)) if x_count_m else None,
+        "li_scraped": int(li_count_m.group(1)) if li_count_m else None,
     }
 
 
@@ -354,6 +362,13 @@ def vc_profile(slug):
     vc["approved"] = entry.get("approved", False) if isinstance(entry, dict) else False
     vc["poc"] = entry.get("poc", "") if isinstance(entry, dict) else ""
     copies = {c["id"]: load_copy(slug, c["id"]) for c in CAMPAIGNS}
+    # Grab scrape counts from the first available campaign file
+    for c in CAMPAIGNS:
+        cp = copies.get(c["id"])
+        if cp and (cp.get("x_scraped") is not None or cp.get("li_scraped") is not None):
+            vc["x_scraped"] = cp.get("x_scraped")
+            vc["li_scraped"] = cp.get("li_scraped")
+            break
     return render_template("vc.html", vc=vc, copies=copies, campaigns=CAMPAIGNS,
                            copy_fields=COPY_FIELDS, partner_statuses=PARTNER_STATUSES,
                            engagement_months=ENGAGEMENT_MONTHS, role_types=ROLE_TYPES)

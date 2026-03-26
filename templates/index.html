@@ -6,7 +6,7 @@
   <title>FeltBook</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #0a0a0a; color: #e8e8e8; min-height: 100vh; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #F0EDE6; color: #1C1917; min-height: 100vh; }
 
     /* ── Hero ───────────────────────────────────────────── */
     .hero {
@@ -16,10 +16,10 @@
       align-items: center;
       padding: 36px 6vw 52px;
       background:
-        radial-gradient(ellipse at 10% 95%, rgba(249, 112, 80, 0.70) 0%, transparent 50%),
-        radial-gradient(ellipse at 88% 8%,  rgba(168, 85, 247, 0.65) 0%, transparent 50%),
-        radial-gradient(ellipse at 50% 55%, rgba(232, 121, 177, 0.30) 0%, transparent 58%),
-        #d4cfe0;
+        radial-gradient(ellipse at 10% 95%, rgba(249, 112, 80, 0.45) 0%, transparent 50%),
+        radial-gradient(ellipse at 88% 8%,  rgba(168, 85, 247, 0.38) 0%, transparent 50%),
+        radial-gradient(ellipse at 50% 55%, rgba(232, 121, 177, 0.20) 0%, transparent 58%),
+        #E8E3D5;
       overflow: hidden;
     }
 
@@ -28,7 +28,7 @@
       position: absolute;
       bottom: 0; left: 0; right: 0;
       height: 100px;
-      background: linear-gradient(to bottom, transparent, #0a0a0a);
+      background: linear-gradient(to bottom, transparent, #F0EDE6);
       pointer-events: none;
     }
 
@@ -70,7 +70,7 @@
       margin-top: 16px;
       font-size: clamp(13px, 1.3vw, 16px);
       font-weight: 500;
-      color: #333;
+      color: #44403C;
       max-width: 420px;
       line-height: 1.6;
     }
@@ -86,17 +86,15 @@
     }
 
     /* ── Sidebar ─────────────────────────────────────── */
-    /* sidebar-col fills full column height with the gradient;
-       the aside inside is sticky so the cards follow scroll */
     .sidebar-col {
       width: 264px;
       flex-shrink: 0;
-      border-left: 1px solid rgba(0,0,0,0.18);
+      border-left: 1px solid #E2DDD6;
       background:
-        radial-gradient(ellipse at 15% 10%,  rgba(249, 112, 80, 0.28) 0%, transparent 55%),
-        radial-gradient(ellipse at 90% 80%,  rgba(168, 85, 247, 0.22) 0%, transparent 55%),
-        radial-gradient(ellipse at 50% 50%,  rgba(232, 121, 177, 0.14) 0%, transparent 60%),
-        #dbd7e8;
+        radial-gradient(ellipse at 15% 10%,  rgba(249, 112, 80, 0.18) 0%, transparent 55%),
+        radial-gradient(ellipse at 90% 80%,  rgba(168, 85, 247, 0.14) 0%, transparent 55%),
+        radial-gradient(ellipse at 50% 50%,  rgba(232, 121, 177, 0.10) 0%, transparent 60%),
+        #EDE9E0;
     }
     .sidebar {
       padding: 20px 16px;
@@ -113,14 +111,14 @@
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.8px;
-      color: rgba(0,0,0,0.35);
+      color: rgba(0,0,0,0.40);
       margin-bottom: 2px;
     }
 
     /* Stat card */
     .stat-card {
-      background: rgba(255,255,255,0.45);
-      border: 1px solid rgba(0,0,0,0.08);
+      background: rgba(255,255,255,0.70);
+      border: 1px solid rgba(0,0,0,0.07);
       border-radius: 12px;
       padding: 18px 20px;
       display: flex;
@@ -132,13 +130,13 @@
       font-size: 38px;
       font-weight: 800;
       letter-spacing: -2px;
-      color: #111;
+      color: #1C1917;
       line-height: 1;
     }
     .stat-label {
       font-size: 12px;
       font-weight: 600;
-      color: rgba(0,0,0,0.5);
+      color: rgba(0,0,0,0.50);
       line-height: 1.4;
     }
     .stat-sub {
@@ -149,8 +147,8 @@
 
     /* Quote carousel */
     .quote-card {
-      background: rgba(255,255,255,0.40);
-      border: 1px solid rgba(0,0,0,0.07);
+      background: rgba(255,255,255,0.60);
+      border: 1px solid rgba(0,0,0,0.06);
       border-radius: 12px;
       padding: 18px 20px 14px;
       display: flex;
@@ -185,17 +183,14 @@
       text-transform: uppercase;
       letter-spacing: 0.4px;
     }
-    .quote-dots {
-      display: flex;
-      gap: 5px;
-    }
+    .quote-dots { display: flex; gap: 5px; }
     .quote-dot {
       width: 5px; height: 5px;
       border-radius: 50%;
-      background: rgba(0,0,0,0.18);
+      background: rgba(0,0,0,0.15);
       transition: background 0.3s;
     }
-    .quote-dot.active { background: rgba(0,0,0,0.45); }
+    .quote-dot.active { background: rgba(0,0,0,0.40); }
     .quote-label {
       font-size: 10px;
       font-weight: 700;
@@ -205,7 +200,7 @@
       margin-bottom: 8px;
     }
 
-    .progress-bar { height: 2px; background: #181818; }
+    .progress-bar { height: 2px; background: #E2DDD6; }
     .progress-fill { height: 100%; background: linear-gradient(90deg, #f97060, #a855f7); transition: width 0.4s ease; }
 
     /* ── Section tabs ───────────────────────────────────── */
@@ -213,20 +208,20 @@
       padding: 20px 32px 0;
       display: flex;
       gap: 10px;
-      background: #0a0a0a;
-      border-bottom: 1px solid #181818;
+      background: #F0EDE6;
+      border-bottom: 1px solid #E2DDD6;
     }
     .section-tab {
       padding: 11px 22px;
       border-radius: 8px 8px 0 0;
-      border: 1px solid #222;
+      border: 1px solid #E2DDD6;
       border-bottom: none;
       font-size: 13px;
       font-weight: 600;
       cursor: pointer;
       font-family: inherit;
-      background: #111;
-      color: #888;
+      background: #EAE6DF;
+      color: #A8A29E;
       transition: all 0.15s;
       display: flex;
       align-items: center;
@@ -235,68 +230,70 @@
       bottom: -1px;
     }
     .section-tab.active {
-      background: #0a0a0a;
-      color: #e8e8e8;
-      border-color: #2a2a2a;
-      border-bottom-color: #0a0a0a;
+      background: #FFFFFF;
+      color: #1C1917;
+      border-color: #E2DDD6;
+      border-bottom-color: #FFFFFF;
     }
-    .section-tab.coming-soon {
-      cursor: default;
-      opacity: 0.45;
-    }
+    .section-tab.coming-soon { cursor: default; opacity: 0.50; }
     .soon-pill {
       font-size: 10px;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.5px;
-      background: #1e1630;
-      color: #a78bfa;
+      background: #EEF2FF;
+      color: #6366F1;
       padding: 2px 7px;
       border-radius: 10px;
     }
 
     /* ── Filter bar ─────────────────────────────────────── */
     .filter-bar {
-      padding: 16px 32px;
+      padding: 14px 32px;
       display: flex;
       gap: 8px;
       align-items: center;
       flex-wrap: wrap;
-      border-bottom: 1px solid #181818;
-      background: #0a0a0a;
+      border-bottom: 1px solid #E2DDD6;
+      background: #FFFFFF;
       position: sticky;
       top: 0;
       z-index: 10;
     }
     .filter-bar input {
-      background: #131313;
-      border: 1px solid #242424;
-      color: #e8e8e8;
+      background: #F7F4EF;
+      border: 1px solid #E2DDD6;
+      color: #1C1917;
       padding: 7px 12px;
       border-radius: 6px;
       font-size: 13px;
       width: 200px;
       outline: none;
     }
-    .filter-bar input:focus { border-color: #a855f7; }
-    .filter-sep { width: 1px; height: 20px; background: #242424; margin: 0 4px; }
-    .filter-btn { background: none; border: 1px solid #242424; color: #666; padding: 6px 12px; border-radius: 6px; font-size: 12px; cursor: pointer; white-space: nowrap; transition: all 0.12s; }
-    .filter-btn:hover { border-color: #444; color: #aaa; }
-    .filter-btn.active { border-color: #7c6ff7; color: #7c6ff7; background: #1a1830; }
-    .filter-month { background: #131313; border: 1px solid #242424; color: #666; padding: 6px 10px; border-radius: 6px; font-size: 12px; outline: none; cursor: pointer; font-family: inherit; }
-    .filter-month.active { border-color: #6ee7b7; color: #6ee7b7; background: #0a1e18; }
+    .filter-bar input::placeholder { color: #A8A29E; }
+    .filter-bar input:focus { border-color: #C5BFB8; background: #FFFFFF; }
+    .filter-sep { width: 1px; height: 20px; background: #E2DDD6; margin: 0 4px; }
+    .filter-btn { background: none; border: 1px solid #E2DDD6; color: #78716C; padding: 6px 12px; border-radius: 6px; font-size: 12px; cursor: pointer; white-space: nowrap; transition: all 0.12s; }
+    .filter-btn:hover { border-color: #C5BFB8; color: #1C1917; }
+    .filter-btn.active { border-color: #1C1917; color: #1C1917; background: #F7F4EF; font-weight: 600; }
+    .filter-month { background: #F7F4EF; border: 1px solid #E2DDD6; color: #78716C; padding: 6px 10px; border-radius: 6px; font-size: 12px; outline: none; cursor: pointer; font-family: inherit; }
+    .filter-month.active { border-color: #059669; color: #059669; background: #ECFDF5; }
 
     /* ── Three-column layout ────────────────────────────── */
     .three-col-layout { display: flex; gap: 0; flex: 1; min-width: 0; }
-    .col-section { flex: 1; min-width: 0; border-right: 1px solid #181818; display: flex; flex-direction: column; }
+    .col-section { flex: 1; min-width: 0; border-right: 1px solid #E2DDD6; display: flex; flex-direction: column; transition: opacity 0.15s; }
     .col-section:last-child { border-right: none; }
-    .col-header { padding: 12px 20px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: #444; border-bottom: 2px solid #181818; background: #080808; position: sticky; top: 57px; z-index: 5; display: flex; align-items: center; justify-content: space-between; }
-    .col-header .col-count { font-size: 10px; font-weight: 600; color: #333; background: #141414; padding: 2px 7px; border-radius: 10px; text-transform: none; letter-spacing: 0; }
+    .col-section.drag-over { background: #F7F4EF; outline: 2px dashed #C5BFB8; outline-offset: -2px; }
+    .col-section.dragging { opacity: 0.4; }
+    .col-header { padding: 12px 20px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: #A8A29E; border-bottom: 1px solid #E2DDD6; background: #F7F4EF; position: sticky; top: 57px; z-index: 5; display: flex; align-items: center; justify-content: space-between; cursor: grab; user-select: none; }
+    .col-header:active { cursor: grabbing; }
+    .col-drag-handle { color: #D5D0C8; font-size: 13px; margin-right: 6px; flex-shrink: 0; }
+    .col-header .col-count { font-size: 10px; font-weight: 600; color: #A8A29E; background: #EAE6DF; padding: 2px 7px; border-radius: 10px; text-transform: none; letter-spacing: 0; }
     .col-cards { flex: 1; }
-    .col-empty { padding: 32px 20px; font-size: 12px; color: #333; text-align: center; }
+    .col-empty { padding: 32px 20px; font-size: 12px; color: #C5BFB8; text-align: center; }
 
     .card {
-      background: #0a0a0a;
+      background: #FFFFFF;
       padding: 20px 24px;
       cursor: pointer;
       text-decoration: none;
@@ -304,52 +301,55 @@
       display: block;
       transition: background 0.15s;
       position: relative;
+      border-bottom: 1px solid #F0EDE6;
     }
-    .card:hover { background: #101010; }
-    .card .name { font-size: 15px; font-weight: 500; margin-bottom: 3px; }
-    .card .firm { font-size: 12px; color: #444; margin-bottom: 12px; }
+    .card:hover { background: #FDFCFA; }
+    .card .name { font-size: 15px; font-weight: 500; margin-bottom: 3px; color: #1C1917; }
+    .card .firm { font-size: 12px; color: #A8A29E; margin-bottom: 12px; }
     .card .badges { display: flex; gap: 6px; flex-wrap: wrap; }
 
     .badge { font-size: 11px; padding: 2px 8px; border-radius: 20px; font-weight: 500; }
-    .badge.done     { background: #0f2218; color: #4ade80; }
-    .badge.pending  { background: #141414; color: #555; }
-    .badge.no-x     { background: #2e1a1a; color: #f87171; }
-    .badge.linkedin { background: #1a2a3a; color: #60a5fa; cursor: pointer; }
-    .badge.x-handle { background: #1a1a1a; color: #e5e5e5; cursor: pointer; }
-    .badge.month    { background: #0a1e18; color: #6ee7b7; }
-    .badge.set-status { background: #141414; color: #444; cursor: pointer; border: 1px dashed #222; }
-    .badge.set-status:hover { color: #888; border-color: #444; }
-    .badge.approved { background: #0a1e10; color: #4ade80; }
-    .btn-approve { font-size: 11px; padding: 2px 8px; border-radius: 4px; border: 1px solid #2a2a2a; background: none; cursor: pointer; font-family: inherit; color: #555; transition: all 0.15s; white-space: nowrap; }
-    .btn-approve:hover { border-color: #4ade80; color: #4ade80; }
-    .btn-approve.is-approved { border-color: #4ade80; color: #4ade80; background: #0a1e10; }
-    .badge.poc      { background: #1e1628; color: #c084fc; }
+    .badge.done     { background: #DCFCE7; color: #166534; }
+    .badge.pending  { background: #F5F3EF; color: #A8A29E; }
+    .badge.no-x     { background: #FEF2F2; color: #DC2626; }
+    .badge.linkedin { background: #EEF2FF; color: #4F46E5; cursor: pointer; }
+    .badge.x-handle { background: #F5F3EF; color: #1C1917; cursor: pointer; }
+    .badge.month    { background: #ECFDF5; color: #059669; }
+    .badge.set-status { background: #F7F4EF; color: #A8A29E; cursor: pointer; border: 1px dashed #E2DDD6; }
+    .badge.set-status:hover { color: #78716C; border-color: #C5BFB8; }
+    .badge.approved { background: #DCFCE7; color: #166534; }
+    .btn-approve { font-size: 11px; padding: 2px 8px; border-radius: 4px; border: 1px solid #E2DDD6; background: none; cursor: pointer; font-family: inherit; color: #A8A29E; transition: all 0.15s; white-space: nowrap; }
+    .btn-approve:hover { border-color: #86EFAC; color: #166534; background: #F0FDF4; }
+    .btn-approve.is-approved { border-color: #86EFAC; color: #166534; background: #DCFCE7; }
+    .badge.poc      { background: #FAF5FF; color: #9333EA; }
 
-    .card-select { position: absolute; top: 10px; right: 10px; width: 16px; height: 16px; accent-color: #818cf8; cursor: pointer; display: none; }
+    .card-select { position: absolute; top: 10px; right: 10px; width: 16px; height: 16px; cursor: pointer; display: none; }
     .select-mode .card-select { display: block; }
     .select-mode .arrow { display: none; }
     .select-mode .card { padding-right: 36px; }
 
     .bulk-bar {
       position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);
-      background: #161616; border: 1px solid #2a2a2a; border-radius: 10px;
+      background: #FFFFFF; border: 1px solid #E2DDD6; border-radius: 10px;
       padding: 10px 16px; display: flex; align-items: center; gap: 12px;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.8); z-index: 100;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.12); z-index: 100;
       display: none;
     }
     .bulk-bar.visible { display: flex; }
-    .bulk-bar span { font-size: 13px; color: #888; }
-    .btn-bulk-send { background: #818cf8; color: white; border: none; padding: 8px 16px; border-radius: 6px; font-size: 13px; font-weight: 500; cursor: pointer; font-family: inherit; }
-    .btn-bulk-send:hover { background: #6c75e6; }
-    .btn-bulk-send:disabled { background: #2a2a2a; color: #555; cursor: not-allowed; }
-    .btn-cancel-select { background: none; border: 1px solid #333; color: #666; padding: 7px 12px; border-radius: 6px; font-size: 12px; cursor: pointer; font-family: inherit; }
-    .btn-cancel-select:hover { border-color: #555; color: #aaa; }
-    .badge.role-vc        { background: #131328; color: #818cf8; }
-    .badge.role-teammate  { background: #2a142a; color: #e879f9; }
-    .badge.role-friend    { background: #112218; color: #34d399; }
+    .bulk-bar span { font-size: 13px; color: #78716C; }
+    .btn-bulk-send { background: #1C1917; color: white; border: none; padding: 8px 16px; border-radius: 6px; font-size: 13px; font-weight: 500; cursor: pointer; font-family: inherit; }
+    .btn-bulk-send:hover { background: #292524; }
+    .btn-bulk-send:disabled { background: #E2DDD6; color: #A8A29E; cursor: not-allowed; }
+    .btn-cancel-select { background: none; border: 1px solid #E2DDD6; color: #78716C; padding: 7px 12px; border-radius: 6px; font-size: 12px; cursor: pointer; font-family: inherit; }
+    .btn-cancel-select:hover { border-color: #C5BFB8; color: #1C1917; }
+    .badge.role-vc        { background: #EEF2FF; color: #4F46E5; }
+    .badge.role-teammate  { background: #FDF4FF; color: #A21CAF; }
+    .badge.role-friend    { background: #F0FDF4; color: #16A34A; }
+    .badge.role-mentor    { background: #FFF7ED; color: #C2410C; }
+    .badge.role-investor  { background: #FFF8F0; color: #92400E; }
 
-    .card .arrow { position: absolute; right: 20px; top: 50%; transform: translateY(-50%); color: #282828; font-size: 18px; }
-    .card:hover .arrow { color: #555; }
+    .card .arrow { position: absolute; right: 20px; top: 50%; transform: translateY(-50%); color: #D5D0C8; font-size: 18px; }
+    .card:hover .arrow { color: #A8A29E; }
 
     .status-control { display: inline-block; }
 
@@ -357,25 +357,25 @@
     .status-menu {
       position: fixed;
       z-index: 1000;
-      background: #161616;
-      border: 1px solid #252525;
+      background: #FFFFFF;
+      border: 1px solid #E2DDD6;
       border-radius: 8px;
       padding: 6px;
       min-width: 210px;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.8);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.12);
       display: none;
     }
-    .status-menu .menu-label  { font-size: 10px; font-weight: 600; color: #444; text-transform: uppercase; letter-spacing: 0.5px; padding: 4px 8px 6px; }
-    .status-menu .menu-opt    { padding: 7px 10px; border-radius: 5px; font-size: 12px; cursor: pointer; color: #888; }
-    .status-menu .menu-opt:hover  { background: #202020; color: #e8e8e8; }
-    .status-menu .menu-opt.selected { color: #e8e8e8; background: #202020; }
-    .status-menu .menu-divider { height: 1px; background: #222; margin: 6px 0; }
-    .status-menu .menu-month  { width: 100%; background: #0f0f0f; border: 1px solid #252525; color: #888; border-radius: 5px; font-size: 12px; padding: 7px 8px; outline: none; cursor: pointer; font-family: inherit; }
-    .status-menu .menu-month:focus { border-color: #6ee7b7; color: #e8e8e8; }
-    .status-menu .menu-role   { width: 100%; background: #0f0f0f; border: 1px solid #252525; color: #888; border-radius: 5px; font-size: 12px; padding: 7px 8px; outline: none; cursor: pointer; font-family: inherit; }
-    .status-menu .menu-role:focus  { border-color: #818cf8; color: #e8e8e8; }
+    .status-menu .menu-label  { font-size: 10px; font-weight: 600; color: #A8A29E; text-transform: uppercase; letter-spacing: 0.5px; padding: 4px 8px 6px; }
+    .status-menu .menu-opt    { padding: 7px 10px; border-radius: 5px; font-size: 12px; cursor: pointer; color: #78716C; }
+    .status-menu .menu-opt:hover  { background: #F7F4EF; color: #1C1917; }
+    .status-menu .menu-opt.selected { color: #1C1917; background: #F7F4EF; }
+    .status-menu .menu-divider { height: 1px; background: #E2DDD6; margin: 6px 0; }
+    .status-menu .menu-month  { width: 100%; background: #F7F4EF; border: 1px solid #E2DDD6; color: #78716C; border-radius: 5px; font-size: 12px; padding: 7px 8px; outline: none; cursor: pointer; font-family: inherit; }
+    .status-menu .menu-month:focus { border-color: #059669; color: #1C1917; }
+    .status-menu .menu-role   { width: 100%; background: #F7F4EF; border: 1px solid #E2DDD6; color: #78716C; border-radius: 5px; font-size: 12px; padding: 7px 8px; outline: none; cursor: pointer; font-family: inherit; }
+    .status-menu .menu-role:focus  { border-color: #4F46E5; color: #1C1917; }
 
-    .empty { padding: 60px 40px; text-align: center; color: #444; }
+    .empty { padding: 60px 40px; text-align: center; color: #C5BFB8; }
   </style>
 </head>
 <body>
@@ -450,7 +450,7 @@
     {% endif %}
     <button class="btn-approve {{ 'is-approved' if vc.approved else '' }}"
       onclick="event.preventDefault(); event.stopPropagation(); toggleApproved('{{ vc.slug }}', this)">
-      {{ '✓ Marik Approved' if vc.approved else '○ Mark Approved' }}
+      {{ '✓ Marik Approved' if vc.approved else '○ Marik Approved?' }}
     </button>
     {% if vc.poc %}
       <span class="badge poc">POC: {{ vc.poc }}</span>
@@ -468,18 +468,21 @@
 </a>
 {% endmacro %}
 
-{% set vcs_col    = vcs | selectattr('role', 'equalto', 'vc') | list %}
-{% set team_col   = vcs | selectattr('role', 'equalto', 'feltsense_teammate') | list %}
-{% set friends_col = vcs | selectattr('role', 'equalto', 'friend') | list %}
-{% set unassigned = vcs | rejectattr('role') | list %}
-{% set vcs_col    = vcs_col + unassigned %}
+{% set vcs_col      = vcs | selectattr('role', 'equalto', 'vc') | list %}
+{% set team_col     = vcs | selectattr('role', 'equalto', 'feltsense_teammate') | list %}
+{% set friends_col  = vcs | selectattr('role', 'equalto', 'friend') | list %}
+{% set mentors_col  = vcs | selectattr('role', 'equalto', 'mentor_advisor') | list %}
+{% set investor_col  = vcs | selectattr('role', 'equalto', 'investor_update') | list %}
+{% set unassigned   = vcs | rejectattr('role') | list %}
+{% set vcs_col      = vcs_col + unassigned %}
 
 <div class="grid-wrap">
 <div class="three-col-layout" id="grid">
 
   <!-- VCs -->
-  <div class="col-section">
+  <div class="col-section" draggable="true" data-col="vc">
     <div class="col-header">
+      <span class="col-drag-handle">⠿</span>
       VCs
       <span class="col-count">{{ vcs_col | length }}</span>
     </div>
@@ -490,8 +493,9 @@
   </div>
 
   <!-- Feltsense Team -->
-  <div class="col-section">
+  <div class="col-section" draggable="true" data-col="team">
     <div class="col-header">
+      <span class="col-drag-handle">⠿</span>
       Feltsense Team
       <span class="col-count">{{ team_col | length }}</span>
     </div>
@@ -502,14 +506,41 @@
   </div>
 
   <!-- Friends of Feltsense -->
-  <div class="col-section">
+  <div class="col-section" draggable="true" data-col="friends">
     <div class="col-header">
+      <span class="col-drag-handle">⠿</span>
       Friends of Feltsense
       <span class="col-count">{{ friends_col | length }}</span>
     </div>
     <div class="col-cards" id="col-friends">
       {% for vc in friends_col %}{{ vc_card(vc) }}{% endfor %}
       {% if not friends_col %}<div class="col-empty">No friends yet</div>{% endif %}
+    </div>
+  </div>
+
+  <!-- Mentors / Advisors -->
+  <div class="col-section" draggable="true" data-col="mentors">
+    <div class="col-header">
+      <span class="col-drag-handle">⠿</span>
+      Mentors / Advisors
+      <span class="col-count">{{ mentors_col | length }}</span>
+    </div>
+    <div class="col-cards" id="col-mentors">
+      {% for vc in mentors_col %}{{ vc_card(vc) }}{% endfor %}
+      {% if not mentors_col %}<div class="col-empty">No mentors yet</div>{% endif %}
+    </div>
+  </div>
+
+  <!-- Previous Investor Update List -->
+  <div class="col-section" draggable="true" data-col="investor">
+    <div class="col-header">
+      <span class="col-drag-handle">⠿</span>
+      Prev. Investor Update
+      <span class="col-count">{{ investor_col | length }}</span>
+    </div>
+    <div class="col-cards" id="col-investor">
+      {% for vc in investor_col %}{{ vc_card(vc) }}{% endfor %}
+      {% if not investor_col %}<div class="col-empty">No contacts yet</div>{% endif %}
     </div>
   </div>
 
@@ -520,15 +551,6 @@
 <div class="sidebar-col">
 <aside class="sidebar">
   <div class="sidebar-label">✦ Community</div>
-
-  <!-- Posts generated count -->
-  <div class="stat-card">
-    <div class="stat-number">{{ generated }}</div>
-    <div>
-      <div class="stat-label">Posts Generated</div>
-      <div class="stat-sub">March · YC Demo Day</div>
-    </div>
-  </div>
 
   <!-- @feltsensefund mentions last 7 days -->
   <div class="stat-card">
@@ -704,7 +726,7 @@ async function toggleApproved(slug, btn) {
   const data = await res.json();
   if (!data.ok) return;
   btn.classList.toggle('is-approved', newVal);
-  btn.textContent = newVal ? '✓ Marik Approved' : '○ Mark Approved';
+  btn.textContent = newVal ? '✓ Marik Approved' : '○ Marik Approved?';
 }
 
 function updateCardMonthBadge(card, month) {
@@ -775,6 +797,76 @@ function updateBulkBar() {
 document.addEventListener('change', e => {
   if (e.target.classList.contains('card-select')) updateBulkBar();
 });
+
+// ── Column drag-and-drop reordering ───────────────────────
+(function initColDrag() {
+  const grid = document.getElementById('grid');
+  let dragged = null;
+
+  function saveColOrder() {
+    const order = Array.from(grid.querySelectorAll('.col-section')).map(c => c.dataset.col);
+    localStorage.setItem('feltbook_col_order', JSON.stringify(order));
+  }
+
+  function restoreColOrder() {
+    const saved = localStorage.getItem('feltbook_col_order');
+    if (!saved) return;
+    try {
+      const order = JSON.parse(saved);
+      order.forEach(colId => {
+        const col = grid.querySelector(`.col-section[data-col="${colId}"]`);
+        if (col) grid.appendChild(col);
+      });
+    } catch(e) {}
+  }
+
+  restoreColOrder();
+
+  grid.addEventListener('dragstart', e => {
+    const col = e.target.closest('.col-section');
+    if (!col) return;
+    dragged = col;
+    col.classList.add('dragging');
+    e.dataTransfer.effectAllowed = 'move';
+  });
+
+  grid.addEventListener('dragend', e => {
+    const col = e.target.closest('.col-section');
+    if (col) col.classList.remove('dragging');
+    grid.querySelectorAll('.col-section').forEach(c => c.classList.remove('drag-over'));
+    dragged = null;
+    saveColOrder();
+  });
+
+  grid.addEventListener('dragover', e => {
+    e.preventDefault();
+    e.dataTransfer.dropEffect = 'move';
+    const target = e.target.closest('.col-section');
+    if (!target || target === dragged) return;
+    grid.querySelectorAll('.col-section').forEach(c => c.classList.remove('drag-over'));
+    target.classList.add('drag-over');
+  });
+
+  grid.addEventListener('dragleave', e => {
+    const target = e.target.closest('.col-section');
+    if (target) target.classList.remove('drag-over');
+  });
+
+  grid.addEventListener('drop', e => {
+    e.preventDefault();
+    const target = e.target.closest('.col-section');
+    if (!target || target === dragged || !dragged) return;
+    target.classList.remove('drag-over');
+    // Insert before or after depending on cursor position
+    const rect = target.getBoundingClientRect();
+    const mid  = rect.left + rect.width / 2;
+    if (e.clientX < mid) {
+      grid.insertBefore(dragged, target);
+    } else {
+      grid.insertBefore(dragged, target.nextSibling);
+    }
+  });
+})();
 
 async function sendBulkEmails() {
   const checked = document.querySelectorAll('.card-select:checked');
