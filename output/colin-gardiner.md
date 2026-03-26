@@ -10,7 +10,7 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-Just rebuilt the entire YC W26 batch with AI agents. Real products live and working right now. Speed to market isn't the moat anymore - so what is?
+@feltsensefund just rebuilt the entire YC W26 batch with AI agents. Real products live and working right now. Speed to market isn't the moat anymore - so what is?
 
 **LinkedIn:**
 @feltsensefund stress-tested every startup in the YC W26 batch. AI founders. Replicated the core product. Days, not months. real applications are live - go test some of the builds. Full PDF covers the whole batch.

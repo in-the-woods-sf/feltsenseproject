@@ -12,7 +12,7 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-We stress-tested every YC W26 startup for defensibility - and the results are brutal. Real applications are live to test. If an agent can rebuild it that fast, what was the moat? Full breakdown in the PDF. @feltsensefund
+@feltsensefund stress-tested every YC W26 startup for defensibility - and the results are brutal. Real applications are live to test. If an agent can rebuild it that fast, what was the moat? Full breakdown in the PDF.
 
 **LinkedIn:**
 Here's the rewritten post:

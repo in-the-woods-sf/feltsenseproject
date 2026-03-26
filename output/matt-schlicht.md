@@ -10,7 +10,7 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-Just stress-tested every YC W26 startup for defensibility with AI agents-and it's eye-opening. Real products built in days. If speed was your moat, what is it now?
+@feltsensefund just stress-tested every YC W26 startup for defensibility with AI agents-and it's eye-opening. Real products built in days. If speed was your moat, what is it now?
 
 **LinkedIn:**
 Here's what happens when you let AI agents loose on an entire YC batch: Feltsense just stress-tested all of W26's startups for defensibility, and the results are eye-opening. The public launch includes real, working applications built in days - go test some of them yourself. The full report covers the whole cohort.

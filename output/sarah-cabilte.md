@@ -12,7 +12,7 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-Just stress-tested every YC W26 startup for defensibility - and the results are sobering. Real apps are live, go try them. If an AI agent replicates your product in weeks, do you actually have a moat?
+@feltsensefund just stress-tested every YC W26 startup for defensibility - and the results are sobering. Real apps are live, go try them. If an AI agent replicates your product in days, do you actually have a moat?
 
 **LinkedIn:**
 I just stress-tested 48 YC W26 startups for defensibility-and the results are brutal.

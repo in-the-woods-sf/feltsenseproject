@@ -12,7 +12,7 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-Just tested every YC W26 startup with AI founders-and the results are brutal. Real agents are live rebuilding these products in days. If your moat can't survive that, you need a new strategy. Full PDF breakdown inside. 🧵
+@feltsensefund just tested every YC W26 startup with AI founders-and the results are brutal. Real agents are live rebuilding these products in days. If your moat can't survive that, you need a new strategy. Full PDF breakdown inside. 🧵
 
 **LinkedIn:**
 What does defensibility even look like when an AI agent can replicate your core product in days?

@@ -12,7 +12,7 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-We stress-tested every YC W26 startup for defensibility. Real applications are live-go try them. If speed-to-market isn't a moat anymore, what are we actually pricing into early rounds?
+@feltsensefund stress-tested every YC W26 startup for defensibility. Real applications are live-go try them. If speed-to-market isn't a moat anymore, what are we actually pricing into early rounds?
 
 **LinkedIn:**
 What happens when you unleash AI agents on an entire YC batch?

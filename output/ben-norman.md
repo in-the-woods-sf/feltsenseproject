@@ -12,7 +12,7 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-Just stress-tested every YC W26 startup for defensibility. Real applications live today - go test the builds. The uncomfortable question: if an agent can replicate your startup that fast, what's actually protecting you?
+@feltsensefund just stress-tested every YC W26 startup for defensibility. Real applications live today - go test the builds. The uncomfortable question: if an agent can replicate your startup that fast, what's actually protecting you?
 
 **LinkedIn:**
 What happens when an AI agent can rebuild your startup in a weekend?
