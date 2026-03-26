@@ -1,6 +1,12 @@
 ## Jeff Bocan — Okapi VC
 
 
+### 📋 Sculpture Summary
+
+YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we release a full replicability report across all 198 companies in the YC W26 batch, highlighting 20 of the top builds. Followers can explore how replicable the latest batch is, company by company, and what it means for the future of defensibility in startups.
+
+---
+
 ### 📣 Post (X + LinkedIn)
 
 **X:**
