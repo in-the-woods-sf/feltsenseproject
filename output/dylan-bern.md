@@ -12,18 +12,12 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-Feltsense stress-tested every YC W26 startup for defensibility with AI. Real apps are live now. The question: if an agent rebuilds it that fast, what are we actually funding?
+Nobody wants to hear this, but if AI agents can rebuild your startup in hours, you're not building a company - you're building a weekend project. 🤖 @feltsensefund just proved this by replicating all 198 YC W26 startups. The implications for what we fund are brutal. 💀
 
 **LinkedIn:**
-Feltsense just stress-tested every startup in the entire YC W26 batch for defensibility using AI founders. The public launch includes real applications live with working products built in days - go test some of them out. The full PDF covers the whole batch.
+Feltsense just stress-tested every startup in the entire YC W26 batch for defensibility using AI founders. The public launch includes real applications live with working products built in days - go test some of them out.
 
-This is the kind of exercise that should make early-stage investors uncomfortable in a productive way. Speed to market used to be the moat. Now agents move faster than any founding team can. So what does defensibility actually look like when the cost of building drops to near zero?
-
-The startups that couldn't be replicated are telling us something worth paying attention to. The hardest markets to crack with AI weren't the most technically complex. They were the most socially complex. Industries full of politics, turf wars, broken trust, and bureaucratic nightmares that AI can't fix overnight.
-
-Turns out messy, dysfunctional markets might be the most defensible in the AI era. Companies that know how to navigate regulatory capture, entrenched interests, and human dysfunction have real moats. AI can build the product, but it can't play politics or earn trust from skeptical stakeholders.
-
-The future belongs to founders who thrive in the mess, not those who avoid it.
+The startups that couldn't be replicated are telling us something worth paying attention to. The hardest markets to crack with AI weren't the most technically complex - they were the most socially complex. Industries full of politics, turf wars, broken trust, and bureaucratic nightmares that AI can't fix overnight.
 
 Comment "Feltsense" to get the full W26 report.
 ---

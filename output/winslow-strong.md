@@ -10,14 +10,14 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-@feltsensefund stress-tested every YC W26 startup's defensibility with AI. Working products built in days. Real question: if an agent replicates your core offering that fast, what's your moat? Impressive work.
+Lots of noise about startup moats in the AI era. 🤖 @feltsensefund built working replicas of all 198 YC W26 startups. The results are tough and enlightening. 💡
 
 **LinkedIn:**
-Feltsense just did something worth paying attention to. They went through every startup in the entire YC W26 batch using AI founders, stress-testing each one for defensibility. real applications are live - go test some of the builds. The full PDF covers the whole batch.
 
-Speed-to-market used to be the moat. That assumption is getting tested in real time now. The startups that couldn't be replicated are the interesting ones.
 
-If an AI agent can rebuild your core product in days, what exactly are investors paying for?
+
+Speed-to-market used to be the moat. That assumption is getting tested in real time now. The startups that couldn't be replicated are truly the ones pushing the boundary
+
 
 ---
 

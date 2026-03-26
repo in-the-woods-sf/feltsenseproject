@@ -10,10 +10,10 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-@feltsensefund tested AI on every YC W26 startup-replicating their products in days. Real builds. Real questions: if speed-to-market isn't defensibility anymore, what is?
+The faster AI can clone your startup, the more defensible it should be. But speed of replication seems inversely correlated with barriers to entry. So what actually protects you? @feltsensefund built all 198 YC W26 startups to find out 👁️
 
 **LinkedIn:**
-been thinking about this one - @feltsense stress-tested every startup in the entire YC W26 batch using AI founders. replicated the core of what each company does. real applications live - test some of the builds launched as live products built in days - the full PDF covers the whole batch. as a seed investor this changes how I think about defensibility at the earliest stages. if an AI agent can rebuild what you're doing that fast - what exactly is the moat? not rhetorical - genuinely sorting through this.
+As a seed investor this changes how I think about defensibility at the earliest stages.
 
 ---
 

@@ -12,22 +12,14 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-Just stress-tested every YC W26 startup with AI founders-and the results are sobering. Real applications live now. If an agent can rebuild it in days, where's the actual moat? Full PDF breakdown of the entire batch inside.
+Before this analysis, I assumed YC founders had solid moats. After seeing @feltsensefund replicate all 198 W26 startups with AI agents, I'm questioning everything. Live apps prove most can be rebuilt in days. 🤖 The full breakdown PDF is brutal but necessary reading. 📊
 
 **LinkedIn:**
 What happens when AI agents try to steal your startup's entire product in 48 hours?
 
-The team at @feltsense just stress-tested this with 198 YC W26 companies. AI founders attempted to replicate each one live - and the results reveal something counterintuitive about defensibility in 2025.
+The team at @feltsense just stress-tested this with 198 YC W26 companies, and the results reveal something counterintuitive about defensibility in 2025. The startups that couldn't be replicated weren't the most technically sophisticated - they were the ones operating in messy, dysfunctional markets full of politics, broken trust, and bureaucratic nightmares.
 
-The startups that couldn't be replicated weren't the most technically sophisticated. They were the ones operating in messy, dysfunctional markets full of politics, broken trust, and bureaucratic nightmares.
-
-Speed used to be the moat. Build fast, raise faster. But when an AI agent can replicate core functionality in days, speed becomes table stakes. The real defensibility lies in markets that are socially complex, not technically complex.
-
-Healthcare procurement. Government contracts. Enterprise sales with 18-month cycles and relationship-dependent deals. These industries are full of human dynamics that AI can't navigate overnight - no matter how sophisticated the model.
-
-The companies that spent years learning to operate in regulated, relationship-heavy, politically charged markets? They have moats that go far beyond code.
-
-Maybe the most defensible businesses in the AI era aren't the ones with the cleanest go-to-market. They're the ones willing to get their hands dirty in markets everyone else avoids.
+When AI can replicate core functionality in days, the real defensibility lies in markets that are socially complex, not technically complex. Healthcare procurement, government contracts, enterprise sales with 18-month cycles - these industries are full of human dynamics that AI can't navigate overnight.
 
 Comment "Feltsense" to get the full W26 report.
 ---

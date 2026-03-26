@@ -12,20 +12,12 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-Feltsense went through every startup in the YC W26 batch and stress-tested each one for defensibility using AI. real applications are live today - go test some of the builds. If an agent can rebuild what you're building, what exactly is your investor paying for?
+Three things I learned from @feltsensefund's YC W26 replication report that changed how I invest: 198 startups. 198 AI rebuilds. Real working demos you can test today. The uncomfortable truth? 🤖 Most "defensible" businesses aren't. 📄 PDF link in their bio.
 
 **LinkedIn:**
-I just watched AI agents replicate entire startup ideas from the YC W26 batch in days. Not weeks. Days.
+I just watched AI agents replicate entire startup ideas from the YC W26 batch in days. @feltsense stress-tested the whole cohort for defensibility using AI founders, and you can test the actual products built in mere days.
 
-@feltsense stress-tested the whole cohort for defensibility using AI founders, and the public launch features real application replications live - you can test the builds with actual products built in mere days. The full report covers every company in the batch.
-
-This is the most honest mirror the startup ecosystem has right now. Speed used to be the moat. Now agents move faster than any founding team.
-
-But here's the surprising finding: the hardest markets to crack with AI aren't technically complex - they're socially complex. Industries full of politics, turf wars, broken trust, and bureaucracy create the strongest moats because AI can't fix broken human dynamics overnight.
-
-Companies that spent years navigating messy, regulated markets suddenly have real defensibility. The dysfunction everyone complained about? That's your moat in 2025.
-
-So what does defensibility actually mean now? It's not your tech stack. It's the relationships, trust, and institutional knowledge you've built in markets that resist automation.
+Here's the surprising finding: the hardest markets to crack with AI aren't technically complex, they're socially complex. Industries full of politics, turf wars, and broken trust create the strongest moats because AI can't fix broken human dynamics overnight. The dysfunction everyone complained about? That's your moat in 2025.
 
 Comment "Feltsense" to get the full W26 report.
 ---

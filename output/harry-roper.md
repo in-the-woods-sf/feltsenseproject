@@ -12,20 +12,10 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-@feltsensefund just tested every YC W26 startup for defensibility-here's what got me: real products are live and working. If an agent replicates your core in days, what's actually protecting you? Go see for yourself. 🔗
+This made me rethink how I evaluate AI startups. 🤖 @feltsensefund built working versions of all 198 YC W26 companies to test what actually creates defensibility when agents can copy your core product in days. The live demos are brutal and eye-opening. 👀 🔗
 
 **LinkedIn:**
-@feltsense just stress-tested every startup in the entire YC W26 batch by having AI replicate them. Here's what we found: the companies that couldn't be copied weren't the most technically sophisticated.
-
-They were the ones navigating messy, regulated, or politically charged markets.
-
-Speed-to-market used to be the moat. That assumption is getting tested in real time. But here's the plot twist: markets hardest to crack with AI aren't technically complex - they're socially complex.
-
-Industries full of bureaucracy, turf wars, and broken trust? Those are looking like the most defensible territories in the AI era. Years spent navigating regulatory mazes and building relationships through dysfunction suddenly look like real competitive advantages.
-
-If an AI agent can rebuild your product in days, what were you actually defending? Turns out, social complexity beats technical complexity for moats.
-
-Comment "Feltsense" to get the full W26 report.
+@feltsense just stress-tested every startup in the entire YC W26 batch by having AI replicate them. Here's what we found: the companies that couldn't be copied weren't the most technically sophisticated. They were the ones navigating messy, regulated, or politically charged markets. If an AI agent can rebuild your product in days, what were you actually defending? Turns out, social complexity beats technical complexity for moats. Comment "Feltsense" to get the full W26 report.
 ---
 
 ### 💬 Comment to drop on our post

@@ -10,20 +10,12 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-At Draper we talk a lot about backing irrational ideas. @feltsensefund just went through every startup in the YC W26 batch with AI founders and replicated them in days. If your moat disappears that fast, was it ever irrational enough? 👀
+In 12 months, every diligence process will include a replication test. @feltsensefund just ran it on the entire YC W26 batch - 198 startups replicated in days with working demos. The report is wild. 🤯 If AI can clone your idea that fast, maybe it wasn't defensible enough. 🚀
 
 **LinkedIn:**
-We at Draper always say we back rational founders building irrational ideas. That thesis just got pressure-tested in a way I didn't expect.
+We at Draper always say we back rational founders building irrational ideas. That thesis just got pressure-tested when @feltsense went through every startup in the entire YC W26 batch using AI, building live replications in days.
 
-@feltsense went through every startup in the entire YC W26 batch using AI. Built live replications in days. Real applications live - some of the builds are public, and the full PDF covers the whole batch.
-
-The startups that couldn't be replicated are the ones worth studying. Because defensibility used to mean speed. Now it has to mean something the agents can't touch.
-
-Here's what surprised me: the most defensible companies weren't the most technically complex ones. They were the ones navigating messy, dysfunctional markets full of politics, turf wars, and broken trust.
-
-AI can replicate features overnight. But it can't fix decades of broken human dynamics. Companies that spent years learning to navigate bureaucracy, regulation, and industry dysfunction have real moats that no amount of code can replicate.
-
-So what does a real moat look like in 2025? It might just be the markets everyone else thinks are too messy to touch.
+Here's what surprised me: the most defensible companies weren't the most technically complex ones. They were the ones navigating messy, dysfunctional markets full of politics, turf wars, and broken trust. AI can replicate features overnight, but it can't fix decades of broken human dynamics.
 
 Comment "Feltsense" to get the full W26 report.
 ---

@@ -12,18 +12,14 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-@feltsensefund just made AI the ultimate stress test for startup defensibility. They evaluated every YC W26 founder against it-and real applications are already live. Test them. Full PDF available. If an agent rebuilds your moat in days, was it ever there?
+Pitch decks show you the vision. @feltsensefund shows you whether that vision survives contact with AI. 🤖 They replicated all 198 YC W26 startups - applications are live, full report available. If AI agents can clone your business model overnight, your moat might be a mirage. 💭
 
 **LinkedIn:**
 I just watched Feltsense stress-test every startup in the YC W26 batch against AI - and the results are reshaping how I think about defensibility.
 
-They built live replications of 198 companies in days. The ones that survived? They weren't the most technically sophisticated. They were the ones operating in messy, dysfunctional markets that AI can't easily crack.
+They built live replications of 198 companies in days. The ones that survived weren't the most technically sophisticated - they were operating in messy, dysfunctional markets that AI can't easily crack.
 
-Turns out the startups hardest to replicate weren't defending against technical complexity - they were navigating social complexity. Politics. Broken trust. Bureaucracy. Turf wars that have existed for decades.
-
-AI agents can ship products faster than ever, but they can't fix human dysfunction overnight. The founders who spent years learning to operate in these messy environments have built something that's genuinely hard to replicate: institutional knowledge of how broken systems actually work.
-
-The full breakdown shows which W26 companies understood this and which missed it entirely.
+The startups hardest to replicate were navigating social complexity: politics, broken trust, bureaucracy, and turf wars that have existed for decades. AI agents can ship products faster than ever, but they can't fix human dysfunction overnight.
 
 Comment "Feltsense" to get the full W26 report.
 ---

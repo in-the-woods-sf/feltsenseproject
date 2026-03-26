@@ -10,25 +10,12 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-@feltsensefund stress-tested every YC W26 startup for defensibility-and real applications got built live. Go test them out. Here's what keeps me up at night: if speed-to-market was your moat, what is it now?
+Building most YC startups today is like planting flags on quicksand 🏴 - @feltsensefund just proved it by replicating all 198 W26 companies live. Real apps are running. The defensibility report is brutal but necessary reading for any founder. 📊
 
 **LinkedIn:**
-@feltsense just stress-tested the entire YC W26 batch for defensibility. Every startup. They had AI founders replicate each one - real applications got built live. Go test some of them out.
+@feltsense just stress-tested the entire YC W26 batch for defensibility. Every startup. They had AI founders replicate each one and real applications got built live in days. Go test some of them out!
 
-The framing investors have relied on for years is "build fast, raise fast, own the market." But if an agent can replicate the core product in a weekend, speed isn't a moat anymore. It's a starting line.
 
-The surprising finding? Markets hardest to crack with AI aren't technically complex - they're socially complex. Industries full of politics, turf wars, broken trust, or bureaucracy. AI can't fix broken human dynamics overnight.
-
-Companies that spent years navigating messy, regulated markets have real moats. The dysfunction everyone complains about? That's actually defensibility in disguise.
-
-So what actually counts as a moat now? TBD on whether most founders have a good answer.
-
-Comment "Feltsense" to get the full W26 report.
----
-
-### 💬 Comment to drop on our post
-
-🔑 The interesting part isn't which startups got replicated. It's how few couldn't be. That's the real signal for investors evaluating this batch.
 
 ---
 

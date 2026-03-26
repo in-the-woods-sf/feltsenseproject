@@ -12,22 +12,14 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-@feltsensefund stress-tested every YC W26 startup for defensibility with AI. Real applications are live - go test them. If an agent replicates your core product in days, what's your actual moat?
+The era of "build fast, figure out moats later" just ended. @feltsensefund replicated all 198 YC W26 startups with AI to prove it. The applications work. The report is brutal. 📊 When your entire product becomes a weekend AI project, execution speed isn't strategy. ⚡
 
 **LinkedIn:**
 What happens when an AI agent can replicate your entire product in 72 hours?
 
-That's the question @feltsense asked while stress-testing every startup in the YC W26 batch. Their AI founders put each one through the gauntlet on defensibility - replicating 198 companies to test what actually holds up at scale. The public launch shows real application replications live.
+That's the question @feltsense asked while stress-testing every startup in the YC W26 batch, replicating 198 companies to test what actually holds up at scale. Here's what they found: the most defensible companies aren't in technically complex markets - they're in socially complex ones. Industries full of politics, turf wars, and broken trust where companies spent years navigating bureaucracy and earning credibility the hard way.
 
-Speed to market used to be the moat. Now agents move at the same speed founders do. But here's what Feltsense found: the most defensible companies aren't in technically complex markets - they're in socially complex ones.
-
-Industries full of politics, turf wars, and broken trust. Markets where companies spent years navigating bureaucracy and earning credibility the hard way. AI can replicate your product overnight, but it can't fix broken human dynamics or navigate regulatory capture.
-
-The surprising finding? Dysfunction might be the most underrated moat in the AI era. While everyone chases technical differentiation, the real defensibility lies in markets too messy for algorithms to crack quickly.
-
-Companies that learned to work within broken systems, earned trust through years of relationship building, and understand the unwritten rules - those are the moats that actually matter when AI can build anything.
-
-Comment "Feltsense" to get the full W26 report.
+AI can replicate your product overnight, but it can't fix broken human dynamics or navigate regulatory capture. Comment "Feltsense" to get the full W26 report.
 ---
 
 ### 💬 Comment to drop on our post

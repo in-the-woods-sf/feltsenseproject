@@ -10,22 +10,10 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-@feltsensefund just rebuilt the entire YC W26 batch with AI agents. Real products live and working right now. Speed to market isn't the moat anymore - so what is?
+Most startups think they're building defensible moats. They're not. @feltsensefund just proved it - rebuilt all 198 YC W26 companies with AI agents. Live products. Working now. ⚡ Speed commoditized. So what actually matters? 🤔
 
 **LinkedIn:**
-@feltsense stress-tested every startup in the YC W26 batch. AI founders. Replicated the core product. Days, not months. real applications are live - go test some of the builds.
-
-Been thinking about their findings from the marketplace side. The most defensible companies weren't the most technically sophisticated - they were the ones navigating messy, socially complex markets.
-
-Healthcare compliance. Government procurement. Enterprise sales with 18-month cycles and committee approvals. Industries full of relationships, politics, and broken trust that took years to navigate.
-
-AI can ship your product in a weekend. But it can't fix decades of human dysfunction overnight.
-
-Network effects still matter. Proprietary data still matters. But "we built it first" stopped being a moat the moment LLMs could code.
-
-The surprising insight: companies that spent years learning to operate in dysfunctional markets have real defensibility. Technical complexity is table stakes now. Social complexity is the new moat.
-
-Comment "Feltsense" to get the full W26 report.
+@feltsense stress-tested every startup in the YC W26 batch by replicating their core products in days, not months. The most defensible companies weren't the most technically sophisticated - they were the ones navigating messy, socially complex markets. Healthcare compliance, government procurement, enterprise sales with 18-month cycles and committee approvals. AI can ship your product in a weekend, but it can't fix decades of human dysfunction overnight. Technical complexity is table stakes now - social complexity is the new moat. Comment "Feltsense" to get the full W26 report.
 ---
 
 ### 💬 Comment to drop on our post

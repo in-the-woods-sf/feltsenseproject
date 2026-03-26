@@ -10,15 +10,14 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-So @feltsensefund went through every startup in the YC W26 batch and tried to replicate them with AI agents. Built real live applications - go test some of them out. If your moat is just shipping fast...is that still a moat? Check it out
+Interesting experiment from @feltsensefund. They tried to replicate every YC W26 startup with AI. The results are... clarifying. 198 real applications built and live for testing. Turns out "move fast and break things" hits different when AI can move faster. 🤖⚡ Worth a look.
 
 **LinkedIn:**
-This is worth paying attention to. Feltsense went through every startup in the entire YC W26 batch, stress-testing defensibility by trying to replicate them with AI. real applications live - test some of the builds have live products already built. The full PDF covers the whole batch.
+This is worth paying attention to. Feltsense went through every startup in the entire YC W26 batch, stress-testing defensibility by trying to replicate them with AI - some of the builds have live products already built.
 
-As an investor I keep asking what defensibility actually means now. Speed to market used to be the answer. Not sure thats enough anymore.
+As an investor I keep asking what defensibility actually means now. Speed to market used to be the answer, but not sure that's enough anymore.
 
 If an AI agent can rebuild what you shipped in days, what exactly are we funding?
-
 ---
 
 ### 💬 Comment to drop on our post

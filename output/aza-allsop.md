@@ -12,19 +12,14 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-@feltsensefund stress-tested the entire YC W26 batch with AI founders and the results are sobering: if an agent can rebuild it that fast, what's the actual moat? Real applications are live-go test them. Full PDF covers every startup. The defensibility question just got urgent.
+The Three Laws of AI Startup Defensibility: network effects that strengthen with scale, proprietary data that compounds over time, and regulatory moats that create barriers. @feltsensefund just replicated all 198 YC W26 startups to test this. The live demos + full PDF are brutal.
 
 **LinkedIn:**
 I just stress-tested every YC W26 startup against AI-and the results are reshaping how I think about defensibility.
 
-Real applications are live now - go test some of the builds. The full PDF covers every company in the batch.
-
 Speed used to be the moat. Build fast, raise faster, outrun everyone. But when an AI agent can replicate the core product in days, speed stops being a defensible position.
 
-The startups that held up are worth studying closely. The ones that didn't are worth studying even more.
-
-What does defensibility actually look like now?
-
+The startups that held up are worth studying closely. What does defensibility actually look like now?
 ---
 
 ### 💬 Comment to drop on our post

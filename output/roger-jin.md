@@ -12,20 +12,12 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-@feltsensefund stress-tested every YC W26 startup for defensibility - and the results are brutal. Real applications are live to test. If an agent can rebuild it that fast, what was the moat? Full breakdown in the PDF.
+Been analyzing startup moats for 8 years. This is the first time I've seen defensibility tested at this scale. @feltsensefund actually rebuilt all 198 YC W26 startups with AI agents 🤖 - the live apps are shocking. Full breakdown in their PDF. 📊
 
 **LinkedIn:**
 **What if your startup's moat disappears in 72 hours?**
 
-That's the question @feltsense forced themselves to answer reviewing the entire YC W26 batch. Every single company. Stress-tested for defensibility by AI founders who replicated 198 startups to test which ones could survive AI disruption.
-
-The exercise surfaced a counterintuitive finding: the markets hardest to crack with AI aren't technically complex - they're socially complex.
-
-Industries full of politics, turf wars, broken trust, or bureaucracy might actually be the most defensible in the AI era. AI can replicate code and workflows in days, but it can't fix broken human dynamics overnight.
-
-Companies that spent years navigating messy, regulated markets - learning who to call, building trust with gatekeepers, understanding unwritten rules - have real moats that AI can't easily replicate.
-
-Speed used to be the ultimate defensibility. Now it might be your ability to operate in dysfunction.
+That's the question @feltsense forced themselves to answer reviewing the entire YC W26 batch, stress-testing 198 startups for AI defensibility. The counterintuitive finding: the markets hardest to crack with AI aren't technically complex, they're socially complex. Industries full of politics, turf wars, broken trust, or bureaucracy might actually be the most defensible in the AI era. AI can replicate code and workflows in days, but it can't fix broken human dynamics overnight. 
 
 Comment "Feltsense" to get the full W26 report.
 ---

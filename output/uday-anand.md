@@ -12,22 +12,14 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-@feltsensefund stress-tested every YC W26 startup for defensibility using AI. Real applications are live-go test them. If an agent can rebuild it that fast, what's the moat? Full PDF covers the batch.
+Most startup moats are fiction. @feltsensefund just proved it across 198 companies. They rebuilt every YC W26 startup with AI - working demos are live. If your defensibility crumbles to code in days, you never had a business. The full damage report is brutal. 🤖💀
 
 **LinkedIn:**
 I just watched AI agents dismantle 72 startups in real-time.
 
-The team at @feltsense stress-tested every YC W26 company with AI to see what actually survives. The results? Some founders are sleeping soundly. Others should be very worried.
+The team at @feltsense stress-tested every YC W26 company with AI to see what actually survives. The surprising finding? The startups that couldn't be replicated weren't the most technically complex - they were the most socially complex. Companies navigating messy markets full of politics, turf wars, and broken trust had real defensibility.
 
-Speed used to be the moat. Build fast, raise faster. But when an AI agent rebuilds your core product in 72 hours, speed stops being a competitive advantage. It becomes a baseline.
-
-The surprising finding? The startups that couldn't be replicated weren't the most technically complex - they were the most socially complex. Companies navigating messy markets full of politics, turf wars, and broken trust had real defensibility. AI can build the product, but it can't fix decades of broken human dynamics overnight.
-
-While everyone's chasing technical moats, the founders who've spent years learning to navigate dysfunction might have the most defensible businesses in the AI era.
-
-Real applications are live now - go test some of the builds yourself.
-
-Comment "Feltsense" to get the full W26 report.
+While everyone's chasing technical moats, the founders who've spent years learning to navigate dysfunction might have the most defensible businesses in the AI era. Comment "Feltsense" to get the full W26 report.
 ---
 
 ### 💬 Comment to drop on our post

@@ -10,16 +10,11 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-Defensibility used to mean speed-to-market. @feltsensefund replicated YC W26 startup products in days with AI. If agents build it that fast, what's the moat?
+Your startup's "secret sauce" isn't so secret anymore. @feltsensefund just proved it by replicating all 198 YC W26 companies with AI - and the apps actually work. The full breakdown is wild. 
 
 **LinkedIn:**
 Defensibility is getting redefined in real time.
 
-Feltsense went through every startup in the YC W26 batch using AI founders. Replicated core products in days. real applications are live - go test some of the builds. The full PDF covers the entire batch.
-
-Speed-to-market used to be the moat. Now agents move at that same speed. So the real filter changes. The startups that couldn't be replicated are the ones worth studying.
-
-If an AI agent can rebuild what you shipped, what exactly are investors pricing in?
 
 ---
 
