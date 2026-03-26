@@ -12,19 +12,10 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-Nobody wants to hear this, but if AI agents can rebuild your startup in hours, you're not building a company - you're building a weekend project. 🤖 @feltsensefund just proved this by replicating all 198 YC W26 startups. The implications for what we fund are brutal. 💀
+@feltsensefund just replicated all 198 YC W26 startups. The implications are brutal. 💀
 
 **LinkedIn:**
-Feltsense just stress-tested every startup in the entire YC W26 batch for defensibility using AI founders. The public launch includes real applications live with working products built in days - go test some of them out.
-
-The startups that couldn't be replicated are telling us something worth paying attention to. The hardest markets to crack with AI weren't the most technically complex - they were the most socially complex. Industries full of politics, turf wars, broken trust, and bureaucratic nightmares that AI can't fix overnight.
-
-Comment "Feltsense" to get the full W26 report.
----
-
-### 💬 Comment to drop on our post
-
-This is a useful forcing function. The defensibility conversation in early-stage investing is too often hand-waved away with "execution" as the answer. Seeing every company in the batch put through this lens makes the gaps harder to ignore.
+The startups that couldn't be replicated are telling us something worth paying attention to.
 
 ---
 

@@ -10,15 +10,10 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-Most startups think they're building defensible moats. They're not. @feltsensefund just proved it - rebuilt all 198 YC W26 companies with AI agents. Live products. Working now. ⚡ Speed commoditized. So what actually matters? 🤔
+Most startups think they're building defensible moats. They're not. @feltsensefund just proved it by replicating all 198 YC W26 companies with agentic founders. Live products. Working now ⚡
 
 **LinkedIn:**
-@feltsense stress-tested every startup in the YC W26 batch by replicating their core products in days, not months. The most defensible companies weren't the most technically sophisticated - they were the ones navigating messy, socially complex markets. Healthcare compliance, government procurement, enterprise sales with 18-month cycles and committee approvals. AI can ship your product in a weekend, but it can't fix decades of human dysfunction overnight. Technical complexity is table stakes now - social complexity is the new moat. Comment "Feltsense" to get the full W26 report.
----
-
-### 💬 Comment to drop on our post
-
-Been saying speed isn't a moat for a while now. This puts numbers on it. Curious which ones actually held up.
+@feltsense stress-tested every startup in the YC W26 batch by replicating their core products in days, not months. 
 
 ---
 

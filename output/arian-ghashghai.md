@@ -10,19 +10,10 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-Defensibility used to mean hard to build. Now it means hard to rip out. @feltsensefund proved this by cloning all 198 YC W26 startups in days - full working apps, not demos. The report is wild. 🔥 "First mover advantage" is officially dead. ⚰️
+Defensibility used to mean hard to build. Now it means hard to rip out. @feltsensefund proved this by cloning all 198 YC W26 startups in days. First mover advantage might be dead soon enough ⚰️
 
 **LinkedIn:**
-the vc industry loves the word "defensibility" but imo most investors never actually pressure-test it. @feltsense just went through every startup in the entire YC W26 batch using AI, replicating what each one does with real live applications you can test.
-
-here's what surprised me: the markets hardest to crack with AI aren't technically complex, they're socially complex. industries full of politics, turf wars, broken trust, bureaucracy where AI can't fix broken human dynamics overnight. companies that spent years navigating messy, regulated markets might actually have the most defensible positions in the AI era.
-
-Comment "Feltsense" to get the full W26 report.
----
-
-### 💬 Comment to drop on our post
-
-this is a more honest version of the diligence most investors skip. i.e. actually testing whether the thing you're funding can be rebuilt by something that doesn't need sleep or a cap table. the startups that survived this are the ones worth a real conversation.
+The vc industry loves the word "defensibility" but imo most investors never actually pressure-test it. @feltsense just went through every startup in the entire YC W26 batch using AI, replicating what each one does with real live applications you can test!
 
 ---
 

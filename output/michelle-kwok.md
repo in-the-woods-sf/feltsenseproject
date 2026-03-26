@@ -10,19 +10,12 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-In 12 months, every diligence process will include a replication test. @feltsensefund just ran it on the entire YC W26 batch - 198 startups replicated in days with working demos. The report is wild. 🤯 If AI can clone your idea that fast, maybe it wasn't defensible enough. 🚀
+In 12 months, every diligence process will include a replication test. @feltsensefund just ran it on the entire YC W26 batch - 198 startups replicated in days with working demos. The report is wild. 🤯 
 
 **LinkedIn:**
 We at Draper always say we back rational founders building irrational ideas. That thesis just got pressure-tested when @feltsense went through every startup in the entire YC W26 batch using AI, building live replications in days.
 
-Here's what surprised me: the most defensible companies weren't the most technically complex ones. They were the ones navigating messy, dysfunctional markets full of politics, turf wars, and broken trust. AI can replicate features overnight, but it can't fix decades of broken human dynamics.
 
-Comment "Feltsense" to get the full W26 report.
----
-
-### 💬 Comment to drop on our post
-
-This is the kind of stress test the ecosystem actually needs. The startups that survived the replication are telling you something about what defensibility looks like going forward. Paying close attention to those ones.
 
 ---
 

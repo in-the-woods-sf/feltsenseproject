@@ -13,12 +13,7 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 Check out for yourself who in the YC W26 batch survived the @feltsensefund's AI replication gauntlet.
 
 **LinkedIn:**
-Here's what happens when you let AI agents loose on an entire YC batch: @feltsense just stress-tested all of W26's startups for defensibility, and the results are eye-opening. They replicated 198 companies to test what's actually defensible at scale. The most surprising finding? Markets hardest to crack with AI aren't technically complex, they're socially complex. Industries full of politics, turf wars, and broken trust create moats that code can't replicate overnight. If an AI agent can replicate the core of what you do in a few days, your best bet might be diving deeper into the dysfunction, not running from it. Comment "Feltsense" to get the full W26 report.
----
-
-### 💬 Comment to drop on our post
-
-This is a practical way to pressure-test what defensibility actually means right now. The ones that couldn't be replicated are the interesting part of the report.
+They replicated 198 companies to test what's actually defensible at scale!
 
 ---
 

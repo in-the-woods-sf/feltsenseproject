@@ -10,19 +10,11 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-Interesting experiment from @feltsensefund. They tried to replicate every YC W26 startup with AI. The results are... clarifying. 198 real applications built and live for testing. Turns out "move fast and break things" hits different when AI can move faster. 🤖⚡ Worth a look.
+Interesting experiment from @feltsensefund. They replicated every YC W26 startup with AI. The results are... clarifying. 198 real applications built and live for testing. Turns out "move fast and break things" hits different when AI can move faster. 🤖⚡ Worth a look.
 
 **LinkedIn:**
-This is worth paying attention to. Feltsense went through every startup in the entire YC W26 batch, stress-testing defensibility by trying to replicate them with AI - some of the builds have live products already built.
 
-As an investor I keep asking what defensibility actually means now. Speed to market used to be the answer, but not sure that's enough anymore.
-
-If an AI agent can rebuild what you shipped in days, what exactly are we funding?
----
-
-### 💬 Comment to drop on our post
-
-This is the question every early stage investor should be sitting with right now. Speed used to be the moat. Whats the moat when agents can ship too?
+@Feltsense taking "move fast and break things" to a whole new level.
 
 ---
 

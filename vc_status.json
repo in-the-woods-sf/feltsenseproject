@@ -4,713 +4,905 @@
     "engagement_month": "",
     "role": "vc",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {
+      "march:x_post": true,
+      "march:linkedin_post": true
+    }
   },
   "marc-averitt": {
     "status": "",
     "engagement_month": "",
     "role": "vc",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {
+      "march:x_post": true,
+      "march:linkedin_post": true
+    }
   },
   "elias-can": {
     "status": "",
     "engagement_month": "",
     "role": "vc",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {
+      "march:linkedin_post": true,
+      "march:x_post": true
+    }
   },
   "ronnie-martinez": {
     "status": "",
     "engagement_month": "",
     "role": "vc",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {
+      "march:x_post": true,
+      "march:linkedin_post": true
+    }
   },
   "evan-buhler": {
     "status": "",
     "engagement_month": "",
     "role": "vc",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {
+      "march:x_post": true,
+      "march:linkedin_post": true
+    }
   },
   "jon-soberg": {
     "status": "",
     "engagement_month": "",
     "role": "vc",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {
+      "march:x_post": true,
+      "march:linkedin_post": true
+    }
   },
   "matthew-mulvey": {
     "status": "active",
     "engagement_month": "",
     "role": "vc",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {
+      "march:linkedin_post": true,
+      "march:x_post": true
+    }
   },
   "shawn-larrabee": {
     "status": "active",
     "engagement_month": "",
     "role": "vc",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {
+      "march:linkedin_post": true,
+      "march:x_post": true
+    }
   },
   "patrick-kerr": {
     "status": "",
     "engagement_month": "",
     "role": "vc",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {
+      "march:linkedin_post": true,
+      "march:x_post": true
+    }
   },
   "zachary-ginsburg": {
     "status": "",
     "engagement_month": "",
     "role": "vc",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {
+      "march:x_post": true,
+      "march:linkedin_post": true
+    }
   },
   "david-wieland": {
     "status": "",
     "engagement_month": "",
     "role": "vc",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {
+      "march:x_post": true,
+      "march:linkedin_post": true
+    }
   },
   "winslow-strong": {
     "status": "",
     "engagement_month": "",
     "role": "vc",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {
+      "march:x_post": true,
+      "march:linkedin_post": true
+    }
   },
   "alejandra-vergara": {
     "status": "",
     "engagement_month": "",
     "role": "vc",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {
+      "march:x_post": true,
+      "march:linkedin_post": true
+    }
   },
   "carl-choi": {
     "status": "",
     "engagement_month": "",
     "role": "vc",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {
+      "march:x_post": true,
+      "march:linkedin_post": true
+    }
   },
   "danny-pantuso": {
     "status": "",
     "engagement_month": "",
     "role": "vc",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {
+      "march:x_post": true,
+      "march:linkedin_post": true
+    }
   },
   "william-hsu": {
     "status": "",
     "engagement_month": "",
     "role": "vc",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {
+      "march:x_post": true,
+      "march:linkedin_post": true
+    }
   },
   "gus-domel": {
     "status": "active",
     "engagement_month": "",
     "role": "vc",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {
+      "march:x_post": true,
+      "march:linkedin_post": true
+    }
   },
   "brayton-williams": {
     "status": "active",
     "engagement_month": "",
     "role": "vc",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {
+      "march:x_post": true,
+      "march:linkedin_post": true
+    }
   },
   "aaron-meder": {
     "status": "",
     "engagement_month": "",
     "role": "vc",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {
+      "march:x_post": true,
+      "march:linkedin_post": true
+    }
   },
   "ben-parr": {
     "status": "",
     "engagement_month": "",
     "role": "vc",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {
+      "march:x_post": true,
+      "march:linkedin_post": true
+    }
   },
   "matt-schlicht": {
     "status": "active",
     "engagement_month": "",
     "role": "vc",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {
+      "march:x_post": true,
+      "march:linkedin_post": true
+    }
   },
   "dylan-bern": {
     "status": "",
     "engagement_month": "",
     "role": "vc",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {
+      "march:x_post": true,
+      "march:linkedin_post": true
+    }
   },
   "angad-randhawa": {
     "status": "",
     "engagement_month": "",
     "role": "vc",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {
+      "march:x_post": true,
+      "march:linkedin_post": true
+    }
   },
   "marina-girgis": {
     "status": "active",
     "engagement_month": "",
     "role": "vc",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {
+      "march:x_post": true,
+      "march:linkedin_post": true
+    }
   },
   "michelle-kwok": {
     "status": "active",
     "engagement_month": "",
     "role": "vc",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {
+      "march:x_post": true,
+      "march:linkedin_post": true
+    }
   },
   "colin-gardiner": {
     "status": "",
     "engagement_month": "",
     "role": "vc",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {
+      "march:linkedin_post": true,
+      "march:x_post": true
+    }
   },
   "arian-ghashghai": {
     "status": "",
     "engagement_month": "",
     "role": "vc",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {
+      "march:linkedin_post": true,
+      "march:x_post": true
+    }
   },
   "paul-grossinger": {
     "status": "active",
     "engagement_month": "",
     "role": "vc",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {
+      "march:linkedin_post": true,
+      "march:x_post": true
+    }
   },
   "sebastian-spitzer": {
     "status": "",
     "engagement_month": "",
     "role": "vc",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {
+      "march:x_post": true,
+      "march:linkedin_post": true
+    }
   },
   "marik-hazan": {
     "status": "",
     "engagement_month": "",
     "role": "feltsense_teammate",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "sarah-cabilte": {
     "status": "",
     "engagement_month": "",
     "role": "feltsense_teammate",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "ben-norman": {
     "status": "",
     "engagement_month": "",
     "role": "feltsense_teammate",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "matt-wood": {
     "status": "",
     "engagement_month": "",
     "role": "feltsense_teammate",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "rishabh-kapoor": {
     "status": "",
     "engagement_month": "",
     "role": "feltsense_teammate",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "yvonne-pilapitiya": {
     "status": "",
     "engagement_month": "",
     "role": "feltsense_teammate",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "lakshitha-perera": {
     "status": "",
     "engagement_month": "",
     "role": "feltsense_teammate",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "harry-roper": {
     "status": "",
     "engagement_month": "",
     "role": "feltsense_teammate",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "ayesh-jayasinghe": {
     "status": "",
     "engagement_month": "",
     "role": "feltsense_teammate",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "aza-allsop": {
     "status": "",
     "engagement_month": "",
     "role": "feltsense_teammate",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "roger-jin": {
     "status": "",
     "engagement_month": "",
     "role": "feltsense_teammate",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "uday-anand": {
     "status": "",
     "engagement_month": "",
     "role": "feltsense_teammate",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "john-lee": {
     "status": "",
     "engagement_month": "",
     "role": "feltsense_teammate",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "jack-brody": {
     "status": "",
     "engagement_month": "",
     "role": "mentor_advisor",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "peter-green": {
     "status": "",
     "engagement_month": "",
     "role": "mentor_advisor",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "molly-o-shea": {
     "status": "",
     "engagement_month": "",
     "role": "mentor_advisor",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "jason-calacanis": {
     "status": "",
     "engagement_month": "",
     "role": "mentor_advisor",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "jonathan-bruck": {
     "status": "",
     "engagement_month": "",
     "role": "mentor_advisor",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "jeremiah-owyang": {
     "status": "",
     "engagement_month": "",
     "role": "mentor_advisor",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "justin-mares": {
     "status": "",
     "engagement_month": "",
     "role": "mentor_advisor",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "julian-shapiro": {
     "status": "",
     "engagement_month": "",
     "role": "mentor_advisor",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "daniel-birmingham": {
     "status": "",
     "engagement_month": "",
     "role": "mentor_advisor",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "ali-attar": {
     "status": "",
     "engagement_month": "",
     "role": "mentor_advisor",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "rapha-gontijo-lopes": {
     "status": "",
     "engagement_month": "",
     "role": "mentor_advisor",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "jonathan-leung": {
     "status": "",
     "engagement_month": "",
     "role": "mentor_advisor",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "dave-fontenot": {
     "status": "",
     "engagement_month": "",
     "role": "mentor_advisor",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "emily-liu": {
     "status": "",
     "engagement_month": "",
     "role": "mentor_advisor",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "evan-stites-clayton": {
     "status": "",
     "engagement_month": "",
     "role": "mentor_advisor",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "james-he": {
     "status": "",
     "engagement_month": "",
     "role": "mentor_advisor",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "james-tan": {
     "status": "",
     "engagement_month": "",
     "role": "mentor_advisor",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "yotam-rosenbaum": {
     "status": "",
     "engagement_month": "",
     "role": "mentor_advisor",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "gabriel-jarrosson": {
     "status": "",
     "engagement_month": "",
     "role": "mentor_advisor",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "shahed-khan": {
     "status": "",
     "engagement_month": "",
     "role": "investor_update",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "neil-parikh": {
     "status": "",
     "engagement_month": "",
     "role": "investor_update",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "yuri-sagalov": {
     "status": "",
     "engagement_month": "",
     "role": "investor_update",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "yoni-rechtman": {
     "status": "",
     "engagement_month": "",
     "role": "investor_update",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "stu-smith": {
     "status": "",
     "engagement_month": "",
     "role": "investor_update",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "mike-smith": {
     "status": "",
     "engagement_month": "",
     "role": "investor_update",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "kate-kitto": {
     "status": "",
     "engagement_month": "",
     "role": "investor_update",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "geoffrey-woo": {
     "status": "",
     "engagement_month": "",
     "role": "investor_update",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "fawzi-itani": {
     "status": "",
     "engagement_month": "",
     "role": "investor_update",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "brian-rothenberg": {
     "status": "",
     "engagement_month": "",
     "role": "investor_update",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "kris-cercano": {
     "status": "",
     "engagement_month": "",
     "role": "investor_update",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "joe-pompliano": {
     "status": "",
     "engagement_month": "",
     "role": "investor_update",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "sophia-yu": {
     "status": "",
     "engagement_month": "",
     "role": "investor_update",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "jenny-fielding": {
     "status": "",
     "engagement_month": "",
     "role": "investor_update",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "john-forbes": {
     "status": "",
     "engagement_month": "",
     "role": "investor_update",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "kevin-novak": {
     "status": "",
     "engagement_month": "",
     "role": "investor_update",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "joff-redfern": {
     "status": "",
     "engagement_month": "",
     "role": "investor_update",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "amit-vasudev": {
     "status": "",
     "engagement_month": "",
     "role": "investor_update",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "matthew-brimer": {
     "status": "",
     "engagement_month": "",
     "role": "investor_update",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "ryan-gembala": {
     "status": "",
     "engagement_month": "",
     "role": "investor_update",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "matias-zorrilla": {
     "status": "",
     "engagement_month": "",
     "role": "investor_update",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "etienne-boutan": {
     "status": "",
     "engagement_month": "",
     "role": "investor_update",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "jorian-hoover": {
     "status": "",
     "engagement_month": "",
     "role": "investor_update",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "shane-ray-martin": {
     "status": "",
     "engagement_month": "",
     "role": "investor_update",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "raymond-kim": {
     "status": "",
     "engagement_month": "",
     "role": "investor_update",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "ben-lang": {
     "status": "",
     "engagement_month": "",
     "role": "investor_update",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "arielle-zuckerberg": {
     "status": "",
     "engagement_month": "",
     "role": "investor_update",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "lex": {
     "status": "",
     "engagement_month": "",
     "role": "investor_update",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "charlie-leggate": {
     "status": "",
     "engagement_month": "",
     "role": "investor_update",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "ryan-hoover": {
     "status": "",
     "engagement_month": "",
     "role": "investor_update",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "greg-castle": {
     "status": "",
     "engagement_month": "",
     "role": "investor_update",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "adam-d-augelli": {
     "status": "",
     "engagement_month": "",
     "role": "investor_update",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "yohei-nakajima": {
     "status": "",
     "engagement_month": "",
     "role": "investor_update",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "robin-chan": {
     "status": "",
     "engagement_month": "",
     "role": "investor_update",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "chris-yeh": {
     "status": "",
     "engagement_month": "",
     "role": "investor_update",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "michael-dempsey": {
     "status": "",
     "engagement_month": "",
     "role": "investor_update",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "marvin-liao": {
     "status": "",
     "engagement_month": "",
     "role": "investor_update",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "warren-shaeffer": {
     "status": "",
     "engagement_month": "",
     "role": "investor_update",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "rico-mallozzi": {
     "status": "",
     "engagement_month": "",
     "role": "investor_update",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "kate-meacham": {
     "status": "",
     "engagement_month": "",
     "role": "investor_update",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {}
   },
   "ethan-austin": {
     "status": "active",
     "engagement_month": "",
     "role": "vc",
     "approved": false,
-    "poc": ""
+    "poc": "",
+    "reviewed": {
+      "march:linkedin_post": true,
+      "march:x_post": true
+    }
   }
 }

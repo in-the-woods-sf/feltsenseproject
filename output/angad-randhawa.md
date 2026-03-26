@@ -12,21 +12,10 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 **X:**
 If an AI agent can replicate your product in a weekend, you don't have a company. You have a demo. 🤖
 
-@feltsensefund just proved this by rebuilding all 198 YC W26 startups. Real working apps. Live right now.
-
-The defensibility report is brutal and necessary reading. 🔥
+@feltsensefund just proved this by rebuilding all 198 YC W26 startups. Real working apps. Live right now 🔥
 
 **LinkedIn:**
-I just watched an AI agent replicate an entire startup's core product in under a week.
-
-@feltsense stress-tested every single YC W26 company with AI to see which ones could actually be copied. Speed-to-market used to win but now that's table stakes since an AI agent can clone your product before your seed round closes. The startups that couldn't be replicated are the ones I'm actually paying attention to.
-
-So what actually counts as defensible anymore? Comment "Feltsense" to get the full W26 report.
----
-
-### 💬 Comment to drop on our post
-
-this is the kind of stress test the ecosystem needs right now. defensibility is getting redefined in real time and most people aren't paying close enough attention. the ones that held up under this are the signal.
+I just watched an AI agent replicate an entire startup's core product in a few days!
 
 ---
 

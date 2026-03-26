@@ -12,19 +12,12 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-Three things I learned from @feltsensefund's YC W26 replication report that changed how I invest: 198 startups. 198 AI rebuilds. Real working demos you can test today. The uncomfortable truth? 🤖 Most "defensible" businesses aren't. 📄 PDF link in their bio.
+Three things I learned from @feltsensefund's YC W26 replication report that changed how I invest: 198 startups. 198 AI rebuilds. Real working demos you can test today. The uncomfortable truth? 🤖 Most "defensible" businesses... aren't.
 
 **LinkedIn:**
 I just watched AI agents replicate entire startup ideas from the YC W26 batch in days. @feltsense stress-tested the whole cohort for defensibility using AI founders, and you can test the actual products built in mere days.
 
-Here's the surprising finding: the hardest markets to crack with AI aren't technically complex, they're socially complex. Industries full of politics, turf wars, and broken trust create the strongest moats because AI can't fix broken human dynamics overnight. The dysfunction everyone complained about? That's your moat in 2025.
 
-Comment "Feltsense" to get the full W26 report.
----
-
-### 💬 Comment to drop on our post
-
-This is the right question at the right time. Going through the entire batch forces a real conversation about what holds up under pressure and what doesn't. The startups that survived this test are the ones I want to look at more closely.
 
 ---
 
