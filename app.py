@@ -105,6 +105,7 @@ def load_statuses() -> dict:
                     "role": val.get("role", ""),
                     "approved": val.get("approved", False),
                     "poc": val.get("poc", ""),
+                    "reviewed": val.get("reviewed", {}),
                 }
         return migrated
     return {}
@@ -371,6 +372,7 @@ def vc_profile(slug):
     vc["role"] = entry.get("role", "") if isinstance(entry, dict) else ""
     vc["approved"] = entry.get("approved", False) if isinstance(entry, dict) else False
     vc["poc"] = entry.get("poc", "") if isinstance(entry, dict) else ""
+    reviewed = entry.get("reviewed", {}) if isinstance(entry, dict) else {}
     copies = {c["id"]: load_copy(slug, c["id"]) for c in CAMPAIGNS}
     # Grab scrape counts from the first available campaign file
     for c in CAMPAIGNS:
@@ -382,7 +384,7 @@ def vc_profile(slug):
     return render_template("vc.html", vc=vc, copies=copies, campaigns=CAMPAIGNS,
                            copy_fields=COPY_FIELDS, partner_statuses=PARTNER_STATUSES,
                            engagement_months=ENGAGEMENT_MONTHS, role_types=ROLE_TYPES,
-                           hub_mode=False)
+                           reviewed=reviewed, hub_mode=False)
 
 
 @app.route("/hub/<slug>")
@@ -398,6 +400,7 @@ def hub_profile(slug):
     vc["role"] = entry.get("role", "") if isinstance(entry, dict) else ""
     vc["approved"] = entry.get("approved", False) if isinstance(entry, dict) else False
     vc["poc"] = entry.get("poc", "") if isinstance(entry, dict) else ""
+    reviewed = entry.get("reviewed", {}) if isinstance(entry, dict) else {}
     copies = {c["id"]: load_copy(slug, c["id"]) for c in CAMPAIGNS}
     for c in CAMPAIGNS:
         cp = copies.get(c["id"])
@@ -408,7 +411,7 @@ def hub_profile(slug):
     return render_template("vc.html", vc=vc, copies=copies, campaigns=CAMPAIGNS,
                            copy_fields=HUB_COPY_FIELDS, partner_statuses=PARTNER_STATUSES,
                            engagement_months=ENGAGEMENT_MONTHS, role_types=ROLE_TYPES,
-                           hub_mode=True)
+                           reviewed=reviewed, hub_mode=True)
 
 
 @app.route("/api/set-status/<slug>", methods=["POST"])
@@ -447,11 +450,23 @@ def set_status(slug):
     if poc is not None:
         entry["poc"] = poc
 
+    # Toggle reviewed state for a specific campaign+field cell
+    reviewed_key = data.get("reviewed_key")   # e.g. "march:x_post"
+    reviewed_val = data.get("reviewed_val")   # True / False
+    if reviewed_key is not None and reviewed_val is not None:
+        reviewed_map = entry.get("reviewed", {})
+        if reviewed_val:
+            reviewed_map[reviewed_key] = True
+        else:
+            reviewed_map.pop(reviewed_key, None)
+        entry["reviewed"] = reviewed_map
+
     statuses[slug] = entry
     save_statuses(statuses)
     return jsonify({"ok": True, "slug": slug, "status": entry["status"],
                     "engagement_month": entry["engagement_month"], "role": entry["role"],
-                    "approved": entry.get("approved", False), "poc": entry.get("poc", "")})
+                    "approved": entry.get("approved", False), "poc": entry.get("poc", ""),
+                    "reviewed": entry.get("reviewed", {})})
 
 
 @app.route("/api/regenerate/<slug>", methods=["POST"])

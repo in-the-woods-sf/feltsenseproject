@@ -141,6 +141,14 @@
     .cell-actions { display: flex; gap: 5px; }
     .cell-empty-label { font-size: 12px; color: #D5D0C8; padding: 8px 0; }
 
+    /* Reviewed state */
+    .ct-copy-cell.reviewed { background: #F0FDF4; }
+    .ct-copy-cell.reviewed:hover { background: #ECFDF5; }
+    .ct-copy-cell.reviewed .cell-ta { color: #78716C; cursor: default; }
+    .btn-reviewed { background: none; border: 1px solid #E2DDD6; color: #A8A29E; padding: 2px 8px; border-radius: 3px; font-size: 10px; cursor: pointer; font-family: inherit; transition: all 0.12s; }
+    .btn-reviewed:hover { border-color: #86EFAC; color: #166534; }
+    .btn-reviewed.is-reviewed { border-color: #86EFAC; color: #166534; background: #DCFCE7; }
+
     .warn-flag { font-size: 10px; color: #D97706; margin-bottom: 2px; }
 
     /* ── Regen panel ────────────────────────────────── */
@@ -280,15 +288,18 @@
         {% set platform = 'linkedin' if section == 'linkedin' else 'x' %}
         {% for c in campaigns %}
         {% set cell_id = "cell-" ~ c.id ~ "-" ~ field_id %}
+        {% set rkey = c.id ~ ":" ~ field_id %}
+        {% set is_reviewed = reviewed.get(rkey, False) %}
         {% if copies[c.id] %}
-        <div class="ct-copy-cell" id="{{ cell_id }}">
+        <div class="ct-copy-cell {{ 'reviewed' if is_reviewed else '' }}" id="{{ cell_id }}">
           <textarea class="cell-ta"
             id="ta-{{ c.id }}-{{ field_id }}"
             data-campaign="{{ c.id }}"
             data-field="{{ field_id }}"
             data-slug="{{ vc.slug }}"
             rows="{{ ta_rows }}"
-            oninput="cellInput(this)">{{ copies[c.id][field_id] }}</textarea>
+            oninput="cellInput(this)"
+            {{ 'readonly' if is_reviewed else '' }}>{{ copies[c.id][field_id] }}</textarea>
           <div class="cell-footer">
             {% if field_id == 'x_post' %}
             <span class="char-count" id="cc-{{ c.id }}-{{ field_id }}"></span>
@@ -299,6 +310,11 @@
             <div class="cell-actions">
               <button class="btn-copy-cell" onclick="copyCell('{{ c.id }}', '{{ field_id }}', this)">Copy</button>
               <button class="btn-share-cell {{ platform }}" onclick="shareCell('{{ c.id }}', '{{ field_id }}', '{{ platform }}', this)" title="Open in {{ 'X' if platform == 'x' else 'LinkedIn' }}">↗</button>
+              <button class="btn-reviewed {{ 'is-reviewed' if is_reviewed else '' }}"
+                data-rkey="{{ rkey }}"
+                onclick="toggleReviewed('{{ vc.slug }}', '{{ rkey }}', this)">
+                {{ '✓ Reviewed' if is_reviewed else 'Review' }}
+              </button>
               {% if not hub_mode %}
               <button class="btn-approved btn-approve-cell {{ 'is-approved' if vc.approved else '' }}"
                 onclick="toggleApproved('{{ vc.slug }}', this)">
@@ -557,6 +573,29 @@ function quickGenerate(slug, campaign) {
   document.getElementById('regen-section').value = 'all';
   document.getElementById('regen-instruction').value = '';
   regenerate(slug);
+}
+
+// ── Reviewed toggle ───────────────────────────────────────
+async function toggleReviewed(slug, rkey, btn) {
+  const isReviewed = btn.classList.contains('is-reviewed');
+  const newVal = !isReviewed;
+  const res = await fetch('/api/set-status/' + slug, {
+    method: 'POST', headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ reviewed_key: rkey, reviewed_val: newVal }),
+  });
+  const data = await res.json();
+  if (!data.ok) return;
+
+  // Update button
+  btn.classList.toggle('is-reviewed', newVal);
+  btn.textContent = newVal ? '✓ Reviewed' : 'Review';
+
+  // Lock/unlock the textarea and cell
+  const [campaign, fieldId] = rkey.split(':');
+  const ta = document.getElementById('ta-' + campaign + '-' + fieldId);
+  const cell = document.getElementById('cell-' + campaign + '-' + fieldId);
+  if (ta) ta.readOnly = newVal;
+  if (cell) cell.classList.toggle('reviewed', newVal);
 }
 
 // ── Marik Approved toggle ──────────────────────────────────
