@@ -352,6 +352,8 @@ def index():
         vc["role"] = entry.get("role", "") if isinstance(entry, dict) else ""
         vc["approved"] = entry.get("approved", False) if isinstance(entry, dict) else False
         vc["poc"] = entry.get("poc", "") if isinstance(entry, dict) else ""
+        reviewed_map = entry.get("reviewed", {}) if isinstance(entry, dict) else {}
+        vc["reviewed"] = reviewed_map.get("march:x_post", False) and reviewed_map.get("march:linkedin_post", False)
     generated = sum(1 for v in vcs if v["generated"])
     quotes = load_march_quotes()
     return render_template("index.html", vcs=vcs, total=len(vcs), generated=generated,

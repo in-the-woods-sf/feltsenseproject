@@ -319,6 +319,7 @@
     .badge.set-status { background: #F7F4EF; color: #A8A29E; cursor: pointer; border: 1px dashed #E2DDD6; }
     .badge.set-status:hover { color: #78716C; border-color: #C5BFB8; }
     .badge.approved { background: #DCFCE7; color: #166534; }
+    .badge.reviewed-badge { background: #DBEAFE; color: #1D4ED8; }
     .btn-approve { font-size: 11px; padding: 2px 8px; border-radius: 4px; border: 1px solid #E2DDD6; background: none; cursor: pointer; font-family: inherit; color: #A8A29E; transition: all 0.15s; white-space: nowrap; }
     .btn-approve:hover { border-color: #86EFAC; color: #166534; background: #F0FDF4; }
     .btn-approve.is-approved { border-color: #86EFAC; color: #166534; background: #DCFCE7; }
@@ -441,6 +442,9 @@
       <span class="badge done">✓ Copy Ready</span>
     {% else %}
       <span class="badge pending">Not generated</span>
+    {% endif %}
+    {% if vc.reviewed %}
+      <span class="badge reviewed-badge">✓ Reviewed</span>
     {% endif %}
     <div class="status-control" onclick="event.preventDefault(); event.stopPropagation(); openStatusMenu('{{ vc.slug }}', event)">
       <span class="badge set-status">⚙ Edit ▾</span>
@@ -582,6 +586,9 @@
       <div style="margin-top:8px; font-size:11px; {{ 'color:#166534' if vc.generated else 'color:#A8A29E' }}">
         {{ '✓ Copy Ready' if vc.generated else 'Not generated' }}
       </div>
+      {% if vc.reviewed %}
+      <div style="margin-top:4px; font-size:10px; color:#1D4ED8; font-weight:500;">✓ Reviewed</div>
+      {% endif %}
     </a>
     {% endfor %}
   </div>
