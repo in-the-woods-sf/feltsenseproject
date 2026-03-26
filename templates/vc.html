@@ -15,11 +15,10 @@
     .topbar-identity { display: flex; flex-direction: column; gap: 4px; }
     .topbar-name-row { display: flex; align-items: center; gap: 10px; }
     .topbar h1 { font-size: 16px; font-weight: 600; color: #1C1917; }
-    .topbar .firm { font-size: 13px; color: #A8A29E; }
-    .topbar-contact-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
-    .topbar-contact-row a { font-size: 12px; color: #78716C; text-decoration: none; display: flex; align-items: center; gap: 4px; }
+    .topbar-contact-row { display: flex; flex-direction: column; gap: 2px; margin-top: 3px; }
+    .topbar-contact-row .firm { font-size: 13px; font-weight: 500; color: #78716C; }
+    .topbar-contact-row a { font-size: 12px; color: #A8A29E; text-decoration: none; }
     .topbar-contact-row a:hover { color: #1C1917; }
-    .contact-sep { color: #D5D0C8; font-size: 11px; }
     .scrape-counts { font-size: 11px; display: flex; gap: 8px; }
     .scrape-counts .sc { padding: 2px 7px; border-radius: 10px; background: #F5F3EF; border: 1px solid #E2DDD6; color: #A8A29E; }
     .scrape-counts .sc.has-data { color: #166534; border-color: #BBF7D0; background: #F0FDF4; }
@@ -183,7 +182,6 @@
   <div class="topbar-identity">
     <div class="topbar-name-row">
       <h1>{{ vc.name }}</h1>
-      {% if vc.firm %}<span class="firm">{{ vc.firm }}</span>{% endif %}
       <div class="scrape-counts">
         {% if vc.x_scraped is defined and vc.x_scraped is not none %}
           <span class="sc {{ 'has-data' if vc.x_scraped > 0 else 'no-data' }}">𝕏 {{ vc.x_scraped }} posts</span>
@@ -194,17 +192,10 @@
       </div>
     </div>
     <div class="topbar-contact-row">
-      {% if vc.email %}
-        <a href="mailto:{{ vc.email }}">✉ {{ vc.email }}</a>
-        {% if vc.x_url or vc.linkedin_url %}<span class="contact-sep">·</span>{% endif %}
-      {% endif %}
-      {% if vc.x_url %}
-        <a href="{{ vc.x_url }}" target="_blank">𝕏 {{ vc.x_url | replace('https://x.com/', '@') | replace('https://twitter.com/', '@') }}</a>
-        {% if vc.linkedin_url %}<span class="contact-sep">·</span>{% endif %}
-      {% endif %}
-      {% if vc.linkedin_url %}
-        <a href="{{ vc.linkedin_url }}" target="_blank">in LinkedIn ↗</a>
-      {% endif %}
+      {% if vc.firm %}<span class="firm">{{ vc.firm }}</span>{% endif %}
+      {% if vc.email %}<a href="mailto:{{ vc.email }}">{{ vc.email }}</a>{% endif %}
+      {% if vc.x_url %}<a href="{{ vc.x_url }}" target="_blank">X: {{ vc.x_url | replace('https://x.com/', '@') | replace('https://twitter.com/', '@') }}</a>{% endif %}
+      {% if vc.linkedin_url %}<a href="{{ vc.linkedin_url }}" target="_blank">LinkedIn: {{ vc.linkedin_url }}</a>{% endif %}
     </div>
   </div>
 
