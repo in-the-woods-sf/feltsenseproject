@@ -12,10 +12,10 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-We obsess over defensibility in pitch decks. @feltsensefund replicated every YC W26 startup with AI in days. If products are that replicable, what are we actually funding? This will reshape how we do diligence.
+We obsess over defensibility in pitch decks. @feltsensefund replicated every YC W26 startup with AI in days. If products are that replicable, what are we actually funding 👀
 
 **LinkedIn:**
-We talk about defensibility in every pitch meeting. Usually it's a slide with a diagram and some optimistic arrows. Feltsense just went through every startup in the entire YC W26 batch using AI founders, stress-testing whether each one could be replicated. Twenty of those are now live products, built in days. Not as a stunt. As a question. If the core product can be rebuilt that quickly, what is the actual moat we're backing? Speed used to be the answer. I'm not sure it is anymore.
+We talk about defensibility in every pitch meeting. Usually it's a slide with a diagram and some optimistic arrows. Feltsense just went through every startup in the entire YC W26 batch using AI founders, stress-testing whether each one could be replicated. Twenty of those are now live products, built in days. Not as a stunt. As a question. If the core product can be rebuilt that quickly, what is the actual moat we're backing? 
 
 ---
 

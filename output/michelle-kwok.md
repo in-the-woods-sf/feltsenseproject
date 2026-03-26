@@ -15,7 +15,7 @@ At Draper we talk a lot about backing irrational ideas. @feltsensefund just went
 **LinkedIn:**
 We at Draper always say we back rational founders building irrational ideas. That thesis just got pressure-tested in a way I didn't expect.
 
-@feltsensefund went through every startup in the entire YC W26 batch using AI. Built live replications in days. Real applications live - some of the builds are public, and the full PDF covers the whole batch.
+@feltsense went through every startup in the entire YC W26 batch using AI. Built live replications in days. Real applications live - some of the builds are public, and the full PDF covers the whole batch.
 
 The startups that couldn't be replicated are the ones worth studying. Because defensibility used to mean speed. Now it has to mean something the agents can't touch.
 

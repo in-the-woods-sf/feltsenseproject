@@ -17,7 +17,7 @@ Feltsense went through every startup in the YC W26 batch and stress-tested each 
 **LinkedIn:**
 I just watched AI agents replicate entire startup ideas from the YC W26 batch in days. Not weeks. Days.
 
-@feltsensefund stress-tested the whole cohort for defensibility using AI founders, and the public launch features real application replications live - you can test the builds with actual products built in mere days. The full report covers every company in the batch.
+@feltsense stress-tested the whole cohort for defensibility using AI founders, and the public launch features real application replications live - you can test the builds with actual products built in mere days. The full report covers every company in the batch.
 
 This is the most honest mirror the startup ecosystem has right now. Speed used to be the moat. Now agents move faster than any founding team.
 

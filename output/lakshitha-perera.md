@@ -17,7 +17,7 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 **LinkedIn:**
 What does defensibility even look like when an AI agent can replicate your core product in days?
 
-That's the question @feltsensefund forced every startup in the YC W26 batch to answer. They replicated 198 companies at scale to stress-test which moats could actually hold up. The winners? They're live right now with working products you can test. The losers? They revealed something fascinating about where real defensibility lives in 2024.
+That's the question @feltsense forced every startup in the YC W26 batch to answer. They replicated 198 companies at scale to stress-test which moats could actually hold up. The winners? They're live right now with working products you can test. The losers? They revealed something fascinating about where real defensibility lives in 2024.
 
 The surprising finding: the most defensible companies weren't the most technically sophisticated. They were the ones swimming in messy, regulated markets full of politics and broken trust. Turns out AI can clone your product overnight, but it can't navigate years of accumulated bureaucracy, turf wars, and dysfunctional human dynamics.
 

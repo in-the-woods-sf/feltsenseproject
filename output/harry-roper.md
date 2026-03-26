@@ -15,7 +15,7 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 @feltsensefund just tested every YC W26 startup for defensibility-here's what got me: real products are live and working. If an agent replicates your core in days, what's actually protecting you? Go see for yourself. 🔗
 
 **LinkedIn:**
-@feltsensefund just stress-tested every startup in the entire YC W26 batch by having AI replicate them. Here's what we found: the companies that couldn't be copied weren't the most technically sophisticated.
+@feltsense just stress-tested every startup in the entire YC W26 batch by having AI replicate them. Here's what we found: the companies that couldn't be copied weren't the most technically sophisticated.
 
 They were the ones navigating messy, regulated, or politically charged markets.
 

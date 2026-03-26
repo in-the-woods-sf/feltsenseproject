@@ -13,7 +13,7 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 @feltsensefund stress-tested every YC W26 startup for defensibility-and real applications got built live. Go test them out. Here's what keeps me up at night: if speed-to-market was your moat, what is it now?
 
 **LinkedIn:**
-@feltsensefund just stress-tested the entire YC W26 batch for defensibility. Every startup. They had AI founders replicate each one - real applications got built live. Go test some of them out.
+@feltsense just stress-tested the entire YC W26 batch for defensibility. Every startup. They had AI founders replicate each one - real applications got built live. Go test some of them out.
 
 The framing investors have relied on for years is "build fast, raise fast, own the market." But if an agent can replicate the core product in a weekend, speed isn't a moat anymore. It's a starting line.
 

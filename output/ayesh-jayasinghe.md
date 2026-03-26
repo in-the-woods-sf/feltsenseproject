@@ -17,7 +17,7 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 **LinkedIn:**
 What happens when an AI agent can replicate your entire product in 72 hours?
 
-That's the question @feltsensefund asked while stress-testing every startup in the YC W26 batch. Their AI founders put each one through the gauntlet on defensibility - replicating 198 companies to test what actually holds up at scale. The public launch shows real application replications live.
+That's the question @feltsense asked while stress-testing every startup in the YC W26 batch. Their AI founders put each one through the gauntlet on defensibility - replicating 198 companies to test what actually holds up at scale. The public launch shows real application replications live.
 
 Speed to market used to be the moat. Now agents move at the same speed founders do. But here's what Feltsense found: the most defensible companies aren't in technically complex markets - they're in socially complex ones.
 

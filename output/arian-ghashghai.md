@@ -13,7 +13,7 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 vc twitter talks about defensibility all day but nobody actually stress-tests it. @feltsensefund went through every startup in the YC W26 batch with AI founders and replicated them in days. if your moat is "we built it first," i have bad news
 
 **LinkedIn:**
-the vc industry loves the word "defensibility" but imo most investors never actually pressure-test it. they pattern match on team, traction, maybe TAM, and move on. @feltsensefund just went through every startup in the entire YC W26 batch using AI, replicating what each one does. real applications are live - go test some of them out.
+the vc industry loves the word "defensibility" but imo most investors never actually pressure-test it. they pattern match on team, traction, maybe TAM, and move on. @feltsense just went through every startup in the entire YC W26 batch using AI, replicating what each one does. real applications are live - go test some of them out.
 
 here's what surprised me: the markets hardest to crack with AI aren't technically complex - they're socially complex. industries full of politics, turf wars, broken trust, bureaucracy. AI can't fix broken human dynamics overnight. 
 

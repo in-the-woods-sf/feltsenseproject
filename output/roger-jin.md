@@ -17,7 +17,7 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 **LinkedIn:**
 **What if your startup's moat disappears in 72 hours?**
 
-That's the question @feltsensefund forced themselves to answer reviewing the entire YC W26 batch. Every single company. Stress-tested for defensibility by AI founders who replicated 198 startups to test which ones could survive AI disruption.
+That's the question @feltsense forced themselves to answer reviewing the entire YC W26 batch. Every single company. Stress-tested for defensibility by AI founders who replicated 198 startups to test which ones could survive AI disruption.
 
 The exercise surfaced a counterintuitive finding: the markets hardest to crack with AI aren't technically complex - they're socially complex.
 

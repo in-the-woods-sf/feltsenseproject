@@ -15,7 +15,7 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 **LinkedIn:**
 I just watched an AI agent replicate an entire startup's core product in under a week.
 
-@feltsensefund stress-tested every single YC W26 company with AI to see which ones could actually be copied. The ones that survived? Those are the asymmetric bets worth making.
+@feltsense stress-tested every single YC W26 company with AI to see which ones could actually be copied. The ones that survived? Those are the asymmetric bets worth making.
 
 Speed-to-market used to win. Now that's table stakes. An AI agent can clone your product before your seed round closes. The startups that couldn't be replicated are the ones I'm actually paying attention to.
 

@@ -15,7 +15,7 @@ Speed used to be the moat. Build fast, raise fast, win. @feltsensefund tested ev
 **LinkedIn:**
 Speed used to be the moat. Build fast. Raise fast. Win.
 
-@feltsensefund just went through every startup in the entire YC W26 batch. Stress-tested each one with AI founders. real applications shipped live - go test some of them out. The full PDF covers the whole batch.
+@feltsense just went through every startup in the entire YC W26 batch. Stress-tested each one with AI founders. real applications shipped live - go test some of them out. The full PDF covers the whole batch.
 
 Some startups couldn't be replicated. Most could.
 

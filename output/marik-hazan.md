@@ -17,7 +17,7 @@ Just stress-tested every YC W26 startup with AI founders-and the results are sob
 **LinkedIn:**
 What happens when AI agents try to steal your startup's entire product in 48 hours?
 
-The team at @feltsensefund just stress-tested this with 198 YC W26 companies. AI founders attempted to replicate each one live - and the results reveal something counterintuitive about defensibility in 2025.
+The team at @feltsense just stress-tested this with 198 YC W26 companies. AI founders attempted to replicate each one live - and the results reveal something counterintuitive about defensibility in 2025.
 
 The startups that couldn't be replicated weren't the most technically sophisticated. They were the ones operating in messy, dysfunctional markets full of politics, broken trust, and bureaucratic nightmares.
 

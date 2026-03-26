@@ -12,23 +12,11 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-@feltsensefund tested every YC W26 startup for defensibility with AI. Real apps live now. If an agent rebuilds it overnight, what are we actually funding?
+@feltsensefund tested every YC W26 startup for defensibility with AI. These findings are 🔥
 
 **LinkedIn:**
-@feltsensefund went through every startup in the entire YC W26 batch and stress-tested each one for defensibility using AI founders. They replicated 198 companies to test what's actually defendable when AI can build your product in days.
+@feltsense went through every startup in the entire YC W26 batch and stress-tested each one for defensibility using AI founders. They replicated 198 companies to test what's actually defendable when AI can build your product in days.
 
-As an early-stage investor, I think about moats constantly. Speed to market used to be one. That assumption is getting tested in real time right now.
-
-But here's what surprised me about their findings: the markets hardest to crack with AI aren't the most technically complex - they're the most socially complex. Industries full of politics, turf wars, broken trust, and bureaucracy. AI can replicate code overnight, but it can't fix broken human dynamics or navigate years of institutional dysfunction.
-
-Companies that have spent years learning to work within messy, regulated markets might have the most underrated moats of the AI era. If an AI agent can replicate your startup in days, what exactly is the durable value we're backing? Increasingly, it's your ability to operate where others can't.
-
-Comment "Feltsense" to get the full W26 report.
----
-
-### 💬 Comment to drop on our post
-
-This is a useful forcing function for how we evaluate defensibility at the seed stage. The companies that held up under this kind of pressure are the ones I want to spend time understanding. Curious how the results shift investor diligence conversations going forward.
 
 ---
 
