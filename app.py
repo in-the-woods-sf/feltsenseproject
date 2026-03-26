@@ -73,12 +73,19 @@ CAMPAIGNS = [
 # (section, field_id, label, textarea_rows)
 COPY_FIELDS = [
     ("summary",    "post_summary",  "Summary",            2),
-    ("x",          "x_post",        "Post",              3),
-    ("x",          "reply_casual",  "Reply A",            2),
-    ("x",          "reply_insight", "Reply B",            2),
-    ("linkedin",   "linkedin_post", "Post",               6),
+    ("x",          "x_post",        "VC X Post",          3),
+    ("x",          "reply_casual",  "Feltsense Reply A",  2),
+    ("x",          "reply_insight", "Feltsense Reply B",  2),
+    ("linkedin",   "linkedin_post", "VC LinkedIn Post",   6),
     ("engagement", "comment",       "Their Comment",      3),
     ("engagement", "our_comment",   "Feltsense Comment",  3),
+]
+
+# Hub view: VC-facing only — summary, posts, no replies or internal comments
+HUB_COPY_FIELDS = [
+    ("summary",    "post_summary",  "Summary",            2),
+    ("x",          "x_post",        "VC X Post",          3),
+    ("linkedin",   "linkedin_post", "VC LinkedIn Post",   6),
 ]
 
 
@@ -374,7 +381,34 @@ def vc_profile(slug):
             break
     return render_template("vc.html", vc=vc, copies=copies, campaigns=CAMPAIGNS,
                            copy_fields=COPY_FIELDS, partner_statuses=PARTNER_STATUSES,
-                           engagement_months=ENGAGEMENT_MONTHS, role_types=ROLE_TYPES)
+                           engagement_months=ENGAGEMENT_MONTHS, role_types=ROLE_TYPES,
+                           hub_mode=False)
+
+
+@app.route("/hub/<slug>")
+def hub_profile(slug):
+    vcs = load_vcs()
+    vc = next((v for v in vcs if v["slug"] == slug), None)
+    if not vc:
+        abort(404)
+    statuses = load_statuses()
+    entry = statuses.get(slug, {})
+    vc["status"] = entry.get("status", "") if isinstance(entry, dict) else entry
+    vc["engagement_month"] = entry.get("engagement_month", "") if isinstance(entry, dict) else ""
+    vc["role"] = entry.get("role", "") if isinstance(entry, dict) else ""
+    vc["approved"] = entry.get("approved", False) if isinstance(entry, dict) else False
+    vc["poc"] = entry.get("poc", "") if isinstance(entry, dict) else ""
+    copies = {c["id"]: load_copy(slug, c["id"]) for c in CAMPAIGNS}
+    for c in CAMPAIGNS:
+        cp = copies.get(c["id"])
+        if cp and (cp.get("x_scraped") is not None or cp.get("li_scraped") is not None):
+            vc["x_scraped"] = cp.get("x_scraped")
+            vc["li_scraped"] = cp.get("li_scraped")
+            break
+    return render_template("vc.html", vc=vc, copies=copies, campaigns=CAMPAIGNS,
+                           copy_fields=HUB_COPY_FIELDS, partner_statuses=PARTNER_STATUSES,
+                           engagement_months=ENGAGEMENT_MONTHS, role_types=ROLE_TYPES,
+                           hub_mode=True)
 
 
 @app.route("/api/set-status/<slug>", methods=["POST"])

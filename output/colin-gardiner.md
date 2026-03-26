@@ -10,10 +10,10 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-@feltsense went through every startup in the YC W26 batch. Replicated them with agentic AI. 20 featured deep-dives are live with working products. Speed to market used to be the moat. So what is it now?
+Just rebuilt the entire YC W26 batch with AI agents. Real products live and working right now. Speed to market isn't the moat anymore - so what is?
 
 **LinkedIn:**
-@feltsense stress-tested every startup in the YC W26 batch. Agentic AI founders. Replicated the core product. Days, not months. 20 featured deep-dives are live with working builds. Full PDF covers the whole batch.
+@feltsense stress-tested every startup in the YC W26 batch. Agentic AI founders. Replicated the core product. Days, not months. real applications are live - go test some of the builds. Full PDF covers the whole batch.
 
 Been thinking about this from the marketplace side. Network effects still matter. Proprietary data still matters. But "we built it first" is not a defensibility argument anymore.
 

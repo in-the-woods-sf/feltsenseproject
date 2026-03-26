@@ -401,7 +401,8 @@
 
 <!-- ── Section tabs ──────────────────────────────────────────── -->
 <div class="section-tabs">
-  <button class="section-tab active">Feltsense Network</button>
+  <button class="section-tab active" id="tab-network" onclick="switchTab('network')">Feltsense Network</button>
+  <button class="section-tab" id="tab-hub" onclick="switchTab('hub')">Feltsense VC Content Hub</button>
   <button class="section-tab coming-soon" disabled>Feltsense Talent Tool <span class="soon-pill">Coming Soon</span></button>
 </div>
 
@@ -566,6 +567,25 @@
 </div><!-- end .sidebar-col -->
 
 </div><!-- end .content-layout -->
+
+<!-- ── VC Content Hub panel ───────────────────────────────── -->
+<div id="hub-panel" style="display:none; padding: 32px;">
+  <div style="margin-bottom: 20px;">
+    <h2 style="font-size:15px; font-weight:700; color:#1C1917; margin-bottom:4px;">Feltsense VC Content Hub</h2>
+    <p style="font-size:12px; color:#A8A29E;">VC-facing copy — posts and replies, no internal notes.</p>
+  </div>
+  <div style="display:flex; flex-wrap:wrap; gap:12px;">
+    {% for vc in vcs_col %}
+    <a href="/hub/{{ vc.slug }}" style="display:block; background:#FFFFFF; border:1px solid #E2DDD6; border-radius:8px; padding:14px 18px; min-width:180px; text-decoration:none; color:#1C1917; transition: border-color 0.15s;">
+      <div style="font-size:13px; font-weight:600;">{{ vc.name }}</div>
+      {% if vc.firm %}<div style="font-size:11px; color:#A8A29E; margin-top:2px;">{{ vc.firm }}</div>{% endif %}
+      <div style="margin-top:8px; font-size:11px; {{ 'color:#166534' if vc.generated else 'color:#A8A29E' }}">
+        {{ '✓ Copy Ready' if vc.generated else 'Not generated' }}
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</div>
 
 <!-- ── Floating status / engagement menu ──────────────────── -->
 <div class="status-menu" id="status-menu">
@@ -877,6 +897,33 @@ async function sendBulkEmails() {
     btn.disabled = false;
     toggleSelectMode();
   }, 3000);
+}
+
+// Auto-restore hub tab if returning from hub profile
+if (new URLSearchParams(location.search).get('tab') === 'hub') {
+  document.addEventListener('DOMContentLoaded', () => switchTab('hub'));
+}
+
+function switchTab(tab) {
+  const networkContent = document.querySelector('.filter-bar');
+  const contentLayout  = document.querySelector('.content-layout');
+  const hubPanel       = document.getElementById('hub-panel');
+  const tabNetwork     = document.getElementById('tab-network');
+  const tabHub         = document.getElementById('tab-hub');
+
+  if (tab === 'hub') {
+    networkContent.style.display = 'none';
+    contentLayout.style.display  = 'none';
+    hubPanel.style.display       = 'block';
+    tabNetwork.classList.remove('active');
+    tabHub.classList.add('active');
+  } else {
+    networkContent.style.display = '';
+    contentLayout.style.display  = '';
+    hubPanel.style.display       = 'none';
+    tabNetwork.classList.add('active');
+    tabHub.classList.remove('active');
+  }
 }
 </script>
 

@@ -12,7 +12,7 @@
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-@feltsense went through every startup in the YC W26 batch and stress-tested each one for defensibility using agentic AI. The question investors should be sitting with: if an agent can rebuild your core product in days, what exactly are we funding? 🔍
+Just stress-tested every YC W26 startup with agentic AI-here's what kept me up at night: if an agent rebuilds your core product in days, what are we actually funding? @feltsense dug deep on defensibility. 🔍
 
 **LinkedIn:**
 Feltsense just went through the entire YC W26 batch and stress-tested every startup for defensibility using agentic AI founders. They built live replications of featured companies in days.

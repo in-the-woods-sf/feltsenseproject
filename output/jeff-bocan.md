@@ -15,7 +15,7 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 **LinkedIn:**
 The first check is based on trust. Subsequent checks are earned. That framework has guided me for years. But what happens when an AI agent can replicate what a startup does in days?
 
-Feltsense just went through every startup in the YC W26 batch, stress-testing defensibility with agentic AI founders. 20 deep-dive replications are live, full batch breakdown in the PDF.
+Feltsense just went through every startup in the YC W26 batch, stress-testing defensibility with agentic AI founders. real applications are live - go test some of the builds, full batch breakdown in the PDF.
 
 Speed used to be the moat. Now it might be the commodity. So what are we really betting on when we write that first check… 🤔
 

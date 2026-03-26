@@ -12,10 +12,14 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-We went through every startup in the YC W26 batch and stress-tested each one for defensibility using agentic AI founders. 20 featured deep-dives are live with working products built in days. The rest are in the full PDF. If an agent can rebuild it that fast, what was the moat? @feltsense
+Agentic AI just stress-tested every YC W26 startup for defensibility - and the results are brutal. Real applications are live to test. If an agent can rebuild it that fast, what was the moat? Full breakdown in the PDF. @feltsense
 
 **LinkedIn:**
-We just went through the entire YC W26 batch at Feltsense. Every single company, stress-tested for defensibility by agentic AI founders. 20 featured deep-dives are now live with working products built in days. The full PDF covers the rest.
+Here's the rewritten post:
+
+**What if your startup's moat disappears in 72 hours?**
+
+That's the question we forced ourselves to answer reviewing the entire YC W26 batch at Feltsense. Every single company. Stress-tested for defensibility by agentic AI founders. Real applications are live now - go test some of the builds. The full PDF covers the rest.
 
 The exercise forced a question I keep coming back to: if an AI agent can replicate the core of what you're building in a matter of days, where does your moat actually live?
 
