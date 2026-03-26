@@ -1,4 +1,4 @@
-## Ethan — Outside VC
+## Ethan Austin — Outside VC
 
 ### 📋 Sculpture Summary
 

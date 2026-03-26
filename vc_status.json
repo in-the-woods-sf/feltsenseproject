@@ -160,13 +160,6 @@
     "approved": false,
     "poc": ""
   },
-  "ethan": {
-    "status": "active",
-    "engagement_month": "",
-    "role": "vc",
-    "approved": false,
-    "poc": ""
-  },
   "marina-girgis": {
     "status": "active",
     "engagement_month": "",
@@ -433,44 +426,291 @@
     "approved": false,
     "poc": ""
   },
-  "shahed-khan": {"status": "", "engagement_month": "", "role": "investor_update", "approved": false, "poc": ""},
-  "neil-parikh": {"status": "", "engagement_month": "", "role": "investor_update", "approved": false, "poc": ""},
-  "yuri-sagalov": {"status": "", "engagement_month": "", "role": "investor_update", "approved": false, "poc": ""},
-  "yoni-rechtman": {"status": "", "engagement_month": "", "role": "investor_update", "approved": false, "poc": ""},
-  "stu-smith": {"status": "", "engagement_month": "", "role": "investor_update", "approved": false, "poc": ""},
-  "mike-smith": {"status": "", "engagement_month": "", "role": "investor_update", "approved": false, "poc": ""},
-  "kate-kitto": {"status": "", "engagement_month": "", "role": "investor_update", "approved": false, "poc": ""},
-  "geoffrey-woo": {"status": "", "engagement_month": "", "role": "investor_update", "approved": false, "poc": ""},
-  "fawzi-itani": {"status": "", "engagement_month": "", "role": "investor_update", "approved": false, "poc": ""},
-  "brian-rothenberg": {"status": "", "engagement_month": "", "role": "investor_update", "approved": false, "poc": ""},
-  "kris-cercano": {"status": "", "engagement_month": "", "role": "investor_update", "approved": false, "poc": ""},
-  "joe-pompliano": {"status": "", "engagement_month": "", "role": "investor_update", "approved": false, "poc": ""},
-  "sophia-yu": {"status": "", "engagement_month": "", "role": "investor_update", "approved": false, "poc": ""},
-  "jenny-fielding": {"status": "", "engagement_month": "", "role": "investor_update", "approved": false, "poc": ""},
-  "john-forbes": {"status": "", "engagement_month": "", "role": "investor_update", "approved": false, "poc": ""},
-  "kevin-novak": {"status": "", "engagement_month": "", "role": "investor_update", "approved": false, "poc": ""},
-  "joff-redfern": {"status": "", "engagement_month": "", "role": "investor_update", "approved": false, "poc": ""},
-  "amit-vasudev": {"status": "", "engagement_month": "", "role": "investor_update", "approved": false, "poc": ""},
-  "matthew-brimer": {"status": "", "engagement_month": "", "role": "investor_update", "approved": false, "poc": ""},
-  "ryan-gembala": {"status": "", "engagement_month": "", "role": "investor_update", "approved": false, "poc": ""},
-  "matias-zorrilla": {"status": "", "engagement_month": "", "role": "investor_update", "approved": false, "poc": ""},
-  "etienne-boutan": {"status": "", "engagement_month": "", "role": "investor_update", "approved": false, "poc": ""},
-  "jorian-hoover": {"status": "", "engagement_month": "", "role": "investor_update", "approved": false, "poc": ""},
-  "shane-ray-martin": {"status": "", "engagement_month": "", "role": "investor_update", "approved": false, "poc": ""},
-  "raymond-kim": {"status": "", "engagement_month": "", "role": "investor_update", "approved": false, "poc": ""},
-  "ben-lang": {"status": "", "engagement_month": "", "role": "investor_update", "approved": false, "poc": ""},
-  "arielle-zuckerberg": {"status": "", "engagement_month": "", "role": "investor_update", "approved": false, "poc": ""},
-  "lex": {"status": "", "engagement_month": "", "role": "investor_update", "approved": false, "poc": ""},
-  "charlie-leggate": {"status": "", "engagement_month": "", "role": "investor_update", "approved": false, "poc": ""},
-  "ryan-hoover": {"status": "", "engagement_month": "", "role": "investor_update", "approved": false, "poc": ""},
-  "greg-castle": {"status": "", "engagement_month": "", "role": "investor_update", "approved": false, "poc": ""},
-  "adam-d-augelli": {"status": "", "engagement_month": "", "role": "investor_update", "approved": false, "poc": ""},
-  "yohei-nakajima": {"status": "", "engagement_month": "", "role": "investor_update", "approved": false, "poc": ""},
-  "robin-chan": {"status": "", "engagement_month": "", "role": "investor_update", "approved": false, "poc": ""},
-  "chris-yeh": {"status": "", "engagement_month": "", "role": "investor_update", "approved": false, "poc": ""},
-  "michael-dempsey": {"status": "", "engagement_month": "", "role": "investor_update", "approved": false, "poc": ""},
-  "marvin-liao": {"status": "", "engagement_month": "", "role": "investor_update", "approved": false, "poc": ""},
-  "warren-shaeffer": {"status": "", "engagement_month": "", "role": "investor_update", "approved": false, "poc": ""},
-  "rico-mallozzi": {"status": "", "engagement_month": "", "role": "investor_update", "approved": false, "poc": ""},
-  "kate-meacham": {"status": "", "engagement_month": "", "role": "investor_update", "approved": false, "poc": ""}
+  "shahed-khan": {
+    "status": "",
+    "engagement_month": "",
+    "role": "investor_update",
+    "approved": false,
+    "poc": ""
+  },
+  "neil-parikh": {
+    "status": "",
+    "engagement_month": "",
+    "role": "investor_update",
+    "approved": false,
+    "poc": ""
+  },
+  "yuri-sagalov": {
+    "status": "",
+    "engagement_month": "",
+    "role": "investor_update",
+    "approved": false,
+    "poc": ""
+  },
+  "yoni-rechtman": {
+    "status": "",
+    "engagement_month": "",
+    "role": "investor_update",
+    "approved": false,
+    "poc": ""
+  },
+  "stu-smith": {
+    "status": "",
+    "engagement_month": "",
+    "role": "investor_update",
+    "approved": false,
+    "poc": ""
+  },
+  "mike-smith": {
+    "status": "",
+    "engagement_month": "",
+    "role": "investor_update",
+    "approved": false,
+    "poc": ""
+  },
+  "kate-kitto": {
+    "status": "",
+    "engagement_month": "",
+    "role": "investor_update",
+    "approved": false,
+    "poc": ""
+  },
+  "geoffrey-woo": {
+    "status": "",
+    "engagement_month": "",
+    "role": "investor_update",
+    "approved": false,
+    "poc": ""
+  },
+  "fawzi-itani": {
+    "status": "",
+    "engagement_month": "",
+    "role": "investor_update",
+    "approved": false,
+    "poc": ""
+  },
+  "brian-rothenberg": {
+    "status": "",
+    "engagement_month": "",
+    "role": "investor_update",
+    "approved": false,
+    "poc": ""
+  },
+  "kris-cercano": {
+    "status": "",
+    "engagement_month": "",
+    "role": "investor_update",
+    "approved": false,
+    "poc": ""
+  },
+  "joe-pompliano": {
+    "status": "",
+    "engagement_month": "",
+    "role": "investor_update",
+    "approved": false,
+    "poc": ""
+  },
+  "sophia-yu": {
+    "status": "",
+    "engagement_month": "",
+    "role": "investor_update",
+    "approved": false,
+    "poc": ""
+  },
+  "jenny-fielding": {
+    "status": "",
+    "engagement_month": "",
+    "role": "investor_update",
+    "approved": false,
+    "poc": ""
+  },
+  "john-forbes": {
+    "status": "",
+    "engagement_month": "",
+    "role": "investor_update",
+    "approved": false,
+    "poc": ""
+  },
+  "kevin-novak": {
+    "status": "",
+    "engagement_month": "",
+    "role": "investor_update",
+    "approved": false,
+    "poc": ""
+  },
+  "joff-redfern": {
+    "status": "",
+    "engagement_month": "",
+    "role": "investor_update",
+    "approved": false,
+    "poc": ""
+  },
+  "amit-vasudev": {
+    "status": "",
+    "engagement_month": "",
+    "role": "investor_update",
+    "approved": false,
+    "poc": ""
+  },
+  "matthew-brimer": {
+    "status": "",
+    "engagement_month": "",
+    "role": "investor_update",
+    "approved": false,
+    "poc": ""
+  },
+  "ryan-gembala": {
+    "status": "",
+    "engagement_month": "",
+    "role": "investor_update",
+    "approved": false,
+    "poc": ""
+  },
+  "matias-zorrilla": {
+    "status": "",
+    "engagement_month": "",
+    "role": "investor_update",
+    "approved": false,
+    "poc": ""
+  },
+  "etienne-boutan": {
+    "status": "",
+    "engagement_month": "",
+    "role": "investor_update",
+    "approved": false,
+    "poc": ""
+  },
+  "jorian-hoover": {
+    "status": "",
+    "engagement_month": "",
+    "role": "investor_update",
+    "approved": false,
+    "poc": ""
+  },
+  "shane-ray-martin": {
+    "status": "",
+    "engagement_month": "",
+    "role": "investor_update",
+    "approved": false,
+    "poc": ""
+  },
+  "raymond-kim": {
+    "status": "",
+    "engagement_month": "",
+    "role": "investor_update",
+    "approved": false,
+    "poc": ""
+  },
+  "ben-lang": {
+    "status": "",
+    "engagement_month": "",
+    "role": "investor_update",
+    "approved": false,
+    "poc": ""
+  },
+  "arielle-zuckerberg": {
+    "status": "",
+    "engagement_month": "",
+    "role": "investor_update",
+    "approved": false,
+    "poc": ""
+  },
+  "lex": {
+    "status": "",
+    "engagement_month": "",
+    "role": "investor_update",
+    "approved": false,
+    "poc": ""
+  },
+  "charlie-leggate": {
+    "status": "",
+    "engagement_month": "",
+    "role": "investor_update",
+    "approved": false,
+    "poc": ""
+  },
+  "ryan-hoover": {
+    "status": "",
+    "engagement_month": "",
+    "role": "investor_update",
+    "approved": false,
+    "poc": ""
+  },
+  "greg-castle": {
+    "status": "",
+    "engagement_month": "",
+    "role": "investor_update",
+    "approved": false,
+    "poc": ""
+  },
+  "adam-d-augelli": {
+    "status": "",
+    "engagement_month": "",
+    "role": "investor_update",
+    "approved": false,
+    "poc": ""
+  },
+  "yohei-nakajima": {
+    "status": "",
+    "engagement_month": "",
+    "role": "investor_update",
+    "approved": false,
+    "poc": ""
+  },
+  "robin-chan": {
+    "status": "",
+    "engagement_month": "",
+    "role": "investor_update",
+    "approved": false,
+    "poc": ""
+  },
+  "chris-yeh": {
+    "status": "",
+    "engagement_month": "",
+    "role": "investor_update",
+    "approved": false,
+    "poc": ""
+  },
+  "michael-dempsey": {
+    "status": "",
+    "engagement_month": "",
+    "role": "investor_update",
+    "approved": false,
+    "poc": ""
+  },
+  "marvin-liao": {
+    "status": "",
+    "engagement_month": "",
+    "role": "investor_update",
+    "approved": false,
+    "poc": ""
+  },
+  "warren-shaeffer": {
+    "status": "",
+    "engagement_month": "",
+    "role": "investor_update",
+    "approved": false,
+    "poc": ""
+  },
+  "rico-mallozzi": {
+    "status": "",
+    "engagement_month": "",
+    "role": "investor_update",
+    "approved": false,
+    "poc": ""
+  },
+  "kate-meacham": {
+    "status": "",
+    "engagement_month": "",
+    "role": "investor_update",
+    "approved": false,
+    "poc": ""
+  },
+  "ethan-austin": {
+    "status": "active",
+    "engagement_month": "",
+    "role": "vc",
+    "approved": false,
+    "poc": ""
+  }
 }

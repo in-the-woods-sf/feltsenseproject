@@ -1,4 +1,4 @@
-## Ethan — Outside VC
+## Ethan Austin — Outside VC
 
 
 > ⚠️ **Insufficient data:** No posts were scraped. Copy uses general VC conventions — review carefully.
@@ -32,7 +32,7 @@ This is a useful forcing function for how investors think about defensibility. T
 ### 🔁 Our reply to their comment — pick one (internal use)
 
 **A — Casual** *(warm thanks / acknowledgment)*
-Appreciate that framing, Ethan. The "are we pricing those correctly" question is one we kept circling back to while building this out.
+Appreciate that framing, Ethan Austin. The "are we pricing those correctly" question is one we kept circling back to while building this out.
 
 **B — Insight** *(unintuitive push that deepens the thread)*
 One thing that surprised us: the startups with the most technically complex products weren't necessarily the hardest to replicate. The ones that embedded themselves into messy, relationship-driven workflows were far stickier than any architecture choice.
