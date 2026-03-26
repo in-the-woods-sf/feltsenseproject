@@ -505,19 +505,6 @@
     </div>
   </div>
 
-  <!-- Friends of Feltsense -->
-  <div class="col-section" draggable="true" data-col="friends">
-    <div class="col-header">
-      <span class="col-drag-handle">⠿</span>
-      Friends of Feltsense
-      <span class="col-count">{{ friends_col | length }}</span>
-    </div>
-    <div class="col-cards" id="col-friends">
-      {% for vc in friends_col %}{{ vc_card(vc) }}{% endfor %}
-      {% if not friends_col %}<div class="col-empty">No friends yet</div>{% endif %}
-    </div>
-  </div>
-
   <!-- Mentors / Advisors -->
   <div class="col-section" draggable="true" data-col="mentors">
     <div class="col-header">
@@ -541,6 +528,19 @@
     <div class="col-cards" id="col-investor">
       {% for vc in investor_col %}{{ vc_card(vc) }}{% endfor %}
       {% if not investor_col %}<div class="col-empty">No contacts yet</div>{% endif %}
+    </div>
+  </div>
+
+  <!-- Friends of Feltsense -->
+  <div class="col-section" draggable="true" data-col="friends">
+    <div class="col-header">
+      <span class="col-drag-handle">⠿</span>
+      Friends of Feltsense
+      <span class="col-count">{{ friends_col | length }}</span>
+    </div>
+    <div class="col-cards" id="col-friends">
+      {% for vc in friends_col %}{{ vc_card(vc) }}{% endfor %}
+      {% if not friends_col %}<div class="col-empty">No friends yet</div>{% endif %}
     </div>
   </div>
 
