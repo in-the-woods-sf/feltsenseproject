@@ -6,39 +6,37 @@
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-We ran agentic AI founders against every startup in YC's W26 batch. Built live products in days. Some companies held up. Most didn't. If speed-to-market was your moat, what is it now? @feltsense
+We went through every startup in the YC W26 batch and stress-tested each one for defensibility. 20 featured deep-dives ship today with live products built in days. The question nobody's asking yet: if an agent can replicate your startup that fast, what exactly is the moat?
 
 **LinkedIn:**
-We just stress-tested every startup in the YC W26 batch for defensibility. The method: agentic AI founders replicating what each company does, with 20 deep-dive builds shipping as live products in days.
+We spent weeks running every startup in the YC W26 batch through agentic AI founders, stress-testing each one for real defensibility. Today we're publishing 20 featured deep-dives with live products built in days. The full PDF covers the entire batch.
 
-Some of these startups held up. A lot of them didn't.
+Speed used to be the moat. Build fast, raise fast, grow fast. But when an AI agent can rebuild what you shipped in a fraction of the time, speed alone stops meaning what it used to.
 
-The old playbook was build fast, raise fast, figure out the moat later. That worked when execution speed was scarce. It's not scarce anymore.
-
-So the question for founders and investors alike: if an AI agent can rebuild your product in 72 hours, where does real defensibility actually live?
+The startups that couldn't be replicated are telling us something important. What are founders and investors going to do with that information?
 
 ---
 
 ### 💬 Comment to drop on our post
 
-This is the kind of diligence exercise that should make every early-stage investor uncomfortable in a productive way. The gap between "first to market" and "defensible" is getting exposed in real time here.
+The most interesting output here isn't the 20 live builds. It's the pattern across the entire batch showing how narrow the defensibility window actually is for most software startups right now. That's the conversation worth having.
 
 ---
 
 ### 🔁 Our reply to their comment — pick one (internal use)
 
 **A — Casual** *(warm thanks / acknowledgment)*
-Appreciate that framing, Ben. That gap between first-to-market and defensible is exactly the nerve we were trying to hit.
+Appreciate that, Ben. The batch-wide pattern is exactly what we kept coming back to as the real story.
 
 **B — Insight** *(unintuitive push that deepens the thread)*
-What surprised us most: the companies that held up weren't the most technically complex. They were the ones where the product was a side effect of something an agent can't accumulate on its own.
+What surprised us most is that the startups with the strongest defensibility weren't the ones with the most technical complexity. They were the ones where the product was inseparable from a feedback loop that takes time to build, not skill.
 
 **C — Tease** *(hint at more coming / stay tuned)*
-The defensibility patterns we're seeing across the full batch are starting to cluster in ways that change how we think about what's fundable right now.
+The defensibility window pattern you're pointing at gets sharper when you see what we're mapping across batches next.
 
 ---
 
-**Voice notes:** Without public post data, the tone defaults to composed VC partner: measured confidence, analytical framing, comfortable asking hard questions without grandstanding. Kept energy steady and let the implications do the work.
+**Voice notes:** Used a measured, analytical VC tone given no public data on Ben's actual voice. Kept the energy composed and intellectually grounded, leaning on the work itself rather than adjectives or hype.
 
 **Scrape status:**
 > No scraping attempted

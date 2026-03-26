@@ -2,20 +2,18 @@
 Campaign brief summary: # Campaign: YC Replication Sculpture — March 24th Launch
 
 ## What We Did
-We went through every startup in the YC W26 batch using agentic AI founders — stress-testing each one for defensibility. The pu...
+Feltsense went through every startup in the YC W26 batch using agentic AI founders — stress-testing each one for defensibility....
 
 ---
 
-- [Jeff Bocan — Okapi VC](./jeff-bocan.md)
 - [Marc Averitt — Okapi VC](./marc-averitt.md)
-- [Elias Can — Elias Can](./elias-can.md)
+- [Elias Can — Elias Can](./elias-can.md) ⚠️
 - [Ronnie Martinez — CEAS Investments](./ronnie-martinez.md)
 - [Evan Buhler — Talok Capital](./evan-buhler.md)
 - [Jon Soberg — MS&AD Ventures](./jon-soberg.md)
-- [Matthew Mulvey — Liquid 2 Ventures](./matthew-mulvey.md)
+- [Matthew Mulvey — Liquid 2 Ventures](./matthew-mulvey.md) ⚠️
 - [Shawn Larrabee — Liquid 2 Ventures](./shawn-larrabee.md) ⚠️
 - [Patrick Kerr — Launch Factory](./patrick-kerr.md) ⚠️
-- [Zachary Ginsburg — Calm Ventures](./zachary-ginsburg.md) ⚠️
 - [David Wieland — Motivate Ventures](./david-wieland.md)
 - [Winslow Strong — Winslow Strong](./winslow-strong.md)
 - [Alejandra Vergara — Bee Partners](./alejandra-vergara.md)

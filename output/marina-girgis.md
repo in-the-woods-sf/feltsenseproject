@@ -6,33 +6,35 @@
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-At Precursor we evaluate hundreds of early-stage companies a year. @feltsense just went through the entire YC W26 batch with agentic AI founders and stress-tested every single one for defensibility. If speed-to-market isn't a moat anymore, what exactly are we pricing into our seed rounds?
+At pre-seed we bet on founders, not features. @feltsense just stress-tested every startup in the YC W26 batch for defensibility using agentic AI. The ones that held up tell you something real about what moats look like now. The ones that didn't tell you even more.
 
 **LinkedIn:**
-We spend a lot of time at Precursor thinking about what makes early-stage companies durable. Feltsense just went through every startup in the YC W26 batch using agentic AI founders to stress-test defensibility. They built live products in days, with 20 featured as deep-dive replications. Some companies held up. Many didn't. The exercise is forcing a real question for seed investors: if the product can be rebuilt by an agent in a weekend, what are we actually underwriting when we write a check?
+We talk about defensibility constantly in early-stage investing. But we rarely pressure-test it this directly. Feltsense went through every startup in the YC W26 batch using agentic AI founders, replicating what they do in days. 20 featured deep-dives are live with working products. The full PDF covers the entire batch.
+
+The results are clarifying. Some companies held up. Many didn't. At pre-seed, we're betting on founders who build things that can't be reduced to a prompt. So what does defensibility actually mean when agents can ship this fast?
 
 ---
 
 ### 💬 Comment to drop on our post
 
-This is a useful forcing function for how seed investors think about defensibility. The companies that held up probably share something that has nothing to do with their code. Curious to see the full breakdown.
+This is a useful forcing function. At the earliest stages, we're already asking founders what makes them hard to replace. Seeing it tested at batch scale makes the question sharper, not easier.
 
 ---
 
 ### 🔁 Our reply to their comment — pick one (internal use)
 
 **A — Casual** *(warm thanks / acknowledgment)*
-Appreciate you engaging with this, Marina. The seed-stage lens is exactly the perspective we were hoping this would reach.
+Appreciate that framing, Marina. The "forcing function" angle is exactly how we think about it too.
 
 **B — Insight** *(unintuitive push that deepens the thread)*
-You're right that it's not about the code. The most interesting finding was that the hardest companies to replicate weren't technically complex at all. They just had feedback loops with users that an agent couldn't simulate.
+One thing that surprised us: the startups that held up best weren't the most technically complex. They were the ones where the founder's specific insight shaped the product in ways an agent couldn't reverse-engineer from the outside.
 
 **C — Tease** *(hint at more coming / stay tuned)*
-We're starting to see a pattern in what separates the unreplicable companies from the rest, and it's reshaping how we think about what comes next from Feltsense.
+We're starting to see patterns in what makes early-stage companies replication-resistant, and it maps to something most investors aren't weighting heavily enough yet.
 
 ---
 
-**Voice notes:** With no public posts available, this copy uses a measured, analytically grounded VC voice befitting a seed-stage investor at Precursor. Tone is composed and evaluative, centering the investor's perspective on defensibility rather than hype.
+**Voice notes:** Used a measured, analytically grounded VC tone with emphasis on early-stage investing perspective. Kept energy composed and question-driven, defaulting to a "thoughtful partner" register given the absence of specific voice data.
 
 **Scrape status:**
 > LinkedIn [✗]: LinkedIn blocked request (status 999) — this is normal (0 posts)

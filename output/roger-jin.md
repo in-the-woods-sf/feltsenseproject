@@ -6,39 +6,37 @@
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-We went through every startup in the YC W26 batch and stress-tested them with agentic AI founders. Built live products in days. Some companies held up. Most didn't. If an agent can replicate your startup that fast, what was the moat in the first place?
+We went through every startup in the YC W26 batch and stress-tested each one for defensibility using agentic AI founders. 20 featured deep-dives are live with working products built in days. The rest are in the full PDF. If an agent can rebuild it that fast, what was the moat? @feltsense
 
 **LinkedIn:**
-We just went through the entire YC W26 batch at Feltsense. Every company. Agentic AI founders stress-testing each one for defensibility, with 20 deep-dive replications built as live products in days. The full breakdown covers the rest.
+We just went through the entire YC W26 batch at Feltsense. Every single company, stress-tested for defensibility by agentic AI founders. 20 featured deep-dives are now live with working products built in days. The full PDF covers the rest.
 
-Speed used to be the moat. Ship fast, raise fast, figure it out later. That playbook is getting pressure-tested in real time now.
+The exercise forced a question I keep coming back to: if an AI agent can replicate the core of what you're building in a matter of days, where does your moat actually live?
 
-Some of these companies held up remarkably well. Others dissolved on contact. The difference between the two is worth studying closely.
-
-If an AI agent can rebuild what you're building in a weekend, what exactly are investors paying for?
+Speed used to be the answer. I'm not sure it is anymore.
 
 ---
 
 ### 💬 Comment to drop on our post
 
-The gap between "replicable product" and "defensible company" is something most investors still evaluate with gut feel. Seeing it tested empirically across an entire batch makes the conversation much harder to hand-wave away.
+The most interesting finding isn't which startups got replicated. It's how few had defensibility that lived outside the product itself. That distinction is going to reshape how early-stage investors think about what they're actually funding.
 
 ---
 
 ### 🔁 Our reply to their comment — pick one (internal use)
 
 **A — Casual** *(warm thanks / acknowledgment)*
-Appreciate that framing, Roger. The gut-feel point is exactly why we wanted to make this tangible instead of theoretical.
+Appreciate you pulling that thread, Roger. The product-vs-defensibility distinction is exactly the conversation we were hoping this would spark.
 
 **B — Insight** *(unintuitive push that deepens the thread)*
-What surprised us most is that the companies with the strongest defensibility often looked unremarkable on demo day. The ones that generated the most hype were sometimes the easiest to replicate in under 72 hours.
+What surprised us most is that the startups with the strongest defensibility often looked the least impressive on demo day, because their moats were in places that don't fit on a slide.
 
 **C — Tease** *(hint at more coming / stay tuned)*
-The empirical side is just the starting point. We're seeing patterns in what makes something truly non-replicable that don't map to any framework investors are currently using.
+We're sitting on a pattern across the batch about where defensibility actually clusters that's going to make a lot of seed-stage theses uncomfortable.
 
 ---
 
-**Voice notes:** Without public post data, copy defaults to a measured, analytically grounded VC voice. Tone is composed and intellectually direct, leaning on precision over personality, calibrated to feel like a partner sharing findings rather than making announcements.
+**Voice notes:** With no public data to anchor to, the tone defaults to measured VC partner: analytical, composed, lets the implications do the talking rather than leaning on enthusiasm or flair.
 
 **Scrape status:**
 > No scraping attempted

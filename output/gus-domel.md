@@ -4,33 +4,37 @@
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-@feltsense just went through every startup in the YC W26 batch and stress-tested them with agentic AI founders. Live replications built in days. The ones that couldn't be copied are the ones worth watching 👀 If speed was your moat, what is it now?
+@feltsense just went through every startup in the YC W26 batch and stress-tested them for defensibility using agentic AI founders. 20 featured deep-dives with live products built in days. The question nobody wants to sit with: if an agent can rebuild it that fast, what's the actual moat? 👀
 
 **LinkedIn:**
-This is the kind of project that should make every early-stage investor pay attention. @Feltsense went through the entire YC W26 batch and stress-tested each startup for defensibility using agentic AI founders. Built live replications in days. Some held up. A lot didn't. The startups that couldn't be copied are telling us something important about where real value sits now. Speed to market used to be the answer. It's not enough anymore. If you're a founder and your moat is "we built it first," what's the plan when an agent builds it second in 72 hours?
+Been thinking about this one all week. @Feltsense went through every single startup in the YC W26 batch, stress-testing each one for defensibility using agentic AI founders. 20 featured deep-dives come with live products built in days. The full PDF covers the entire batch.
+
+Speed used to be the moat. Ship fast, raise fast, grow fast. But if an AI agent can replicate what you're building in a few days, that playbook is getting tested in real time.
+
+The founders who can't be replicated are the ones I want to back. What does defensibility actually look like now?
 
 ---
 
 ### 💬 Comment to drop on our post
 
-This is the right question at the right time. Speed used to buy you a window. Now the window is closing faster than most founders realize. The ones that survived this test are the ones I want to talk to.
+This is the right stress test at the right time. The founders who come out the other side of this looking strong are the ones building something an agent genuinely can't touch. Amped to see who those are.
 
 ---
 
 ### 🔁 Our reply to their comment — pick one (internal use)
 
 **A — Casual** *(warm thanks / acknowledgment)*
-Appreciate you, Gus. The founders who get this and keep building anyway are exactly who we're paying attention to.
+Appreciate you, Gus. Means a lot coming from someone who's been in the trenches with founders at this stage every day.
 
 **B — Insight** *(unintuitive push that deepens the thread)*
-The surprising thing wasn't which startups we could replicate. It was how many founders had defensibility they hadn't even articulated yet, buried in decisions an agent would never think to make.
+One thing that surprised us: the startups with the deepest moats weren't always the most technically complex ones. Sometimes the defensibility came from places the founders themselves hadn't articulated yet.
 
 **C — Tease** *(hint at more coming / stay tuned)*
-We're seeing a pattern in the batch around which types of defensibility actually survive agentic pressure, and it's not the ones most investors are pricing in right now.
+We're noticing a pattern across the batch around what actually makes a startup unreplicable, and it's not what most investors are screening for right now.
 
 ---
 
-**Voice notes:** Brought Gus's natural energy down one notch from his typical "amped" register to land on confident and direct. Kept the short-burst cadence and founder-facing framing he defaults to, but let the idea carry the weight instead of hype vocabulary.
+**Voice notes:** Kept Gus's punchy, fragment-forward rhythm and generous energy but dialed the hype vocabulary down one notch. Replaced his signature "insane" and "don't sleep on" with sharper, more considered framing while keeping the post feeling like something he'd genuinely fire off after seeing something that got him thinking.
 
 **Scrape status:**
 > X/Twitter [✓]: Twitter API v2 (29 posts)

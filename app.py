@@ -74,7 +74,6 @@ COPY_FIELDS = [
     ("x",          "x_post",        "Post",              3),
     ("x",          "reply_casual",  "Reply A",            2),
     ("x",          "reply_insight", "Reply B",            2),
-    ("x",          "reply_tease",   "Reply C",            2),
     ("linkedin",   "linkedin_post", "Post",               6),
     ("engagement", "comment",       "Their Comment",      3),
     ("engagement", "our_comment",   "Feltsense Comment",  3),
@@ -243,9 +242,6 @@ def save_copy(slug: str, copy: GeneratedCopy, campaign: str = "march"):
 **B — Insight** *(unintuitive push that deepens the thread)*
 {copy.our_reply_insight}
 
-**C — Tease** *(hint at more coming / stay tuned)*
-{copy.our_reply_tease}
-
 ---
 
 **Voice notes:** {copy.voice_notes}
@@ -410,7 +406,7 @@ def set_status(slug):
 def regenerate(slug):
     """
     Regenerate copy for a single VC.
-    Body: { "section": "x_post"|"linkedin_post"|"comment"|"reply_casual"|"reply_insight"|"reply_tease"|"all",
+    Body: { "section": "x_post"|"linkedin_post"|"comment"|"reply_casual"|"reply_insight"|"all",
             "instruction": "make it shorter and more casual" }
     """
     vcs = load_vcs()
@@ -505,7 +501,7 @@ def save_edit(slug):
         "comment":     (r"(### 💬 Their Comment\s*\n[^\n]*\n\n)(.*?)(\n\n---)", re.DOTALL),
         "our_comment": (r"(### 💬 Feltsense Comment\s*\n[^\n]*\n\n)(.*?)(\n\n---)", re.DOTALL),
         "reply_casual":(r"(\*\*A — Casual\*\*[^\n]*\n)(.*?)(\n\n\*\*B —)", re.DOTALL),
-        "reply_insight":(r"(\*\*B — Insight\*\*[^\n]*\n)(.*?)(\n\n\*\*C —)", re.DOTALL),
+        "reply_insight":(r"(\*\*B — Insight\*\*[^\n]*\n)(.*?)(\n\n---)", re.DOTALL),
         "reply_tease": (r"(\*\*C — Tease\*\*[^\n]*\n)(.*?)(\n\n---)", re.DOTALL),
     }
 

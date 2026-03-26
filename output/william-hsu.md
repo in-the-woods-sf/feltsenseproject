@@ -4,33 +4,33 @@
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-someone went through the entire yc w26 batch with agentic AI - replicated the core product in days for each one. most had no real moat. the ones that did are worth studying. @feltsense dropped the whole thing today
+so @feltsense went through every startup in the YC W26 batch - agentic AI replicating what each one does in days - 20 featured deep-dives with live products built. the real question for investors now is what defensibility actually means if speed-to-market isn't it anymore
 
 **LinkedIn:**
-so @feltsense went through every startup in the yc w26 batch - used agentic AI founders to try replicating each one in days. 20 deep-dives are public with live builds, full pdf covers the rest. most of what people call defensibility didn't hold up. speed to market used to be enough - now agents have speed too. the startups that survived the replication are the interesting ones. if your moat disappears in 72 hours was it ever a moat
+been thinking about this one - @feltsense stress-tested every startup in the entire YC W26 batch using agentic AI founders. replicated the core of what each company does. 20 featured deep-dives launched as live products built in days - the full PDF covers the whole batch. as a seed investor this changes how I think about defensibility at the earliest stages. if an AI agent can rebuild what you're doing that fast - what exactly is the moat? not rhetorical - genuinely sorting through this.
 
 ---
 
 ### 💬 Comment to drop on our post
 
-this is the right stress test at the right time - speed used to be the whole game and now it's table stakes. curious which ones actually held up and why
+interesting exercise - the ones that couldn't be replicated are probably the only ones worth the term sheet. makes you rethink what "fast execution" even buys you now.
 
 ---
 
 ### 🔁 Our reply to their comment — pick one (internal use)
 
 **A — Casual** *(warm thanks / acknowledgment)*
-appreciate you looking at this, William - the "why" behind what held up is honestly the most interesting part of the whole project
+Appreciate you sitting with the question instead of jumping to a take - that's exactly the kind of investor reaction we were hoping this would spark.
 
 **B — Insight** *(unintuitive push that deepens the thread)*
-the surprising thing wasn't how many we could replicate - it was that the few we couldn't all shared one trait that had nothing to do with their tech stack
+What surprised us most is that the startups with the strongest technical moats weren't always the hardest to replicate - sometimes the defensibility lived in places the founders themselves hadn't identified yet.
 
 **C — Tease** *(hint at more coming / stay tuned)*
-we're sitting on some patterns about what actually constitutes defensibility now that would change how early-stage diligence works - more on that soon
+We're already tracking which replication patterns map to specific funding stages - the seed-stage signal looks very different from what most investors expect.
 
 ---
 
-**Voice notes:** Matched William's lowercase, dash-connected, no-period style with minimal punctuation and zero posturing. Kept the energy flat and observational rather than performative, letting the idea do the work.
+**Voice notes:** Captured William's dash-heavy, stream-of-consciousness cadence with lowercase energy and minimal polish. Kept the tone educated-casual with a wry, muttering-to-himself quality rather than any performed authority.
 
 **Scrape status:**
 > X/Twitter [✓]: Twitter API v2 (1 posts)

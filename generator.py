@@ -110,10 +110,9 @@ Write three pieces in {name}'s voice:
    - Ends the exchange feeling like two people who see the world similarly
    - Written FROM Feltsense's perspective, engaging with {name}'s content
 
-4. OUR REPLY to their comment — three options (for Feltsense / Marik to pick from)
-   All three are written as Feltsense (@feltsense) responding personally to {name}.
+4. OUR REPLY to their comment — two options (for Feltsense / Marik to pick from)
+   Both are written as Feltsense (@feltsense) responding personally to {name}.
    Each is 1-2 sentences. Pick up something specific from their comment.
-   Write all three — the team will choose the right one for the moment.
 
    OPTION A — CASUAL: Warm, genuine thanks or acknowledgment. Feels like a founder
    who appreciates the support without overdoing it. Human, not corporate.
@@ -122,13 +121,6 @@ Write three pieces in {name}'s voice:
    the thread deeper. Something that reframes the conversation or reveals something
    unexpected from the project — the kind of thing that makes someone stop scrolling.
    Not a summary of what we did. A new angle they haven't considered yet.
-
-   OPTION C — TEASE: A hint that there's more coming — written for a VC audience
-   that already understands the space. No links, no PDF references, no CTAs.
-   Just a single sentence that makes them feel like they're getting a look behind
-   the curtain — something Feltsense is building toward or a pattern from the project
-   that hasn't been published yet. Feels like an insider nudge between peers,
-   not a marketing tease. Builds anticipation without naming what's coming.
 
 Format your response EXACTLY as:
 ### X POST
@@ -147,9 +139,6 @@ Format your response EXACTLY as:
 [1-2 sentences]
 
 ### OUR REPLY B — INSIGHT
-[1-2 sentences]
-
-### OUR REPLY C — TEASE
 [1-2 sentences]
 
 ### VOICE NOTES

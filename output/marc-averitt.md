@@ -1,41 +1,53 @@
 ## Marc Averitt — Okapi VC
 
 
-### 📣 Post (X + LinkedIn)
+> ⚠️ **Insufficient data:** No posts were scraped. Copy uses general VC conventions — review carefully.
 
-**X:**
-@feltsense just went through every startup in the YC W26 batch and stress-tested them for defensibility using agentic AI founders. 20 featured deep-dives with live products built in days. If an agent can replicate your startup that fast, what's the actual moat? 🤔
+### 📋 Sculpture Summary
 
-**LinkedIn:**
-This one has me thinking. @Feltsense went through every startup in the entire YC W26 batch using agentic AI founders, stress-testing each one for defensibility. They built 20 featured deep-dives as live products in days. The full PDF covers the whole batch.
 
-Speed-to-market used to be the moat. Now an AI agent can match that speed on its own. So what actually makes a startup defensible anymore?
-
-Curious how founders and investors are processing this one. ✌️
 
 ---
 
-### 💬 Comment to drop on our post
+### 📣 Post (X + LinkedIn)
 
-This is the kind of stress test the ecosystem needs right now. If speed alone was your edge, that's a problem. Curious which ones couldn't be replicated. 🤔
+**X:**
+@feltsense went through every startup in the YC W26 batch and stress-tested each one for defensibility using agentic AI. The question investors should be sitting with: if an agent can rebuild your core product in days, what exactly are we funding? 🔍
+
+**LinkedIn:**
+Feltsense just went through the entire YC W26 batch and stress-tested every startup for defensibility using agentic AI founders. They built live replications of featured companies in days.
+
+This is the kind of exercise that should change how we evaluate early-stage deals. Speed to market used to be the moat. Now speed is commoditized. So what's left?
+
+The startups that couldn't be replicated are telling us something important about where real value lives. Every investor in this ecosystem should be paying attention.
+
+---
+
+### 💬 Their Comment
+*(Suggested copy for Marc Averitt to post on Feltsense's post)*
+
+This is a meaningful exercise for anyone deploying capital at the seed stage right now. The defensibility question is shifting faster than most investors are willing to admit, and stress-testing an entire batch like this surfaces what pitch decks won't.
+
+---
+
+### 💬 Feltsense Comment
+*(What Feltsense / Marik drops on Marc Averitt's own post)*
+
+The way Okapi thinks about early conviction maps well to what we're seeing when we strip startups down to their replicable core.
 
 ---
 
 ### 🔁 Our reply to their comment — pick one (internal use)
 
 **A — Casual** *(warm thanks / acknowledgment)*
-Appreciate you digging into this, Marc. The ones that held up are genuinely worth a closer look. ✌️
+Appreciate the thoughtful take, Marc. This is exactly the kind of conversation we were hoping to spark with investors who actually do the work at the early stage.
 
 **B — Insight** *(unintuitive push that deepens the thread)*
-The surprising part wasn't which startups were easy to replicate. It was how many had defensibility hiding in places that had nothing to do with their product.
+What surprised us most is that the hardest companies to replicate weren't always the most technically complex. Sometimes the moat was in a very specific data relationship or workflow insight that no agent could infer from the outside.
 
 **C — Tease** *(hint at more coming / stay tuned)*
-We're sitting on some patterns about what actually made certain startups unreplicable, and it's not what most investors would guess.
+We're starting to see patterns across the batch that suggest defensibility clusters in ways the current seed framework doesn't account for.
 
 ---
 
-**Voice notes:** Kept it casual-observational with trailing curiosity rather than authority, leaned on his signature 🤔 and ✌️ sparingly, and framed everything as genuine interest rather than hype. Matched his link-forward, light-commentary instinct while giving him just enough original thought to feel natural.
-
-**Scrape status:**
-> X/Twitter [✓]: Twitter API v2 (26 posts)
-> LinkedIn [✗]: LinkedIn blocked request (status 999) — this is normal (0 posts)
+**Voice notes:** With no public post data available, this copy uses a measured, analytical VC voice: confident in assertions, precise in language, and focused on investment implications rather than hype. Energy is kept composed and peer-level throughout.

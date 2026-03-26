@@ -6,33 +6,37 @@
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-Every investor talks about defensibility. @feltsense went through the entire YC W26 batch with agentic AI founders and actually tested it. If an agent can rebuild your product in days, what exactly are we funding when we write the check?
+Feltsense went through every startup in the YC W26 batch and stress-tested each one for defensibility using agentic AI. 20 featured deep-dives ship today with live products built in days. If an agent can rebuild what you're building, what exactly is your investor paying for?
 
 **LinkedIn:**
-We talk about defensibility constantly in this business. Usually in the abstract. Feltsense just ran a different kind of stress test. They went through every startup in the YC W26 batch using agentic AI founders, rebuilding core products in days. 20 deep-dive replications are live now. The full batch breakdown is in the PDF. Some companies held up. Many didn't. The question I keep sitting with: if the product is replicable, are we actually underwriting the team, the network, the timing? Or are we just underwriting speed that no longer belongs to humans alone?
+Feltsense just went through every startup in the entire YC W26 batch, stress-testing each one for defensibility using agentic AI founders. The public launch features 20 deep-dive replications with live products built in days. The full report covers the whole batch.
+
+This is the most honest mirror the startup ecosystem has right now. Speed used to be the moat. Now agents move faster than any founding team.
+
+So what does defensibility actually mean in 2025?
 
 ---
 
 ### 💬 Comment to drop on our post
 
-This is the diligence exercise most investors know they should be running but aren't. Seeing which companies in the batch actually held up under replication tells you more about defensibility than any pitch deck does.
+This is the right question at the right time. Going through the entire batch forces a real conversation about what holds up under pressure and what doesn't. The startups that survived this test are the ones I want to look at more closely.
 
 ---
 
 ### 🔁 Our reply to their comment — pick one (internal use)
 
 **A — Casual** *(warm thanks / acknowledgment)*
-Appreciate that framing, Sebastian. That's exactly the lens we built this around — diligence, not spectacle.
+Appreciate that, Sebastian. The ones that held up surprised us too, and we think they deserve more attention than the ones that didn't.
 
 **B — Insight** *(unintuitive push that deepens the thread)*
-What surprised us most is that the companies with the strongest moats often looked the least impressive on first pass. The flashy demos were the easiest to replicate; the boring-looking infrastructure plays were the hardest.
+What caught us off guard is that the hardest companies to replicate weren't the most technically complex ones. They were the ones where the founder's judgment was embedded so deeply into the product loop that an agent couldn't close the gap.
 
 **C — Tease** *(hint at more coming / stay tuned)*
-We're starting to see patterns in what makes something truly non-replicable, and it's not what the current defensibility frameworks predict — more on that soon.
+We're sitting on some patterns from the batch that reframe how defensibility clusters across sectors, and the distribution is not what most investors would expect.
 
 ---
 
-**Voice notes:** Used a measured, analytically grounded VC tone — someone who weighs ideas carefully before speaking and frames observations through an investor's lens rather than a hype cycle. Kept energy composed and question-driven, fitting a partner-level perspective.
+**Voice notes:** Used a composed, analytically confident VC tone with measured conviction. Without a specific voice profile, leaned into clear reasoning and restrained authority rather than personality-driven flourishes.
 
 **Scrape status:**
 > LinkedIn [✗]: LinkedIn blocked request (status 999) — this is normal (0 posts)

@@ -6,37 +6,39 @@
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-We went through every startup in the YC W26 batch and stress-tested each one for defensibility using agentic AI founders. 20 deep-dive replications are live with working products built in days. The question investors should be sitting with: if an agent can rebuild it that fast, what exactly are you funding?
+We went through every startup in the YC W26 batch and stress-tested each one for defensibility using agentic AI founders. 20 featured deep-dives are live with working products built in days. The full PDF covers the entire batch. If an agent can rebuild it that fast, what was the moat?
 
 **LinkedIn:**
-We just went through the entire YC W26 batch at Feltsense. Every startup, stress-tested for defensibility by agentic AI founders. 20 featured deep-dives are live now, each with a working product built in days. The full breakdown covers the rest.
+We just went through the entire YC W26 batch at Feltsense. Every single startup, stress-tested for defensibility by agentic AI founders. 20 featured deep-dives are now live with working products built in days. The full PDF covers every company in the batch.
 
-Some of these companies couldn't be replicated. Most could. That gap is the most important signal in early-stage investing right now, and almost nobody is measuring it.
+Speed used to be the moat. Build fast, raise faster, outrun everyone. But when an AI agent can replicate the core product in days, speed stops being a defensible position.
 
-If speed-to-market isn't a moat anymore, what is?
+The startups that held up are worth studying closely. The ones that didn't are worth studying even more.
+
+What does defensibility actually look like now?
 
 ---
 
 ### 💬 Comment to drop on our post
 
-The defensibility question is overdue. Investors pattern-match on traction and team, but this forces a harder conversation about what survives contact with capable agents. The startups that held up here are the ones I'd want to spend time with.
+The most interesting finding here isn't which startups got replicated. It's how few had something an agent genuinely couldn't reach. That ratio is the real signal for anyone writing checks right now.
 
 ---
 
 ### 🔁 Our reply to their comment — pick one (internal use)
 
 **A — Casual** *(warm thanks / acknowledgment)*
-Appreciate you engaging with this seriously, Aza. That's exactly the conversation we're trying to open up.
+Appreciate you pulling out that thread, Aza. The ratio is exactly where the conversation needs to be.
 
 **B — Insight** *(unintuitive push that deepens the thread)*
-One thing that surprised us: the companies that held up best weren't the most technically complex. They were the ones where the product was inseparable from a specific relationship with their user, something an agent could build around but never quite inhabit.
+What surprised us is that the hardest companies to replicate weren't the most technically complex. They were the ones where the product was inseparable from a very specific relationship with their users that no agent could simulate on day one.
 
 **C — Tease** *(hint at more coming / stay tuned)*
-The defensibility patterns we found across the full batch start clustering in ways that challenge how most seed frameworks work right now. We're not done pulling on that thread.
+That ratio you're pointing at gets even more interesting when you look at which category of startup breaks the pattern, and we're sitting on some data that reframes the whole defensibility conversation.
 
 ---
 
-**Voice notes:** With no public data on Aza's voice, this copy defaults to a composed, analytically grounded VC tone: direct claims, measured confidence, no performative energy. Framing leans on intellectual curiosity over hype, letting the project's implications do the heavy lifting.
+**Voice notes:** With no public data to reference, the tone defaults to measured VC partner voice: direct, analytical, comfortable making bold claims but always grounding them in observable signal rather than hype. Kept energy composed and let the project's scope do the talking.
 
 **Scrape status:**
 > No scraping attempted

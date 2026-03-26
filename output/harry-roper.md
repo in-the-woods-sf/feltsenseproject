@@ -6,37 +6,37 @@
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-We went through every startup in the YC W26 batch and tried to replicate them with agentic AI founders. Live products, built in days. Some held up. Most didn't. If your moat disappears that fast, what were you actually building?
+We went through every startup in the YC W26 batch and stress-tested each one for defensibility. 20 featured deep-dives are live with working products built in days. If an agentic founder can replicate your core product that fast, what exactly is the moat? 🔗
 
 **LinkedIn:**
-We just went through the entire YC W26 batch at Feltsense. Every startup, stress-tested for defensibility using agentic AI founders. 20 deep-dive replications are live now with working products built in days. The full breakdown covers the rest.
+We just went through every startup in the entire YC W26 batch. Agentic AI founders stress-tested each one for defensibility. 20 featured deep-dives are now live with working products built in days. The full PDF covers the whole batch.
 
-The point isn't to tear anything down. It's to ask a question the market needs to sit with: if an agent can rebuild your core product over a weekend, where does your real defensibility live?
+Speed-to-market used to be the moat. That assumption is getting tested in real time. The startups that couldn't be replicated tell a very different story than the ones that could.
 
-The startups that held up are genuinely interesting. The pattern in why they held up is even more so.
+If an AI agent can rebuild your product in days, what were you actually defending?
 
 ---
 
 ### 💬 Comment to drop on our post
 
-The gap between "shipped fast" and "defensible" is getting exposed in real time here. What stands out to me is how few companies in the batch had moats that weren't just execution speed. That used to be enough.
+The gap between "launched" and "defensible" is getting exposed faster than most founders realize. The ones that held up in this analysis are worth studying closely. Curious how investors start pricing this into their diligence.
 
 ---
 
 ### 🔁 Our reply to their comment — pick one (internal use)
 
 **A — Casual** *(warm thanks / acknowledgment)*
-Really appreciate you framing it that way, Harry. That execution-speed point is exactly the nerve this was meant to hit.
+Appreciate that, Harry. The diligence question is exactly where this lands next and it's a conversation we're glad to be pushing forward.
 
 **B — Insight** *(unintuitive push that deepens the thread)*
-What surprised us most is that the companies with the strongest defensibility weren't the most technically complex ones. The moat often came from something you'd never think to replicate because it doesn't look like a feature.
+What surprised us most is that the defensibility gap didn't correlate with technical complexity. Some of the simplest-looking products were the hardest to replicate because the moat was in decisions you couldn't reverse-engineer from the outside.
 
 **C — Tease** *(hint at more coming / stay tuned)*
-We're seeing a pattern across the batch that redefines what "technical moat" even means at this stage — and it's not what most investors are screening for right now.
+The patterns we're seeing in how investors actually respond when shown a live replica of their portfolio company are more revealing than the replications themselves.
 
 ---
 
-**Voice notes:** Without public posts to calibrate against, this uses a measured, analytically confident VC voice — someone who leads with questions over declarations and lets the work speak without overselling it.
+**Voice notes:** Used a composed, analytically confident VC tone with minimal flourish. Without public posts to reference, the voice leans on direct, measured conviction and lets the scale of the project carry the weight.
 
 **Scrape status:**
 > No scraping attempted

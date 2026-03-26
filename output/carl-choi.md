@@ -6,33 +6,37 @@
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-We evaluate hundreds of early-stage companies a year. @feltsense just went through every startup in the YC W26 batch and stress-tested defensibility using agentic AI. If an agent can rebuild your product in days, what exactly is the investor betting on?
+@feltsense went through every startup in the YC W26 batch and stress-tested each one for defensibility using agentic AI. 20 featured deep-dives ship today with live products built in days. If speed-to-market isn't a moat anymore, what exactly are we underwriting when we write early checks?
 
 **LinkedIn:**
-As an investor, I spend a lot of time thinking about what makes a company defensible at the earliest stages. Feltsense went through the entire YC W26 batch and used agentic AI founders to stress-test each one, rebuilding core products in days. Twenty of those replications are live now with deep-dive breakdowns. The results are forcing a real conversation about what we're actually underwriting when we back a pre-seed company. If speed to market is no longer the moat, what is?
+Feltsense just went through every startup in the entire YC W26 batch, stress-testing defensibility by building agentic AI replications of each one. The public launch features 20 deep-dives with live products built in days. The full PDF covers the whole batch.
+
+As an early-stage investor, I think about moats constantly. Speed used to be the answer. Ship first, raise fast, figure it out later. But if an AI agent can rebuild your product in days, speed alone stops being defensible.
+
+The startups that couldn't be replicated are the interesting ones. What does defensibility actually look like now?
 
 ---
 
 ### 💬 Comment to drop on our post
 
-This is the kind of diligence exercise that should make every early-stage investor uncomfortable in a productive way. The companies that survived the replication test are telling us something important about where defensibility actually lives now.
+This is a useful lens for anyone making early-stage bets right now. Going through the entire W26 batch forces a real conversation about what we're actually funding when we back a pre-seed company. The ones that held up under replication tell you something the pitch deck never will.
 
 ---
 
 ### 🔁 Our reply to their comment — pick one (internal use)
 
 **A — Casual** *(warm thanks / acknowledgment)*
-Appreciate you engaging with this, Carl. Coming from someone evaluating deal flow at your scale, that means a lot.
+Appreciate that, Carl. The whole project started from exactly that question about what early checks are really buying, so it means a lot coming from someone making those decisions every day.
 
 **B — Insight** *(unintuitive push that deepens the thread)*
-One thing that surprised us: the startups with the strongest technical moats weren't always the hardest to replicate. Sometimes the defensibility lived in places the founders themselves hadn't articulated yet.
+One thing that surprised us: the startups with the strongest technical implementations weren't always the hardest to replicate. The ones with deeply embedded feedback loops from real users were far more resilient than anything built on pure engineering complexity.
 
 **C — Tease** *(hint at more coming / stay tuned)*
-We're seeing patterns across the batch about which types of moats hold up and which ones dissolve on contact. The next piece of this project goes deeper into that taxonomy.
+We're starting to see patterns across the batch about which categories of defensibility hold up at different stages, and the early-stage picture looks very different from what most investors assume.
 
 ---
 
-**Voice notes:** Used a measured, analytical VC voice with a focus on investment framing and portfolio-level thinking. Kept the tone composed and inquiry-driven, reflecting a partner who evaluates companies methodically rather than reacting with hype.
+**Voice notes:** With no public posts to calibrate against, this uses a measured, analytically grounded VC voice appropriate for a partner at a fund like Alumni Ventures. The tone is thoughtful and composed, treating the campaign as an investment-relevant insight rather than a product endorsement.
 
 **Scrape status:**
 > LinkedIn [✗]: LinkedIn blocked request (status 999) — this is normal (0 posts)

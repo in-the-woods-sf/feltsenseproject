@@ -4,39 +4,39 @@
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-Defensibility used to mean speed-to-market. @feltsense went through the entire YC W26 batch with agentic AI founders, replicating core products in days. The startups that held up are the ones worth studying. The ones that didn't? That's the real signal for investors right now.
+Defensibility used to mean speed-to-market. @feltsense just went through every startup in the YC W26 batch with agentic AI founders, replicating core products in days. 20 featured deep-dives are live. The question investors should be sitting with: if an agent can build it that fast, what was the moat?
 
 **LinkedIn:**
-Speed-to-market vs. true moat. Two very different things.
+Defensibility is getting redefined in real time.
 
-Feltsense just stress-tested the entire YC W26 batch using agentic AI founders. Replicated core products in days. 20 featured deep-dives are live, full breakdown covers the rest.
+Feltsense went through every startup in the YC W26 batch using agentic AI founders. Replicated core products in days. 20 featured deep-dives are live with working builds. The full PDF covers the entire batch.
 
-The framework is simple. If an AI agent can rebuild what you do in 72 hours, your defensibility lives somewhere else. Domain expertise. Proprietary data. Operator depth.
+Speed-to-market used to be the moat. Now agents move at that same speed. So the real filter changes. The startups that couldn't be replicated are the ones worth studying.
 
-The startups that couldn't be replicated are telling us something. What does defensibility actually mean now?
+If an AI agent can rebuild what you shipped, what exactly are investors pricing in?
 
 ---
 
 ### 💬 Comment to drop on our post
 
-This is the right stress test at the right time. Replicability vs. defensibility is the binary every investor needs to run on their own portfolio. The startups that held up here are operating on a different axis entirely.
+This is the defensibility stress test the ecosystem needed but nobody wanted to run. The startups that held up under replication are telling you something about where durable value actually lives. Worth sitting with that list.
 
 ---
 
 ### 🔁 Our reply to their comment — pick one (internal use)
 
 **A — Casual** *(warm thanks / acknowledgment)*
-Appreciate that framing, Alejandra. Replicability vs. defensibility is exactly the lens we built this around, and it means something coming from someone running that filter on real portfolios.
+Appreciate this, Alejandra. Coming from someone who evaluates defensibility for a living, that means something.
 
 **B — Insight** *(unintuitive push that deepens the thread)*
-The surprising part was which axis separated the defensible ones. It wasn't proprietary tech or data in most cases — it was operator knowledge so specific that the agent had nothing to train against.
+The surprising part wasn't which startups were easy to replicate. It was how many had defensibility hiding in places the founders themselves hadn't articulated yet, buried in workflow design and data loops, not in the product surface.
 
 **C — Tease** *(hint at more coming / stay tuned)*
-We're seeing a pattern in which types of moats consistently survive agentic replication — and it's reshaping how we think about what comes next from Feltsense.
+We're seeing a pattern in the batch around which categories produce durable moats and which ones just produce fast demos, and the split is not where most investors would guess.
 
 ---
 
-**Voice notes:** Leaned into Alejandra's contrast-driven, framework-first style — binaries like "speed-to-market vs. true moat" and "replicability vs. defensibility." Kept emoji out entirely to match her structural-not-decorative approach, and ended on open questions rather than conclusions.
+**Voice notes:** Matched Alejandra's thesis-first, declarative cadence with compressed sentences and no hedging. Kept vocabulary at her professional-but-stripped-down register, avoided decorative language, and let the central question land flat rather than building toward it.
 
 **Scrape status:**
 > X/Twitter [✓]: Twitter API v2 (30 posts)

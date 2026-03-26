@@ -4,35 +4,37 @@
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-So @feltsense went through the entire YC W26 batch and stress tested every startup for defensibility using AI agents. Built live products in days. If an agent can replicate what you do that fast...was it ever really a moat? Check it out
+So @feltsense went through every startup in the YC W26 batch and tried to replicate them with AI agents. Built 20 live products in days. If your moat is just shipping fast...is that still a moat? Check it out
 
 **LinkedIn:**
-This is worth paying attention to. Feltsense went through the entire YC W26 batch and used AI agents to stress test every startup for defensibility. They built working replications in days. 20 deep dives are public now with the full batch breakdown in the PDF.
+This is worth paying attention to. Feltsense went through every startup in the entire YC W26 batch, stress-testing defensibility by trying to replicate them with agentic AI. 20 featured deep-dives have live products already built. The full PDF covers the whole batch.
 
-The question it raises is pretty simple and kind of uncomfortable... if an AI agent can rebuild your startup that quickly, what exactly is the moat? The ones that couldnt be replicated are the interesting part to me.
+As an investor I keep asking what defensibility actually means now. Speed to market used to be the answer. Not sure thats enough anymore.
+
+If an AI agent can rebuild what you shipped in days, what exactly are we funding?
 
 ---
 
 ### 💬 Comment to drop on our post
 
-This is the kind of thing that makes you rethink what defensibility actually means right now. The ones that held up under this...those are the names I want to see.
+This is the question every early stage investor should be sitting with right now. Speed used to be the moat. Whats the moat when agents can ship too?
 
 ---
 
 ### 🔁 Our reply to their comment — pick one (internal use)
 
 **A — Casual** *(warm thanks / acknowledgment)*
-Appreciate you looking at this, Paul. The ones that held up are definitely the most interesting part of the whole thing.
+Appreciate you flagging the real question here Paul. Thats exactly the conversation we were hoping to start.
 
 **B — Insight** *(unintuitive push that deepens the thread)*
-The surprising thing is the startups that held up werent always the most technically complex ones. Some of the simplest looking products had defensibility in places we didnt expect to find it.
+The thing that surprised us most is that the startups with the strongest defensibility werent the most technically complex ones, they were the ones where the founder's insight couldnt be abstracted into a prompt.
 
 **C — Tease** *(hint at more coming / stay tuned)*
-We are sitting on some patterns about what actually makes something unreplicable that didnt make it into the public version yet.
+We're seeing a pattern in which types of companies agents cant touch, and its not what most investors would guess.
 
 ---
 
-**Voice notes:** Matched Paul's casual, no-apostrophe, ellipsis-heavy style with his "check it out" sharing format and rhetorical question energy. Kept it conversational and unpretentious, like a smart investor sharing something that genuinely caught his attention rather than performing thought leadership.
+**Voice notes:** Matched Paul's low-formality, conversational, drop-a-link-and-a-thought rhythm. Kept punctuation loose, skipped apostrophes where he naturally would, avoided emojis entirely, and framed investor-relevant content as a casual nudge rather than a thesis.
 
 **Scrape status:**
 > X/Twitter [✓]: Twitter API v2 (30 posts)

@@ -4,37 +4,37 @@
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-@feltsense went through every startup in the YC W26 batch and tried to replicate them with AI agents. Built live products in days. Some held up. Most didn't. If speed-to-market is your moat, what exactly are you defending?
+@feltsense went through every startup in the YC W26 batch. Replicated them with agentic AI. 20 featured deep-dives are live with working products. Speed to market used to be the moat. So what is it now?
 
 **LinkedIn:**
-Somebody finally did it. @Feltsense took the entire YC W26 batch and stress-tested every single one for defensibility using agentic AI. Built working replicas in days. 20 deep-dives are public with live products. The full batch breakdown is in the PDF.
+@feltsense stress-tested every startup in the YC W26 batch. Agentic AI founders. Replicated the core product. Days, not months. 20 featured deep-dives are live with working builds. Full PDF covers the whole batch.
 
-Here's what sits with me. We tell founders to move fast. Ship fast. Raise fast. But if an AI agent can rebuild your thing in a weekend, speed was never the moat. It was just the story you told investors.
+Been thinking about this from the marketplace side. Network effects still matter. Proprietary data still matters. But "we built it first" is not a defensibility argument anymore.
 
-The startups that couldn't be replicated are the interesting ones. What were they actually doing differently?
+If an agent can ship your product in a weekend, what are you actually defending?
 
 ---
 
 ### 💬 Comment to drop on our post
 
-This is the defensibility conversation every marketplace investor has been having privately for a year. Except now someone actually built the receipts. Curious which ones held up and why.
+Been saying speed isn't a moat for a while now. This puts numbers on it. Curious which ones actually held up.
 
 ---
 
 ### 🔁 Our reply to their comment — pick one (internal use)
 
 **A — Casual** *(warm thanks / acknowledgment)*
-Appreciate that Colin. The receipts part took the most work honestly, glad it lands with someone thinking about this every day.
+Appreciate you looking at this, Colin. The ones that held up are the interesting part of the conversation.
 
 **B — Insight** *(unintuitive push that deepens the thread)*
-The ones that held up almost never had a technical moat. It was network density and data loops that the agents couldn't cold-start, which says something uncomfortable about how we evaluate early-stage defensibility.
+The pattern that surprised us: the startups with the simplest products were often the hardest to replicate, because the defensibility was buried in behavior loops the agent couldn't bootstrap from zero.
 
 **C — Tease** *(hint at more coming / stay tuned)*
-We're finding patterns in which categories consistently resist replication, and it's reshaping how we think about where to point this next.
+We're seeing a defensibility pattern across the batch that maps almost perfectly to marketplace dynamics, and we haven't published that layer yet.
 
 ---
 
-**Voice notes:** Clipped, think-out-loud cadence with no polish. Kept it grounded and practitioner-framed, leaning into Colin's marketplace investor identity and his natural skepticism about hype without overcorrecting into cynicism.
+**Voice notes:** Short fragments, dropped subjects, low-formality register matching Colin's staccato texting-a-group-chat style. Kept emoji-free and let the blunt phrasing carry the energy, ending on a question rather than a conclusion.
 
 **Scrape status:**
 > X/Twitter [✓]: Twitter API v2 (29 posts)

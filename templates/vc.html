@@ -180,10 +180,6 @@
   <div class="links">
     {% if vc.x_url %}<a href="{{ vc.x_url }}" target="_blank">X ↗</a>{% endif %}
     {% if vc.linkedin_url %}<a href="{{ vc.linkedin_url }}" target="_blank">LinkedIn ↗</a>{% endif %}
-    <button class="btn-approved {{ 'is-approved' if vc.approved else '' }}" id="btn-approved"
-      onclick="toggleApproved('{{ vc.slug }}')">
-      {{ '✓ Marik Approved' if vc.approved else '○ Mark Approved' }}
-    </button>
     {% if vc.email %}
     <button class="btn-send-email" id="btn-send-email" onclick="sendEmail('{{ vc.slug }}')">✉ Send Email</button>
     {% endif %}
@@ -280,6 +276,10 @@
             <div class="cell-actions">
               <button class="btn-copy-cell" onclick="copyCell('{{ c.id }}', '{{ field_id }}', this)">Copy</button>
               <button class="btn-share-cell {{ platform }}" onclick="shareCell('{{ c.id }}', '{{ field_id }}', '{{ platform }}', this)" title="Open in {{ 'X' if platform == 'x' else 'LinkedIn' }}">↗</button>
+              <button class="btn-approved btn-approve-cell {{ 'is-approved' if vc.approved else '' }}"
+                onclick="toggleApproved('{{ vc.slug }}', this)">
+                {{ '✓ Approved' if vc.approved else '○ Approve' }}
+              </button>
             </div>
           </div>
         </div>
@@ -319,7 +319,6 @@
           <option value="our_comment">Feltsense Comment</option>
           <option value="reply_casual">Reply A — Casual</option>
           <option value="reply_insight">Reply B — Insight</option>
-          <option value="reply_tease">Reply C — Tease</option>
         </select>
       </div>
       <div class="field-group">
@@ -484,7 +483,7 @@ async function regenerate(slug) {
       x_post: c.x_post, linkedin_post: c.linkedin_post,
       comment: c.comment, our_comment: c.our_comment,
       reply_casual: c.reply_casual,
-      reply_insight: c.reply_insight, reply_tease: c.reply_tease,
+      reply_insight: c.reply_insight,
     };
 
     const toUpdate = section === 'all' ? Object.keys(fieldMap) : [section];
@@ -533,8 +532,7 @@ function quickGenerate(slug, campaign) {
 }
 
 // ── Marik Approved toggle ──────────────────────────────────
-async function toggleApproved(slug) {
-  const btn = document.getElementById('btn-approved');
+async function toggleApproved(slug, btn) {
   const isApproved = btn.classList.contains('is-approved');
   const newVal = !isApproved;
   const res = await fetch('/api/set-status/' + slug, {
@@ -543,8 +541,10 @@ async function toggleApproved(slug) {
   });
   const data = await res.json();
   if (!data.ok) return;
-  btn.classList.toggle('is-approved', newVal);
-  btn.textContent = newVal ? '✓ Marik Approved' : '○ Mark Approved';
+  document.querySelectorAll('.btn-approve-cell').forEach(b => {
+    b.classList.toggle('is-approved', newVal);
+    b.textContent = newVal ? '✓ Approved' : '○ Approve';
+  });
   flashSaved();
 }
 

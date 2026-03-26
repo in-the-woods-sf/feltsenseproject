@@ -4,39 +4,37 @@
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-@feltsense went through every startup in the YC W26 batch and tried to replicate them with agentic AI founders. live products built in days. the ones that couldn't be copied are the ones worth watching. if an agent can rebuild your startup that fast, what was the moat? 🤖
+@feltsense just went through every startup in the YC W26 batch and stress-tested each one for defensibility using agentic AI founders. 20 featured deep-dives with live products built in days. if an AI agent can replicate your startup that fast, what's the actual moat? go read this 🤖
 
 **LinkedIn:**
-feltsense just stress-tested the entire YC W26 batch for defensibility. agentic AI founders replicating startups in days, with 20 deep-dive live builds featured publicly and the full batch covered in the PDF.
+@Feltsense went through every single startup in the YC W26 batch. Used agentic AI founders to stress-test defensibility across the board. 20 featured deep-dives come with live products built in days. The full PDF covers the entire batch.
 
-speed-to-market used to be the moat. now agents move just as fast. the startups that held up are genuinely interesting. the ones that didn't tell you something about where founding is heading.
+Speed-to-market used to be the moat. Now an AI agent can replicate the core product before your seed round closes. The startups that couldn't be replicated are the asymmetric ones worth paying attention to.
 
-if your defensibility is "we built it first," that's not a moat anymore. so what is?
-
-go check out what @feltsense is putting together.
+So what actually counts as defensible anymore?
 
 ---
 
 ### 💬 Comment to drop on our post
 
-this is the right stress test at the right time. defensibility has always been the real question, most people just didn't have a way to pressure-test it this directly. the batch-wide scope makes this asymmetric signal for anyone deploying capital right now.
+this is the kind of stress test the ecosystem needs right now. defensibility is getting redefined in real time and most people aren't paying close enough attention. the ones that held up under this are the signal.
 
 ---
 
 ### 🔁 Our reply to their comment — pick one (internal use)
 
 **A — Casual** *(warm thanks / acknowledgment)*
-appreciate you flagging the scope piece, Angad. that batch-wide lens is exactly what made this worth doing.
+appreciate you, Angad. building this felt like something the ecosystem needed to see, and it means a lot when people who think about defensibility every day actually dig in.
 
 **B — Insight** *(unintuitive push that deepens the thread)*
-the surprising thing wasn't which startups got replicated — it was how many teams had defensibility they hadn't even articulated yet, buried in workflow decisions no agent could reverse-engineer from the product alone.
+The surprising thing wasn't which startups we could replicate, it was how many had defensibility hiding in places the founders themselves hadn't articulated yet. The agentic mirror revealed strengths that pitch decks completely missed.
 
 **C — Tease** *(hint at more coming / stay tuned)*
-the replications were step one. what we're seeing in the patterns across the full batch is pointing somewhere most investors aren't looking yet.
+We're sitting on patterns from the full batch about which categories of defensibility hold up and which ones collapse, and the breakdown is not what most investors would expect.
 
 ---
 
-**Voice notes:** Matched Angad's low-friction, fragmentary style with lowercase openings, stacked short observations, and directive energy ("go check out"). Kept emoji use minimal and functional (single 🤖), avoided hype words, and leaned into his VC vocabulary ("asymmetric signal," "deploying capital") wrapped in casual register.
+**Voice notes:** Matched Angad's lowercase-casual, fragmented style with his directive "go [verb]" cadence and VC-native vocabulary. Kept enthusiasm present but composed, using his signal-booster persona rather than lecturer mode, and leaned into his affinity for terms like "asymmetric" and purposeful emoji use.
 
 **Scrape status:**
 > X/Twitter [✓]: Twitter API v2 (30 posts)

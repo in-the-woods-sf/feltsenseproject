@@ -4,35 +4,35 @@
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-@feltsense went through every startup in the YC W26 batch and tried to replicate them with AI agents. Built live products in days. Some held up. Most didn't. If speed was your moat, what is it now?
+@feltsense went through every startup in the YC W26 batch and stress-tested each one for defensibility using AI agents. 20 featured deep-dives have live products built in days. If speed was your moat, what is it now?
 
 **LinkedIn:**
-Feltsense just went through the entire YC W26 batch and stress-tested every startup for defensibility using agentic AI founders. They built live replications in days. 20 deep-dive builds are public now, with the full batch breakdown in a PDF.
+Feltsense just went through every startup in the entire YC W26 batch, stress-testing each one for defensibility using agentic AI founders. The public launch includes 20 featured deep-dives with live products built in days. The full report covers the whole batch.
 
-Some of these companies held up. A lot of them didn't. The ones that couldn't be replicated are the interesting ones. If your whole advantage was shipping fast, what happens when an AI agent ships faster?
+This is a useful exercise for anyone investing in or building early-stage companies right now. If an AI agent can replicate the core of what you do in a few days, what does defensibility actually look like going forward?
 
 ---
 
 ### 💬 Comment to drop on our post
 
-This is a useful exercise for anyone investing right now. The gap between "built quickly" and "actually defensible" is getting harder to see from the outside. Nice to have someone just show it.
+This is a practical way to pressure-test what defensibility actually means right now. The ones that couldn't be replicated are the interesting part of the report.
 
 ---
 
 ### 🔁 Our reply to their comment — pick one (internal use)
 
 **A — Casual** *(warm thanks / acknowledgment)*
-Appreciate that, Matt. That gap is exactly what we kept running into across the batch.
+Thanks, Matt. That's exactly the part of the project we keep coming back to ourselves.
 
 **B — Insight** *(unintuitive push that deepens the thread)*
-One thing that surprised us: the startups with the most technical complexity weren't always the hardest to replicate. The ones with real defensibility often had it in places you wouldn't expect from a pitch deck.
+The surprising thing is that the hardest companies to replicate weren't always the most technically complex ones. Some of the strongest moats came down to decisions that looked simple on the surface but were almost impossible to reverse-engineer.
 
 **C — Tease** *(hint at more coming / stay tuned)*
-We're sitting on some patterns from the full batch that change how we think about what "early traction" even signals anymore.
+We're seeing a pattern across the batch around which types of defensibility hold up and which ones evaporate, and it doesn't map to the categories most investors are using right now.
 
 ---
 
-**Voice notes:** Kept it plain, friendly, and unhurried to match Matt's casual-practical register. No emoji, no jargon, no performative energy. Let the idea carry the weight instead of the language.
+**Voice notes:** Kept the tone clean, direct, and utilitarian to match Matt's natural voice. No emoji, no filler, no posturing. Exclamation points avoided to stay on the composed side of his energy level.
 
 **Scrape status:**
 > X/Twitter [✓]: Twitter API v2 (2 posts)

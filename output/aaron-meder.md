@@ -6,37 +6,37 @@
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-@feltsense went through every startup in the YC W26 batch and stress-tested each one for defensibility using agentic AI founders. If an agent can rebuild your product in days, what exactly is the moat? The answers are more nuanced than you'd expect.
+@feltsense went through every startup in the YC W26 batch and stress-tested each one for defensibility using agentic AI. 20 featured deep-dives are live with working products built in days. If speed-to-market isn't a moat anymore, what exactly are we pricing into early rounds?
 
 **LinkedIn:**
-Feltsense just went through the entire YC W26 batch and stress-tested every startup for defensibility using agentic AI founders. Twenty deep-dive replications are live with working products built in days. The full breakdown covers the rest.
+Feltsense just went through every startup in the entire YC W26 batch, using agentic AI founders to stress-test defensibility. 20 featured deep-dives are live now, each with a working product built in days. The full PDF covers the whole batch.
 
-Speed to market used to be the moat. That assumption is eroding faster than most investors want to acknowledge. The startups that held up tell you something important about where real value sits now.
+This is forcing a real conversation. We've spent years telling founders that speed is the advantage. Move fast, ship, raise. But if an AI agent can replicate the core of what you're building in a weekend, speed alone stops being defensible.
 
-If an AI agent can replicate what you built, what were you actually defending?
+The startups that couldn't be replicated are the interesting ones. What were they doing differently?
 
 ---
 
 ### 💬 Comment to drop on our post
 
-This is the right stress test at the right time. The gap between "built fast" and "built something durable" is getting exposed in real time, and investors need to recalibrate what defensibility actually looks like in an agentic era.
+This is a useful forcing function. The best companies in any batch have something that can't be described in a product spec. Curious how many in the W26 batch actually cleared that bar once you went through the whole thing.
 
 ---
 
 ### 🔁 Our reply to their comment — pick one (internal use)
 
 **A — Casual** *(warm thanks / acknowledgment)*
-Appreciate this, Aaron. Means something when someone investing at this stage sees the same shift happening.
+Appreciate that framing. The "can't be described in a product spec" line is exactly the dividing line we kept running into across the batch.
 
 **B — Insight** *(unintuitive push that deepens the thread)*
-What surprised us most is that the companies with the strongest defensibility weren't the most technically complex. The durable ones had embedded themselves into workflows that agents couldn't shortcut around.
+What surprised us is that the hardest companies to replicate weren't always the most technically complex. Some of the simplest-looking products had defensibility baked into relationships and data loops that no agent could cold-start.
 
 **C — Tease** *(hint at more coming / stay tuned)*
-The batch-wide patterns on where defensibility actually clusters are telling a story we haven't published yet, and it challenges some conventional wisdom about which categories are "safe."
+We're building a framework around that exact question, and the patterns from the batch are pointing somewhere we didn't expect.
 
 ---
 
-**Voice notes:** Without a scraped voice profile, this copy uses a measured, analytical VC tone: confident observations grounded in investment logic, minimal flair, and a preference for letting the implications speak rather than overselling the conclusion.
+**Voice notes:** Used a measured, analytical VC tone with direct but unhurried pacing. Kept energy composed and grounded in investor logic rather than hype, defaulting to intellectual curiosity over enthusiasm.
 
 **Scrape status:**
 > LinkedIn [✗]: LinkedIn blocked request (status 999) — this is normal (0 posts)

@@ -6,37 +6,37 @@
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-We went through every startup in the YC W26 batch and stress-tested each one for defensibility using agentic AI founders. 20 deep-dive replications are live with working products built in days. If an agent can rebuild your company that fast, what was the moat? @feltsense
+We went through every startup in the YC W26 batch and stress-tested each one for defensibility using agentic AI founders. 20 featured deep-dives are live with working products built in days. The full PDF covers the entire batch. If an agent can rebuild it that fast, what was the moat? @feltsense
 
 **LinkedIn:**
-We just went through every startup in the YC W26 batch. Agentic AI founders stress-tested each one for defensibility. 20 featured deep-dives are live now, with working products built in days. The full breakdown covers the rest of the batch.
+We just went through every startup in the YC W26 batch at Feltsense. Agentic AI founders stress-tested each one for defensibility. 20 featured deep-dives are now live with working products built in days. The full PDF covers the entire batch.
 
-Speed-to-market used to be the moat. Build fast, raise faster. But when an AI agent can replicate the core of what you do in a weekend, speed stops being a competitive advantage. It becomes table stakes.
+Speed used to be the moat. Build fast, raise faster. But when an AI agent rebuilds your core product in 72 hours, speed stops being a competitive advantage. It becomes a baseline.
 
-The startups that couldn't be replicated are telling us something important about what defensibility actually means now. Worth sitting with that.
+So what actually holds up? The startups that couldn't be replicated are telling us something worth paying attention to.
 
 ---
 
 ### 💬 Comment to drop on our post
 
-The replications that failed are more interesting than the ones that succeeded. That's where the real signal is for investors trying to figure out what holds up in an agentic world. Looking forward to digging into the full breakdown.
+The ones that held up weren't the most technically complex. They were the ones where the product was almost incidental to what made the company hard to copy. That distinction is going to reshape how we think about early-stage investing.
 
 ---
 
 ### 🔁 Our reply to their comment — pick one (internal use)
 
 **A — Casual** *(warm thanks / acknowledgment)*
-Appreciate that, Uday. The failed replications taught us more than anything else in this project, honestly.
+Appreciate that, Uday. That exact distinction kept surfacing in ways we didn't expect when we started this.
 
 **B — Insight** *(unintuitive push that deepens the thread)*
-What surprised us is that the strongest moats weren't where we expected them. The companies that held up best weren't the most technically complex ones; they were the ones where the product was inseparable from a specific relationship with their users that no agent could fake.
+One thing that surprised us: the startups with the strongest network effects on paper were often easier to replicate than the ones with deeply opinionated workflows baked into the product itself.
 
 **C — Tease** *(hint at more coming / stay tuned)*
-We're already seeing patterns in the replication failures that point to a very different framework for how defensibility gets evaluated going forward.
+We're seeing a pattern in what made certain companies irreplicable that doesn't map to any traditional moat framework, and we're not done pulling on that thread.
 
 ---
 
-**Voice notes:** Given the lack of public data, the tone defaults to measured, analytical VC partner voice: confident without being flashy, more interested in structural observations than hype, and comfortable letting the work speak for itself.
+**Voice notes:** With no public voice data, the copy defaults to a composed, analytically grounded VC register. Confident but measured, favoring observation and implication over hype or declarative statements.
 
 **Scrape status:**
 > No scraping attempted

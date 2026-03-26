@@ -6,37 +6,37 @@
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-We ran every startup in the YC W26 batch through agentic AI founders to stress-test defensibility. Some held up. Most didn't. If an AI agent can rebuild your product in days, what exactly is your moat? The 20 deepest replications are live now from @feltsense.
+We went through every startup in the YC W26 batch and stress-tested each one for defensibility. 20 featured deep-dives ship today with live products built in days. The question worth sitting with: if an AI agent can replicate your startup that fast, what was the moat?
 
 **LinkedIn:**
-We went through the entire YC W26 batch and stress-tested every startup for defensibility using agentic AI founders. Built live products in days. 20 deep-dive replications are public now, with the full batch breakdown in the PDF.
+Today we're releasing something we've been working on at Feltsense for a while. We went through every startup in the entire YC W26 batch using agentic AI founders, stress-testing each one for defensibility. The public launch includes 20 featured deep-dives with live products built in days. The full PDF covers the whole batch.
 
-The findings are clarifying. Speed to market used to be the moat. That assumption is breaking down in real time.
+Speed used to be the moat. Build fast, raise fast, outrun everyone. But when an AI agent can replicate what you do in days, speed alone stops meaning what it used to.
 
-The startups that held up are worth studying closely. The ones that didn't raise a harder question: what does defensibility actually mean when an agent can do what you do?
+The startups that couldn't be replicated are telling us something. What exactly are they doing differently?
 
 ---
 
 ### 💬 Comment to drop on our post
 
-The gap between "replicated in days" and "couldn't be replicated at all" is where the real signal lives. That's the part of this I keep coming back to. Interested to see how founders in the batch respond.
+The most interesting signal here isn't which startups got replicated. It's how few had something that genuinely resisted it. That ratio is going to reshape how early-stage diligence works.
 
 ---
 
 ### 🔁 Our reply to their comment — pick one (internal use)
 
 **A — Casual** *(warm thanks / acknowledgment)*
-Appreciate that, John. The founder responses are already starting to come in, and they're more thoughtful than we expected.
+Appreciate that read, John. The ratio surprised us too, honestly, and we think it says more about where diligence is heading than anything in the builds themselves.
 
 **B — Insight** *(unintuitive push that deepens the thread)*
-What surprised us most is that the defensibility gap didn't correlate with technical complexity. Some of the simplest products were the hardest to replicate, and the reason is never what you'd guess from the outside.
+What caught us off guard is that the startups with the strongest defensibility weren't the most technically complex ones. The hardest to replicate were the ones that had embedded themselves into workflows in ways an agent couldn't shortcut.
 
 **C — Tease** *(hint at more coming / stay tuned)*
-The batch-wide patterns are more interesting than any single replication. We're sitting on some data about where defensibility actually clusters that changes the conversation.
+The diligence angle is exactly where this is going next, and the pattern we're seeing across the full batch points to something investors aren't pricing in yet.
 
 ---
 
-**Voice notes:** With no public post data available, the copy defaults to a measured, analytically grounded VC voice: confident without being showy, focused on signal over hype, comfortable asking questions rather than declaring answers.
+**Voice notes:** With no public data to match, the tone defaults to a measured, composed VC partner voice: direct, analytical, comfortable with ambiguity, and focused on implications rather than hype.
 
 **Scrape status:**
 > No scraping attempted

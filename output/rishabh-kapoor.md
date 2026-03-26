@@ -6,37 +6,37 @@
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-We went through every startup in the YC W26 batch and stress-tested each one for defensibility using agentic AI founders. 20 deep-dives are live with working products built in days. If an agent can replicate your startup that fast, what was the moat in the first place?
+We went through every startup in the YC W26 batch and stress-tested each one for defensibility using agentic AI founders. 20 featured deep-dives are live with working products built in days. The full PDF covers the entire batch. If an agent can rebuild it that fast, what was the moat?
 
 **LinkedIn:**
-We just went through the entire YC W26 batch and stress-tested every startup for defensibility using agentic AI founders. 20 featured deep-dives are live now, each with a working product built in days. The full breakdown covers the rest.
+We just went through every startup in the YC W26 batch at Feltsense. Agentic AI founders stress-tested each one for defensibility. The public launch features 20 deep-dive replications with live products built in days. The full PDF covers the entire batch.
 
-This isn't about tearing anything down. It's a mirror. Speed-to-market used to be the moat. Now agents move at the same speed founders do.
+Speed-to-market used to be the moat. Now agents can ship in days what takes teams months. The startups that couldn't be replicated are telling us something important about where defensibility actually lives now.
 
-The startups that couldn't be replicated are the ones worth studying closely. What does defensibility actually look like when building is no longer the hard part?
+So what does a real moat look like in 2025?
 
 ---
 
 ### 💬 Comment to drop on our post
 
-The gap between "launched" and "defensible" is getting exposed in real time here. What stands out to me is that the companies that held up aren't necessarily the most technically complex ones. They're the ones where the product is deeply entangled with something an agent can't shortcut.
+The most interesting signal here isn't which startups got replicated. It's how quickly the gap between "replicable" and "defensible" is narrowing. Founders and investors both need to recalibrate what they consider durable.
 
 ---
 
 ### 🔁 Our reply to their comment — pick one (internal use)
 
 **A — Casual** *(warm thanks / acknowledgment)*
-Appreciate this, Rishabh. That point about entanglement over complexity is exactly the kind of distinction that kept coming up as we worked through the batch.
+Appreciate this, Rishabh. That recalibration point is exactly the conversation we're trying to start.
 
 **B — Insight** *(unintuitive push that deepens the thread)*
-One thing that surprised us: the strongest moats weren't in the product layer at all. The hardest companies to replicate were the ones where the defensibility lived in relationships, data loops, or regulatory positioning that no agent could bootstrap from scratch.
+One thing that surprised us: the startups with the strongest technical complexity weren't always the hardest to replicate. The ones with deeply embedded user workflows were.
 
 **C — Tease** *(hint at more coming / stay tuned)*
-We're sitting on some patterns from the non-replicable cohort that reframe what "early-stage defensibility" even means for investors evaluating this next generation of companies.
+We're seeing a pattern across the batch around which defensibility signals actually hold up under pressure, and it's not the ones most investors are screening for.
 
 ---
 
-**Voice notes:** Used a composed, analytical VC register with measured confidence. Without public post data for Rishabh, the tone leans on clear thinking, intellectual curiosity, and restraint over hype.
+**Voice notes:** Used a composed, analytically confident VC tone given no public data on Rishabh's actual voice. Kept energy measured and let the scale of the project carry the weight rather than leaning on hype language.
 
 **Scrape status:**
 > No scraping attempted

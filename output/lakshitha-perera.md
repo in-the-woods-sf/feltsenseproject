@@ -6,39 +6,35 @@
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-We went through every startup in the YC W26 batch and stress-tested them with agentic AI founders. Built live products in days. Some held up. Most didn't. If an AI agent can replicate your core product that fast, what was the moat in the first place?
+We went through every startup in the YC W26 batch and stress-tested each one for defensibility using agentic AI founders. 20 featured deep-dives are live with working products built in days. The full PDF covers the entire batch. If an agent can rebuild it that fast, what was the moat?
 
 **LinkedIn:**
-We went through every startup in the YC W26 batch at Feltsense. Used agentic AI founders to stress-test each one for defensibility. Built live products in days. 20 deep-dive replications are public now, with the full breakdown in the PDF.
+We just went through every startup in the YC W26 batch at Feltsense. Agentic AI founders stress-tested each one for defensibility. The public launch includes 20 featured deep-dives with live products built in days. The full PDF covers the entire batch.
 
-Some startups held up. Most didn't.
-
-Speed to market used to be the moat. That assumption is breaking down in real time. The companies that couldn't be replicated share something specific, and it's not what most investors are pattern-matching for.
-
-If an agent can rebuild your product in 72 hours, what are you actually defending?
+Speed to market used to be the moat. Now an AI agent can replicate the core of what you're building before your seed round closes. The startups that held up are genuinely interesting. The ones that didn't raise a harder question: what does defensibility actually mean now?
 
 ---
 
 ### 💬 Comment to drop on our post
 
-The interesting finding isn't which companies got replicated. It's how few had anything underneath the product that an agent couldn't reach. That gap between "built fast" and "built something defensible" is where the real conversation starts.
+The most telling part isn't which startups got replicated. It's how few required anything beyond publicly available context to rebuild. That gap between perceived defensibility and actual defensibility is where the real conversation starts.
 
 ---
 
 ### 🔁 Our reply to their comment — pick one (internal use)
 
 **A — Casual** *(warm thanks / acknowledgment)*
-Appreciate you putting a finer point on it, Lakshitha. That gap is exactly what we kept running into across the batch.
+Appreciate you seeing what this is actually about, Lakshitha. The gap you're pointing to is exactly what kept coming up as we worked through the batch.
 
 **B — Insight** *(unintuitive push that deepens the thread)*
-One thing that surprised us: the startups with the strongest defensibility often looked the least impressive on demo day. Turns out the things agents can't replicate are rarely the things that generate applause.
+What surprised us most is that technical complexity barely correlated with defensibility. The hardest companies to replicate were the ones with feedback loops that only exist because real users shaped the product over time.
 
 **C — Tease** *(hint at more coming / stay tuned)*
-We're starting to see a pattern in what makes something truly unreplicable, and it's pulling us toward a framework that changes how we evaluate early-stage deals entirely.
+The pattern we're seeing across the batch around which types of moats actually held up is leading us somewhere we didn't expect, and it has more to do with investor behavior than founder strategy.
 
 ---
 
-**Voice notes:** Used a composed, analytically grounded VC voice with measured confidence. Leaned toward observation over declaration, keeping energy steady and letting the implications do the work, since no public posts were available to calibrate a more specific register.
+**Voice notes:** Used a composed, analytical VC tone given no public voice data. Kept the register measured and intellectually grounded, leaning into observation over enthusiasm, letting the project's implications do the work.
 
 **Scrape status:**
 > No scraping attempted

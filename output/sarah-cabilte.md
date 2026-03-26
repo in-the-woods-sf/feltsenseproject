@@ -6,37 +6,37 @@
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-We went through every startup in the YC W26 batch and stress-tested each one for defensibility using agentic AI founders. 20 deep-dive replications are live now. The question worth sitting with: if an agent rebuilds your product in days, what was the moat? 🔗
+We went through every startup in the YC W26 batch and stress-tested each one for defensibility. 20 featured deep-dives are live with working products built in days. If an AI agent can replicate what you're building that fast, what exactly is the moat?
 
 **LinkedIn:**
-We just went through the entire YC W26 batch at Feltsense, stress-testing every startup for defensibility using agentic AI founders. 20 deep-dive replications are live today with working products built in days. The full breakdown covers the rest of the batch.
+We just went through the entire YC W26 batch at Feltsense. Every startup. Stress-tested each one for defensibility using agentic AI founders. 20 featured deep-dives are now live with working products built in days. The full PDF covers the whole batch.
 
-Speed used to be the moat. Ship fast, raise fast, figure it out later. That era is getting pressure-tested in real time.
+Some of these companies couldn't be replicated. Most could.
 
-The startups that couldn't be replicated are telling us something important about what defensibility actually means now. What do you think separates the ones that hold up?
+Speed to market used to be the moat. That era is ending. So what actually makes a startup defensible now? The answers are more interesting than you'd expect.
 
 ---
 
 ### 💬 Comment to drop on our post
 
-The replications that failed are more interesting to me than the ones that succeeded. That's where the real signal is on what defensibility looks like going forward. Excited to dig into the full breakdown.
+The ones that couldn't be replicated tell you more about where defensibility is heading than any framework I've seen. Worth sitting with the full batch breakdown before drawing conclusions.
 
 ---
 
 ### 🔁 Our reply to their comment — pick one (internal use)
 
 **A — Casual** *(warm thanks / acknowledgment)*
-Appreciate you digging in, Sarah. The failed replications are exactly where we spent the most time thinking too.
+Appreciate that, Sarah. The full batch really does shift the picture once you sit with the patterns across all of them.
 
 **B — Insight** *(unintuitive push that deepens the thread)*
-What surprised us is that the moats that held weren't always technical. Some of the hardest-to-replicate startups had defensibility baked into relationships and workflows that no agent could shortcut.
+One thing that surprised us: the startups with the strongest defensibility weren't the most technically complex ones. The hardest to replicate were the ones where the product and the distribution loop were the same thing.
 
 **C — Tease** *(hint at more coming / stay tuned)*
-We're already mapping the patterns across the ones that held up, and the common thread is not what most investors are screening for right now.
+There's a pattern in the batch around which types of moats held up and which completely dissolved that we haven't published yet, and it challenges a lot of conventional thinking about what makes early-stage companies fundable.
 
 ---
 
-**Voice notes:** With no public data on Sarah's voice, this copy defaults to a composed, thoughtful VC register: direct without being flashy, intellectually engaged, and grounded in the work rather than the hype. Calibrated to feel like someone who leads with analysis over enthusiasm.
+**Voice notes:** With no public post history available, this copy uses a composed, analytically grounded VC voice: confident without being loud, letting the work speak and ending with questions rather than declarations.
 
 **Scrape status:**
 > No scraping attempted

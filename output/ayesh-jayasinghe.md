@@ -6,37 +6,37 @@
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-We went through every startup in the YC W26 batch and stress-tested each one for defensibility using agentic AI founders. 20 deep-dive replications are live now with working products built in days. The question worth sitting with: if an agent can rebuild it that fast, what was the moat?
+We went through every startup in the YC W26 batch and stress-tested each one for defensibility using agentic AI founders. 20 featured deep-dives are live with working products built in days. The full PDF covers the entire batch. If an agent can rebuild it that fast, what was the moat?
 
 **LinkedIn:**
-We just went through the entire YC W26 batch at Feltsense, stress-testing every startup for defensibility using agentic AI founders. 20 deep-dive replications are live today, each with a working product built in days. The full breakdown covers the rest of the batch.
+We went through every startup in the YC W26 batch at Feltsense. Agentic AI founders stress-tested each one for defensibility. The public launch features 20 deep-dive replications with live products built in days. The full PDF covers the entire batch.
 
-Some companies held up. Others didn't survive the mirror.
+Speed to market used to be the moat. Now agents move at the same speed founders do. Defensibility has to mean something deeper than "we got there first."
 
-Defensibility used to mean shipping first. That's no longer enough. If an AI agent can replicate what you're building in days, the conversation about what actually constitutes a moat needs to change. So what does defensibility look like now?
+So what actually holds up when an AI agent can replicate your core product in days?
 
 ---
 
 ### 💬 Comment to drop on our post
 
-The replications that failed are more interesting than the ones that succeeded. That's where the actual signal lives for investors trying to figure out what holds up in this new environment.
+The ones that couldn't be replicated tell you more than the ones that could. Defensibility is shifting from execution speed to something harder to name, and this project makes that visible in a way I haven't seen before.
 
 ---
 
 ### 🔁 Our reply to their comment — pick one (internal use)
 
 **A — Casual** *(warm thanks / acknowledgment)*
-Appreciate that framing, Ayesh. The failed replications taught us more than we expected going in.
+Appreciate you digging into this, Ayesh. Building it from the inside made the pattern even clearer than we expected.
 
 **B — Insight** *(unintuitive push that deepens the thread)*
-What surprised us is that the companies we couldn't replicate weren't the most technically complex ones. They were the ones where the product was inseparable from a feedback loop that takes time to build, not code.
+The surprising thing is that technical complexity wasn't the strongest predictor of defensibility. Some of the most sophisticated products were the easiest to replicate, and the hardest ones to rebuild had moats we almost didn't recognize as moats.
 
 **C — Tease** *(hint at more coming / stay tuned)*
-The defensibility patterns we're finding across the batch are starting to cluster in ways that change how we think about what's actually fundable right now.
+We're seeing a pattern across the batch that redefines what "defensible" looks like for the next generation of startups, and the full picture isn't public yet.
 
 ---
 
-**Voice notes:** Tone is measured and analytical, leaning on intellectual curiosity over excitement. Written as a VC partner sharing a substantive project with conviction but without showmanship, letting the weight of the work speak for itself.
+**Voice notes:** With no public posts to reference, the tone defaults to composed, analytical VC partner voice: direct claims grounded in the work, intellectually curious, low on decoration. Calibrated to sound like someone sharing findings from a project they led, not promoting a launch.
 
 **Scrape status:**
 > No scraping attempted

@@ -6,39 +6,37 @@
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-We evaluate defensibility for a living. @feltsense just went through every startup in the YC W26 batch with agentic AI founders and replicated them in days. If speed-to-market is your moat, what exactly are you defending?
+Feltsense went through every startup in the YC W26 batch and stress-tested each one for defensibility using agentic AI. 20 featured deep-dives ship today with live products built in days. The question investors should be sitting with: if an agent can rebuild it that fast, what are we actually funding?
 
 **LinkedIn:**
-I spend my days evaluating what makes companies durable. So when Feltsense went through every startup in the YC W26 batch using agentic AI founders and rebuilt core products in days, it got my attention.
+Feltsense just stress-tested every startup in the entire YC W26 batch for defensibility using agentic AI founders. The public launch includes 20 featured deep-dives with live products built in days. The full PDF covers the whole batch.
 
-This isn't about dunking on early-stage companies. It's a stress test. The ones that held up are revealing something important about what defensibility actually means now.
+This is the kind of exercise that should make early-stage investors uncomfortable in a productive way. Speed to market used to be the moat. Now agents move faster than any founding team can. So what does defensibility actually look like when the cost of building drops to near zero?
 
-20 deep-dive replications are live. The full batch breakdown is in the PDF.
-
-If your moat is execution speed alone, what happens when agents execute faster?
+The startups that couldn't be replicated are telling us something worth paying attention to.
 
 ---
 
 ### 💬 Comment to drop on our post
 
-This is the kind of diligence exercise every investor should be running internally. The gap between "first to ship" and "hard to replicate" is getting wider, and most pitch decks still treat them as the same thing.
+This is a useful forcing function. The defensibility conversation in early-stage investing is too often hand-waved away with "execution" as the answer. Seeing every company in the batch put through this lens makes the gaps harder to ignore.
 
 ---
 
 ### 🔁 Our reply to their comment — pick one (internal use)
 
 **A — Casual** *(warm thanks / acknowledgment)*
-Appreciate you engaging with this, Dylan. Coming from someone who underwrites durability for a living, that means a lot.
+Appreciate that framing, Dylan. The hand-waving around "execution as moat" is exactly what pushed us to build this in the first place.
 
 **B — Insight** *(unintuitive push that deepens the thread)*
-One thing that surprised us: the startups with the deepest technical moats weren't always the hardest to replicate. Sometimes the defensibility was in relationships and data loops that don't show up in a pitch deck at all.
+One thing that surprised us: the companies with the strongest defensibility often looked the least impressive on paper at first glance. The replication process actually inverted our assumptions about which business models hold up.
 
 **C — Tease** *(hint at more coming / stay tuned)*
-We're seeing a pattern in which *types* of moats hold up and which collapse, and it's not mapping to what most investors expect. More on that soon.
+The gaps you're pointing to get sharper when you look at them by category, and the pattern across the full batch is something we're not done unpacking yet.
 
 ---
 
-**Voice notes:** With no public post data available, this copy adopts a measured, analytically grounded VC voice befitting a partner at a firm known for patient, long-duration investing. Tone is composed and evaluative rather than flashy.
+**Voice notes:** Used a measured, analytical VC tone with a bias toward asking better questions over making declarations. Kept energy composed and intellectually grounded, fitting a seasoned partner at a firm known for long-term, conviction-driven investing.
 
 **Scrape status:**
 > LinkedIn [✗]: LinkedIn blocked request (status 999) — this is normal (0 posts)

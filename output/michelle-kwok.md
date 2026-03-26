@@ -4,39 +4,39 @@
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-At Draper we talk a lot about backing the audacious. @feltsense just went through every startup in the YC W26 batch with agentic AI founders and replicated them in days. If speed-to-market isn't the moat anymore, what is? 👀
+At Draper we talk a lot about backing irrational ideas. @feltsense just went through every startup in the YC W26 batch with agentic AI founders and replicated them in days. If your moat disappears that fast, was it ever irrational enough? 👀
 
 **LinkedIn:**
-We spend a lot of time at Draper thinking about what actually makes a founder defensible. Not the pitch, not the speed, not the demo day momentum. The deeper thing.
+We at Draper always say we back rational founders building irrational ideas. That thesis just got pressure-tested in a way I didn't expect.
 
-Feltsense just went through every startup in the YC W26 batch using agentic AI founders, stress-testing defensibility in real time. 20 featured deep-dives are live with working products built in days. The full batch breakdown is in the PDF.
+Feltsense went through every startup in the entire YC W26 batch using agentic AI founders. Built live replications in days. 20 featured deep-dives are public, and the full PDF covers the whole batch.
 
-This isn't an attack on YC or founders. It's a mirror. And honestly, the startups that couldn't be replicated are the most interesting ones in the whole batch.
+The startups that couldn't be replicated are the ones worth studying. Because defensibility used to mean speed. Now it has to mean something the agents can't touch.
 
-If an AI agent can rebuild what you're building in a weekend, was it ever a real moat?
+So what does a real moat look like in 2025?
 
 ---
 
 ### 💬 Comment to drop on our post
 
-This is the kind of stress test that actually moves the conversation forward. At Draper we've always said the founder matters more than the idea. Now there's a pretty concrete way to see which ideas need that founder to survive and which ones don't.
+This is the kind of stress test the ecosystem actually needs. The startups that survived the replication are telling you something about what defensibility looks like going forward. Paying close attention to those ones.
 
 ---
 
 ### 🔁 Our reply to their comment — pick one (internal use)
 
 **A — Casual** *(warm thanks / acknowledgment)*
-Appreciate you Michelle. The Draper lens on contrarian conviction is exactly the energy this project was built around.
+Really appreciate this, Michelle. Coming from someone who actually underwrites bold bets for a living, it means a lot.
 
 **B — Insight** *(unintuitive push that deepens the thread)*
-The surprising thing wasn't which startups were easy to replicate. It was that the ones with the strongest founder-market fit were often the hardest to copy even when the product itself was straightforward.
+The interesting pattern is that the hardest companies to replicate weren't the most technically complex. They were the ones where the founder's specific insight was so deeply embedded in the product that an agent couldn't reverse-engineer the reasoning behind the decisions.
 
 **C — Tease** *(hint at more coming / stay tuned)*
-We're sitting on some patterns about what makes the unreplicable ones tick that aren't in the public launch yet, and it challenges a few assumptions about where defensibility actually lives in a batch like this.
+The defensibility gap between what survived and what didn't is revealing a pattern about where venture conviction should actually concentrate next, and we're not done mapping it.
 
 ---
 
-**Voice notes:** Matched Michelle's "bold hook into structured expansion" rhythm with her conversational-professional register. Threaded in Draper brand language ("At Draper," "audacious," contrarian conviction framing) and kept emoji use to a single 👀 accent, consistent with her punctuating style.
+**Voice notes:** Anchored every claim back to the Draper brand identity and thesis language ("irrational ideas," "we at Draper"), matching her habit of speaking as the firm. Kept the casual-but-substantive register at her natural energy level, dialed down one notch from her typical hype openers while preserving her contrarian-conviction vocabulary.
 
 **Scrape status:**
 > X/Twitter [✓]: Twitter API v2 (30 posts)

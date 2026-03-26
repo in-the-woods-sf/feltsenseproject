@@ -320,6 +320,9 @@
     .badge.set-status { background: #141414; color: #444; cursor: pointer; border: 1px dashed #222; }
     .badge.set-status:hover { color: #888; border-color: #444; }
     .badge.approved { background: #0a1e10; color: #4ade80; }
+    .btn-approve { font-size: 11px; padding: 2px 8px; border-radius: 4px; border: 1px solid #2a2a2a; background: none; cursor: pointer; font-family: inherit; color: #555; transition: all 0.15s; white-space: nowrap; }
+    .btn-approve:hover { border-color: #4ade80; color: #4ade80; }
+    .btn-approve.is-approved { border-color: #4ade80; color: #4ade80; background: #0a1e10; }
     .badge.poc      { background: #1e1628; color: #c084fc; }
 
     .card-select { position: absolute; top: 10px; right: 10px; width: 16px; height: 16px; accent-color: #818cf8; cursor: pointer; display: none; }
@@ -445,9 +448,10 @@
     {% if vc.engagement_month %}
       <span class="badge month">📅 {{ vc.engagement_month }}</span>
     {% endif %}
-    {% if vc.approved %}
-      <span class="badge approved">✓ Approved</span>
-    {% endif %}
+    <button class="btn-approve {{ 'is-approved' if vc.approved else '' }}"
+      onclick="event.preventDefault(); event.stopPropagation(); toggleApproved('{{ vc.slug }}', this)">
+      {{ '✓ Marik Approved' if vc.approved else '○ Mark Approved' }}
+    </button>
     {% if vc.poc %}
       <span class="badge poc">POC: {{ vc.poc }}</span>
     {% endif %}
@@ -688,6 +692,19 @@ async function setCardPoc(poc) {
   } else {
     if (pocBadge) pocBadge.remove();
   }
+}
+
+async function toggleApproved(slug, btn) {
+  const isApproved = btn.classList.contains('is-approved');
+  const newVal = !isApproved;
+  const res = await fetch('/api/set-status/' + slug, {
+    method: 'POST', headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ approved: newVal }),
+  });
+  const data = await res.json();
+  if (!data.ok) return;
+  btn.classList.toggle('is-approved', newVal);
+  btn.textContent = newVal ? '✓ Marik Approved' : '○ Mark Approved';
 }
 
 function updateCardMonthBadge(card, month) {

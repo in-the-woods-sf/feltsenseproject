@@ -4,39 +4,39 @@
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-Everyone needs to pay attention to what @feltsense just did. They went through the ENTIRE YC W26 batch with agentic AI founders and stress-tested every single one for defensibility. Live products built in days. If an agent can replicate your startup that fast, what was the moat?
+@feltsense just went through every startup in the YC W26 batch. Agentic AI founders replicated them in days. 20 featured deep-dives are live with working products. The question every investor should be asking right now: if an agent can rebuild it that fast, what was the moat?
 
 **LinkedIn:**
-Something important just dropped.
+This one got my attention.
 
-@Feltsense went through every startup in the YC W26 batch. Used agentic AI founders to stress-test each one for defensibility. 20 featured deep-dives with live products built in days. The full batch covered in the PDF.
+@Feltsense went through every startup in the entire YC W26 batch. Agentic AI founders. Stress-testing defensibility. 20 featured deep-dives are live now with working products built in days. The full PDF covers every single company.
 
-Some startups couldn't be replicated. Most could.
+Speed used to be the moat. Build fast, raise fast, win. That era is being tested in real time.
 
-We are entering a new era. Speed-to-market used to be the moat. Not anymore. The question every founder and investor needs to sit with: if an AI agent can rebuild what you're building in days, what exactly are you defending?
+The startups that couldn't be replicated? Those are the ones I want to talk to. If an AI agent can rebuild your product in days, what exactly are investors backing?
 
 ---
 
 ### 💬 Comment to drop on our post
 
-This is the stress test the ecosystem needed but nobody was willing to run. The startups that survived replication are the ones I want to talk to.
+This is the defensibility stress test the whole ecosystem needed but nobody wanted to run. The startups that survived replication are the ones worth watching closely.
 
 ---
 
 ### 🔁 Our reply to their comment — pick one (internal use)
 
 **A — Casual** *(warm thanks / acknowledgment)*
-Means a lot coming from you, Ben. You've been calling the agentic founder wave before most people had language for it.
+Means a lot coming from you, Ben. You spend more time in the trenches with early founders than almost anyone, so you know what real defensibility looks like up close.
 
 **B — Insight** *(unintuitive push that deepens the thread)*
-The surprising thing: the startups that survived weren't always the most technically complex. Some of the simplest-looking products had defensibility baked into places we didn't expect to find it, while some deeply technical ones folded fast.
+The pattern that surprised us most: the companies that looked weakest on paper were sometimes the hardest to replicate, because their moat wasn't in the product at all. It was in something an agent can't easily simulate.
 
 **C — Tease** *(hint at more coming / stay tuned)*
-The replication data is just the surface layer. We're sitting on patterns about which types of defensibility actually hold up across the entire batch, and it contradicts a lot of conventional VC wisdom.
+The batch-wide data is revealing a defensibility pattern across verticals that we haven't published yet, and it's going to change how early-stage investors think about what to fund next.
 
 ---
 
-**Voice notes:** Matched Ben's staccato, declarative rhythm with short fragments and line breaks. Kept the rallying energy ("Everyone needs to pay attention") but dialed it one notch below his usual ALL-CAPS superlative register to stay on the composed side.
+**Voice notes:** Captured Ben's staccato, fragment-heavy rhythm and headline-style declarations while dialing back the ALL CAPS hype energy one notch toward composed confidence. Kept tagging minimal (only @feltsense, with clear reason) and let the boldness of the claim carry the post rather than exclamation marks or amplifier words.
 
 **Scrape status:**
 > X/Twitter [✓]: Twitter API v2 (30 posts)
