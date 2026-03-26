@@ -10,10 +10,10 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-vc twitter talks about defensibility all day but nobody actually stress-tests it. @feltsense went through every startup in the YC W26 batch with agentic AI founders and replicated them in days. if your moat is "we built it first," i have bad news
+vc twitter talks about defensibility all day but nobody actually stress-tests it. @feltsensefund went through every startup in the YC W26 batch with AI founders and replicated them in days. if your moat is "we built it first," i have bad news
 
 **LinkedIn:**
-the vc industry loves the word "defensibility" but imo most investors never actually pressure-test it. they pattern match on team, traction, maybe TAM, and move on. @Feltsense just went through every startup in the entire YC W26 batch using agentic AI founders, replicating what each one does. real applications are live - go test some of them out. the full PDF covers the whole batch. 2 things are true at the same time: YC produces exceptional founders, and speed-to-market is no longer a moat by itself. so what is?
+the vc industry loves the word "defensibility" but imo most investors never actually pressure-test it. they pattern match on team, traction, maybe TAM, and move on. @feltsensefund just went through every startup in the entire YC W26 batch using AI founders, replicating what each one does. real applications are live - go test some of them out. the full PDF covers the whole batch. 2 things are true at the same time: YC produces exceptional founders, and speed-to-market is no longer a moat by itself. so what is?
 
 ---
 

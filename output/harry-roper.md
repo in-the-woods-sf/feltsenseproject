@@ -15,7 +15,7 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 Just tested every YC W26 startup for defensibility-here's what scared me: real products are live and working. If an agentic founder replicates your core in weeks, what's actually protecting you? Go see for yourself. 🔗
 
 **LinkedIn:**
-I just stress-tested every startup in the entire YC W26 batch with agentic AI founders. Here's what we found: real applications are live now - go test some of the builds. The full PDF covers the whole batch.
+I just stress-tested every startup in the entire YC W26 batch with AI founders. Here's what we found: real applications are live now - go test some of the builds. The full PDF covers the whole batch.
 
 Speed-to-market used to be the moat. That assumption is getting tested in real time. The startups that couldn't be replicated tell a very different story than the ones that could.
 

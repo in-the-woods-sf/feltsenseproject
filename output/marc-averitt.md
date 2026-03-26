@@ -12,10 +12,10 @@
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-Just stress-tested every YC W26 startup with agentic AI-here's what kept me up at night: if an agent rebuilds your core product in days, what are we actually funding? @feltsense dug deep on defensibility. 🔍
+Just stress-tested every YC W26 startup with AI-here's what kept me up at night: if an agent rebuilds your core product in days, what are we actually funding? @feltsensefund dug deep on defensibility. 🔍
 
 **LinkedIn:**
-Feltsense just went through the entire YC W26 batch and stress-tested every startup for defensibility using agentic AI founders. They built live replications of featured companies in days.
+Feltsense just went through the entire YC W26 batch and stress-tested every startup for defensibility using AI founders. They built live replications of featured companies in days.
 
 This is the kind of exercise that should change how we evaluate early-stage deals. Speed to market used to be the moat. Now speed is commoditized. So what's left?
 

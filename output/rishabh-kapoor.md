@@ -12,10 +12,10 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-Agentic AI just became the ultimate stress test for startup defensibility. We evaluated every YC W26 founder against it-and real applications are already live. Test them. Download the full PDF. If an agent rebuilds your moat in weeks, was it ever there?
+AI just became the ultimate stress test for startup defensibility. We evaluated every YC W26 founder against it-and real applications are already live. Test them. Download the full PDF. If an agent rebuilds your moat in weeks, was it ever there?
 
 **LinkedIn:**
-I just stress-tested every startup in the YC W26 batch against agentic AI - and the results are reshaping how I think about defensibility.
+I just stress-tested every startup in the YC W26 batch against AI - and the results are reshaping how I think about defensibility.
 
 At Feltsense, we built live replications of their products in days. The ones that survived? They're telling us something critical about where real moats actually live in 2025.
 

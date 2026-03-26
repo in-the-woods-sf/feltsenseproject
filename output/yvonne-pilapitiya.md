@@ -17,7 +17,7 @@ Stress-tested every YC W26 startup for defensibility. Real applications are live
 **LinkedIn:**
 What if I told you an AI agent just built your startup's product in 72 hours?
 
-That's not hypothetical anymore. At Feltsense, we stress-tested every single startup in the YC W26 batch using agentic AI founders-complete with working products. Some builds are live right now. The full PDF covers the entire cohort.
+That's not hypothetical anymore. At Feltsense, we stress-tested every single startup in the YC W26 batch using AI founders-complete with working products. Some builds are live right now. The full PDF covers the entire cohort.
 
 The findings are striking. Speed to market used to be the defensibility story. That story is getting rewritten in real time.
 

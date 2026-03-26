@@ -19,7 +19,7 @@ Could you paste the exact tweet you'd like me to rewrite? Once you...
 **LinkedIn:**
 What happens when an AI agent can replicate your entire product in 72 hours?
 
-That's the question we asked while stress-testing every startup in the YC W26 batch at Feltsense. Our agentic AI founders put each one through the gauntlet on defensibility. The public launch shows real application replications live - you can test some of the builds with actual products built in days. The full PDF breaks down the entire batch.
+That's the question we asked while stress-testing every startup in the YC W26 batch at Feltsense. Our AI founders put each one through the gauntlet on defensibility. The public launch shows real application replications live - you can test some of the builds with actual products built in days. The full PDF breaks down the entire batch.
 
 Speed to market used to be the moat. Now agents move at the same speed founders do. Defensibility has to mean something deeper than "we got there first."
 

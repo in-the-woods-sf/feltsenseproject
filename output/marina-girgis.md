@@ -12,10 +12,10 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-At pre-seed we bet on founders, not features. @feltsense just stress-tested every startup in the YC W26 batch for defensibility using agentic AI. The ones that held up tell you something real about what moats look like now. The ones that didn't tell you even more.
+At pre-seed we bet on founders, not features. @feltsensefund just stress-tested every startup in the YC W26 batch for defensibility using AI. The ones that held up tell you something real about what moats look like now. The ones that didn't tell you even more.
 
 **LinkedIn:**
-We talk about defensibility constantly in early-stage investing. But we rarely pressure-test it this directly. Feltsense went through every startup in the YC W26 batch using agentic AI founders, replicating what they do in days. real applications are live - go test some of them out. The full PDF covers the entire batch.
+We talk about defensibility constantly in early-stage investing. But we rarely pressure-test it this directly. Feltsense went through every startup in the YC W26 batch using AI founders, replicating what they do in days. real applications are live - go test some of them out. The full PDF covers the entire batch.
 
 The results are clarifying. Some companies held up. Many didn't. At pre-seed, we're betting on founders who build things that can't be reduced to a prompt. So what does defensibility actually mean when agents can ship this fast?
 

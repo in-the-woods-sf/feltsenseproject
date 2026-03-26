@@ -17,7 +17,7 @@ Just stress-tested every YC W26 startup for defensibility. Real applications liv
 **LinkedIn:**
 What happens when an AI agent can rebuild your startup in a weekend?
 
-We spent weeks running every startup in the YC W26 batch through agentic AI founders, stress-testing each one for real defensibility. Today we're publishing real applications live - go test some of the builds. The full PDF covers the entire batch.
+We spent weeks running every startup in the YC W26 batch through AI founders, stress-testing each one for real defensibility. Today we're publishing real applications live - go test some of the builds. The full PDF covers the entire batch.
 
 Speed used to be the moat. Build fast, raise fast, grow fast. But when an AI agent can rebuild what you shipped in a fraction of the time, speed alone stops meaning what it used to.
 

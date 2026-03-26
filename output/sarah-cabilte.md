@@ -17,7 +17,7 @@ Just stress-tested every YC W26 startup for defensibility - and the results are 
 **LinkedIn:**
 I just stress-tested 48 YC W26 startups for defensibility-and the results are brutal.
 
-Using agentic AI, we replicated what each founder built. Some were impossible to copy. Most weren't.
+Using AI, we replicated what each founder built. Some were impossible to copy. Most weren't.
 
 Speed to market used to be the moat. That era is ending. So what actually makes a startup defensible now? The answers are more interesting than you'd expect.
 

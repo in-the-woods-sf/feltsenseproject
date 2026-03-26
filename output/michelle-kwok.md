@@ -10,12 +10,12 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-At Draper we talk a lot about backing irrational ideas. @feltsense just went through every startup in the YC W26 batch with agentic AI founders and replicated them in days. If your moat disappears that fast, was it ever irrational enough? 👀
+At Draper we talk a lot about backing irrational ideas. @feltsensefund just went through every startup in the YC W26 batch with AI founders and replicated them in days. If your moat disappears that fast, was it ever irrational enough? 👀
 
 **LinkedIn:**
 We at Draper always say we back rational founders building irrational ideas. That thesis just got pressure-tested in a way I didn't expect.
 
-Feltsense went through every startup in the entire YC W26 batch using agentic AI founders. Built live replications in days. real applications live - test some of the builds are public, and the full PDF covers the whole batch.
+Feltsense went through every startup in the entire YC W26 batch using AI founders. Built live replications in days. real applications live - test some of the builds are public, and the full PDF covers the whole batch.
 
 The startups that couldn't be replicated are the ones worth studying. Because defensibility used to mean speed. Now it has to mean something the agents can't touch.
 

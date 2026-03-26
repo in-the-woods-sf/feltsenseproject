@@ -10,12 +10,12 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-@feltsense just went through every startup in the YC W26 batch. Agentic AI founders replicated them in days. real applications are live - go test some of them out. The question every investor should be asking right now: if an agent can rebuild it that fast, what was the moat?
+@feltsensefund just went through every startup in the YC W26 batch. AI founders replicated them in days. real applications are live - go test some of them out. The question every investor should be asking right now: if an agent can rebuild it that fast, what was the moat?
 
 **LinkedIn:**
 This one got my attention.
 
-@Feltsense went through every startup in the entire YC W26 batch. Agentic AI founders. Stress-testing defensibility. real applications are live - go test some of them out. The full PDF covers every single company.
+@feltsensefund went through every startup in the entire YC W26 batch. AI founders. Stress-testing defensibility. real applications are live - go test some of them out. The full PDF covers every single company.
 
 Speed used to be the moat. Build fast, raise fast, win. That era is being tested in real time.
 
@@ -42,7 +42,7 @@ The batch-wide data is revealing a defensibility pattern across verticals that w
 
 ---
 
-**Voice notes:** Captured Ben's staccato, fragment-heavy rhythm and headline-style declarations while dialing back the ALL CAPS hype energy one notch toward composed confidence. Kept tagging minimal (only @feltsense, with clear reason) and let the boldness of the claim carry the post rather than exclamation marks or amplifier words.
+**Voice notes:** Captured Ben's staccato, fragment-heavy rhythm and headline-style declarations while dialing back the ALL CAPS hype energy one notch toward composed confidence. Kept tagging minimal (only @feltsensefund, with clear reason) and let the boldness of the claim carry the post rather than exclamation marks or amplifier words.
 
 **Scrape status:**
 > X/Twitter [✓]: Twitter API v2 (30 posts)
