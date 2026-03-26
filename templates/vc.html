@@ -293,6 +293,7 @@
             {% else %}
             <span></span>
             {% endif %}
+            {% if field_id != 'post_summary' %}
             <div class="cell-actions">
               <button class="btn-copy-cell" onclick="copyCell('{{ c.id }}', '{{ field_id }}', this)">Copy</button>
               <button class="btn-share-cell {{ platform }}" onclick="shareCell('{{ c.id }}', '{{ field_id }}', '{{ platform }}', this)" title="Open in {{ 'X' if platform == 'x' else 'LinkedIn' }}">↗</button>
@@ -301,6 +302,7 @@
                 {{ '✓ Marik Approved' if vc.approved else '○ Marik Approved?' }}
               </button>
             </div>
+            {% endif %}
           </div>
         </div>
         {% else %}
