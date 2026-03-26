@@ -83,6 +83,7 @@
     .grid-wrap {
       flex: 1;
       min-width: 0;
+      overflow-x: auto;
     }
 
     /* ── Sidebar ─────────────────────────────────────── */
@@ -280,12 +281,12 @@
     .filter-month.active { border-color: #059669; color: #059669; background: #ECFDF5; }
 
     /* ── Three-column layout ────────────────────────────── */
-    .three-col-layout { display: flex; gap: 0; flex: 1; min-width: 0; }
-    .col-section { flex: 1; min-width: 0; border-right: 1px solid #E2DDD6; display: flex; flex-direction: column; transition: opacity 0.15s; }
+    .three-col-layout { display: flex; gap: 0; width: 100%; min-width: calc(5 * 185px); }
+    .col-section { flex: 1; min-width: 185px; border-right: 1px solid #E2DDD6; display: flex; flex-direction: column; transition: opacity 0.15s; }
     .col-section:last-child { border-right: none; }
     .col-section.drag-over { background: #F7F4EF; outline: 2px dashed #C5BFB8; outline-offset: -2px; }
     .col-section.dragging { opacity: 0.4; }
-    .col-header { padding: 12px 20px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: #A8A29E; border-bottom: 1px solid #E2DDD6; background: #F7F4EF; position: sticky; top: 57px; z-index: 5; display: flex; align-items: center; justify-content: space-between; cursor: grab; user-select: none; }
+    .col-header { padding: 10px 14px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.6px; color: #A8A29E; border-bottom: 1px solid #E2DDD6; background: #F7F4EF; position: sticky; top: 57px; z-index: 5; display: flex; align-items: center; justify-content: space-between; cursor: grab; user-select: none; white-space: nowrap; gap: 6px; }
     .col-header:active { cursor: grabbing; }
     .col-drag-handle { color: #D5D0C8; font-size: 13px; margin-right: 6px; flex-shrink: 0; }
     .col-header .col-count { font-size: 10px; font-weight: 600; color: #A8A29E; background: #EAE6DF; padding: 2px 7px; border-radius: 10px; text-transform: none; letter-spacing: 0; }
