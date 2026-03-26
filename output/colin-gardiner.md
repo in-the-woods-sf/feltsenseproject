@@ -13,12 +13,19 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 @feltsensefund just rebuilt the entire YC W26 batch with AI agents. Real products live and working right now. Speed to market isn't the moat anymore - so what is?
 
 **LinkedIn:**
-@feltsensefund stress-tested every startup in the YC W26 batch. AI founders. Replicated the core product. Days, not months. real applications are live - go test some of the builds. Full PDF covers the whole batch.
+@feltsensefund stress-tested every startup in the YC W26 batch. AI founders. Replicated the core product. Days, not months. real applications are live - go test some of the builds.
 
-Been thinking about this from the marketplace side. Network effects still matter. Proprietary data still matters. But "we built it first" is not a defensibility argument anymore.
+Been thinking about their findings from the marketplace side. The most defensible companies weren't the most technically sophisticated - they were the ones navigating messy, socially complex markets.
 
-If an agent can ship your product in a weekend, what are you actually defending?
+Healthcare compliance. Government procurement. Enterprise sales with 18-month cycles and committee approvals. Industries full of relationships, politics, and broken trust that took years to navigate.
 
+AI can ship your product in a weekend. But it can't fix decades of human dysfunction overnight.
+
+Network effects still matter. Proprietary data still matters. But "we built it first" stopped being a moat the moment LLMs could code.
+
+The surprising insight: companies that spent years learning to operate in dysfunctional markets have real defensibility. Technical complexity is table stakes now. Social complexity is the new moat.
+
+Comment "Feltsense" to get the full W26 report.
 ---
 
 ### 💬 Comment to drop on our post

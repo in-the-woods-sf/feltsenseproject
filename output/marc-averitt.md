@@ -15,12 +15,15 @@
 @feltsensefund just stress-tested every YC W26 startup with AI-and it kept me up at night: if an agent rebuilds your core product in days, what are we actually funding? 🔍
 
 **LinkedIn:**
-Feltsense just went through the entire YC W26 batch and stress-tested every startup for defensibility using AI founders. They built live replications of featured companies in days.
+@feltsensefund just went through the entire YC W26 batch and stress-tested every startup for defensibility using AI founders. They built live replications of featured companies in days.
 
-This is the kind of exercise that should change how we evaluate early-stage deals. Speed to market used to be the moat. Now speed is commoditized. So what's left?
+This is the kind of exercise that should change how we evaluate early-stage deals. Speed to market used to be the moat. Now speed has also been commoditized.
 
-The startups that couldn't be replicated are telling us something important about where real value lives. Every investor in this ecosystem should be paying attention.
+But here's what caught my attention in their findings: the markets hardest to crack with AI aren't technically complex - they're socially complex. Industries full of politics, turf wars, and bureaucracy can't be disrupted by code alone. 
 
+Companies that spent years navigating these messy human dynamics have real moats that AI can't replicate overnight. While everyone chases the cleanest tech problems, the most defensible opportunities might be hiding in the dysfunction.
+
+Comment "Feltsense" to get the full W26 report.
 ---
 
 ### 💬 Their Comment

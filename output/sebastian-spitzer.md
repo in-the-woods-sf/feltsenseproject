@@ -17,12 +17,17 @@ Feltsense went through every startup in the YC W26 batch and stress-tested each 
 **LinkedIn:**
 I just watched AI agents replicate entire startup ideas from the YC W26 batch in days. Not weeks. Days.
 
-Feltsense stress-tested the whole cohort for defensibility using AI founders, and the public launch features real application replications live - you can test the builds with actual products built in mere days. The full report covers every company in the batch.
+@feltsensefund stress-tested the whole cohort for defensibility using AI founders, and the public launch features real application replications live - you can test the builds with actual products built in mere days. The full report covers every company in the batch.
 
 This is the most honest mirror the startup ecosystem has right now. Speed used to be the moat. Now agents move faster than any founding team.
 
-So what does defensibility actually mean in 2025?
+But here's the surprising finding: the hardest markets to crack with AI aren't technically complex - they're socially complex. Industries full of politics, turf wars, broken trust, and bureaucracy create the strongest moats because AI can't fix broken human dynamics overnight.
 
+Companies that spent years navigating messy, regulated markets suddenly have real defensibility. The dysfunction everyone complained about? That's your moat in 2025.
+
+So what does defensibility actually mean now? It's not your tech stack. It's the relationships, trust, and institutional knowledge you've built in markets that resist automation.
+
+Comment "Feltsense" to get the full W26 report.
 ---
 
 ### 💬 Comment to drop on our post

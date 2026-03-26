@@ -15,14 +15,17 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 @feltsensefund just made AI the ultimate stress test for startup defensibility. They evaluated every YC W26 founder against it-and real applications are already live. Test them. Full PDF available. If an agent rebuilds your moat in days, was it ever there?
 
 **LinkedIn:**
-I just stress-tested every startup in the YC W26 batch against AI - and the results are reshaping how I think about defensibility.
+I just watched Feltsense stress-test every startup in the YC W26 batch against AI - and the results are reshaping how I think about defensibility.
 
-At Feltsense, we built live replications of their products in days. The ones that survived? They're telling us something critical about where real moats actually live in 2025.
+They built live replications of 198 companies in days. The ones that survived? They weren't the most technically sophisticated. They were the ones operating in messy, dysfunctional markets that AI can't easily crack.
 
-Speed-to-market used to be the competitive advantage. Now agents can ship in days what takes teams months. The startups that couldn't be replicated are showing us the future - and the full PDF breakdown covers the entire batch with live demos.
+Turns out the startups hardest to replicate weren't defending against technical complexity - they were navigating social complexity. Politics. Broken trust. Bureaucracy. Turf wars that have existed for decades.
 
-Test the builds yourself. See which founders understood something the rest missed.
+AI agents can ship products faster than ever, but they can't fix human dysfunction overnight. The founders who spent years learning to operate in these messy environments have built something that's genuinely hard to replicate: institutional knowledge of how broken systems actually work.
 
+The full breakdown shows which W26 companies understood this and which missed it entirely.
+
+Comment "Feltsense" to get the full W26 report.
 ---
 
 ### 💬 Comment to drop on our post

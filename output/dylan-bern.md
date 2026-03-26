@@ -19,8 +19,13 @@ Feltsense just stress-tested every startup in the entire YC W26 batch for defens
 
 This is the kind of exercise that should make early-stage investors uncomfortable in a productive way. Speed to market used to be the moat. Now agents move faster than any founding team can. So what does defensibility actually look like when the cost of building drops to near zero?
 
-The startups that couldn't be replicated are telling us something worth paying attention to.
+The startups that couldn't be replicated are telling us something worth paying attention to. The hardest markets to crack with AI weren't the most technically complex. They were the most socially complex. Industries full of politics, turf wars, broken trust, and bureaucratic nightmares that AI can't fix overnight.
 
+Turns out messy, dysfunctional markets might be the most defensible in the AI era. Companies that know how to navigate regulatory capture, entrenched interests, and human dysfunction have real moats. AI can build the product, but it can't play politics or earn trust from skeptical stakeholders.
+
+The future belongs to founders who thrive in the mess, not those who avoid it.
+
+Comment "Feltsense" to get the full W26 report.
 ---
 
 ### 💬 Comment to drop on our post

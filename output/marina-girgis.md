@@ -15,10 +15,15 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 At pre-seed we bet on founders, not features. @feltsensefund just stress-tested every startup in the YC W26 batch for defensibility using AI. The ones that held up tell you something real about what moats look like now. The ones that didn't tell you even more.
 
 **LinkedIn:**
-We talk about defensibility constantly in early-stage investing. But we rarely pressure-test it this directly. Feltsense went through every startup in the YC W26 batch using AI founders, replicating what they do in days. real applications are live - go test some of them out. The full PDF covers the entire batch.
+We talk about defensibility constantly in early-stage investing. But we rarely pressure-test it this directly. @feltsensefund went through every startup in the YC W26 batch using AI, replicating what they do in days. Real applications are live - go test some of them out.
 
-The results are clarifying. Some companies held up. Many didn't. At pre-seed, we're betting on founders who build things that can't be reduced to a prompt. So what does defensibility actually mean when agents can ship this fast?
+The results are clarifying. Some companies held up. Many didn't. Here's what surprised me: the markets hardest to crack with AI aren't technically complex - they're socially complex. Industries full of politics, turf wars, broken trust, or layers of bureaucracy that took years to navigate.
 
+AI can ship fast, but it can't fix broken human dynamics overnight. The companies that survived Feltsense's replication weren't necessarily building the most sophisticated tech. They were the ones operating in messy, regulated, or relationship-heavy markets where social complexity creates real moats.
+
+At pre-seed, we're betting on founders who build things that can't be reduced to a prompt. Turns out the most defensible businesses in the AI era might be the ones dealing with dysfunction, not disrupting it.
+
+Comment "Feltsense" to get the full W26 report.
 ---
 
 ### 💬 Comment to drop on our post

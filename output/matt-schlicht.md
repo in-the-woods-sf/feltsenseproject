@@ -13,10 +13,13 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 @feltsensefund just stress-tested every YC W26 startup for defensibility with AI agents-and it's eye-opening. Real products built in days. If speed was your moat, what is it now?
 
 **LinkedIn:**
-Here's what happens when you let AI agents loose on an entire YC batch: Feltsense just stress-tested all of W26's startups for defensibility, and the results are eye-opening. The public launch includes real, working applications built in days - go test some of them yourself. The full report covers the whole cohort.
+Here's what happens when you let AI agents loose on an entire YC batch: @feltsensefund just stress-tested all of W26's startups for defensibility, and the results are eye-opening. They replicated 198 companies to test what's actually defensible at scale - the public launch includes real, working applications built in days.
 
-This is a useful exercise for anyone investing in or building early-stage companies right now. If an AI agent can replicate the core of what you do in a few days, what does defensibility actually look like going forward?
+The most surprising finding? Markets hardest to crack with AI aren't technically complex - they're socially complex. Industries full of politics, turf wars, and broken trust create moats that code can't replicate overnight. Companies that spent years navigating messy, regulated markets suddenly have real defensibility.
 
+This is a useful exercise for anyone investing in or building early-stage companies right now. If an AI agent can replicate the core of what you do in a few days, your best bet might be diving deeper into the dysfunction, not running from it.
+
+Comment "Feltsense" to get the full W26 report.
 ---
 
 ### 💬 Comment to drop on our post

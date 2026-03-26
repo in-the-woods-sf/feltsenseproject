@@ -15,12 +15,17 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 @feltsensefund just tested every YC W26 startup for defensibility-here's what got me: real products are live and working. If an agent replicates your core in days, what's actually protecting you? Go see for yourself. 🔗
 
 **LinkedIn:**
-I just stress-tested every startup in the entire YC W26 batch with AI founders. Here's what we found: real applications are live now - go test some of the builds. The full PDF covers the whole batch.
+@feltsensefund just stress-tested every startup in the entire YC W26 batch by having AI replicate them. Here's what we found: the companies that couldn't be copied weren't the most technically sophisticated.
 
-Speed-to-market used to be the moat. That assumption is getting tested in real time. The startups that couldn't be replicated tell a very different story than the ones that could.
+They were the ones navigating messy, regulated, or politically charged markets.
 
-If an AI agent can rebuild your product in days, what were you actually defending?
+Speed-to-market used to be the moat. That assumption is getting tested in real time. But here's the plot twist: markets hardest to crack with AI aren't technically complex - they're socially complex.
 
+Industries full of bureaucracy, turf wars, and broken trust? Those are looking like the most defensible territories in the AI era. Years spent navigating regulatory mazes and building relationships through dysfunction suddenly look like real competitive advantages.
+
+If an AI agent can rebuild your product in days, what were you actually defending? Turns out, social complexity beats technical complexity for moats.
+
+Comment "Feltsense" to get the full W26 report.
 ---
 
 ### 💬 Comment to drop on our post

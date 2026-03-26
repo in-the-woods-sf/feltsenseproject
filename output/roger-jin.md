@@ -15,16 +15,19 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 @feltsensefund stress-tested every YC W26 startup for defensibility - and the results are brutal. Real applications are live to test. If an agent can rebuild it that fast, what was the moat? Full breakdown in the PDF.
 
 **LinkedIn:**
-Here's the rewritten post:
-
 **What if your startup's moat disappears in 72 hours?**
 
-That's the question we forced ourselves to answer reviewing the entire YC W26 batch at Feltsense. Every single company. Stress-tested for defensibility by AI founders. Real applications are live now - go test some of the builds. The full PDF covers the rest.
+That's the question @feltsensefund forced themselves to answer reviewing the entire YC W26 batch. Every single company. Stress-tested for defensibility by AI founders who replicated 198 startups to test which ones could survive AI disruption.
 
-The exercise forced a question I keep coming back to: if an AI agent can replicate the core of what you're building in a matter of days, where does your moat actually live?
+The exercise surfaced a counterintuitive finding: the markets hardest to crack with AI aren't technically complex - they're socially complex.
 
-Speed used to be the answer. I'm not sure it is anymore.
+Industries full of politics, turf wars, broken trust, or bureaucracy might actually be the most defensible in the AI era. AI can replicate code and workflows in days, but it can't fix broken human dynamics overnight.
 
+Companies that spent years navigating messy, regulated markets - learning who to call, building trust with gatekeepers, understanding unwritten rules - have real moats that AI can't easily replicate.
+
+Speed used to be the ultimate defensibility. Now it might be your ability to operate in dysfunction.
+
+Comment "Feltsense" to get the full W26 report.
 ---
 
 ### 💬 Comment to drop on our post

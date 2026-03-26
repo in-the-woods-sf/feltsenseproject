@@ -15,14 +15,19 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 @feltsensefund stress-tested every YC W26 startup for defensibility using AI. Real apps are live to test now. If speed-to-market isn't a moat, what are we actually underwriting with early checks?
 
 **LinkedIn:**
-What happens when you give AI agents a simple brief: "rebuild this startup"? Feltsense just ran that experiment across the entire YC W26 batch - and the results are telling.
+What happens when you give AI agents a simple brief: "rebuild this startup"? @feltsensefund just ran that experiment across 198 YC W26 companies - and the results reveal something counterintuitive about defensibility.
 
-Some companies fell in days. Others proved nearly impossible to replicate. The public launch includes live applications with working products built as proof of concept. The full PDF breaks down the entire batch.
+Some companies fell in days. Others proved nearly impossible to replicate, even with working AI-built prototypes as proof of concept.
 
-As an early-stage investor, I think about moats constantly. Speed used to be the answer. Ship first, raise fast, figure it out later. But if an AI agent can rebuild your product in days, speed alone stops being defensible.
+As an early-stage investor, I've been obsessing over what moats actually look like now. Speed used to be everything. Ship fast, raise faster. But when AI can rebuild your product overnight, technical complexity stops being the answer.
 
-The startups that couldn't be replicated are the interesting ones. What does defensibility actually look like now?
+The most interesting finding from Feltsense's stress-testing: the hardest companies to crack weren't the most technically sophisticated. They were the ones operating in messy, dysfunctional markets full of politics, broken trust, and bureaucratic nightmares.
 
+Turns out AI can replicate code faster than we thought. But it can't fix years of relationship-building in industries where everyone hates each other, or navigate the unwritten rules that govern how business actually gets done in regulated sectors.
+
+The startups that have spent years learning to dance with dysfunction - those are the ones with real moats in the AI era.
+
+Comment "Feltsense" to get the full W26 report.
 ---
 
 ### 💬 Comment to drop on our post

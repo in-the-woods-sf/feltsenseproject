@@ -17,12 +17,17 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 **LinkedIn:**
 What happens when an AI agent can replicate your entire product in 72 hours?
 
-That's the question we asked while stress-testing every startup in the YC W26 batch at Feltsense. @feltsensefund's AI founders put each one through the gauntlet on defensibility. The public launch shows real application replications live - you can test some of the builds with actual products built in days. The full PDF breaks down the entire batch.
+That's the question @feltsensefund asked while stress-testing every startup in the YC W26 batch. Their AI founders put each one through the gauntlet on defensibility - replicating 198 companies to test what actually holds up at scale. The public launch shows real application replications live.
 
-Speed to market used to be the moat. Now agents move at the same speed founders do. Defensibility has to mean something deeper than "we got there first."
+Speed to market used to be the moat. Now agents move at the same speed founders do. But here's what Feltsense found: the most defensible companies aren't in technically complex markets - they're in socially complex ones.
 
-So what actually holds up when an AI agent can replicate your core product in days?
+Industries full of politics, turf wars, and broken trust. Markets where companies spent years navigating bureaucracy and earning credibility the hard way. AI can replicate your product overnight, but it can't fix broken human dynamics or navigate regulatory capture.
 
+The surprising finding? Dysfunction might be the most underrated moat in the AI era. While everyone chases technical differentiation, the real defensibility lies in markets too messy for algorithms to crack quickly.
+
+Companies that learned to work within broken systems, earned trust through years of relationship building, and understand the unwritten rules - those are the moats that actually matter when AI can build anything.
+
+Comment "Feltsense" to get the full W26 report.
 ---
 
 ### 💬 Comment to drop on our post

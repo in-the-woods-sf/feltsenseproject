@@ -17,10 +17,13 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 **LinkedIn:**
 What does defensibility even look like when an AI agent can replicate your core product in days?
 
-That's the question we forced every startup in the YC W26 batch to answer at Feltsense. Our AI stress-tested each founder on whether their moat could actually hold up. The winners? They're live right now with working products you can test. The losers? They're teaching us something harder about what "defensibility" means in 2024.
+That's the question @feltsensefund forced every startup in the YC W26 batch to answer. They replicated 198 companies at scale to stress-test which moats could actually hold up. The winners? They're live right now with working products you can test. The losers? They revealed something fascinating about where real defensibility lives in 2024.
 
-Speed to market used to be enough. Not anymore. The full PDF breaks down the entire batch.
+The surprising finding: the most defensible companies weren't the most technically sophisticated. They were the ones swimming in messy, regulated markets full of politics and broken trust. Turns out AI can clone your product overnight, but it can't navigate years of accumulated bureaucracy, turf wars, and dysfunctional human dynamics.
 
+Speed to market used to be enough. Now the companies with the strongest moats are those that spent years learning to work within industries that resist change at every level.
+
+Comment "Feltsense" to get the full W26 report.
 ---
 
 ### 💬 Comment to drop on our post
