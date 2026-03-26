@@ -281,12 +281,12 @@
     .filter-month.active { border-color: #059669; color: #059669; background: #ECFDF5; }
 
     /* ── Three-column layout ────────────────────────────── */
-    .three-col-layout { display: flex; gap: 0; width: 100%; min-width: calc(5 * 185px); }
+    .three-col-layout { display: flex; gap: 0; width: 100%; min-width: calc(4 * 185px); }
     .col-section { flex: 1; min-width: 185px; border-right: 1px solid #E2DDD6; display: flex; flex-direction: column; transition: opacity 0.15s; }
     .col-section:last-child { border-right: none; }
     .col-section.drag-over { background: #F7F4EF; outline: 2px dashed #C5BFB8; outline-offset: -2px; }
     .col-section.dragging { opacity: 0.4; }
-    .col-header { padding: 10px 14px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.6px; color: #A8A29E; border-bottom: 1px solid #E2DDD6; background: #F7F4EF; position: sticky; top: 57px; z-index: 5; display: flex; align-items: center; justify-content: space-between; cursor: grab; user-select: none; white-space: nowrap; gap: 6px; }
+    .col-header { padding: 10px 14px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.6px; color: #A8A29E; border-bottom: 1px solid #E2DDD6; background: #F7F4EF; position: sticky; top: 0; z-index: 5; display: flex; align-items: center; justify-content: space-between; cursor: grab; user-select: none; white-space: nowrap; gap: 6px; }
     .col-header:active { cursor: grabbing; }
     .col-drag-handle { color: #D5D0C8; font-size: 13px; margin-right: 6px; flex-shrink: 0; }
     .col-header .col-count { font-size: 10px; font-weight: 600; color: #A8A29E; background: #EAE6DF; padding: 2px 7px; border-radius: 10px; text-transform: none; letter-spacing: 0; }
@@ -410,8 +410,6 @@
   <input type="text" id="search" placeholder="Search by name or firm…" oninput="filterCards()">
   <div class="filter-sep"></div>
   <button class="filter-btn active" onclick="setFilter('all', this)">All</button>
-  <button class="filter-btn" onclick="setFilter('done', this)">Generated</button>
-  <button class="filter-btn" onclick="setFilter('pending', this)">Pending</button>
   <div class="filter-sep"></div>
   <button class="filter-btn" id="btn-select-mode" onclick="toggleSelectMode()">✉ Bulk Email</button>
   <select class="filter-month" id="month-filter" onchange="filterCards()">
@@ -471,7 +469,6 @@
 
 {% set vcs_col      = vcs | selectattr('role', 'equalto', 'vc') | list %}
 {% set team_col     = vcs | selectattr('role', 'equalto', 'feltsense_teammate') | list %}
-{% set friends_col  = vcs | selectattr('role', 'equalto', 'friend') | list %}
 {% set mentors_col  = vcs | selectattr('role', 'equalto', 'mentor_advisor') | list %}
 {% set investor_col  = vcs | selectattr('role', 'equalto', 'investor_update') | list %}
 {% set unassigned   = vcs | rejectattr('role') | list %}
@@ -532,18 +529,6 @@
     </div>
   </div>
 
-  <!-- Friends of Feltsense -->
-  <div class="col-section" draggable="true" data-col="friends">
-    <div class="col-header">
-      <span class="col-drag-handle">⠿</span>
-      Friends of Feltsense
-      <span class="col-count">{{ friends_col | length }}</span>
-    </div>
-    <div class="col-cards" id="col-friends">
-      {% for vc in friends_col %}{{ vc_card(vc) }}{% endfor %}
-      {% if not friends_col %}<div class="col-empty">No friends yet</div>{% endif %}
-    </div>
-  </div>
 
 </div><!-- end .three-col-layout -->
 </div><!-- end .grid-wrap -->
