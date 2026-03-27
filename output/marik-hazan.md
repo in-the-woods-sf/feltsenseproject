@@ -12,16 +12,14 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-Before this analysis, I assumed YC founders had solid moats. After seeing @feltsensefund replicate all 198 W26 startups with AI agents, I'm questioning everything. Live apps prove most can be rebuilt in days. 🤖 The full breakdown PDF is brutal but necessary reading. 📊
+We ran 198 W26 startups through Feltsense. 👀
+The full breakdown says a lot more than you'd expect.
 
 **LinkedIn:**
-What happens when AI agents try to steal your startup's entire product in 48 hours?
-
-The team at @feltsense just stress-tested this with 198 YC W26 companies, and the results reveal something counterintuitive about defensibility in 2025. The startups that couldn't be replicated weren't the most technically sophisticated - they were the ones operating in messy, dysfunctional markets full of politics, broken trust, and bureaucratic nightmares.
-
-When AI can replicate core functionality in days, the real defensibility lies in markets that are socially complex, not technically complex. Healthcare procurement, government contracts, enterprise sales with 18-month cycles - these industries are full of human dynamics that AI can't navigate overnight.
-
-Comment "Feltsense" to get the full W26 report.
+Slow markets. Political ones. Full of gatekeepers.
+Those kept showing up as the strongest positions when we ran Feltsense across the entire W26 YC batch.
+Not a coincidence. Where AI moves freely, competition piles in fast. Where people and process are the obstacle, most players never show up at all.
+Difficult to enter means difficult to displace.
 ---
 
 ### 💬 Comment to drop on our post
