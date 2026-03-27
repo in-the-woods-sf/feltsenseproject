@@ -452,10 +452,6 @@
     {% if vc.engagement_month %}
       <span class="badge month">📅 {{ vc.engagement_month }}</span>
     {% endif %}
-    <button class="btn-approve {{ 'is-approved' if vc.approved else '' }}"
-      onclick="event.preventDefault(); event.stopPropagation(); toggleApproved('{{ vc.slug }}', this)">
-      {{ '✓ Marik Approved' if vc.approved else '○ Marik Approved?' }}
-    </button>
     {% if vc.poc %}
       <span class="badge poc">POC: {{ vc.poc }}</span>
     {% endif %}
