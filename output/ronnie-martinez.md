@@ -15,7 +15,7 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 **LinkedIn:**
 
 
-As an investor this is the question i keep sitting with: if an AI agent can replicate the core of what you're building that quickly, what are we actually underwriting? 
+As an investor, this is the question I keep sitting with: if an AI agent can replicate the core of what you're building that quickly, what are we actually underwriting? 
 
 ---
 

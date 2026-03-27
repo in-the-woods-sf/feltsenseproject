@@ -21,13 +21,13 @@ Interesting experiment from @feltsensefund. They replicated every YC W26 startup
 ### 🔁 Our reply to their comment — pick one (internal use)
 
 **A — Casual** *(warm thanks / acknowledgment)*
-Appreciate you flagging the real question here Paul. Thats exactly the conversation we were hoping to start.
+Appreciate you flagging the real question here Paul. That's exactly the conversation we were hoping to start.
 
 **B — Insight** *(unintuitive push that deepens the thread)*
-The thing that surprised us most is that the startups with the strongest defensibility werent the most technically complex ones, they were the ones where the founder's insight couldnt be abstracted into a prompt.
+The thing that surprised us most is that the startups with the strongest defensibility weren't the most technically complex ones, they were the ones where the founder's insight couldn't be abstracted into a prompt.
 
 **C — Tease** *(hint at more coming / stay tuned)*
-We're seeing a pattern in which types of companies agents cant touch, and its not what most investors would guess.
+We're seeing a pattern in which types of companies agents can't touch, and it's not what most investors would guess.
 
 ---
 

@@ -12,7 +12,7 @@
 ### 📣 Post (X + LinkedIn)
 
 **X:**
-@feltsensefund just stress-tested every YC W26 startup with AI-and it kept me up at night: if an agent rebuilds your core product in days, what are we actually funding? 🔍
+@feltsensefund just stress-tested every YC W26 startup with AI. It kept me up at night: if an agent rebuilds your core product in days, what are we actually funding? 🔍
 
 **LinkedIn:**
 @feltsense just went through the entire YC W26 batch and stress-tested every startup for defensibility using AI founders. They built live replications of featured companies in days.

@@ -16,7 +16,7 @@ Lots of noise about startup moats in the AI era. 🤖 @feltsensefund built worki
 
 
 
-Speed-to-market used to be the moat. That assumption is getting tested in real time now. The startups that couldn't be replicated are truly the ones pushing the boundary
+Speed-to-market used to be the moat. That assumption is getting tested in real time now. The startups that couldn't be replicated are truly the ones pushing the boundary.
 
 
 ---

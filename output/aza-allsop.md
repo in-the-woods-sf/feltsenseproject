@@ -15,7 +15,7 @@ YC W26 Batch Replication Launch Building off YC Demo Day on March 24th, we relea
 The Three Laws of AI Startup Defensibility: network effects that strengthen with scale, proprietary data that compounds over time, and regulatory moats that create barriers. @feltsensefund just replicated all 198 YC W26 startups to test this. The live demos + full PDF are brutal.
 
 **LinkedIn:**
-I just stress-tested every YC W26 startup against AI-and the results are reshaping how I think about defensibility.
+I just stress-tested every YC W26 startup against AI. The results are reshaping how I think about defensibility.
 
 Speed used to be the moat. Build fast, raise faster, outrun everyone. But when an AI agent can replicate the core product in days, speed stops being a defensible position.
 
