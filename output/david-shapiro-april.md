@@ -1,4 +1,4 @@
-## Peter Green — Republic
+## Carl Choi — Alumni Ventures
 
 ### 📋 Sculpture Summary
 
@@ -15,3 +15,26 @@
 
 
 ---
+
+### 💬 Their Comment
+*(Suggested copy for Carl Choi to post on Feltsense's post)*
+
+
+
+---
+
+### 💬 Feltsense Comment
+*(What Feltsense / Marik drops on Carl Choi's own post)*
+
+
+
+---
+
+### 🔁 Our reply to their comment — pick one (internal use)
+
+**A — Casual** *(warm thanks / acknowledgment)*
+
+
+**B — Insight** *(unintuitive push that deepens the thread)*
+
+

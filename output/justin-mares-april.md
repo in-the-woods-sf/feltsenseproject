@@ -1,4 +1,4 @@
-## Justin Mares — 
+## Justin Mares — Long Journey Ventures
 
 ### 📋 Sculpture Summary
 
@@ -15,26 +15,3 @@
 
 
 ---
-
-### 💬 Their Comment
-*(Suggested copy for Justin Mares to post on Feltsense's post)*
-
-
-
----
-
-### 💬 Feltsense Comment
-*(What Feltsense / Marik drops on Justin Mares's own post)*
-
-
-
----
-
-### 🔁 Our reply to their comment — pick one (internal use)
-
-**A — Casual** *(warm thanks / acknowledgment)*
-
-
-**B — Insight** *(unintuitive push that deepens the thread)*
-
-

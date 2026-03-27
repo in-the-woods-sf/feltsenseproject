@@ -142,17 +142,6 @@
       "march:linkedin_post": true
     }
   },
-  "carl-choi": {
-    "status": "",
-    "engagement_month": "",
-    "role": "vc",
-    "approved": false,
-    "poc": "",
-    "reviewed": {
-      "march:x_post": true,
-      "march:linkedin_post": true
-    }
-  },
   "danny-pantuso": {
     "status": "",
     "engagement_month": "",
@@ -433,7 +422,7 @@
   "peter-green": {
     "status": "",
     "engagement_month": "",
-    "role": "mentor_advisor",
+    "role": "vc",
     "approved": false,
     "poc": "",
     "reviewed": {}
@@ -465,7 +454,7 @@
   "jeremiah-owyang": {
     "status": "",
     "engagement_month": "",
-    "role": "mentor_advisor",
+    "role": "vc",
     "approved": false,
     "poc": "",
     "reviewed": {}
@@ -473,7 +462,7 @@
   "justin-mares": {
     "status": "",
     "engagement_month": "",
-    "role": "mentor_advisor",
+    "role": "vc",
     "approved": false,
     "poc": "",
     "reviewed": {}
@@ -904,5 +893,17 @@
       "march:linkedin_post": true,
       "march:x_post": true
     }
+  },
+  "dani-tustin": {
+    "role": "vc"
+  },
+  "carolena-leon": {
+    "role": "vc"
+  },
+  "jager-mcconnell": {
+    "role": "vc"
+  },
+  "david-shapiro": {
+    "role": "vc"
   }
 }

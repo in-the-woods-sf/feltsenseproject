@@ -1,4 +1,4 @@
-## Peter Green — Republic
+## Carolena Leon — Long Journey Ventures
 
 ### 📋 Sculpture Summary
 

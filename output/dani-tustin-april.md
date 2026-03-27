@@ -1,4 +1,4 @@
-## Peter Green — Republic
+## Dani Tustin — Long Journey Ventures
 
 ### 📋 Sculpture Summary
 

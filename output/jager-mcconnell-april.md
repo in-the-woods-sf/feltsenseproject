@@ -1,4 +1,4 @@
-## Peter Green — Republic
+## Jager McConnell — Crunchbase
 
 ### 📋 Sculpture Summary
 
