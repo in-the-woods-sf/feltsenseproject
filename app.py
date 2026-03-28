@@ -72,23 +72,21 @@ CAMPAIGNS = [
 # Rows in the copy table, grouped by platform section
 # (section, field_id, label, textarea_rows)
 COPY_FIELDS = [
-    ("summary",    "post_summary",       "Summary",                2),
-    ("x",          "x_post",             "VC X Post",              3),
-    ("x",          "x_comment",          "VC X Comment",           2),
-    ("x",          "reply_casual",       "Feltsense Reply A",      2),
-    ("x",          "reply_insight",      "Feltsense Reply B",      2),
-    ("linkedin",   "linkedin_post",      "VC LinkedIn Post",       6),
-    ("linkedin",   "linkedin_comment",   "VC LinkedIn Comment",    2),
+    ("summary",    "post_summary",       "Summary",              2),
+    ("x",          "x_post",             "X Post",               3),
+    ("x",          "x_comment",          "X Comment",            2),
+    ("x",          "reply_casual",       "Feltsense Reply A",    2),
+    ("x",          "reply_insight",      "Feltsense Reply B",    2),
+    ("linkedin",   "linkedin_post",      "LinkedIn Post",        6),
+    ("linkedin",   "linkedin_comment",   "LinkedIn Comment",     2),
     ("linkedin",   "linkedin_reply",     "Feltsense LinkedIn Reply", 2),
 ]
 
-# Hub view: VC-facing only — summary, posts, no replies or internal comments
+# Hub view (Feltsense teammates): posts only — no comment rows, no Feltsense reply rows
 HUB_COPY_FIELDS = [
-    ("summary",    "post_summary",      "Summary",               2),
-    ("x",          "x_post",            "VC X Post",             3),
-    ("x",          "x_comment",         "VC X Comment",          2),
-    ("linkedin",   "linkedin_post",     "VC LinkedIn Post",      6),
-    ("linkedin",   "linkedin_comment",  "VC LinkedIn Comment",   2),
+    ("summary",    "post_summary",   "Summary",         2),
+    ("x",          "x_post",         "X Post",          3),
+    ("linkedin",   "linkedin_post",  "LinkedIn Post",   6),
 ]
 
 
