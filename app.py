@@ -84,9 +84,11 @@ COPY_FIELDS = [
 
 # Hub view: VC-facing only — summary, posts, no replies or internal comments
 HUB_COPY_FIELDS = [
-    ("summary",    "post_summary",  "Summary",            2),
-    ("x",          "x_post",        "VC X Post",          3),
-    ("linkedin",   "linkedin_post", "VC LinkedIn Post",   6),
+    ("summary",    "post_summary",      "Summary",               2),
+    ("x",          "x_post",            "VC X Post",             3),
+    ("x",          "x_comment",         "VC X Comment",          2),
+    ("linkedin",   "linkedin_post",     "VC LinkedIn Post",      6),
+    ("linkedin",   "linkedin_comment",  "VC LinkedIn Comment",   2),
 ]
 
 

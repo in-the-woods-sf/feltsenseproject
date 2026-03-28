@@ -8,10 +8,18 @@ on the shared campaign brief.
 """
 
 import re
+import os
 import anthropic
 from dataclasses import dataclass
 from typing import Optional
 from scraper import ProfileData
+
+# Optional OpenAI fallback
+try:
+    import openai as _openai_module
+    _OPENAI_AVAILABLE = True
+except ImportError:
+    _OPENAI_AVAILABLE = False
 
 
 @dataclass
@@ -166,6 +174,24 @@ class CopyGenerator:
     def __init__(self, api_key: Optional[str] = None, model: str = "claude-opus-4-6"):
         self.client = anthropic.Anthropic(api_key=api_key) if api_key else anthropic.Anthropic()
         self.model = model
+        # OpenAI fallback — used automatically when Anthropic credits are depleted
+        openai_key = os.environ.get("OPENAI_API_KEY", "")
+        if _OPENAI_AVAILABLE and openai_key:
+            self._openai_client = _openai_module.OpenAI(api_key=openai_key)
+        else:
+            self._openai_client = None
+
+    def _call_openai(self, system: str, user: str, max_tokens: int = 4000) -> str:
+        """Call GPT-4o as a fallback when Anthropic credits are depleted."""
+        resp = self._openai_client.chat.completions.create(
+            model="gpt-4o",
+            max_tokens=max_tokens,
+            messages=[
+                {"role": "system", "content": system},
+                {"role": "user", "content": user},
+            ],
+        )
+        return resp.choices[0].message.content or ""
 
     def _build_posts_block(self, twitter: Optional[ProfileData], linkedin: Optional[ProfileData]) -> tuple[str, str]:
         """Build a combined posts block and bio string from scraped data.
@@ -197,19 +223,24 @@ class CopyGenerator:
         return posts_block, bio
 
     def _analyze_tone(self, name: str, firm: str, posts_block: str, bio: str) -> str:
-        """Quick Claude call to extract voice signals from scraped posts."""
+        """Quick call to extract voice signals from scraped posts. Falls back to OpenAI."""
         prompt = _TONE_ANALYSIS_PROMPT.format(
             name=name, firm=firm, posts_block=posts_block, bio=bio
         )
-        response = self.client.messages.create(
-            model=self.model,
-            max_tokens=800,
-            thinking={"type": "adaptive"},
-            messages=[{"role": "user", "content": prompt}],
-        )
-        for block in response.content:
-            if block.type == "text":
-                return block.text
+        try:
+            response = self.client.messages.create(
+                model=self.model,
+                max_tokens=800,
+                thinking={"type": "adaptive"},
+                messages=[{"role": "user", "content": prompt}],
+            )
+            for block in response.content:
+                if block.type == "text":
+                    return block.text
+        except anthropic.BadRequestError as e:
+            if "credit" in str(e).lower() and self._openai_client:
+                return self._call_openai(_SYSTEM_PROMPT, prompt, max_tokens=800)
+            raise
         return "(tone analysis unavailable)"
 
     def generate(
@@ -246,30 +277,36 @@ class CopyGenerator:
         x_post = linkedin_post = x_comment = linkedin_comment = ""
         our_reply_casual = our_reply_insight = our_reply_tease = our_linkedin_reply = final_voice_notes = ""
 
-        with self.client.messages.stream(
-            model=self.model,
-            max_tokens=4000,
-            system=[
-                {
-                    "type": "text",
-                    "text": _SYSTEM_PROMPT,
-                },
-                {
-                    "type": "text",
-                    "text": f"CAMPAIGN BRIEF (shared context):\n\n{campaign_brief}",
-                    "cache_control": {"type": "ephemeral"},  # cache across all VC calls
-                },
-            ],
-            messages=[{"role": "user", "content": copy_prompt}],
-        ) as stream:
-            full_response = stream.get_final_message()
-
-        # Parse structured response
         raw = ""
-        for block in full_response.content:
-            if block.type == "text":
-                raw = block.text
-                break
+        try:
+            with self.client.messages.stream(
+                model=self.model,
+                max_tokens=4000,
+                system=[
+                    {"type": "text", "text": _SYSTEM_PROMPT},
+                    {
+                        "type": "text",
+                        "text": f"CAMPAIGN BRIEF (shared context):\n\n{campaign_brief}",
+                        "cache_control": {"type": "ephemeral"},
+                    },
+                ],
+                messages=[{"role": "user", "content": copy_prompt}],
+            ) as stream:
+                full_response = stream.get_final_message()
+            for block in full_response.content:
+                if block.type == "text":
+                    raw = block.text
+                    break
+        except Exception as e:
+            if "credit" in str(e).lower() and self._openai_client:
+                # Anthropic credits depleted — fall back to GPT-4o
+                system_with_brief = (
+                    _SYSTEM_PROMPT
+                    + f"\n\nCAMPAIGN BRIEF:\n\n{campaign_brief}"
+                )
+                raw = self._call_openai(system_with_brief, copy_prompt, max_tokens=4000)
+            else:
+                raise
 
         x_post = _extract_section(raw, "X POST")
         linkedin_post = _extract_section(raw, "LINKEDIN POST")
