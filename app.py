@@ -72,13 +72,14 @@ CAMPAIGNS = [
 # Rows in the copy table, grouped by platform section
 # (section, field_id, label, textarea_rows)
 COPY_FIELDS = [
-    ("summary",    "post_summary",  "Summary",            2),
-    ("x",          "x_post",        "VC X Post",          3),
-    ("x",          "reply_casual",  "Feltsense Reply A",  2),
-    ("x",          "reply_insight", "Feltsense Reply B",  2),
-    ("linkedin",   "linkedin_post", "VC LinkedIn Post",   6),
-    ("engagement", "comment",       "Their Comment",      3),
-    ("engagement", "our_comment",   "Feltsense Comment",  3),
+    ("summary",    "post_summary",       "Summary",                2),
+    ("x",          "x_post",             "VC X Post",              3),
+    ("x",          "x_comment",          "VC X Comment",           2),
+    ("x",          "reply_casual",       "Feltsense Reply A",      2),
+    ("x",          "reply_insight",      "Feltsense Reply B",      2),
+    ("linkedin",   "linkedin_post",      "VC LinkedIn Post",       6),
+    ("linkedin",   "linkedin_comment",   "VC LinkedIn Comment",    2),
+    ("linkedin",   "linkedin_reply",     "Feltsense LinkedIn Reply", 2),
 ]
 
 # Hub view: VC-facing only — summary, posts, no replies or internal comments
@@ -187,11 +188,16 @@ def load_copy(slug: str, campaign: str = "march") -> Optional[dict]:
         m = re.search(pattern, raw, re.DOTALL)
         return m.group(1).strip() if m else ""
 
-    # "Their Comment" — new header first, fall back to old single-comment header
-    their_comment = (
-        extract("💬 Their Comment")
+    # Per-platform VC comments — new headers first, fall back to old single comment
+    x_comment = (
+        extract("💬 VC X Comment")
+        or extract("💬 Their Comment")
         or extract("💬 Comment to drop on our post")
         or extract("💬 Comment")
+    )
+    linkedin_comment = (
+        extract("💬 VC LinkedIn Comment")
+        or ""
     )
 
     # Parse scrape counts from metadata lines if present
@@ -204,9 +210,10 @@ def load_copy(slug: str, campaign: str = "march") -> Optional[dict]:
     return {
         "post_summary": extract("📋 Sculpture Summary"),
         "x_post": x_post,
+        "x_comment": x_comment,
         "linkedin_post": linkedin_post,
-        "comment": their_comment,
-        "our_comment": extract("💬 Feltsense Comment"),
+        "linkedin_comment": linkedin_comment,
+        "linkedin_reply": extract("💬 Feltsense LinkedIn Reply"),
         "reply_casual": extract_reply("A — Casual"),
         "reply_insight": extract_reply("B — Insight"),
         "reply_tease": extract_reply("C — Tease"),
@@ -242,17 +249,24 @@ def save_copy(slug: str, copy: GeneratedCopy, campaign: str = "march"):
 
 ---
 
-### 💬 Their Comment
-*(Suggested copy for {copy.name} to post on Feltsense's post)*
+### 💬 VC X Comment
+*(Suggested copy for {copy.name} to drop on Feltsense's X post)*
 
-{copy.comment}
+{copy.x_comment}
 
 ---
 
-### 💬 Feltsense Comment
-*(What Feltsense / Marik drops on {copy.name}'s own post)*
+### 💬 VC LinkedIn Comment
+*(Suggested copy for {copy.name} to drop on Feltsense's LinkedIn post)*
 
-{copy.our_comment}
+{copy.linkedin_comment}
+
+---
+
+### 💬 Feltsense LinkedIn Reply
+*(Feltsense's reply to {copy.name}'s LinkedIn comment — internal use)*
+
+{copy.our_linkedin_reply}
 
 ---
 
@@ -503,6 +517,7 @@ def regenerate(slug):
                 name=vc["name"],
                 x_url=vc.get("x_url", ""),
                 linkedin_url=vc.get("linkedin_url", ""),
+                twitter_bearer_token=os.environ.get("TWITTER_BEARER_TOKEN", "") or None,
             )
 
         # Prepend campaign context, then append any extra instruction
@@ -537,9 +552,10 @@ def regenerate(slug):
             "copy": {
                 "post_summary": getattr(copy, "post_summary", ""),
                 "x_post": x_post,
+                "x_comment": copy.x_comment,
                 "linkedin_post": linkedin_post,
-                "comment": copy.comment,
-                "our_comment": copy.our_comment,
+                "linkedin_comment": copy.linkedin_comment,
+                "linkedin_reply": copy.our_linkedin_reply,
                 "reply_casual": copy.our_reply_casual,
                 "reply_insight": copy.our_reply_insight,
                 "reply_tease": copy.our_reply_tease,
@@ -567,14 +583,15 @@ def save_edit(slug):
     raw = path.read_text(encoding="utf-8")
 
     field_patterns = {
-        "post_summary":(r"(### 📋 Sculpture Summary\s*\n\n)(.*?)(\n\n---)", re.DOTALL),
-        "x_post":      (r"(\*\*X:\*\*\s*\n)(.*?)(\n\n\*\*LinkedIn:)", re.DOTALL),
-        "linkedin_post":(r"(\*\*LinkedIn:\*\*\s*\n)(.*?)(\n\n---)", re.DOTALL),
-        "comment":     (r"(### 💬 Their Comment\s*\n[^\n]*\n\n)(.*?)(\n\n---)", re.DOTALL),
-        "our_comment": (r"(### 💬 Feltsense Comment\s*\n[^\n]*\n\n)(.*?)(\n\n---)", re.DOTALL),
-        "reply_casual":(r"(\*\*A — Casual\*\*[^\n]*\n)(.*?)(\n\n\*\*B —)", re.DOTALL),
-        "reply_insight":(r"(\*\*B — Insight\*\*[^\n]*\n)(.*?)(\n\n---)", re.DOTALL),
-        "reply_tease": (r"(\*\*C — Tease\*\*[^\n]*\n)(.*?)(\n\n---)", re.DOTALL),
+        "post_summary":     (r"(### 📋 Sculpture Summary\s*\n\n)(.*?)(\n\n---)", re.DOTALL),
+        "x_post":           (r"(\*\*X:\*\*\s*\n)(.*?)(\n\n\*\*LinkedIn:)", re.DOTALL),
+        "linkedin_post":    (r"(\*\*LinkedIn:\*\*\s*\n)(.*?)(\n\n---)", re.DOTALL),
+        "x_comment":        (r"(### 💬 VC X Comment\s*\n[^\n]*\n\n)(.*?)(\n\n---)", re.DOTALL),
+        "linkedin_comment": (r"(### 💬 VC LinkedIn Comment\s*\n[^\n]*\n\n)(.*?)(\n\n---)", re.DOTALL),
+        "linkedin_reply":   (r"(### 💬 Feltsense LinkedIn Reply\s*\n[^\n]*\n\n)(.*?)(\n\n---)", re.DOTALL),
+        "reply_casual":     (r"(\*\*A — Casual\*\*[^\n]*\n)(.*?)(\n\n\*\*B —)", re.DOTALL),
+        "reply_insight":    (r"(\*\*B — Insight\*\*[^\n]*\n)(.*?)(\n\n---)", re.DOTALL),
+        "reply_tease":      (r"(\*\*C — Tease\*\*[^\n]*\n)(.*?)(\n\n---)", re.DOTALL),
     }
 
     if field not in field_patterns:

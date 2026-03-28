@@ -29,9 +29,6 @@
     .btn-send-email { font-size: 12px; color: #4F46E5; padding: 4px 10px; border: 1px solid #C7D2FE; border-radius: 4px; background: #EEF2FF; cursor: pointer; font-family: inherit; }
     .btn-send-email:hover { border-color: #4F46E5; background: #E0E7FF; }
     .btn-send-email:disabled { opacity: 0.4; cursor: not-allowed; }
-    .btn-approved { font-size: 12px; padding: 4px 10px; border-radius: 4px; border: 1px solid #E2DDD6; background: #FFFFFF; cursor: pointer; font-family: inherit; color: #A8A29E; transition: all 0.15s; }
-    .btn-approved:hover { border-color: #86EFAC; color: #166534; background: #F0FDF4; }
-    .btn-approved.is-approved { border-color: #86EFAC; color: #166534; background: #DCFCE7; }
     .topbar select { background: #FFFFFF; border: 1px solid #E2DDD6; color: #1C1917; padding: 4px 10px; border-radius: 4px; font-size: 12px; cursor: pointer; outline: none; font-family: inherit; }
     .topbar select:focus { border-color: #A8A29E; }
 
@@ -315,12 +312,6 @@
                 onclick="toggleReviewed('{{ vc.slug }}', '{{ rkey }}', this)">
                 {{ '✓ Reviewed' if is_reviewed else 'Review' }}
               </button>
-              {% if not hub_mode %}
-              <button class="btn-approved btn-approve-cell {{ 'is-approved' if vc.approved else '' }}"
-                onclick="toggleApproved('{{ vc.slug }}', this)">
-                {{ '✓ Marik Approved' if vc.approved else '○ Marik Approved?' }}
-              </button>
-              {% endif %}
             </div>
             {% endif %}
           </div>
@@ -598,22 +589,6 @@ async function toggleReviewed(slug, rkey, btn) {
   if (cell) cell.classList.toggle('reviewed', newVal);
 }
 
-// ── Marik Approved toggle ──────────────────────────────────
-async function toggleApproved(slug, btn) {
-  const isApproved = btn.classList.contains('is-approved');
-  const newVal = !isApproved;
-  const res = await fetch('/api/set-status/' + slug, {
-    method: 'POST', headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ approved: newVal }),
-  });
-  const data = await res.json();
-  if (!data.ok) return;
-  document.querySelectorAll('.btn-approve-cell').forEach(b => {
-    b.classList.toggle('is-approved', newVal);
-    b.textContent = newVal ? '✓ Marik Approved' : '○ Marik Approved?';
-  });
-  flashSaved();
-}
 
 // ── Send email ─────────────────────────────────────────────
 async function sendEmail(slug) {

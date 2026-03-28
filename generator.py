@@ -19,11 +19,12 @@ class GeneratedCopy:
     name: str
     firm: str
     standalone_post: str
-    comment: str               # Suggested copy for the VC to post ON Feltsense's post
-    our_comment: str           # What Feltsense/Marik drops ON the VC's own post
-    our_reply_casual: str      # Option A: warm thanks / acknowledgment
-    our_reply_insight: str     # Option B: unintuitive push that deepens the thread
-    our_reply_tease: str       # Option C: hint at more coming / stay tuned
+    x_comment: str             # Suggested copy for the VC to drop ON Feltsense's X post
+    linkedin_comment: str      # Suggested copy for the VC to drop ON Feltsense's LinkedIn post
+    our_reply_casual: str      # Option A: warm thanks / acknowledgment (X)
+    our_reply_insight: str     # Option B: unintuitive push that deepens the thread (X)
+    our_reply_tease: str       # Option C: hint at more coming / stay tuned (X)
+    our_linkedin_reply: str    # Feltsense reply to VC's LinkedIn comment
     voice_notes: str
     insufficient_data: bool = False
     post_summary: str = ""        # Manually-entered sculpture/post summary (not AI-generated)
@@ -97,18 +98,27 @@ Write three pieces in {name}'s voice:
    - Aim for "quietly confident" over "hyped up" — the idea should carry the energy, not the adjectives
    - FRAMING (NON-NEGOTIABLE): Feltsense went through EVERY startup in the YC W26 batch — not 20, not "some." The full scope is the entire batch. The public launch features 20 deep-dive replications with live products built; the full PDF covers every company. NEVER say "replicated 20 startups" or frame this as 20 companies. Always say "went through the entire YC W26 batch," "every startup in the batch," or "the whole W26 batch." If referencing the 20, it's only "20 featured deep-dives" or "20 live builds" — always in the context of the full batch. This framing applies to every piece of copy in every future version.
 
-2. THEIR COMMENT (suggested copy for {name} to post on Feltsense's post)
-   - 1-3 sentences max
-   - Sounds like a natural, considered reaction from {name} — not a fan reply, more like a peer observation
-   - No generic praise, no hype words — something specific, grounded, and in their voice
-   - Written FROM {name}'s perspective, as if they are commenting on Feltsense's content
+2. THEIR X COMMENT (suggested copy for {name} to drop on Feltsense's X post)
+   - 1 sentence ONLY — max 12 words, punchy, no filler
+   - Must be UNIQUE to {name} — draw from their specific background, thesis, or sector focus
+   - Tone: analytical and grounded — the register of a sharp investor making a real observation, not a fan
+   - Stays in the lane of: defensibility, market structure, diligence, capital allocation, founder edge
+   - NO soft takes, pop references, sci-fi framing, or grandiose metaphors — keep it concrete and professional
+   - NO emojis, no hype words, no exclamation energy
+   - Written FROM {name}'s perspective
+   - Banned openers: "This", "Appreciate", "Great", "Defensibility just got", "Every investor"
+   - If you are writing this for multiple VCs, each comment must start differently and make a different point
 
-3. OUR COMMENT (what Feltsense / Marik drops on {name}'s OWN posts)
-   - STRICTLY 1 sentence ONLY — no exceptions, no two-sentence exceptions, never more than one sentence
-   - Should feel like a genuine peer reaction — not promotional, not begging for engagement
-   - Reference something specific from their actual posts if possible
-   - Ends the exchange feeling like two people who see the world similarly
-   - Written FROM Feltsense's perspective, engaging with {name}'s content
+3. THEIR LINKEDIN COMMENT (suggested copy for {name} to drop on Feltsense's LinkedIn post)
+   - 1 sentence ONLY — max 15 words, slightly warmer than X but equally sharp and professional
+   - Must be UNIQUE to {name} — tied to their specific lens (fund stage, sector, founder experience)
+   - Tone: considered and precise — like a GP sharing a real takeaway, not a cheerleader
+   - Stays in the lane of: defensibility, early-stage underwriting, market complexity, founder conviction
+   - NO soft takes, vague superlatives, or grandiose framing — anchor it to something concrete
+   - No generic praise, no em dashes, no filler
+   - Written FROM {name}'s perspective
+   - Banned openers: "Every investor", "The startups that survived", "Defensibility just got"
+   - If you are writing this for multiple VCs, each comment must start differently and make a different point
 
 4. OUR REPLY to their comment — two options (for Feltsense / Marik to pick from)
    Both are written as Feltsense (@feltsense) responding personally to {name}.
@@ -129,17 +139,20 @@ Format your response EXACTLY as:
 ### LINKEDIN POST
 [60-100 words HARD LIMIT — count every word, do not exceed 100]
 
-### THEIR COMMENT ON OUR POST
-[1-3 sentences — written as {name} commenting on Feltsense's post]
+### THEIR X COMMENT
+[1 sentence, max 12 words — unique to {name}'s specific voice and POV. No generic takes. Varied opener. No em dashes.]
 
-### OUR COMMENT ON THEIR POST
-[1 sentence ONLY — written as Feltsense commenting on {name}'s post]
+### THEIR LINKEDIN COMMENT
+[1 sentence, max 15 words — unique to {name}'s lens. Tied to their fund stage/sector/background. No generic takes. Varied opener. No em dashes.]
 
 ### OUR REPLY A — CASUAL
-[1-2 sentences]
+[1-2 sentences — varied opener, no em dashes, no "Appreciate this"]
 
 ### OUR REPLY B — INSIGHT
-[1-2 sentences]
+[1-2 sentences — no em dashes]
+
+### OUR LINKEDIN REPLY
+[1 sentence — warm acknowledgment of their LinkedIn comment. Varied opener, no em dashes, no "Appreciate this"]
 
 ### VOICE NOTES
 [1-2 sentences summarizing the tone/style used]"""
@@ -230,8 +243,8 @@ class CopyGenerator:
         )
 
         # Stream the response (copy can be long, prevents timeouts)
-        x_post = linkedin_post = comment = our_comment = ""
-        our_reply_casual = our_reply_insight = our_reply_tease = final_voice_notes = ""
+        x_post = linkedin_post = x_comment = linkedin_comment = ""
+        our_reply_casual = our_reply_insight = our_reply_tease = our_linkedin_reply = final_voice_notes = ""
 
         with self.client.messages.stream(
             model=self.model,
@@ -260,22 +273,24 @@ class CopyGenerator:
 
         x_post = _extract_section(raw, "X POST")
         linkedin_post = _extract_section(raw, "LINKEDIN POST")
-        comment = _extract_section(raw, "THEIR COMMENT ON OUR POST")
-        our_comment = _extract_section(raw, "OUR COMMENT ON THEIR POST")
+        x_comment = _extract_section(raw, "THEIR X COMMENT")
+        linkedin_comment = _extract_section(raw, "THEIR LINKEDIN COMMENT")
         our_reply_casual = _extract_section(raw, "OUR REPLY A — CASUAL")
         our_reply_insight = _extract_section(raw, "OUR REPLY B — INSIGHT")
         our_reply_tease = _extract_section(raw, "OUR REPLY C — TEASE")
+        our_linkedin_reply = _extract_section(raw, "OUR LINKEDIN REPLY")
         final_voice_notes = _extract_section(raw, "VOICE NOTES") or voice_notes
 
         return GeneratedCopy(
             name=name,
             firm=firm,
             standalone_post=f"**X:**\n{x_post}\n\n**LinkedIn:**\n{linkedin_post}",
-            comment=comment,
-            our_comment=our_comment,
+            x_comment=x_comment,
+            linkedin_comment=linkedin_comment,
             our_reply_casual=our_reply_casual,
             our_reply_insight=our_reply_insight,
             our_reply_tease=our_reply_tease,
+            our_linkedin_reply=our_linkedin_reply,
             voice_notes=final_voice_notes,
             insufficient_data=insufficient,
         )
