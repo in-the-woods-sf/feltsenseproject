@@ -33,14 +33,14 @@ const categoryStats = [
 
 export function SampleReportSection() {
   return (
-    <section id="sample-report" className="relative z-10">
+    <section id="sample-report" className="relative z-20">
       {/* Section Label - On dark background above the cream section */}
       <div className="py-16 text-center">
         <span className="font-mono text-xs text-[#6B6B68] uppercase tracking-widest">// SAMPLE ANALYSIS</span>
       </div>
 
       {/* Full-width warm off-white/cream section - using inline style to ensure it renders */}
-      <div style={{ backgroundColor: "#FAF7F2", width: "100%" }}>
+      <div style={{ backgroundColor: "#FAF7F2", width: "100%", position: "relative", zIndex: 20 }}>
         <div className="max-w-6xl mx-auto px-6 md:px-12 py-16 md:py-20">
           
           {/* REPORT HEADER ROW */}

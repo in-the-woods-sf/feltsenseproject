@@ -19,7 +19,7 @@ export function BuiltForSection() {
   const hypotenuseHalf = polyRoundness / 2 - 1.5;
 
   return (
-    <section className="py-24 md:py-32">
+    <section className="py-24 md:py-32 relative z-20">
       <div className="container">
         <p className="font-mono text-xs text-white/40 uppercase tracking-widest text-center mb-12">
           // BUILT FOR
